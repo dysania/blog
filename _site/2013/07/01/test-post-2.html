@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="author" content="Team Dysania" />
+        <meta name="viewport" content="width=device-width">
+
+        <title>Test Post</title>
+
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/screen.css">
+        <link rel="stylesheet" href="/css/syntax.css">
+        <link href="http://feeds.feedburner.com/mozmorris" rel="alternate" title="Moz Morris" type="application/atom+xml" />
+
+        <style>
+            a,
+            .date span {
+                color: #880706;
+            }
+        </style>
+
+        <script type="text/javascript">
+          // (function() {
+          //   var config = {
+          //     kitId: 'pqx4dld',
+          //     scriptTimeout: 3000
+          //   };
+          //   var h = document.getElementsByTagName("html")[0];
+          //   h.className += " wf-loading";
+          //   var t = setTimeout(function() {
+          //       h.className = h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");
+          //       h.className += " wf-inactive"
+          //   }, config.scriptTimeout);
+          //   var tk = document.createElement("script"), d = false;
+          //   tk.src = '//use.typekit.net/' + config.kitId + '.js';
+          //   tk.type = "text/javascript";
+          //   tk.async = "true";
+          //   tk.onload = tk.onreadystatechange = function() {
+          //       var a = this.readyState;
+          //       if (d || a && a != "complete" && a!= "loaded") return;
+          //       d = true;
+          //       clearTimeout(t);
+          //       try {
+          //           Typekit.load(config)
+          //       } catch (b) {}
+          //   };
+          //   var s = document.getElementsByTagName("script")[0];
+          //   s.parentNode.insertBefore(tk,s)
+          // })();
+        </script>
+
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+    </head>
+    <body>
+        <header class="clearfix">
+            <nav>
+                <ul>
+                    <li>
+                        
+                          <a href="/about.html">DYSANIA</a>
+                        
+                    </li>
+                </ul>
+            </nav>
+            <!-- 
+            <div class="image-wrapper">
+                <img src="/images/space.gif">
+                <div class="image" style="background-image: url(/images/headers/jesus_ami.jpg);"></div>
+            </div>
+             -->
+        </header>
+        <div class="wrapper clearfix">
+            <div class="main">
+                <section class="date">
+
+<p><span><a href="">July 01, 2013</a></span> - Los Angeles, CA</p>
+
+</section>
+
+<article>
+  <section class="content">
+    <h1>Test Post</h1>
+
+<p>Around four years ago when joining a new firm, like many devs out there I had to spend most of a day setting up my new machine. It was then that I read a post about this tool, <a href="http://www.gnu.org/software/screen/" title="Gnu Screen">GNU Screen</a>. It's a <a href="http://en.wikipedia.org/wiki/Terminal_multiplexer" title="Terminal Multiplexer">terminal multiplexer</a>, but of course you already knew that. Well, during the days, weeks, and months that followed, Screen and I became good friends. Eventually, I even got Screen to perform <a href="http://old.evanmeagher.net/2010/12/patching-screen-with-vertical-split-in-os" title="I patched it for vertical splits">new tricks</a>. But, after four years, I'm saying goodbye.</p>
+
+<p>This past month I've been using <a href="http://en.wikipedia.org/wiki/Tmux" title="tmux is awesome">tmux</a>, another multiplexer that's fast gaining popularity. To be honest, at first I wasn't convinced. It was like Screen, but with added complication (Obviously I forgot the many hours I've spent tweaking my .screenrc file). But very quickly, tmux has grown on me. It's easily configured and comes with <a href="http://fungi.yuggoth.org/vsp4s/" title="Yes, I know Screen has this now - apparently">vertical split</a> and a status line out of the box. Probably the feature I like most is its predefined layouts which conveniently for me, include the layout I would always initially construct in Screen.</p>
+
+<h2>Sessions, Windows, &amp; Panes</h2>
+
+<p>tmux works in a world of sessions, windows, &amp; panes that are managed by the single <strong>server</strong>. When a tmux <strong>client</strong> connects to the server, a <em>session</em> is created that contains a single <em>window</em>. The window can be divided up into rectangular <em>panes</em>, each one of them a <a href="http://en.wikipedia.org/wiki/Pseudo_terminal" title="What is a pseudo terminal?">pseudo terminal</a>. It's also possible to have multiple sessions that each contain multiple windows, all under a single tmux server.</p>
+
+<p>Usefully, a tmux client can be detached from the server, whilst the session is persisted and continues to run in the background. The session can then be reattached at some later point. A good use case for this would be to keep a long running process alive or returning to a development environment that's ready to rock.</p>
+
+<p>The next steps show how I got started with tmux. Please let me know if something doesn't work for you. Better still, improve [my config][folder].</p>
+
+<h2>Installation (OSX)</h2>
+
+<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>brew install tmux
+<span class="nv">$ </span>tmux -V
+<span class="c"># tmux 1.8</span>
+</code></pre></div>
+
+
+
+
+  </section>
+</article>
+
+Included file 'page_navigation.html' not found in _includes directory
+
+<!-- <div id="related">
+  <h2>Related Posts</h2>
+  <ul class="posts">
+    
+      <li><span>04 May 2013</span> &raquo; <a href="/2013/05/04/goodbye-screen-my-old-friend.html">Goodbye Screen, My Old Friend</a></li>
+    
+      <li><span>26 Jun 2013</span> &raquo; <a href="/2013/06/26/test-post.html">Test Post</a></li>
+    
+  </ul>
+  <p><a href="archive.html">View all posts</a></p>
+</div> -->
+
+                <div class="author clearfix">
+                    <div class="left">
+                        <a class="clip" href="https://github.com/vykster"><img src="/images/vykster.jpg" width="75" height="75" alt="Vyki Englert"></a>
+                        <h3><a href="https://github.com/vykster">Vyki Englert</a></h3>
+                        <p><a href="http://twitter.com/toastergrrl">@toastergrrl</a></p>
+                    </div>
+                    <div class="right">
+                        <a class="clip" href="https://github.com/jzeta"><img src="/images/jzeta.jpg" width="75" height="75" alt="Joanna Zeta"></a>
+                        <h3><a href="https://github.com/jzeta">Joanna Zeta</a></h3>
+                        <p><a href="http://twitter.com/jzeta">@jzeta</a></p>
+                    </div>
+                </div>
+                <div class="meta clearfix">
+                    <div class="contact">
+                        <p><a href="https://github.com/dysania">https://github.com/dysania</a></p>
+                        <p><a href="/">home</a> / <a href="/archive.html">archive</a> / <a href="/about.html">about</a> / <a href="/atom.xml">atom</a> / <a href="">rss</a></p>
+                    </div>
+                    <div class="contact right">
+                        <p>dysania.la@gmail.com</p>
+                        <p>powered by <a href="https://github.com/mojombo/jekyll">jekyll</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+
+          // var _gaq = _gaq || [];
+          // _gaq.push(['_setAccount', 'UA-37441744-1']);
+          // _gaq.push(['_trackPageview']);
+
+          // (function() {
+          //   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          //   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          //   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          // })();
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="author" content="Team Dysania" />
+        <meta name="viewport" content="width=device-width">
+
+        <title>{{ page.title }}</title>
+
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/screen.css">
+        <link rel="stylesheet" href="/css/syntax.css">
+        <link href="http://feeds.feedburner.com/mozmorris" rel="alternate" title="Moz Morris" type="application/atom+xml" />
+
+        <style>
+            a,
+            .date span {
+                color: #{{ page.color }};
+            }
+        </style>
+
+        <script type="text/javascript">
+          // (function() {
+          //   var config = {
+          //     kitId: 'pqx4dld',
+          //     scriptTimeout: 3000
+          //   };
+          //   var h = document.getElementsByTagName("html")[0];
+          //   h.className += " wf-loading";
+          //   var t = setTimeout(function() {
+          //       h.className = h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");
+          //       h.className += " wf-inactive"
+          //   }, config.scriptTimeout);
+          //   var tk = document.createElement("script"), d = false;
+          //   tk.src = '//use.typekit.net/' + config.kitId + '.js';
+          //   tk.type = "text/javascript";
+          //   tk.async = "true";
+          //   tk.onload = tk.onreadystatechange = function() {
+          //       var a = this.readyState;
+          //       if (d || a && a != "complete" && a!= "loaded") return;
+          //       d = true;
+          //       clearTimeout(t);
+          //       try {
+          //           Typekit.load(config)
+          //       } catch (b) {}
+          //   };
+          //   var s = document.getElementsByTagName("script")[0];
+          //   s.parentNode.insertBefore(tk,s)
+          // })();
+        </script>
+
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+    </head>
+    <body>
+        <header class="clearfix">
+            <nav>
+                <ul>
+                    <li>
+                        {% if page.link == 'home' %}
+                          <a href="/">&laquo;&nbsp;&nbsp;back to home</a>
+                        {% else %}
+                          <a href="/about.html">DYSANIA</a>
+                        {% endif %}
+                    </li>
+                </ul>
+            </nav>
+            <!-- {% if (page.link != 'home' || page.link != 'about') %}
+            <div class="image-wrapper">
+                <img src="/images/space.gif">
+                <div class="image" style="background-image: url(/images/{{ page.image }});"></div>
+            </div>
+            {% endif %} -->
+        </header>
+        <div class="wrapper clearfix">
+            <div class="main">
+                {{ content }}
+                <div class="author clearfix">
+                    <div class="left">
+                        <a class="clip" href="https://github.com/vykster"><img src="/images/vykster.jpg" width="75" height="75" alt="Vyki Englert"></a>
+                        <h3><a href="https://github.com/vykster">Vyki Englert</a></h3>
+                        <p><a href="http://twitter.com/toastergrrl">@toastergrrl</a></p>
+                    </div>
+                    <div class="right">
+                        <a class="clip" href="https://github.com/jzeta"><img src="/images/jzeta.jpg" width="75" height="75" alt="Joanna Zeta"></a>
+                        <h3><a href="https://github.com/jzeta">Joanna Zeta</a></h3>
+                        <p><a href="http://twitter.com/jzeta">@jzeta</a></p>
+                    </div>
+                </div>
+                <div class="meta clearfix">
+                    <div class="contact">
+                        <p><a href="https://github.com/dysania">https://github.com/dysania</a></p>
+                        <p><a href="/">home</a> / <a href="/archive.html">archive</a> / <a href="/about.html">about</a> / <a href="/atom.xml">atom</a> / <a href="">rss</a></p>
+                    </div>
+                    <div class="contact right">
+                        <p>dysania.la@gmail.com</p>
+                        <p>powered by <a href="https://github.com/mojombo/jekyll">jekyll</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+
+          // var _gaq = _gaq || [];
+          // _gaq.push(['_setAccount', 'UA-37441744-1']);
+          // _gaq.push(['_trackPageview']);
+
+          // (function() {
+          //   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          //   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          //   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          // })();
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,4 @@
+markdown: rdiscount
+pygments: true
+paginate: 2
+# paginate_path: "/page:num"
