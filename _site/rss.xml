@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dysania</title>
-    <link>http://dysania.la/</link>
-    <atom:link href="http://dysania.la/rss.xml" rel="self" type="application/rss+xml" />
-    <description>Dysania Blog</description>
+    <link>http://dysania.github.io/blog</link>
+    <atom:link href="http://dysania.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
+    <description>Blog for Rails Girls Summer of Code</description>
     <language>en-us</language>
-    <pubDate>Thu, 27 Jun 2013 23:16:20 -0700</pubDate>
-    <lastBuildDate>Thu, 27 Jun 2013 23:16:20 -0700</lastBuildDate>
+    <pubDate>Fri, 28 Jun 2013 12:03:56 -0700</pubDate>
+    <lastBuildDate>Fri, 28 Jun 2013 12:03:56 -0700</lastBuildDate>
 
     
     <item>
       <title>Hello, World</title>
-      <link>http://example.com/2013/06/27/hello-world.html</link>
+      <link>http://dysania.github.io/blog/2013/06/27/hello-world.html</link>
       <pubDate>Thu, 27 Jun 2013 00:00:00 -0700</pubDate>
-      <author>dysania.la@gmail.com (Team Dysania)</author>
-      <guid>http://dysania.la/2013/06/27/hello-world</guid>
+      <author>Team Dysania</author>
+      <guid>http://dysania.github.io/blog/2013/06/27/hello-world</guid>
       <description>&lt;h1&gt;Hello, World&lt;/h1&gt;
 
 &lt;p&gt;It&#39;s business time.&lt;/p&gt;
