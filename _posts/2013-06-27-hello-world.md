@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hello World"
+title: "Hello, World"
 location: "Los Angeles, CA"
 image: headers/jesus_ami.jpg
 color: 880706
