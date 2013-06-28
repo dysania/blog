@@ -11,9 +11,9 @@
 
         <title>{{ page.title }}</title>
 
-        <link rel="stylesheet" href="/css/normalize.css">
-        <link rel="stylesheet" href="/css/screen.css">
-        <link rel="stylesheet" href="/css/syntax.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}css/normalize.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}css/screen.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}css/syntax.css">
         <link href="http://feeds.feedburner.com/mozmorris" rel="alternate" title="Moz Morris" type="application/atom+xml" />
 
         <style>
@@ -64,9 +64,9 @@
                 <ul>
                     <li>
                         {% if page.link == 'home' %}
-                          <a href="/">&laquo;&nbsp;&nbsp;back to home</a>
+                          <a href="{{ site.baseurl }}">&laquo;&nbsp;&nbsp;back to home</a>
                         {% else %}
-                          <a href="/about.html">DYSANIA</a>
+                          <a href="{{ site.baseurl }}about.html">DYSANIA</a>
                         {% endif %}
                     </li>
                 </ul>
@@ -96,7 +96,7 @@
                 <div class="meta clearfix">
                     <div class="contact">
                         <p><a href="https://github.com/dysania">https://github.com/dysania</a></p>
-                        <p><a href="/">home</a> / <a href="/archive.html">archive</a> / <a href="/about.html">about</a> / <a href="/atom.xml">atom</a> / <a href="">rss</a></p>
+                        <p><a href="{{ site.baseurl }}">home</a> / <a href="{{ site.baseurl }}archive.html">archive</a> / <a href="{{ site.baseurl }}about.html">about</a> / <a href="{{ site.baseurl }}atom.xml">atom</a> / <a href="{{ site.baseurl }}rss.xml">rss</a></p>
                     </div>
                     <div class="contact right">
                         <p>dysania.la@gmail.com</p>
