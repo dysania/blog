@@ -5,7 +5,7 @@
         <div class="left">
         {% if page.next.url %} 
                 <p>newer:</p>
-                <a href="{{page.next.url}}" title="Newer Post: 
+                <a href="{{ site.baseurl }}{{page.next.url}}" title="Newer Post: 
 {{page.next.title}}"> &laquo; {{page.next.title}}</a> 
         {% endif %}  
         </div> 
@@ -13,7 +13,7 @@
         <div class="right"> 
         {% if page.previous.url %}
                 <p>older:</p>
-                <a href="{{page.previous.url}}" title="Older Post: 
+                <a href="{{ site.baseurl }}{{page.previous.url}}" title="Older Post: 
 {{page.previous.title}}">{{page.previous.title}} &raquo; </a> 
         {% endif %} 
         </div> 

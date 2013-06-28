@@ -11,9 +11,9 @@
 
         <title>{{ page.title }}</title>
 
-        <link rel="stylesheet" href="{{ site.baseurl }}css/normalize.css">
-        <link rel="stylesheet" href="{{ site.baseurl }}css/screen.css">
-        <link rel="stylesheet" href="{{ site.baseurl }}css/syntax.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/normalize.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
         <link href="http://feeds.feedburner.com/mozmorris" rel="alternate" title="Moz Morris" type="application/atom+xml" />
 
         <style>
@@ -64,9 +64,9 @@
                 <ul>
                     <li>
                         {% if page.link == 'home' %}
-                          <a href="{{ site.baseurl }}">&laquo;&nbsp;&nbsp;back to home</a>
+                          <a href="{{ site.baseurl }}/">&laquo;&nbsp;&nbsp;back to home</a>
                         {% else %}
-                          <a href="{{ site.baseurl }}about.html">DYSANIA</a>
+                          <a href="{{ site.baseurl }}/about.html">DYSANIA</a>
                         {% endif %}
                     </li>
                 </ul>
@@ -83,12 +83,12 @@
                 {{ content }}
                 <div class="author clearfix">
                     <div class="left">
-                        <a class="clip" href="https://github.com/vykster"><img src="/images/vykster.jpg" width="75" height="75" alt="Vyki Englert"></a>
+                        <a class="clip" href="https://github.com/vykster"><img src="{{ site.baseurl }}/images/vykster.jpg" width="75" height="75" alt="Vyki Englert"></a>
                         <h3><a href="https://github.com/vykster">Vyki Englert</a></h3>
                         <p><a href="http://twitter.com/toastergrrl">@toastergrrl</a></p>
                     </div>
                     <div class="right">
-                        <a class="clip" href="https://github.com/jzeta"><img src="/images/jzeta.jpg" width="75" height="75" alt="Joanna Zeta"></a>
+                        <a class="clip" href="https://github.com/jzeta"><img src="{{ site.baseurl }}/images/jzeta.jpg" width="75" height="75" alt="Joanna Zeta"></a>
                         <h3><a href="https://github.com/jzeta">Joanna Zeta</a></h3>
                         <p><a href="http://twitter.com/jzeta">@jzeta</a></p>
                     </div>
@@ -96,7 +96,7 @@
                 <div class="meta clearfix">
                     <div class="contact">
                         <p><a href="https://github.com/dysania">https://github.com/dysania</a></p>
-                        <p><a href="{{ site.baseurl }}">home</a> / <a href="{{ site.baseurl }}archive.html">archive</a> / <a href="{{ site.baseurl }}about.html">about</a> / <a href="{{ site.baseurl }}atom.xml">atom</a> / <a href="{{ site.baseurl }}rss.xml">rss</a></p>
+                        <p><a href="{{ site.baseurl }}/">home</a> / <a href="{{ site.baseurl }}/archive.html">archive</a> / <a href="{{ site.baseurl }}/about.html">about</a> / <a href="{{ site.baseurl }}/atom.xml">atom</a> / <a href="{{ site.baseurl }}/rss.xml">rss</a></p>
                     </div>
                     <div class="contact right">
                         <p>dysania.la@gmail.com</p>

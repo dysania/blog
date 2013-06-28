@@ -8,7 +8,7 @@ color: 880706
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
   <section class="date">
-    <p><span><a href="{{ post.url }}">{{ post.date | date: "%B %d, %Y" }}</a></span> - {{ post.location }}</p>
+    <p><span><a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: "%B %d, %Y" }}</a></span> - {{ post.location }}</p>
   </section>
   <p>{{ post.content }}</p>
   <br />
@@ -20,9 +20,9 @@ color: 880706
   {% if paginator.previous_page %}
     <p class="previous">
       {% if paginator.previous_page == 1 %}
-        <a href="/">&laquo;</a>
+        <a href="{{ site.baseurl }}/">&laquo;</a>
       {% else %}
-        <a href="{{ paginator.previous_page_path }}">&laquo;</a>
+        <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}">&laquo;</a>
       {% endif %}
     </p>
   {% else %}
@@ -36,7 +36,7 @@ color: 880706
       {% if paginator.page == 1 %}
         <span class="current-page">1</span>
       {% else %}
-        <a href="/">1</a>
+        <a href="{{ site.baseurl }}/">1</a>
       {% endif %}
     </li>
 
@@ -45,7 +45,7 @@ color: 880706
         {% if count == paginator.page %}
           <span class="current-page">{{ count }}</span>
         {% else %}
-          <a href="/page{{ count }}">{{ count }}</a>
+          <a href="{{ site.baseurl }}/page{{ count }}">{{ count }}</a>
         {% endif %}
       </li>
     {% endfor %}
@@ -53,7 +53,7 @@ color: 880706
 
   {% if paginator.next_page %}
     <p class="next">
-      <a href="{{ paginator.next_page_path }}">&raquo;</a>
+      <a href="{{ site.baseurl }}{{ paginator.next_page_path }}">&raquo;</a>
     </p>
   {% else %}
     <p class="next disabled">
