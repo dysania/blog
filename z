@@ -1,0 +1,47 @@
+commit f766cd6cadd8fd7c371f6ef3f59af96e49887dd5
+Author: jzeta <holla@jzeta.com>
+Date:   Thu Jun 27 23:25:59 2013 -0700
+
+    edited about page
+
+commit 9478da784344ad74987e2fd4d45f9753f7e31984
+Author: jzeta <holla@jzeta.com>
+Date:   Thu Jun 27 23:17:10 2013 -0700
+
+    no pagination if only 1 page, edited first post title
+
+commit c53892a98155c08025ea8ae6d6e6c0a02c262bd1
+Author: jzeta <holla@jzeta.com>
+Date:   Thu Jun 27 23:12:17 2013 -0700
+
+    moved sample posts to _drafts, published first post
+
+commit abcb745fb2582fcc8eb89f1ee3a8703b46a0cd36
+Author: jzeta <holla@jzeta.com>
+Date:   Thu Jun 27 22:27:55 2013 -0700
+
+    fixed relative urls for post dates and pagination
+
+commit 71aa92ab2333bd7b1bad1ad9f834041c64e64e85
+Author: jzeta <holla@jzeta.com>
+Date:   Thu Jun 27 22:15:56 2013 -0700
+
+    edited baseurl, edited relative urls, deleted post_detail.html
+
+commit d79b8878c39b60e481c9bc1622162587f6a6d634
+Author: jzeta <holla@jzeta.com>
+Date:   Thu Jun 27 21:13:52 2013 -0700
+
+    edited baseurl in config
+
+commit 44c25e102a3908565e8b1372013f4da05524b9ee
+Author: jzeta <holla@jzeta.com>
+Date:   Thu Jun 27 20:51:15 2013 -0700
+
+    added baseurl, changed relative urls for deployment on GitHub Pages
+
+commit d745ac5a5dcc97b651da321682b5ebf50e4dc233
+Author: jzeta <holla@jzeta.com>
+Date:   Thu Jun 27 16:19:43 2013 -0700
+
+    first pages commit
