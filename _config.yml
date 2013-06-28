@@ -1,5 +1,4 @@
 markdown: rdiscount
 pygments: true
-paginate: 2
-baseurl: "/blog"
-# paginate_path: "/page:num"
+paginate: 3
+baseurl: /blog/
