@@ -6,134 +6,19 @@
     <atom:link href="http://dysania.la/rss.xml" rel="self" type="application/rss+xml" />
     <description>Dysania Blog</description>
     <language>en-us</language>
-    <pubDate>Thu, 27 Jun 2013 22:27:14 -0700</pubDate>
-    <lastBuildDate>Thu, 27 Jun 2013 22:27:14 -0700</lastBuildDate>
+    <pubDate>Thu, 27 Jun 2013 23:10:36 -0700</pubDate>
+    <lastBuildDate>Thu, 27 Jun 2013 23:10:36 -0700</lastBuildDate>
 
     
     <item>
-      <title>Test Post</title>
-      <link>http://example.com/2013/07/01/test-post-2.html</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 -0700</pubDate>
+      <title>Hello World</title>
+      <link>http://example.com/2013/06/27/hello-world.html</link>
+      <pubDate>Thu, 27 Jun 2013 00:00:00 -0700</pubDate>
       <author>dysania.la@gmail.com (Team Dysania)</author>
-      <guid>http://dysania.la/2013/07/01/test-post-2</guid>
-      <description>&lt;h1&gt;Test Post&lt;/h1&gt;
+      <guid>http://dysania.la/2013/06/27/hello-world</guid>
+      <description>&lt;h1&gt;Hello World&lt;/h1&gt;
 
-&lt;p&gt;Around four years ago when joining a new firm, like many devs out there I had to spend most of a day setting up my new machine. It was then that I read a post about this tool, &lt;a href=&quot;http://www.gnu.org/software/screen/&quot; title=&quot;Gnu Screen&quot;&gt;GNU Screen&lt;/a&gt;. It&#39;s a &lt;a href=&quot;http://en.wikipedia.org/wiki/Terminal_multiplexer&quot; title=&quot;Terminal Multiplexer&quot;&gt;terminal multiplexer&lt;/a&gt;, but of course you already knew that. Well, during the days, weeks, and months that followed, Screen and I became good friends. Eventually, I even got Screen to perform &lt;a href=&quot;http://old.evanmeagher.net/2010/12/patching-screen-with-vertical-split-in-os&quot; title=&quot;I patched it for vertical splits&quot;&gt;new tricks&lt;/a&gt;. But, after four years, I&#39;m saying goodbye.&lt;/p&gt;
-
-&lt;p&gt;This past month I&#39;ve been using &lt;a href=&quot;http://en.wikipedia.org/wiki/Tmux&quot; title=&quot;tmux is awesome&quot;&gt;tmux&lt;/a&gt;, another multiplexer that&#39;s fast gaining popularity. To be honest, at first I wasn&#39;t convinced. It was like Screen, but with added complication (Obviously I forgot the many hours I&#39;ve spent tweaking my .screenrc file). But very quickly, tmux has grown on me. It&#39;s easily configured and comes with &lt;a href=&quot;http://fungi.yuggoth.org/vsp4s/&quot; title=&quot;Yes, I know Screen has this now - apparently&quot;&gt;vertical split&lt;/a&gt; and a status line out of the box. Probably the feature I like most is its predefined layouts which conveniently for me, include the layout I would always initially construct in Screen.&lt;/p&gt;
-
-&lt;h2&gt;Sessions, Windows, &amp;amp; Panes&lt;/h2&gt;
-
-&lt;p&gt;tmux works in a world of sessions, windows, &amp;amp; panes that are managed by the single &lt;strong&gt;server&lt;/strong&gt;. When a tmux &lt;strong&gt;client&lt;/strong&gt; connects to the server, a &lt;em&gt;session&lt;/em&gt; is created that contains a single &lt;em&gt;window&lt;/em&gt;. The window can be divided up into rectangular &lt;em&gt;panes&lt;/em&gt;, each one of them a &lt;a href=&quot;http://en.wikipedia.org/wiki/Pseudo_terminal&quot; title=&quot;What is a pseudo terminal?&quot;&gt;pseudo terminal&lt;/a&gt;. It&#39;s also possible to have multiple sessions that each contain multiple windows, all under a single tmux server.&lt;/p&gt;
-
-&lt;p&gt;Usefully, a tmux client can be detached from the server, whilst the session is persisted and continues to run in the background. The session can then be reattached at some later point. A good use case for this would be to keep a long running process alive or returning to a development environment that&#39;s ready to rock.&lt;/p&gt;
-
-&lt;p&gt;The next steps show how I got started with tmux. Please let me know if something doesn&#39;t work for you. Better still, improve [my config][folder].&lt;/p&gt;
-
-&lt;h2&gt;Installation (OSX)&lt;/h2&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew install tmux
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tmux -V
-&lt;span class=&quot;c&quot;&gt;# tmux 1.8&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-
-
-</description>
-    </item>
-    
-    <item>
-      <title>Test Post</title>
-      <link>http://example.com/2013/06/26/test-post.html</link>
-      <pubDate>Wed, 26 Jun 2013 00:00:00 -0700</pubDate>
-      <author>dysania.la@gmail.com (Team Dysania)</author>
-      <guid>http://dysania.la/2013/06/26/test-post</guid>
-      <description>&lt;h1&gt;Test Post&lt;/h1&gt;
-
-&lt;p&gt;Around four years ago when joining a new firm, like many devs out there I had to spend most of a day setting up my new machine. It was then that I read a post about this tool, &lt;a href=&quot;http://www.gnu.org/software/screen/&quot; title=&quot;Gnu Screen&quot;&gt;GNU Screen&lt;/a&gt;. It&#39;s a &lt;a href=&quot;http://en.wikipedia.org/wiki/Terminal_multiplexer&quot; title=&quot;Terminal Multiplexer&quot;&gt;terminal multiplexer&lt;/a&gt;, but of course you already knew that. Well, during the days, weeks, and months that followed, Screen and I became good friends. Eventually, I even got Screen to perform &lt;a href=&quot;http://old.evanmeagher.net/2010/12/patching-screen-with-vertical-split-in-os&quot; title=&quot;I patched it for vertical splits&quot;&gt;new tricks&lt;/a&gt;. But, after four years, I&#39;m saying goodbye.&lt;/p&gt;
-
-&lt;p&gt;This past month I&#39;ve been using &lt;a href=&quot;http://en.wikipedia.org/wiki/Tmux&quot; title=&quot;tmux is awesome&quot;&gt;tmux&lt;/a&gt;, another multiplexer that&#39;s fast gaining popularity. To be honest, at first I wasn&#39;t convinced. It was like Screen, but with added complication (Obviously I forgot the many hours I&#39;ve spent tweaking my .screenrc file). But very quickly, tmux has grown on me. It&#39;s easily configured and comes with &lt;a href=&quot;http://fungi.yuggoth.org/vsp4s/&quot; title=&quot;Yes, I know Screen has this now - apparently&quot;&gt;vertical split&lt;/a&gt; and a status line out of the box. Probably the feature I like most is its predefined layouts which conveniently for me, include the layout I would always initially construct in Screen.&lt;/p&gt;
-
-&lt;h2&gt;Sessions, Windows, &amp;amp; Panes&lt;/h2&gt;
-
-&lt;p&gt;tmux works in a world of sessions, windows, &amp;amp; panes that are managed by the single &lt;strong&gt;server&lt;/strong&gt;. When a tmux &lt;strong&gt;client&lt;/strong&gt; connects to the server, a &lt;em&gt;session&lt;/em&gt; is created that contains a single &lt;em&gt;window&lt;/em&gt;. The window can be divided up into rectangular &lt;em&gt;panes&lt;/em&gt;, each one of them a &lt;a href=&quot;http://en.wikipedia.org/wiki/Pseudo_terminal&quot; title=&quot;What is a pseudo terminal?&quot;&gt;pseudo terminal&lt;/a&gt;. It&#39;s also possible to have multiple sessions that each contain multiple windows, all under a single tmux server.&lt;/p&gt;
-
-&lt;p&gt;Usefully, a tmux client can be detached from the server, whilst the session is persisted and continues to run in the background. The session can then be reattached at some later point. A good use case for this would be to keep a long running process alive or returning to a development environment that&#39;s ready to rock.&lt;/p&gt;
-
-&lt;p&gt;The next steps show how I got started with tmux. Please let me know if something doesn&#39;t work for you. Better still, improve [my config][folder].&lt;/p&gt;
-
-&lt;h2&gt;Installation (OSX)&lt;/h2&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew install tmux
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tmux -V
-&lt;span class=&quot;c&quot;&gt;# tmux 1.8&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-
-
-</description>
-    </item>
-    
-    <item>
-      <title>Goodbye Screen, My Old Friend</title>
-      <link>http://example.com/2013/05/04/goodbye-screen-my-old-friend.html</link>
-      <pubDate>Sat, 04 May 2013 00:00:00 -0700</pubDate>
-      <author>dysania.la@gmail.com (Team Dysania)</author>
-      <guid>http://dysania.la/2013/05/04/goodbye-screen-my-old-friend</guid>
-      <description>&lt;h1&gt;Goodbye Screen, My Old Friend&lt;/h1&gt;
-
-&lt;p&gt;Around four years ago when joining a new firm, like many devs out there I had to spend most of a day setting up my new machine. It was then that I read a post about this tool, &lt;a href=&quot;http://www.gnu.org/software/screen/&quot; title=&quot;Gnu Screen&quot;&gt;GNU Screen&lt;/a&gt;. It&#39;s a &lt;a href=&quot;http://en.wikipedia.org/wiki/Terminal_multiplexer&quot; title=&quot;Terminal Multiplexer&quot;&gt;terminal multiplexer&lt;/a&gt;, but of course you already knew that. Well, during the days, weeks, and months that followed, Screen and I became good friends. Eventually, I even got Screen to perform &lt;a href=&quot;http://old.evanmeagher.net/2010/12/patching-screen-with-vertical-split-in-os&quot; title=&quot;I patched it for vertical splits&quot;&gt;new tricks&lt;/a&gt;. But, after four years, I&#39;m saying goodbye.&lt;/p&gt;
-
-&lt;p&gt;This past month I&#39;ve been using &lt;a href=&quot;http://en.wikipedia.org/wiki/Tmux&quot; title=&quot;tmux is awesome&quot;&gt;tmux&lt;/a&gt;, another multiplexer that&#39;s fast gaining popularity. To be honest, at first I wasn&#39;t convinced. It was like Screen, but with added complication (Obviously I forgot the many hours I&#39;ve spent tweaking my .screenrc file). But very quickly, tmux has grown on me. It&#39;s easily configured and comes with &lt;a href=&quot;http://fungi.yuggoth.org/vsp4s/&quot; title=&quot;Yes, I know Screen has this now - apparently&quot;&gt;vertical split&lt;/a&gt; and a status line out of the box. Probably the feature I like most is its predefined layouts which conveniently for me, include the layout I would always initially construct in Screen.&lt;/p&gt;
-
-&lt;h2&gt;Sessions, Windows, &amp;amp; Panes&lt;/h2&gt;
-
-&lt;p&gt;tmux works in a world of sessions, windows, &amp;amp; panes that are managed by the single &lt;strong&gt;server&lt;/strong&gt;. When a tmux &lt;strong&gt;client&lt;/strong&gt; connects to the server, a &lt;em&gt;session&lt;/em&gt; is created that contains a single &lt;em&gt;window&lt;/em&gt;. The window can be divided up into rectangular &lt;em&gt;panes&lt;/em&gt;, each one of them a &lt;a href=&quot;http://en.wikipedia.org/wiki/Pseudo_terminal&quot; title=&quot;What is a pseudo terminal?&quot;&gt;pseudo terminal&lt;/a&gt;. It&#39;s also possible to have multiple sessions that each contain multiple windows, all under a single tmux server.&lt;/p&gt;
-
-&lt;p&gt;Usefully, a tmux client can be detached from the server, whilst the session is persisted and continues to run in the background. The session can then be reattached at some later point. A good use case for this would be to keep a long running process alive or returning to a development environment that&#39;s ready to rock.&lt;/p&gt;
-
-&lt;p&gt;The next steps show how I got started with tmux. Please let me know if something doesn&#39;t work for you. Better still, improve &lt;a href=&quot;https://github.com/MozMorris/dotfiles/tree/master/tmux&quot; title=&quot;tmux topic folder&quot;&gt;my config&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2&gt;Installation (OSX)&lt;/h2&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew install tmux
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tmux -V
-&lt;span class=&quot;c&quot;&gt;# tmux 1.8&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h2&gt;Configuration&lt;/h2&gt;
-
-&lt;p&gt;My up to date tmux configuration can be found within the relevant &lt;a href=&quot;https://github.com/MozMorris/dotfiles/tree/master/tmux&quot; title=&quot;tmux topic folder&quot;&gt;folder&lt;/a&gt; of &lt;a href=&quot;https://github.com/MozMorris/dotfiles&quot; title=&quot;These are my dotfiles&quot;&gt;my dotfiles&lt;/a&gt; (tmux uses the dotfile &lt;code&gt;.tmux.conf&lt;/code&gt;). There&#39;s little value in going over lots of configuration when &lt;a href=&quot;http://www.openbsd.org/cgi-bin/man.cgi?query=tmux&amp;amp;sektion=1&quot; title=&quot;tmux&#39;s man page&quot;&gt;tmux&#39;s man page&lt;/a&gt; covers it all. Right now, these are a few of the settings I found useful when I initially made the switch from Screen.&lt;/p&gt;
-
-&lt;p&gt;I tried using tmux&#39;s default prefix key mapping &lt;code&gt;ctrl-b&lt;/code&gt; for a couple of days but it didn&#39;t stick. So I binded the prefix to &lt;code&gt;ctrl-a&lt;/code&gt;, replicating the behaviour of Screen.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;# ~/.tmux.conf&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# Remap prefix key to Ctrl-a&lt;/span&gt;
-unbind-key C-b
-&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; -g prefix C-a
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Binding &lt;code&gt;ctrl-a&lt;/code&gt; to the tmux prefix key breaks &quot;jump to start of line&quot;. Fix it (kind of) - hitting &lt;code&gt;a&lt;/code&gt; again after the tmux prefix jumps to start of line:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;# ~/.tmux.conf&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# Fix jump to end of line&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;bind&lt;/span&gt;-key a send-prefix
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Bind vertical split to &lt;code&gt;|&lt;/code&gt;. Again, I&#39;ve used Screen&#39;s binding. To me this makes a lot of sense as tmux uses &lt;code&gt;&quot;&lt;/code&gt; for horizontal split, placing the two split keys next to each other.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;# ~/.tmux.conf&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# Remap vertical split&lt;/span&gt;
-unbind-key %
-&lt;span class=&quot;nb&quot;&gt;bind&lt;/span&gt;-key | split-window -h
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;p&gt;It&#39;s business time.&lt;/p&gt;
 </description>
     </item>
     
