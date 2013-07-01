@@ -1,7 +1,7 @@
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
-@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:800,800italic);
+@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:800,800italic,400);
 
 html,
 button,
@@ -108,11 +108,13 @@ a:hover {
 
 h1 {
     font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 800;
     line-height: 1em;
 }
 
 h2 {
     font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 800;
 }
 
 nav {
@@ -343,6 +345,15 @@ code {
     list-style: none;
     display: inline-block;
     margin-right: 1em;
+}
+
+#comments-link {
+    font-size: 0.7em;
+    display: block;
+    float: right;
+    text-transform: uppercase;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 400;
 }
 
 /* ==========================================================================

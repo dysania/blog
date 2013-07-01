@@ -12,7 +12,8 @@ color: 880706
     <p><span><a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: "%B %d, %Y" }}</a></span> - <a href="{{ site.baseurl }}/about.html">{{ author.display_name }}</a></p>
   </section>
   <p>{{ post.content }}</p>
-  <br />
+  <p><a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" id="comments-link">link</a></p>
+  <br /><br />
 {% endfor %}
 
 
