@@ -6,9 +6,27 @@
     <atom:link href="http://dysania.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog for Rails Girls Summer of Code</description>
     <language>en-us</language>
-    <pubDate>Mon, 01 Jul 2013 12:21:11 -0700</pubDate>
-    <lastBuildDate>Mon, 01 Jul 2013 12:21:11 -0700</lastBuildDate>
+    <pubDate>Mon, 01 Jul 2013 13:54:26 -0700</pubDate>
+    <lastBuildDate>Mon, 01 Jul 2013 13:54:26 -0700</lastBuildDate>
 
+    
+    <item>
+      <title>Settin' Up</title>
+      <link>http://dysania.github.io/blog/2013/06/30/settin-up.html</link>
+      <pubDate>Sun, 30 Jun 2013 23:30:00 -0700</pubDate>
+      <author>Team Dysania</author>
+      <guid>http://dysania.github.io/blog/2013/06/30/settin-up</guid>
+      <description>&lt;h1&gt;Settin&#39; Up&lt;/h1&gt;
+
+&lt;p&gt;This weekend I installed an Ubuntu Linux VM on my Windows 7 laptop and set about going through &lt;a href=&quot;http://blog.discourse.org/2013/04/discourse-as-your-first-rails-app/&quot;&gt;Discourse as Your First Rails App&lt;/a&gt;. I&#39;ll basically end up with a VM within a VM...kinda neat but kinda worrisome. Prayin&#39; for ya, my wee ASUS.&lt;/p&gt;
+
+&lt;p&gt;Coach Kurtis said to read through &lt;a href=&quot;http://docs.vagrantup.com/v2/getting-started/&quot;&gt;Vagrant&#39;s Getting Started guide&lt;/a&gt; as well, since it&#39;s what Discourse uses for its VM. Vagrant  provides a configured, portable work environment, so that anyone can simply download it and have it up and running quickly.&lt;/p&gt;
+
+&lt;p&gt;So far, I still haven&#39;t gotten Vagrant to run the Discourse VM yet since &lt;a href=&quot;https://github.com/mitchellh/vagrant/wiki/%60vagrant-up%60-hangs-at-%22Waiting-for-VM-to-boot.-This-can-take-a-few-minutes%22&quot;&gt;it keeps hanging&lt;/a&gt;. Hope I can get it working soon.&lt;/p&gt;
+
+&lt;p&gt;P.S. I wonder if Kurtis would mind if I called him Captain Kurt.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Hello, Mentors</title>
@@ -20,7 +38,7 @@
 
 &lt;p&gt;...or in other words, shit just got real (and exciting)!&lt;/p&gt;
 
-&lt;p&gt;I&#39;v just had my &lt;strong&gt;first Google Hangout&lt;/strong&gt; with our mentors &lt;a href=&quot;http://twitter.com/evil_trout&quot;&gt;Robin Ward&lt;/a&gt; and &lt;a href=&quot;http://twitter.com/samsaffron&quot;&gt;Sam Saffron&lt;/a&gt;. Unfortunately, Vyki couldn&#39;t really join in as she was in the woods of Washington for a family reunion. Still, Robin, Sam, our coach &lt;a href=&quot;http://twitter.com/krainboltgreene&quot;&gt;Kurtis&lt;/a&gt; and I were able to discuss our plans for &lt;a href=&quot;http://discourse.org&quot;&gt;Discourse&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I&#39;ve just had my &lt;strong&gt;first Google Hangout&lt;/strong&gt; with our mentors &lt;a href=&quot;http://twitter.com/evil_trout&quot;&gt;Robin Ward&lt;/a&gt; and &lt;a href=&quot;http://twitter.com/samsaffron&quot;&gt;Sam Saffron&lt;/a&gt;. Unfortunately, Vyki couldn&#39;t really join in as she was in the woods of Washington for a family reunion. Still, Robin, Sam, our coach &lt;a href=&quot;http://twitter.com/krainboltgreene&quot;&gt;Kurtis&lt;/a&gt; and I were able to discuss our plans for &lt;a href=&quot;http://discourse.org&quot;&gt;Discourse&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Our goal for the summer will be to &lt;strong&gt;extract all oneboxing into one gem.&lt;/strong&gt; &lt;a href=&quot;http://meta.discourse.org/t/what-is-a-onebox/4546&quot;&gt;Oneboxing&lt;/a&gt; is a feature of Discourse where if you include a link to a site (i.e. Twitter, Wikipedia), it will try to create a usable snippet for you automatically. By extracting this feature into a gem, it can be usable by projects other than Discourse, and will also make testing much easier since the code will be more modularized.&lt;/p&gt;
 
