@@ -1,1 +1,1 @@
-Modified from <a href="https://github.com/MozMorris/mozmorris.github.com">Moz Morris's blog</a>.
+Modified from the blog of [Moz Morris](https://github.com/MozMorris/mozmorris.github.com).
