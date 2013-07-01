@@ -3,7 +3,7 @@ description: Blog for Rails Girls Summer of Code
 url: http://dysania.github.io/blog
 markdown: rdiscount
 pygments: true
-paginate: 2
+paginate: 3
 baseurl: /blog
 authors:
   jz:
