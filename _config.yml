@@ -5,3 +5,28 @@ markdown: rdiscount
 pygments: true
 paginate: 2
 baseurl: /blog
+authors:
+  jz:
+    name: Joanna Zeta
+    display_name: JZ
+    gravatar: n/a
+    email: holla@jzeta.com
+    web: http://jzeta.com
+    twitter: jzeta
+    github: jzeta
+  vyki:
+    name: Vyki Englert
+    display_name: Vyki
+    gravatar: n/a
+    email: vyki.englert@gmail.com
+    web: http://company.com
+    twitter: toastergrrl
+    github: vykster
+  dysania:
+    name: Team Dysania
+    display_name: Team Dysania
+    gravatar: n/a
+    email: dysania.la@gmail.com
+    web: http://github.com/dysania
+    twitter: ''
+    github: dysania

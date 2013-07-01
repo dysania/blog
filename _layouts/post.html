@@ -1,13 +1,16 @@
 ---
 layout: default
 ---
+{% assign author = site.authors[page.author] %}
+
 <section class="date">
 
-  <p><span><a href="{{ site.baseurl }}{{ page.url }}">{{ page.date | date: "%B %d, %Y" }}</a></span> - {{ page.location }}</p>
+  <p><span><a href="{{ site.baseurl }}{{ page.url }}">{{ page.date | date: "%B %d, %Y" }}</a></span> - {{ author.display_name }}</p>
 
 </section>
 
 <article>
+  {{ title }}
   <section class="content">
     {{ content }}
   </section>
