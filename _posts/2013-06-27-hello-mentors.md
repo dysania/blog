@@ -22,7 +22,7 @@ If time permits, we'll also be implementing oneboxing for other often-used sites
 To start out, we're gonna:
 >+ get Discourse running in our own dev environments using Vagrant/VirtualBox (using [this tutorial](http://blog.discourse.org/2013/04/discourse-as-your-first-rails-app/))
 + get Discourse test environment running
-+ create a thread on [Meta Discourse forum](http://meta.discourse.org/) introducing ourselves to the community there
++ create a thread on [meta.discourse forum](http://meta.discourse.org/) introducing ourselves to the community there
 
 I'm feeling pretty lucky to have these awesome guys supporting us. Allons! Let's go!
 
