@@ -13,7 +13,7 @@ author: jz
 
 ...or in other words, shit just got real (and exciting)!
 
-I'v just had my **first Google Hangout** with our mentors [Robin Ward](http://twitter.com/evil_trout) and [Sam Saffron](http://twitter.com/samsaffron). Unfortunately, Vyki couldn't really join in as she was in the woods of Washington for a family reunion. Still, Robin, Sam, our coach [Kurtis](http://twitter.com/krainboltgreene) and I were able to discuss our plans for [Discourse](http://discourse.org).
+I've just had my **first Google Hangout** with our mentors [Robin Ward](http://twitter.com/evil_trout) and [Sam Saffron](http://twitter.com/samsaffron). Unfortunately, Vyki couldn't really join in as she was in the woods of Washington for a family reunion. Still, Robin, Sam, our coach [Kurtis](http://twitter.com/krainboltgreene) and I were able to discuss our plans for [Discourse](http://discourse.org).
 
 Our goal for the summer will be to **extract all oneboxing into one gem.** [Oneboxing](http://meta.discourse.org/t/what-is-a-onebox/4546) is a feature of Discourse where if you include a link to a site (i.e. Twitter, Wikipedia), it will try to create a usable snippet for you automatically. By extracting this feature into a gem, it can be usable by projects other than Discourse, and will also make testing much easier since the code will be more modularized.
 
