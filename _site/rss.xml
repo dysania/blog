@@ -6,9 +6,25 @@
     <atom:link href="http://dysania.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog for Rails Girls Summer of Code</description>
     <language>en-us</language>
-    <pubDate>Mon, 01 Jul 2013 16:29:34 -0700</pubDate>
-    <lastBuildDate>Mon, 01 Jul 2013 16:29:34 -0700</lastBuildDate>
+    <pubDate>Tue, 02 Jul 2013 16:51:23 -0700</pubDate>
+    <lastBuildDate>Tue, 02 Jul 2013 16:51:23 -0700</lastBuildDate>
 
+    
+    <item>
+      <title>I am an Installing Machine</title>
+      <link>http://dysania.github.io/blog/2013/07/01/i-am-an-installing-machine.html</link>
+      <pubDate>Mon, 01 Jul 2013 23:17:00 -0700</pubDate>
+      <author>Team Dysania</author>
+      <guid>http://dysania.github.io/blog/2013/07/01/i-am-an-installing-machine</guid>
+      <description>&lt;h1&gt;I am an Installing Machine&lt;/h1&gt;
+
+&lt;p&gt;Welp, my dream of a &lt;a href=&quot;/2013/06/30/settin-up.html&quot;&gt;VM within a VM&lt;/a&gt; will alas remain unfulfilled. I really couldn&#39;t get Vagrant to boot the Discourse VM without hanging.&lt;/p&gt;
+
+&lt;p&gt;I&#39;ve been hesitant about installing Ubuntu on my laptop, but I finally gave in and decided to &lt;a href=&quot;http://www.linuxbsdos.com/2012/05/17/how-to-dual-boot-ubuntu-12-04-and-windows-7/&quot;&gt;dual-boot Ubuntu and Windows&lt;/a&gt; at Kurtis&#39;s suggestion. Learned a bit about HD partitioning and boot loading. Bye, Linux VM and &lt;a href=&quot;http://www.linuxliveusb.com/&quot;&gt;LinuxLive USB&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;I&#39;ve set up my Linux dev environment yet again (probably 10th time in the last month? here&#39;s to repetition), and will try to get Discourse running by tomorrow.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Settin' Up</title>
