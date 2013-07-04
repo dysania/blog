@@ -6,9 +6,73 @@
     <atom:link href="http://dysania.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog for Rails Girls Summer of Code</description>
     <language>en-us</language>
-    <pubDate>Tue, 02 Jul 2013 16:51:23 -0700</pubDate>
-    <lastBuildDate>Tue, 02 Jul 2013 16:51:23 -0700</lastBuildDate>
+    <pubDate>Wed, 03 Jul 2013 18:01:44 -0700</pubDate>
+    <lastBuildDate>Wed, 03 Jul 2013 18:01:44 -0700</lastBuildDate>
 
+    
+    <item>
+      <title>Popping my IRC Freenode Cherry</title>
+      <link>http://dysania.github.io/blog/2013/07/02/popping-my-irc-freenode-cherry.html</link>
+      <pubDate>Tue, 02 Jul 2013 15:39:00 -0700</pubDate>
+      <author>Team Dysania</author>
+      <guid>http://dysania.github.io/blog/2013/07/02/popping-my-irc-freenode-cherry</guid>
+      <description>&lt;h1&gt;Popping my IRC Freenode Cherry&lt;/h1&gt;
+
+&lt;p&gt;Shout out to UForgotten of the IRC &lt;a href=&quot;http://www.vagrantup.com/&quot;&gt;#vagrant&lt;/a&gt; channel, who helped me &lt;strong&gt;debug a problem on Freenode for the first time!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Earlier today, I tried to run &lt;code&gt;vagrant up&lt;/code&gt; again in my new Linux environment as per &lt;a href=&quot;http://blog.discourse.org/2013/04/discourse-as-your-first-rails-app/&quot;&gt;Discourse as Your First Rails App&lt;/a&gt;, and luckily it didn&#39;t hang at the VM boot anymore. However, I kept getting this error:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Default&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; Mounting NFS shared folders...
+The following SSH &lt;span class=&quot;nb&quot;&gt;command &lt;/span&gt;responded with a non-zero &lt;span class=&quot;nb&quot;&gt;exit &lt;/span&gt;status.
+Vagrant assumes that this means the &lt;span class=&quot;nb&quot;&gt;command &lt;/span&gt;failed! 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;I scrounged the Discourse docs for &lt;a href=&quot;http://docs-v1.vagrantup.com/v1/docs/nfs.html&quot;&gt;NFS&lt;/a&gt; errors and found the following in the &lt;a href=&quot;https://github.com/discourse/discourse/blob/master/docs/VAGRANT.md&quot;&gt;Discourse Vagrant Developer Guide&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/discourse_nfs.png&quot;&gt;&lt;img src=&quot;/images/discourse_nfs.png&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Nope, not my errors. Google wasn&#39;t any real help either; Vagrant issues &lt;a href=&quot;https://github.com/mitchellh/vagrant/issues/1659&quot;&gt;#1659&lt;/a&gt;, &lt;a href=&quot;https://github.com/mitchellh/vagrant/issues/1694&quot;&gt;#1694&lt;/a&gt;, and &lt;a href=&quot;https://github.com/mitchellh/vagrant/issues/1702&quot;&gt;#1702&lt;/a&gt; mentioned similar errors but the solutions didn&#39;t work for me. Vyki and Kurtis weren&#39;t online to help out. &lt;a href=&quot;https://www.youtube.com/watch?v=iuL2loyB1bk&quot;&gt;I was so totally (de)buggin&#39;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Frustrated after running &lt;code&gt;vagrant up&lt;/code&gt; and &lt;code&gt;vagrant halt&lt;/code&gt; over and over again with no success, I turned to the next best thing: irc.freenode.net.&lt;/p&gt;
+
+&lt;p&gt;I posted my problem on the #vagrant channel, and bam, UForgotten immediately responded. (The badass was actually troubleshooting for multiple IRC users at the same time.) He asked me some questions, and had me run some commands to get to the bottom of things. He thought at first it had to do with IP issues that he himself had run into recently with Vagrant, but that wasn&#39;t it.&lt;/p&gt;
+
+&lt;p&gt;UForgotten eventually told me to send him my &lt;a href=&quot;https://github.com/discourse/discourse/blob/master/Vagrantfile&quot;&gt;Vagrantfile&lt;/a&gt; and &lt;a href=&quot;http://docs.vagrantup.com/v2/debugging.html&quot;&gt;debugging log&lt;/a&gt; after running this:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ VAGRANT_LOG&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;debug vagrant up
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;I did so, and after some time, he informed me that the problem lay in this line of the log:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;exportfs: /home/jzeta/Projects/rgsoc/discourse does not support NFS &lt;span class=&quot;nb&quot;&gt;export&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Wait a second.....I&#39;d seen that before.......!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/discourse_nfs_holdup.png&quot;&gt;&lt;img src=&quot;/images/discourse_nfs_holdup.png&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&quot;The root Discourse directory cannot be on an ecryptfs mount or you will receive an error.&quot;&lt;/strong&gt; When I installed Ubuntu, I had opted to encrypt my home folder, which is where I had put Discourse. All I have to do is remove the encryption, and the Discourse environment should be able to run.&lt;/p&gt;
+
+&lt;p&gt;The answer had been right in front of me! Guess I just had to learn the hard way to always read the error log.&lt;/p&gt;
+
+&lt;p&gt;UForgotten was pretty patient with my noobiness, and said the reason why I couldn&#39;t use an encrypted folder was that NFS simply can&#39;t handle the decoding. Another IRC user, smerrill, also put in his 2 cents about how &lt;a href=&quot;http://www.phase2technology.com/blog/vagrant-and-nfs/&quot;&gt;NFS can&#39;t export symlinks&lt;/a&gt; either.&lt;/p&gt;
+
+&lt;p&gt;I thanked UForgotten for his help, and he replied, &quot;De nada mang. Welcome to IRC. It&#39;s good karma, I need help once in a while so when I can I try to pay it forward.&quot; Cool.&lt;/p&gt;
+
+&lt;p&gt;Really glad my first foray into IRC Freenode went well! On to fixing the encryption thing tomorrow.&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;1st time getting help on irc freenode ---&amp;gt; problem solved! thanks &lt;a href=&quot;https://twitter.com/search?q=%23vagrant&amp;amp;src=hash&quot;&gt;#vagrant&lt;/a&gt; channel &lt;a href=&quot;https://twitter.com/RailsGirlsSoC&quot;&gt;@RailsGirlsSoC&lt;/a&gt;&lt;/p&gt;&amp;mdash; jz (@jzeta) &lt;a href=&quot;https://twitter.com/jzeta/statuses/352160070928306178&quot;&gt;July 2, 2013&lt;/a&gt;&lt;/blockquote&gt;
+
+
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+
+
+</description>
+    </item>
     
     <item>
       <title>I am an Installing Machine</title>
