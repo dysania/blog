@@ -16,7 +16,7 @@ We started off with lectures on [semantic versioning](http://en.wikipedia.org/wi
 
 In three short hours we managed to:
 [learn about oneboxing](http://meta.discourse.org/t/what-is-a-onebox/4546)
-+ create a [discourse-oneboxer branch](https://github.com/dysania/discourse-oneboxer) on our 
+>+ create a [discourse-oneboxer branch](https://github.com/dysania/discourse-oneboxer) on our 
 + clone of discourse
 + start namespacing oneboxer to Discourse
 
