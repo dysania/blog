@@ -6,29 +6,106 @@
     <atom:link href="http://dysania.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog for Rails Girls Summer of Code</description>
     <language>en-us</language>
-    <pubDate>Tue, 09 Jul 2013 01:04:11 -0700</pubDate>
-    <lastBuildDate>Tue, 09 Jul 2013 01:04:11 -0700</lastBuildDate>
+    <pubDate>Thu, 18 Jul 2013 00:16:51 -0700</pubDate>
+    <lastBuildDate>Thu, 18 Jul 2013 00:16:51 -0700</lastBuildDate>
 
     
     <item>
-      <title>And so it Begins</title>
-      <link>http://dysania.github.io/blog/2013/07/09/and-so-it-begins.html</link>
-      <pubDate>Tue, 09 Jul 2013 00:59:00 -0700</pubDate>
+      <title>Captain's Log: 2013.07.16</title>
+      <link>http://dysania.github.io/blog/2013/07/16/captains-log.html</link>
+      <pubDate>Tue, 16 Jul 2013 22:33:00 -0700</pubDate>
       <author>Team Dysania</author>
-      <guid>http://dysania.github.io/blog/2013/07/09/and-so-it-begins</guid>
-      <description>&lt;h1&gt;And so it Begins&lt;/h1&gt;
+      <guid>http://dysania.github.io/blog/2013/07/16/captains-log</guid>
+      <description>&lt;h1&gt;Captain&#39;s Log: 2013.07.16&lt;/h1&gt;
 
-&lt;p&gt;Tonight was the first night all three of us (&lt;a href=&quot;http://twitter.com/toastergrrl&quot;&gt;Vyki&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/jzeta&quot;&gt;JZ&lt;/a&gt;, and &lt;a href=&quot;http://twitter.com/kraineboltgreene&quot;&gt;Kurtis&lt;/a&gt;) were in the same room together.  Though JZ and I are still getting all of our &lt;a href=&quot;http://railsgirlssummerofcode.org/tools/&quot;&gt;tools&lt;/a&gt; installed and setup, and despite my kernal headers problem with virtual box, we dove right in.&lt;/p&gt;
+&lt;blockquote&gt;&lt;ul&gt;
+&lt;li&gt;Captain Kurt fixed JZ&#39;s expired version of Sublime Text 2&lt;/li&gt;
+&lt;li&gt;Vyki is still in the process of recreating her dev environment: installed Ruby, RVM, Sublime&lt;/li&gt;
+&lt;li&gt;Captain Kurt switched from Rails JSON to &lt;a href=&quot;https://github.com/intridea/multi_json&quot;&gt;MultiJSON&lt;/a&gt; for JSON parsing&lt;/li&gt;
+&lt;li&gt;Used RSpec to run discourse-oneboxer and fix specs on our own
 
-&lt;p&gt;We started off with lectures on &lt;a href=&quot;http://en.wikipedia.org/wiki/Software_versioning#Semantic_versioning&quot;&gt;semantic versioning&lt;/a&gt;, best practices for ruby gems, and then we started by cloneing the project we will be working on for the summer, &lt;a href=&quot;https://github.com/discourse/discourse&quot;&gt;Discourse&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;bundle exec rake&lt;/code&gt;: run all tests&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rspec &amp;lt;file_with_error.rb:line&amp;gt;&lt;/code&gt;: run specific test&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Messed up git branches
 
-&lt;p&gt;In three short hours we managed to:
-&lt;a href=&quot;http://meta.discourse.org/t/what-is-a-onebox/4546&quot;&gt;learn about oneboxing&lt;/a&gt;
-+ create a &lt;a href=&quot;https://github.com/dysania/discourse-oneboxer&quot;&gt;discourse-oneboxer branch&lt;/a&gt; on our
-+ clone of discourse
-+ start namespacing oneboxer to Discourse&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;supposed to create new branches from master branch&lt;/li&gt;
+&lt;li&gt;instead, created nested mess&lt;/li&gt;
+&lt;li&gt;solution: git merged all nested branches into one&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Fixed 9 tests, 23 failures to go
 
-&lt;p&gt;Now off to finish my homework, namespacing all of the lib/discourse/oneboxer files to Discourse&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;replaced Rails methods
+
+&lt;ul&gt;
+&lt;li&gt;replaced &lt;code&gt;squish()&lt;/code&gt; with &lt;code&gt;gsub()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;changed &lt;code&gt;m.present?&lt;/code&gt; to &lt;code&gt;m.to_a.any?&lt;/code&gt; because it&#39;s more precise&lt;/li&gt;
+&lt;li&gt;replaced &lt;code&gt;blank?&lt;/code&gt; with &lt;code&gt;empty?&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;changed instances of &lt;code&gt;present?&lt;/code&gt; to use &lt;code&gt;nil?&lt;/code&gt; instead&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;removed favicons from expected results&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Conference/meetup talk
+
+&lt;ul&gt;
+&lt;li&gt;Need to ask &lt;a href=&quot;https://twitter.com/jendiamond&quot;&gt;Jen&lt;/a&gt; if we can give quick talk at tomorrow&#39;s &lt;a href=&quot;http://www.meetup.com/Los-Angeles-Womens-Ruby-on-Rails-Group/events/124552602/&quot;&gt;Eastside/Westside Monthly Bash&lt;/a&gt; at &lt;a href=&quot;http://oversee.net/&quot;&gt;Oversee.net&lt;/a&gt; (all 3 of us will be in attendance)&lt;/li&gt;
+&lt;li&gt;Might be interested in presenting at &lt;a href=&quot;http://gogaruco.com/&quot;&gt;GoGaRuCo 2013&lt;/a&gt; in September&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;HOMEWORK: fix all tests&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>And So it Begins</title>
+      <link>http://dysania.github.io/blog/2013/07/08/and-so-it-begins.html</link>
+      <pubDate>Mon, 08 Jul 2013 00:59:00 -0700</pubDate>
+      <author>Team Dysania</author>
+      <guid>http://dysania.github.io/blog/2013/07/08/and-so-it-begins</guid>
+      <description>&lt;h1&gt;And So it Begins&lt;/h1&gt;
+
+&lt;p&gt;Tonight was the first night all three of us (&lt;a href=&quot;http://twitter.com/toastergrrl&quot;&gt;Vyki&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/jzeta&quot;&gt;JZ&lt;/a&gt;, and &lt;a href=&quot;https://twitter.com/krainboltgreene&quot;&gt;Kurtis&lt;/a&gt;) got to work in the same room together!  Though I&#39;m still getting all of my &lt;a href=&quot;http://railsgirlssummerofcode.org/tools/&quot;&gt;tools&lt;/a&gt; installed and set up, and despite my kernel headers problem with VirtualBox, we dove right in.&lt;/p&gt;
+
+&lt;p&gt;We started off with lectures on &lt;a href=&quot;http://en.wikipedia.org/wiki/Software_versioning#Semantic_versioning&quot;&gt;semantic versioning&lt;/a&gt; and best practices for Ruby gems. We then officially forked &lt;a href=&quot;https://github.com/discourse/discourse&quot;&gt;Discourse&lt;/a&gt; to our &lt;a href=&quot;https://github.com/dysania&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In 3 short hours we managed to:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;ul&gt;
+&lt;li&gt;learn about &lt;a href=&quot;http://meta.discourse.org/t/what-is-a-onebox/4546&quot;&gt;oneboxing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;create a &lt;a href=&quot;https://github.com/dysania/discourse-oneboxer&quot;&gt;discourse-oneboxer&lt;/a&gt; repo for the gem we&#39;re building&lt;/li&gt;
+&lt;li&gt;generate a new gem using Bundler&lt;/li&gt;
+&lt;li&gt;start pulling in oneboxer files from the Discourse lib to discourse-oneboxer&lt;/li&gt;
+&lt;li&gt;start properly namespacing the files in discourse-oneboxer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Now off to finish our homework! Mine is to finish the namespacing in discourse-oneboxer, and JZ&#39;s is to finish transfering all the oneboxer files to discourse-oneboxer.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Schedule</title>
+      <link>http://dysania.github.io/blog/2013/07/07/the-schedule.html</link>
+      <pubDate>Sun, 07 Jul 2013 19:50:00 -0700</pubDate>
+      <author>Team Dysania</author>
+      <guid>http://dysania.github.io/blog/2013/07/07/the-schedule</guid>
+      <description>&lt;h1&gt;The Schedule&lt;/h1&gt;
+
+&lt;p&gt;It&#39;s on! We start on the morrow.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Where:&lt;/strong&gt; Downtown LA&lt;br/&gt;
+&lt;strong&gt;When:&lt;/strong&gt; Monday-Thursday, 8-11 PM (12 hrs/wk)&lt;/p&gt;
+
+&lt;p&gt;Shout out to &lt;a href=&quot;https://twitter.com/jendiamond&quot;&gt;Jen Diamond&lt;/a&gt; (member of &lt;a href=&quot;http://teams.railsgirlssummerofcode.org/teams/2&quot;&gt;Team Bundler&lt;/a&gt; and organizer of the &lt;a href=&quot;http://www.meetup.com/Los-Angeles-Womens-Ruby-on-Rails-Group/&quot;&gt;Los Angeles Women&#39;s Ruby on Rails Group&lt;/a&gt;) for 1) continuing to run the LA Ruby Eastside study group despite her new stint on the Westside, and 2) agreeing to move its location from Glendale to Downtown LA.&lt;/p&gt;
 </description>
     </item>
     
@@ -42,7 +119,7 @@
 
 &lt;p&gt;Shout out to UForgotten of the IRC &lt;a href=&quot;http://www.vagrantup.com/&quot;&gt;#vagrant&lt;/a&gt; channel, who helped me &lt;strong&gt;debug a problem on Freenode for the first time!&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Earlier today, I tried to run &lt;code&gt;vagrant up&lt;/code&gt; again in my new Linux environment as per &lt;a href=&quot;http://blog.discourse.org/2013/04/discourse-as-your-first-rails-app/&quot;&gt;Discourse as Your First Rails App&lt;/a&gt;, and luckily it didn't hang at the VM boot anymore. However, I kept getting this error:&lt;/p&gt;
+&lt;p&gt;Earlier today, I tried to run &lt;code&gt;vagrant up&lt;/code&gt; again in my new Linux environment as per &lt;a href=&quot;http://blog.discourse.org/2013/04/discourse-as-your-first-rails-app/&quot;&gt;Discourse as Your First Rails App&lt;/a&gt;, and luckily it didn&#39;t hang at the VM boot anymore. However, I kept getting this error:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Default&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; Mounting NFS shared folders...
 The following SSH &lt;span class=&quot;nb&quot;&gt;command &lt;/span&gt;responded with a non-zero &lt;span class=&quot;nb&quot;&gt;exit &lt;/span&gt;status.
@@ -52,13 +129,13 @@ Vagrant assumes that this means the &lt;span class=&quot;nb&quot;&gt;command &lt
 
 &lt;p&gt;I scrounged the Discourse docs for &lt;a href=&quot;http://docs-v1.vagrantup.com/v1/docs/nfs.html&quot;&gt;NFS&lt;/a&gt; errors and found the following in the &lt;a href=&quot;https://github.com/discourse/discourse/blob/master/docs/VAGRANT.md&quot;&gt;Discourse Vagrant Developer Guide&lt;/a&gt;:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;true/images/discourse_nfs.png&quot;&gt;&lt;img src=&quot;true/images/discourse_nfs.png&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/images/discourse_nfs.png&quot;&gt;&lt;img src=&quot;/images/discourse_nfs.png&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Nope, not my errors. Google wasn't any real help either; Vagrant issues &lt;a href=&quot;https://github.com/mitchellh/vagrant/issues/1659&quot;&gt;#1659&lt;/a&gt;, &lt;a href=&quot;https://github.com/mitchellh/vagrant/issues/1694&quot;&gt;#1694&lt;/a&gt;, and &lt;a href=&quot;https://github.com/mitchellh/vagrant/issues/1702&quot;&gt;#1702&lt;/a&gt; mentioned similar errors but the solutions didn't work for me. Vyki and Kurtis weren't online to help out. &lt;a href=&quot;https://www.youtube.com/watch?v=iuL2loyB1bk&quot;&gt;I was so totally (de)buggin'&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Nope, not my errors. Google wasn&#39;t any real help either; Vagrant issues &lt;a href=&quot;https://github.com/mitchellh/vagrant/issues/1659&quot;&gt;#1659&lt;/a&gt;, &lt;a href=&quot;https://github.com/mitchellh/vagrant/issues/1694&quot;&gt;#1694&lt;/a&gt;, and &lt;a href=&quot;https://github.com/mitchellh/vagrant/issues/1702&quot;&gt;#1702&lt;/a&gt; mentioned similar errors but the solutions didn&#39;t work for me. Vyki and Kurtis weren&#39;t online to help out. &lt;a href=&quot;https://www.youtube.com/watch?v=iuL2loyB1bk&quot;&gt;I was so totally (de)buggin&#39;&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Frustrated after running &lt;code&gt;vagrant up&lt;/code&gt; and &lt;code&gt;vagrant halt&lt;/code&gt; over and over again with no success, I turned to the next best thing: irc.freenode.net.&lt;/p&gt;
 
-&lt;p&gt;I posted my problem on the #vagrant channel, and bam, UForgotten immediately responded. (The badass was actually troubleshooting for multiple IRC users at the same time.) He asked me some questions, and had me run some commands to get to the bottom of things. He thought at first it had to do with IP issues that he himself had run into recently with Vagrant, but that wasn't it.&lt;/p&gt;
+&lt;p&gt;I posted my problem on the #vagrant channel, and bam, UForgotten immediately responded. (The badass was actually troubleshooting for multiple IRC users at the same time.) He asked me some questions, and had me run some commands to get to the bottom of things. He thought at first it had to do with IP issues that he himself had run into recently with Vagrant, but that wasn&#39;t it.&lt;/p&gt;
 
 &lt;p&gt;UForgotten eventually told me to send him my &lt;a href=&quot;https://github.com/discourse/discourse/blob/master/Vagrantfile&quot;&gt;Vagrantfile&lt;/a&gt; and &lt;a href=&quot;http://docs.vagrantup.com/v2/debugging.html&quot;&gt;debugging log&lt;/a&gt; after running this:&lt;/p&gt;
 
@@ -72,17 +149,17 @@ Vagrant assumes that this means the &lt;span class=&quot;nb&quot;&gt;command &lt
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Wait a second.....I'd seen that before.......!&lt;/p&gt;
+&lt;p&gt;Wait a second.....I&#39;d seen that before.......!&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;true/images/discourse_nfs_holdup.png&quot;&gt;&lt;img src=&quot;true/images/discourse_nfs_holdup.png&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/images/discourse_nfs_holdup.png&quot;&gt;&lt;img src=&quot;/images/discourse_nfs_holdup.png&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&quot;The root Discourse directory cannot be on an ecryptfs mount or you will receive an error.&quot;&lt;/strong&gt; When I installed Ubuntu, I had opted to encrypt my home folder, which is where I had put Discourse. All I have to do is remove the encryption, and the Discourse environment should be able to run.&lt;/p&gt;
 
 &lt;p&gt;The answer had been right in front of me! Guess I just had to learn the hard way to always read the error log.&lt;/p&gt;
 
-&lt;p&gt;UForgotten was pretty patient with my noobiness, and said the reason why I couldn't use an encrypted folder was that NFS simply can't handle the decoding. Another IRC user, smerrill, also put in his 2 cents about how &lt;a href=&quot;http://www.phase2technology.com/blog/vagrant-and-nfs/&quot;&gt;NFS can't export symlinks&lt;/a&gt; either.&lt;/p&gt;
+&lt;p&gt;UForgotten was pretty patient with my noobiness, and said the reason why I couldn&#39;t use an encrypted folder was that NFS simply can&#39;t handle the decoding. Another IRC user, smerrill, also put in his 2 cents about how &lt;a href=&quot;http://www.phase2technology.com/blog/vagrant-and-nfs/&quot;&gt;NFS can&#39;t export symlinks&lt;/a&gt; either.&lt;/p&gt;
 
-&lt;p&gt;I thanked UForgotten for his help, and he replied, &quot;De nada mang. Welcome to IRC. It's good karma, I need help once in a while so when I can I try to pay it forward.&quot; Cool.&lt;/p&gt;
+&lt;p&gt;I thanked UForgotten for his help, and he replied, &quot;De nada mang. Welcome to IRC. It&#39;s good karma, I need help once in a while so when I can I try to pay it forward.&quot; Cool.&lt;/p&gt;
 
 &lt;p&gt;Really glad my first foray into IRC Freenode went well! On to fixing the encryption thing tomorrow.&lt;/p&gt;
 
@@ -104,11 +181,11 @@ Vagrant assumes that this means the &lt;span class=&quot;nb&quot;&gt;command &lt
       <guid>http://dysania.github.io/blog/2013/07/01/i-am-an-installing-machine</guid>
       <description>&lt;h1&gt;I am an Installing Machine&lt;/h1&gt;
 
-&lt;p&gt;Welp, my dream of a &lt;a href=&quot;true/2013/06/30/settin-up.html&quot;&gt;VM within a VM&lt;/a&gt; will alas remain unfulfilled. I really couldn't get Vagrant to boot the Discourse VM without hanging.&lt;/p&gt;
+&lt;p&gt;Welp, my dream of a &lt;a href=&quot;/2013/06/30/settin-up.html&quot;&gt;VM within a VM&lt;/a&gt; will alas remain unfulfilled. I really couldn&#39;t get Vagrant to boot the Discourse VM without hanging.&lt;/p&gt;
 
-&lt;p&gt;I've been hesitant about installing Ubuntu on my laptop, but I finally gave in and decided to &lt;a href=&quot;http://www.linuxbsdos.com/2012/05/17/how-to-dual-boot-ubuntu-12-04-and-windows-7/&quot;&gt;dual-boot Ubuntu and Windows&lt;/a&gt; at Kurtis's suggestion. Learned a bit about HD partitioning and boot loading. Bye, Linux VM and &lt;a href=&quot;http://www.linuxliveusb.com/&quot;&gt;LinuxLive USB&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;I&#39;ve been hesitant about installing Ubuntu on my laptop, but I finally gave in and decided to &lt;a href=&quot;http://www.linuxbsdos.com/2012/05/17/how-to-dual-boot-ubuntu-12-04-and-windows-7/&quot;&gt;dual-boot Ubuntu and Windows&lt;/a&gt; at Kurtis&#39;s suggestion. Learned a bit about HD partitioning and boot loading. Bye, Linux VM and &lt;a href=&quot;http://www.linuxliveusb.com/&quot;&gt;LinuxLive USB&lt;/a&gt;!&lt;/p&gt;
 
-&lt;p&gt;I've set up my Linux dev environment yet again (probably 10th time in the last month? here's to repetition), and will try to get Discourse running by tomorrow.&lt;/p&gt;
+&lt;p&gt;I&#39;ve set up my Linux dev environment yet again (probably 10th time in the last month? here&#39;s to repetition), and will try to get Discourse running by tomorrow.&lt;/p&gt;
 </description>
     </item>
     
@@ -118,13 +195,13 @@ Vagrant assumes that this means the &lt;span class=&quot;nb&quot;&gt;command &lt
       <pubDate>Sun, 30 Jun 2013 23:30:00 -0700</pubDate>
       <author>Team Dysania</author>
       <guid>http://dysania.github.io/blog/2013/06/30/settin-up</guid>
-      <description>&lt;h1&gt;Settin' Up&lt;/h1&gt;
+      <description>&lt;h1&gt;Settin&#39; Up&lt;/h1&gt;
 
-&lt;p&gt;This weekend I installed an Ubuntu Linux VM on my Windows 7 laptop and set about going through &lt;a href=&quot;http://blog.discourse.org/2013/04/discourse-as-your-first-rails-app/&quot;&gt;Discourse as Your First Rails App&lt;/a&gt;. I'll basically end up with a VM within a VM...kinda neat but kinda worrisome. Prayin' for ya, my wee ASUS.&lt;/p&gt;
+&lt;p&gt;This weekend I installed an Ubuntu Linux VM on my Windows 7 laptop and set about going through &lt;a href=&quot;http://blog.discourse.org/2013/04/discourse-as-your-first-rails-app/&quot;&gt;Discourse as Your First Rails App&lt;/a&gt;. I&#39;ll basically end up with a VM within a VM...kinda neat but kinda worrisome. Prayin&#39; for ya, my wee ASUS.&lt;/p&gt;
 
-&lt;p&gt;Coach Kurtis said to read through &lt;a href=&quot;http://docs.vagrantup.com/v2/getting-started/&quot;&gt;Vagrant's Getting Started guide&lt;/a&gt; as well, since it's what Discourse uses for its VM. Vagrant  provides a configured, portable work environment, so that anyone can simply download it and have it up and running quickly.&lt;/p&gt;
+&lt;p&gt;Coach Kurtis said to read through &lt;a href=&quot;http://docs.vagrantup.com/v2/getting-started/&quot;&gt;Vagrant&#39;s Getting Started guide&lt;/a&gt; as well, since it&#39;s what Discourse uses for its VM. Vagrant  provides a configured, portable work environment, so that anyone can simply download it and have it up and running quickly.&lt;/p&gt;
 
-&lt;p&gt;So far, I still haven't gotten Vagrant to run the Discourse VM yet since &lt;a href=&quot;https://github.com/mitchellh/vagrant/wiki/%60vagrant-up%60-hangs-at-%22Waiting-for-VM-to-boot.-This-can-take-a-few-minutes%22&quot;&gt;it keeps hanging&lt;/a&gt;. Hope I can get it working soon.&lt;/p&gt;
+&lt;p&gt;So far, I still haven&#39;t gotten Vagrant to run the Discourse VM yet since &lt;a href=&quot;https://github.com/mitchellh/vagrant/wiki/%60vagrant-up%60-hangs-at-%22Waiting-for-VM-to-boot.-This-can-take-a-few-minutes%22&quot;&gt;it keeps hanging&lt;/a&gt;. Hope I can get it working soon.&lt;/p&gt;
 
 &lt;p&gt;P.S. I wonder if Kurtis would mind if I called him Captain Kurt.&lt;/p&gt;
 </description>
@@ -140,13 +217,13 @@ Vagrant assumes that this means the &lt;span class=&quot;nb&quot;&gt;command &lt
 
 &lt;p&gt;...or in other words, shit just got real (and exciting)!&lt;/p&gt;
 
-&lt;p&gt;I've just had my &lt;strong&gt;first Google Hangout&lt;/strong&gt; with our mentors &lt;a href=&quot;http://twitter.com/evil_trout&quot;&gt;Robin Ward&lt;/a&gt; and &lt;a href=&quot;http://twitter.com/samsaffron&quot;&gt;Sam Saffron&lt;/a&gt;. Unfortunately, Vyki couldn't really join in as she was in the woods of Washington for a family reunion. Still, Robin, Sam, our coach &lt;a href=&quot;http://twitter.com/krainboltgreene&quot;&gt;Kurtis&lt;/a&gt; and I were able to discuss our plans for &lt;a href=&quot;http://discourse.org&quot;&gt;Discourse&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I&#39;ve just had my &lt;strong&gt;first Google Hangout&lt;/strong&gt; with our mentors &lt;a href=&quot;http://twitter.com/evil_trout&quot;&gt;Robin Ward&lt;/a&gt; and &lt;a href=&quot;http://twitter.com/samsaffron&quot;&gt;Sam Saffron&lt;/a&gt;. Unfortunately, Vyki couldn&#39;t really join in as she was in the woods of Washington for a family reunion. Still, Robin, Sam, our coach &lt;a href=&quot;http://twitter.com/krainboltgreene&quot;&gt;Kurtis&lt;/a&gt; and I were able to discuss our plans for &lt;a href=&quot;http://discourse.org&quot;&gt;Discourse&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Our goal for the summer will be to &lt;strong&gt;extract all oneboxing into one gem.&lt;/strong&gt; &lt;a href=&quot;http://meta.discourse.org/t/what-is-a-onebox/4546&quot;&gt;Oneboxing&lt;/a&gt; is a feature of Discourse where if you include a link to a site (i.e. Twitter, Wikipedia), it will try to create a usable snippet for you automatically. By extracting this feature into a gem, it can be usable by projects other than Discourse, and will also make testing much easier since the code will be more modularized.&lt;/p&gt;
 
-&lt;p&gt;If time permits, we'll also be implementing oneboxing for other often-used sites that aren't supported yet.&lt;/p&gt;
+&lt;p&gt;If time permits, we&#39;ll also be implementing oneboxing for other often-used sites that aren&#39;t supported yet.&lt;/p&gt;
 
-&lt;p&gt;To start out, we're gonna:&lt;/p&gt;
+&lt;p&gt;To start out, we&#39;re gonna:&lt;/p&gt;
 
 &lt;blockquote&gt;&lt;ul&gt;
 &lt;li&gt;get Discourse running in our own dev environments using Vagrant/VirtualBox (using &lt;a href=&quot;http://blog.discourse.org/2013/04/discourse-as-your-first-rails-app/&quot;&gt;this tutorial&lt;/a&gt;)&lt;/li&gt;
@@ -155,7 +232,7 @@ Vagrant assumes that this means the &lt;span class=&quot;nb&quot;&gt;command &lt
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;I'm feeling pretty lucky to have these awesome guys supporting us. Allons! Let's go!&lt;/p&gt;
+&lt;p&gt;I&#39;m feeling pretty lucky to have these awesome guys supporting us. Allons! Let&#39;s go!&lt;/p&gt;
 </description>
     </item>
     
@@ -167,7 +244,7 @@ Vagrant assumes that this means the &lt;span class=&quot;nb&quot;&gt;command &lt
       <guid>http://dysania.github.io/blog/2013/06/27/hello-world</guid>
       <description>&lt;h1&gt;Hello, World&lt;/h1&gt;
 
-&lt;p&gt;It's business time.&lt;/p&gt;
+&lt;p&gt;It&#39;s business time.&lt;/p&gt;
 </description>
     </item>
     

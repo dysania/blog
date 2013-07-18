@@ -9,7 +9,7 @@
         <meta name="author" content="Team Dysania" />
         <meta name="viewport" content="width=device-width">
 
-        <title>Popping my IRC Freenode Cherry</title>
+        <title>The Schedule</title>
 
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/screen.css">
@@ -82,68 +82,21 @@
 
 <section class="date">
 
-  <p><span><a href="/2013/07/02/popping-my-irc-freenode-cherry.html">July 02, 2013</a></span> - <a href="/about.html">JZ</a></p>
+  <p><span><a href="/2013/07/07/the-schedule.html">July 07, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
 
 </section>
 
 <article>
   
   <section class="content">
-    <h1>Popping my IRC Freenode Cherry</h1>
+    <h1>The Schedule</h1>
 
-<p>Shout out to UForgotten of the IRC <a href="http://www.vagrantup.com/">#vagrant</a> channel, who helped me <strong>debug a problem on Freenode for the first time!</strong></p>
+<p>It's on! We start on the morrow.</p>
 
-<p>Earlier today, I tried to run <code>vagrant up</code> again in my new Linux environment as per <a href="http://blog.discourse.org/2013/04/discourse-as-your-first-rails-app/">Discourse as Your First Rails App</a>, and luckily it didn't hang at the VM boot anymore. However, I kept getting this error:</p>
+<p><strong>Where:</strong> Downtown LA<br/>
+<strong>When:</strong> Monday-Thursday, 8-11 PM (12 hrs/wk)</p>
 
-<div class="highlight"><pre><code class="bash"><span class="o">[</span>Default<span class="o">]</span> Mounting NFS shared folders...
-The following SSH <span class="nb">command </span>responded with a non-zero <span class="nb">exit </span>status.
-Vagrant assumes that this means the <span class="nb">command </span>failed! 
-</code></pre></div>
-
-
-<p>I scrounged the Discourse docs for <a href="http://docs-v1.vagrantup.com/v1/docs/nfs.html">NFS</a> errors and found the following in the <a href="https://github.com/discourse/discourse/blob/master/docs/VAGRANT.md">Discourse Vagrant Developer Guide</a>:</p>
-
-<p><a href="/images/discourse_nfs.png"><img src="/images/discourse_nfs.png" width="100%" /></a></p>
-
-<p>Nope, not my errors. Google wasn't any real help either; Vagrant issues <a href="https://github.com/mitchellh/vagrant/issues/1659">#1659</a>, <a href="https://github.com/mitchellh/vagrant/issues/1694">#1694</a>, and <a href="https://github.com/mitchellh/vagrant/issues/1702">#1702</a> mentioned similar errors but the solutions didn't work for me. Vyki and Kurtis weren't online to help out. <a href="https://www.youtube.com/watch?v=iuL2loyB1bk">I was so totally (de)buggin'</a>.</p>
-
-<p>Frustrated after running <code>vagrant up</code> and <code>vagrant halt</code> over and over again with no success, I turned to the next best thing: irc.freenode.net.</p>
-
-<p>I posted my problem on the #vagrant channel, and bam, UForgotten immediately responded. (The badass was actually troubleshooting for multiple IRC users at the same time.) He asked me some questions, and had me run some commands to get to the bottom of things. He thought at first it had to do with IP issues that he himself had run into recently with Vagrant, but that wasn't it.</p>
-
-<p>UForgotten eventually told me to send him my <a href="https://github.com/discourse/discourse/blob/master/Vagrantfile">Vagrantfile</a> and <a href="http://docs.vagrantup.com/v2/debugging.html">debugging log</a> after running this:</p>
-
-<div class="highlight"><pre><code class="bash"><span class="nv">$ VAGRANT_LOG</span><span class="o">=</span>debug vagrant up
-</code></pre></div>
-
-
-<p>I did so, and after some time, he informed me that the problem lay in this line of the log:</p>
-
-<div class="highlight"><pre><code class="bash">exportfs: /home/jzeta/Projects/rgsoc/discourse does not support NFS <span class="nb">export</span>
-</code></pre></div>
-
-
-<p>Wait a second.....I'd seen that before.......!</p>
-
-<p><a href="/images/discourse_nfs_holdup.png"><img src="/images/discourse_nfs_holdup.png" width="100%" /></a></p>
-
-<p><strong>"The root Discourse directory cannot be on an ecryptfs mount or you will receive an error."</strong> When I installed Ubuntu, I had opted to encrypt my home folder, which is where I had put Discourse. All I have to do is remove the encryption, and the Discourse environment should be able to run.</p>
-
-<p>The answer had been right in front of me! Guess I just had to learn the hard way to always read the error log.</p>
-
-<p>UForgotten was pretty patient with my noobiness, and said the reason why I couldn't use an encrypted folder was that NFS simply can't handle the decoding. Another IRC user, smerrill, also put in his 2 cents about how <a href="http://www.phase2technology.com/blog/vagrant-and-nfs/">NFS can't export symlinks</a> either.</p>
-
-<p>I thanked UForgotten for his help, and he replied, "De nada mang. Welcome to IRC. It's good karma, I need help once in a while so when I can I try to pay it forward." Cool.</p>
-
-<p>Really glad my first foray into IRC Freenode went well! On to fixing the encryption thing tomorrow.</p>
-
-<blockquote class="twitter-tweet"><p>1st time getting help on irc freenode ---&gt; problem solved! thanks <a href="https://twitter.com/search?q=%23vagrant&amp;src=hash">#vagrant</a> channel <a href="https://twitter.com/RailsGirlsSoC">@RailsGirlsSoC</a></p>&mdash; jz (@jzeta) <a href="https://twitter.com/jzeta/statuses/352160070928306178">July 2, 2013</a></blockquote>
-
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-
+<p>Shout out to <a href="https://twitter.com/jendiamond">Jen Diamond</a> (member of <a href="http://teams.railsgirlssummerofcode.org/teams/2">Team Bundler</a> and organizer of the <a href="http://www.meetup.com/Los-Angeles-Womens-Ruby-on-Rails-Group/">Los Angeles Women's Ruby on Rails Group</a>) for 1) continuing to run the LA Ruby Eastside study group despite her new stint on the Westside, and 2) agreeing to move its location from Glendale to Downtown LA.</p>
 
   </section>
 </article>
@@ -155,16 +108,16 @@ Vagrant assumes that this means the <span class="nb">command </span>failed!
         <div class="left">
          
                 <p>newer:</p>
-                <a href="/2013/07/07/the-schedule.html" title="Newer Post: 
-The Schedule"> &laquo; The Schedule</a> 
+                <a href="/2013/07/08/and-so-it-begins.html" title="Newer Post: 
+And So it Begins"> &laquo; And So it Begins</a> 
           
         </div> 
 
         <div class="right"> 
         
                 <p>older:</p>
-                <a href="/2013/07/01/i-am-an-installing-machine.html" title="Older Post: 
-I am an Installing Machine">I am an Installing Machine &raquo; </a> 
+                <a href="/2013/07/02/popping-my-irc-freenode-cherry.html" title="Older Post: 
+Popping my IRC Freenode Cherry">Popping my IRC Freenode Cherry &raquo; </a> 
          
         </div> 
         <div class="clear">&nbsp;</div> 
@@ -176,7 +129,7 @@ I am an Installing Machine">I am an Installing Machine &raquo; </a>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = 'dysania'; // required: replace example with your forum shortname
-        var disqus_identifier = "/2013/07/02/popping-my-irc-freenode-cherry.html";
+        var disqus_identifier = "/2013/07/07/the-schedule.html";
 
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function() {
