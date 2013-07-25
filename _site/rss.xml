@@ -6,9 +6,35 @@
     <atom:link href="http://dysania.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog for Rails Girls Summer of Code</description>
     <language>en-us</language>
-    <pubDate>Thu, 18 Jul 2013 00:16:51 -0700</pubDate>
-    <lastBuildDate>Thu, 18 Jul 2013 00:16:51 -0700</lastBuildDate>
+    <pubDate>Wed, 24 Jul 2013 22:37:26 -0700</pubDate>
+    <lastBuildDate>Wed, 24 Jul 2013 22:37:26 -0700</lastBuildDate>
 
+    
+    <item>
+      <title>Captain's Log: 2013.07.24</title>
+      <link>http://dysania.github.io/blog/2013/07/24/captains-log.html</link>
+      <pubDate>Wed, 24 Jul 2013 22:33:00 -0700</pubDate>
+      <author>Team Dysania</author>
+      <guid>http://dysania.github.io/blog/2013/07/24/captains-log</guid>
+      <description>&lt;h1&gt;Captain&#39;s Log: 2013.07.24&lt;/h1&gt;
+
+&lt;blockquote&gt;&lt;ul&gt;
+&lt;li&gt;First time all three of us met together in a week&lt;/li&gt;
+&lt;li&gt;Learned about pending and pending message
+
+&lt;ul&gt;
+&lt;li&gt;Used where there were methods in tests we don&#39;t understand yet and still need to rewrite&lt;/li&gt;
+&lt;li&gt;Methods: expects, onebox_for_url, base_url, apply&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Added Mocha dependency for tests&lt;/li&gt;
+&lt;li&gt;Fixed all remaining tests, 0 failures, 14 pending&lt;/li&gt;
+&lt;li&gt;Captain Kurt added travis.yml for Travis-CI&lt;/li&gt;
+&lt;li&gt;Travis build doesn&#39;t fail!(but the spam emails continue)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
     
     <item>
       <title>Captain's Log: 2013.07.16</title>
