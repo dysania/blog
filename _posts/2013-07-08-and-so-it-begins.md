@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "And So it Begins"
+title: "And So It Begins"
 location: "Los Angeles, CA"
 date: "Mon, Jul 08 2013 00:59:00 -07:00"
 image: headers/jesus_ami.jpg

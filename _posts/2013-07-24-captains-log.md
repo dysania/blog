@@ -16,6 +16,7 @@ author: dysania
 	+ Used where there were methods in tests we don't understand yet and still need to rewrite
 	+ Methods: expects, onebox_for_url, base_url, apply
 + Added Mocha dependency for tests
-+ Fixed all remaining tests, 0 failures, 14 pending
++ Fixed all remaining tests w/ RSpec, 0 failures, 14 pending
++ Learned about Travis-CI
 + Captain Kurt added travis.yml for Travis-CI
-+ Travis build doesn't fail!(but the spam emails continue)
++ Travis build doesn't fail! (but the spam emails continue...)

@@ -6,8 +6,8 @@
     <atom:link href="http://dysania.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog for Rails Girls Summer of Code</description>
     <language>en-us</language>
-    <pubDate>Wed, 24 Jul 2013 22:37:26 -0700</pubDate>
-    <lastBuildDate>Wed, 24 Jul 2013 22:37:26 -0700</lastBuildDate>
+    <pubDate>Thu, 25 Jul 2013 20:31:51 -0700</pubDate>
+    <lastBuildDate>Thu, 25 Jul 2013 20:31:51 -0700</lastBuildDate>
 
     
     <item>
@@ -28,9 +28,10 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Added Mocha dependency for tests&lt;/li&gt;
-&lt;li&gt;Fixed all remaining tests, 0 failures, 14 pending&lt;/li&gt;
+&lt;li&gt;Fixed all remaining tests w/ RSpec, 0 failures, 14 pending&lt;/li&gt;
+&lt;li&gt;Learned about Travis-CI&lt;/li&gt;
 &lt;li&gt;Captain Kurt added travis.yml for Travis-CI&lt;/li&gt;
-&lt;li&gt;Travis build doesn&#39;t fail!(but the spam emails continue)&lt;/li&gt;
+&lt;li&gt;Travis build doesn&#39;t fail! (but the spam emails continue...)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 </description>
@@ -92,12 +93,12 @@
     </item>
     
     <item>
-      <title>And So it Begins</title>
+      <title>And So It Begins</title>
       <link>http://dysania.github.io/blog/2013/07/08/and-so-it-begins.html</link>
       <pubDate>Mon, 08 Jul 2013 00:59:00 -0700</pubDate>
       <author>Team Dysania</author>
       <guid>http://dysania.github.io/blog/2013/07/08/and-so-it-begins</guid>
-      <description>&lt;h1&gt;And So it Begins&lt;/h1&gt;
+      <description>&lt;h1&gt;And So It Begins&lt;/h1&gt;
 
 &lt;p&gt;Tonight was the first night all three of us (&lt;a href=&quot;http://twitter.com/toastergrrl&quot;&gt;Vyki&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/jzeta&quot;&gt;JZ&lt;/a&gt;, and &lt;a href=&quot;https://twitter.com/krainboltgreene&quot;&gt;Kurtis&lt;/a&gt;) got to work in the same room together!  Though I&#39;m still getting all of my &lt;a href=&quot;http://railsgirlssummerofcode.org/tools/&quot;&gt;tools&lt;/a&gt; installed and set up, and despite my kernel headers problem with VirtualBox, we dove right in.&lt;/p&gt;
 
