@@ -6,9 +6,46 @@
     <atom:link href="http://dysania.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog for Rails Girls Summer of Code</description>
     <language>en-us</language>
-    <pubDate>Thu, 25 Jul 2013 20:31:51 -0700</pubDate>
-    <lastBuildDate>Thu, 25 Jul 2013 20:31:51 -0700</lastBuildDate>
+    <pubDate>Fri, 26 Jul 2013 10:00:27 -0700</pubDate>
+    <lastBuildDate>Fri, 26 Jul 2013 10:00:27 -0700</lastBuildDate>
 
+    
+    <item>
+      <title>Captain's Log: 2013.07.25</title>
+      <link>http://dysania.github.io/blog/2013/07/25/captains-log.html</link>
+      <pubDate>Thu, 25 Jul 2013 21:10:00 -0700</pubDate>
+      <author>Team Dysania</author>
+      <guid>http://dysania.github.io/blog/2013/07/25/captains-log</guid>
+      <description>&lt;h1&gt;Captain&#39;s Log: 2013.07.25&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/syrup.jpg&quot;&gt;&lt;img src=&quot;/images/syrup.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;ul&gt;
+&lt;li&gt;Worked at &lt;a href=&quot;http://www.yelp.com/biz/syrup-desserts-los-angeles-2&quot;&gt;Syrup Desserts&lt;/a&gt; for &lt;a href=&quot;http://www.meetup.com/Los-Angeles-Womens-Ruby-on-Rails-Group/events/130289862/&quot;&gt;Los Angeles Eastside Ruby/Rails study group&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Crêpes on crêpes on crêpes (see photo above)&lt;/li&gt;
+&lt;li&gt;Caught up with Jen of &lt;a href=&quot;http://rgsocbundler.github.io/&quot;&gt;Team Bundler&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Intro to Test-Driven Development
+
+&lt;ul&gt;
+&lt;li&gt;Captain Kurt showed us project he&#39;s working on for a client as an example&lt;/li&gt;
+&lt;li&gt;Create specs first to figure out what you expect the results to be&lt;/li&gt;
+&lt;li&gt;Run specs and write code as you go to make them pass&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Fixed &lt;a href=&quot;https://github.com/dysania/discourse-oneboxer/pull/6&quot;&gt;discourse-oneboxer README&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Edited on GitHub based on Captain Kurt&#39;s comments&lt;/li&gt;
+&lt;li&gt;Made commits to pull request&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Learned about &lt;a href=&quot;http://coveralls.io/&quot;&gt;Coveralls&lt;/a&gt; and &lt;a href=&quot;https://codeclimate.com/&quot;&gt;Code Climate&lt;/a&gt;, added badges to discourse-oneboxer README&lt;/li&gt;
+&lt;li&gt;Started writing RGSoC blog post&lt;/li&gt;
+&lt;li&gt;HOMEWORK: Read up on object-oriented design and &lt;a href=&quot;http://en.wikipedia.org/wiki/Alan_Kay&quot;&gt;Alan Kay&lt;/a&gt; by Monday, finish RGSoC blog post by tomorrow&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
     
     <item>
       <title>Captain's Log: 2013.07.24</title>
@@ -32,6 +69,7 @@
 &lt;li&gt;Learned about Travis-CI&lt;/li&gt;
 &lt;li&gt;Captain Kurt added travis.yml for Travis-CI&lt;/li&gt;
 &lt;li&gt;Travis build doesn&#39;t fail! (but the spam emails continue...)&lt;/li&gt;
+&lt;li&gt;HOMEWORK: Work on RGSoC blog post for Monday, due Friday!&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 </description>
