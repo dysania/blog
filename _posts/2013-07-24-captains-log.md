@@ -20,3 +20,4 @@ author: dysania
 + Learned about Travis-CI
 + Captain Kurt added travis.yml for Travis-CI
 + Travis build doesn't fail! (but the spam emails continue...)
++ HOMEWORK: Work on RGSoC blog post for Monday, due Friday!
