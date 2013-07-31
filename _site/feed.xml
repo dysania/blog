@@ -6,9 +6,48 @@
     <atom:link href="http://dysania.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog for Rails Girls Summer of Code</description>
     <language>en-us</language>
-    <pubDate>Mon, 29 Jul 2013 22:54:24 -0700</pubDate>
-    <lastBuildDate>Mon, 29 Jul 2013 22:54:24 -0700</lastBuildDate>
+    <pubDate>Tue, 30 Jul 2013 22:38:28 -0700</pubDate>
+    <lastBuildDate>Tue, 30 Jul 2013 22:38:28 -0700</lastBuildDate>
 
+    
+    <item>
+      <title>Captain's Log: 2013.07.30</title>
+      <link>http://dysania.github.io/blog/2013/07/30/captains-log.html</link>
+      <pubDate>Tue, 30 Jul 2013 22:18:00 -0700</pubDate>
+      <author>Team Dysania</author>
+      <guid>http://dysania.github.io/blog/2013/07/30/captains-log</guid>
+      <description>&lt;h1&gt;Captain's Log: 2013.07.30&lt;/h1&gt;
+
+&lt;blockquote&gt;&lt;ul&gt;
+&lt;li&gt;Quick chat with &lt;a href=&quot;http://www.twitter.com/evil_trout&quot;&gt;Robin&lt;/a&gt; of Discourse in google hangouts (Sam was sleeping)
+
+&lt;ul&gt;
+&lt;li&gt;discussed progress so far&lt;/li&gt;
+&lt;li&gt;talked about maybe releasing 1.0 version of gem soon&lt;/li&gt;
+&lt;li&gt;talked about GoGaRuCo and how Discourse maintainers are attending&lt;/li&gt;
+&lt;li&gt;Robin and Sam will be guests on an upcoming Ruby Rogues podcast episode&lt;/li&gt;
+&lt;li&gt;LA Ruby/Rails community, Portland, SF&lt;/li&gt;
+&lt;li&gt;Robin will be reviewing our GitHub, making comments, and reporting back to rest of team&lt;/li&gt;
+&lt;li&gt;still need to introduce ourselves on Discourse meta&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Worked on &lt;code&gt;Preview&lt;/code&gt; and &lt;code&gt;Example&lt;/code&gt; classes&lt;/li&gt;
+&lt;li&gt;TDD again, swapped roles:
+
+&lt;ul&gt;
+&lt;li&gt;JZ: making tests pass&lt;/li&gt;
+&lt;li&gt;Vyki: created tests that failed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Created &lt;code&gt;Amazon&lt;/code&gt; class (which we might make inherit from &lt;code&gt;Example&lt;/code&gt; later)&lt;/li&gt;
+&lt;li&gt;Created Amazon handlebars template&lt;/li&gt;
+&lt;li&gt;Learned about File.read and File.join&lt;/li&gt;
+&lt;li&gt;Listened to Ruby Rogues podcast on the bus/train&lt;/li&gt;
+&lt;li&gt;HOMEWORK: Sleep&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
     
     <item>
       <title>Captain's Log: 2013.07.29</title>
@@ -312,35 +351,6 @@ Vagrant assumes that this means the &lt;span class=&quot;nb&quot;&gt;command &lt
 &lt;p&gt;So far, I still haven't gotten Vagrant to run the Discourse VM yet since &lt;a href=&quot;https://github.com/mitchellh/vagrant/wiki/%60vagrant-up%60-hangs-at-%22Waiting-for-VM-to-boot.-This-can-take-a-few-minutes%22&quot;&gt;it keeps hanging&lt;/a&gt;. Hope I can get it working soon.&lt;/p&gt;
 
 &lt;p&gt;P.S. I wonder if Kurtis would mind if I called him Captain Kurt.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Hello, Mentors</title>
-      <link>http://dysania.github.io/blog/2013/06/27/hello-mentors.html</link>
-      <pubDate>Thu, 27 Jun 2013 21:18:21 -0700</pubDate>
-      <author>Team Dysania</author>
-      <guid>http://dysania.github.io/blog/2013/06/27/hello-mentors</guid>
-      <description>&lt;h1&gt;Hello, Mentors&lt;/h1&gt;
-
-&lt;p&gt;...or in other words, shit just got real (and exciting)!&lt;/p&gt;
-
-&lt;p&gt;I've just had my &lt;strong&gt;first Google Hangout&lt;/strong&gt; with our mentors &lt;a href=&quot;http://twitter.com/evil_trout&quot;&gt;Robin Ward&lt;/a&gt; and &lt;a href=&quot;http://twitter.com/samsaffron&quot;&gt;Sam Saffron&lt;/a&gt;. Unfortunately, Vyki couldn't really join in as she was in the woods of Washington for a family reunion. Still, Robin, Sam, our coach &lt;a href=&quot;http://twitter.com/krainboltgreene&quot;&gt;Kurtis&lt;/a&gt; and I were able to discuss our plans for &lt;a href=&quot;http://discourse.org&quot;&gt;Discourse&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Our goal for the summer will be to &lt;strong&gt;extract all oneboxing into one gem.&lt;/strong&gt; &lt;a href=&quot;http://meta.discourse.org/t/what-is-a-onebox/4546&quot;&gt;Oneboxing&lt;/a&gt; is a feature of Discourse where if you include a link to a site (i.e. Twitter, Wikipedia), it will try to create a usable snippet for you automatically. By extracting this feature into a gem, it can be usable by projects other than Discourse, and will also make testing much easier since the code will be more modularized.&lt;/p&gt;
-
-&lt;p&gt;If time permits, we'll also be implementing oneboxing for other often-used sites that aren't supported yet.&lt;/p&gt;
-
-&lt;p&gt;To start out, we're gonna:&lt;/p&gt;
-
-&lt;blockquote&gt;&lt;ul&gt;
-&lt;li&gt;get Discourse running in our own dev environments using Vagrant/VirtualBox (using &lt;a href=&quot;http://blog.discourse.org/2013/04/discourse-as-your-first-rails-app/&quot;&gt;this tutorial&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;get Discourse test environment running&lt;/li&gt;
-&lt;li&gt;create a thread on &lt;a href=&quot;http://meta.discourse.org/&quot;&gt;meta.discourse forum&lt;/a&gt; introducing ourselves to the community there&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I'm feeling pretty lucky to have these awesome guys supporting us. Allons! Let's go!&lt;/p&gt;
 </description>
     </item>
     
