@@ -9,7 +9,7 @@
         <meta name="author" content="Team Dysania" />
         <meta name="viewport" content="width=device-width">
 
-        <title>Captain's Log: 2013.07.30</title>
+        <title>Captain's Log: 2013.07.31</title>
         <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/screen.css">
@@ -82,41 +82,40 @@
 
 <section class="date">
 
-  <p><span><a href="/2013/07/30/captains-log.html">July 30, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
+  <p><span><a href="/2013/07/31/captains-log.html">July 31, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
 
 </section>
 
 <article>
   
   <section class="content">
-    <h1>Captain's Log: 2013.07.30</h1>
+    <h1>Captain's Log: 2013.07.31</h1>
 
 <blockquote><ul>
-<li>Quick chat with <a href="http://www.twitter.com/evil_trout">Robin</a> of Discourse in google hangouts (Sam was sleeping)
-
-<ul>
-<li>discussed progress so far</li>
-<li>talked about maybe releasing 1.0 version of gem soon</li>
-<li>talked about GoGaRuCo and how Discourse maintainers are attending</li>
-<li>Robin and Sam will be guests on an upcoming Ruby Rogues podcast episode</li>
-<li>LA Ruby/Rails community, Portland, SF</li>
-<li>Robin will be reviewing our GitHub, making comments, and reporting back to rest of team</li>
-<li>still need to introduce ourselves on Discourse meta</li>
-</ul>
-</li>
-<li>Worked on <code>Preview</code> and <code>Example</code> classes</li>
-<li>TDD again, swapped roles:
+<li>Still working on <code>preview-refactor</code> branch</li>
+<li>TDD:
 
 <ul>
 <li>JZ: making tests pass</li>
 <li>Vyki: created tests that failed</li>
 </ul>
 </li>
-<li>Created <code>Amazon</code> class (which we might make inherit from <code>Example</code> later)</li>
-<li>Created Amazon handlebars template</li>
-<li>Learned about File.read and File.join</li>
-<li>Listened to Ruby Rogues podcast on the bus/train</li>
-<li>HOMEWORK: Sleep</li>
+<li>Added <code>amazon</code> spec</li>
+<li>Created fixtures for <code>amazon</code> and <code>example</code></li>
+<li>Made <code>preview</code> and <code>amazon</code> specs pass</li>
+<li>Learned how to get contents of url in bash using curl
+
+<ul>
+<li><code>curl --output spec/fixtures/amazon.response -L -X GET http://amzn.com/193609620X</code></li>
+<li>how we will create fixtures for all oneboxes</li>
+</ul>
+</li>
+<li>Vyki bought <a href="http://www.google.com/url?q=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2F1933988657%2Fref%3Doh_details_o00_s00_i03%3Fie%3DUTF8%26psc%3D1&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNEzcqRfz_hCoFeKTom7WuLvoKpPiw">The Well-Grounded Rubyist</a> from <a href="https://www.google.com/url?q=https%3A%2F%2Ftwitter.com%2Flkoponen&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNFJr2dNbYKMSlaaet5DZEAB1E2QHQ">Lili's</a> recommendation</li>
+<li>JZ didn't die from Day 2 of bike commuting and was reunited with her lost keys</li>
+<li>Gave status update to our RGSoC supervisor <a href="https://twitter.com/benediktdeicke">Benedikt</a></li>
+<li>Sent in our introduction blog post to RGSoC organizers for review -- to be published Monday!</li>
+<li>HOMEWORK (Vyki): Clean up Amazon response (remove CSS and whitespace)</li>
+<li>HOMEWORK (JZ): Create fixture for <code>example</code>, pick another onebox to refactor and capture response for it</li>
 </ul>
 </blockquote>
 
@@ -128,18 +127,14 @@
 <div id="page-navigation"> 
         <div class="clear">&nbsp;</div> 
         <div class="left">
-         
-                <p>newer:</p>
-                <a href="/2013/07/31/captains-log.html" title="Newer Post: 
-Captain's Log: 2013.07.31"> &laquo; Captain's Log: 2013.07.31</a> 
           
         </div> 
 
         <div class="right"> 
         
                 <p>older:</p>
-                <a href="/2013/07/29/captains-log.html" title="Older Post: 
-Captain's Log: 2013.07.29">Captain's Log: 2013.07.29 &raquo; </a> 
+                <a href="/2013/07/30/captains-log.html" title="Older Post: 
+Captain's Log: 2013.07.30">Captain's Log: 2013.07.30 &raquo; </a> 
          
         </div> 
         <div class="clear">&nbsp;</div> 
@@ -151,7 +146,7 @@ Captain's Log: 2013.07.29">Captain's Log: 2013.07.29 &raquo; </a>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = 'dysania'; // required: replace example with your forum shortname
-        var disqus_identifier = "/2013/07/30/captains-log.html";
+        var disqus_identifier = "/2013/07/31/captains-log.html";
 
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function() {
