@@ -6,9 +6,66 @@
     <atom:link href="http://dysania.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog for Rails Girls Summer of Code</description>
     <language>en-us</language>
-    <pubDate>Wed, 31 Jul 2013 22:04:26 -0700</pubDate>
-    <lastBuildDate>Wed, 31 Jul 2013 22:04:26 -0700</lastBuildDate>
+    <pubDate>Sun, 04 Aug 2013 04:20:19 -0700</pubDate>
+    <lastBuildDate>Sun, 04 Aug 2013 04:20:19 -0700</lastBuildDate>
 
+    
+    <item>
+      <title>Captain's Log: 2013.08.01</title>
+      <link>http://dysania.github.io/blog/2013/08/01/captains-log.html</link>
+      <pubDate>Thu, 01 Aug 2013 23:00:00 -0700</pubDate>
+      <author>Team Dysania</author>
+      <guid>http://dysania.github.io/blog/2013/08/01/captains-log</guid>
+      <description>&lt;h1&gt;Captain&#39;s Log: 2013.08.01&lt;/h1&gt;
+
+&lt;blockquote&gt;&lt;ul&gt;
+&lt;li&gt;Skipped Ruby study group for this week, but will attend next week&#39;s &lt;a href=&quot;http://www.meetup.com/laruby/events/129200762/&quot;&gt;LA Ruby/Rails August meetup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Created fixtures for all the rest of the oneboxes
+
+&lt;ul&gt;
+&lt;li&gt;Took up most of our session since oneboxer currently supports &lt;a href=&quot;https://github.com/dysania/discourse-oneboxer/tree/master/lib/discourse/oneboxer&quot;&gt;30+ sites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Certain sites (i.e. Hulu, Google Play) kept making &lt;code&gt;curl&lt;/code&gt; hang for some reason&lt;/li&gt;
+&lt;li&gt;Now we&#39;ll focus on creating specs specific to each onebox&lt;/li&gt;
+&lt;li&gt;Started to clean up fixtures but still need to finish&lt;/li&gt;
+&lt;li&gt;According to &lt;a href=&quot;https://github.com/dysania/discourse-oneboxer/blob/master/lib/discourse/oneboxer/whitelist.rb&quot;&gt;&lt;code&gt;whitelist.rb&lt;/code&gt;&lt;/a&gt; if a site supports &lt;a href=&quot;http://ogp.me/&quot;&gt;OpenGraph&lt;/a&gt; then it is already supported by oneboxer -- will have to keep that in mind when making tests&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Captain Kurt&#39;s challenge: if we make the 1st failing test from yesterday (out of 2) pass, he&#39;ll get us pizza during the next session
+
+&lt;ul&gt;
+&lt;li&gt;Used Nokogiri&#39;s &lt;a href=&quot;http://nokogiri.org/Nokogiri/XML/NodeSet.html#method-i-inner_text&quot;&gt;&lt;code&gt;inner_text()&lt;/code&gt;&lt;/a&gt; method to get just text of extracted data, without HTML tags --&gt; CHALLENGE COMPLETED&lt;/li&gt;
+&lt;li&gt;Also made 2nd test pass technically...by commenting it out for now (bad test that we&#39;ll need to rewrite)&lt;/li&gt;
+&lt;li&gt;Monday will be Pizza Day! Or hopefully perhaps something healthier&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;First tiny code review from mentor &lt;a href=&quot;https://twitter.com/evil_trout&quot;&gt;Robin&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Mostly positive, asked for reasoning behind using &lt;a href=&quot;https://github.com/dysania/discourse-oneboxer/commit/45180d20d6dfb7be6f96b0e89707e66094fe7536&quot;&gt;&lt;code&gt;require_relative&lt;/code&gt;&lt;/a&gt; and &lt;a href=&quot;https://github.com/dysania/discourse-oneboxer/commit/deeb3df0b797665a99122f44650086bcb593cd4b&quot;&gt;&lt;code&gt;add_onebox&lt;/code&gt;&lt;/a&gt; manually for each onebox instead of just including the whole onebox directory&lt;/li&gt;
+&lt;li&gt;We replied that we figured it would be easier to understand and would reduce security risk&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Planning on registering discourse-oneboxer gem to &lt;a href=&quot;http://rubygems.org&quot;&gt;RubyGems.org&lt;/a&gt; on Monday
+
+&lt;ul&gt;
+&lt;li&gt;Captain Kurt joked that he would register it himself tomorrow without us (we don&#39;t meet on Fridays)&lt;/li&gt;
+&lt;li&gt;We were not amused
+&lt;img src=&quot;http://www.wall321.com/thumbnails/detail/20121107/usa%20freckles%20gymnast%20olympics%202012%20mckayla%20maroney%20not%20amused%20unimpressed%201920x1080%20wallpaper_www.wall321.com_1.jpg&quot; width=&quot;80%&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Worked on RGSoC introduction blog post
+
+&lt;ul&gt;
+&lt;li&gt;Forked &lt;a href=&quot;https://github.com/dysania/summer-of-code&quot;&gt;summer-of-code&lt;/a&gt; repo, created new branch&lt;/li&gt;
+&lt;li&gt;Converted approved rough draft to Markdown&lt;/li&gt;
+&lt;li&gt;Will submit pull request by Monday&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Captain Kurt suggested creating Ruby wrapper in future for &lt;a href=&quot;https://github.com/wilkie/apsis&quot;&gt;Apsis&lt;/a&gt; game engine by &lt;a href=&quot;https://twitter.com/wilkieii&quot;&gt;@wilkieii&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
     
     <item>
       <title>Captain's Log: 2013.07.31</title>
@@ -355,22 +412,6 @@ Vagrant assumes that this means the &lt;span class=&quot;nb&quot;&gt;command &lt
 
 
 
-</description>
-    </item>
-    
-    <item>
-      <title>I am an Installing Machine</title>
-      <link>http://dysania.github.io/blog/2013/07/01/i-am-an-installing-machine.html</link>
-      <pubDate>Mon, 01 Jul 2013 23:17:00 -0700</pubDate>
-      <author>Team Dysania</author>
-      <guid>http://dysania.github.io/blog/2013/07/01/i-am-an-installing-machine</guid>
-      <description>&lt;h1&gt;I am an Installing Machine&lt;/h1&gt;
-
-&lt;p&gt;Welp, my dream of a &lt;a href=&quot;/2013/06/30/settin-up.html&quot;&gt;VM within a VM&lt;/a&gt; will alas remain unfulfilled. I really couldn&#39;t get Vagrant to boot the Discourse VM without hanging.&lt;/p&gt;
-
-&lt;p&gt;I&#39;ve been hesitant about installing Ubuntu on my laptop, but I finally gave in and decided to &lt;a href=&quot;http://www.linuxbsdos.com/2012/05/17/how-to-dual-boot-ubuntu-12-04-and-windows-7/&quot;&gt;dual-boot Ubuntu and Windows&lt;/a&gt; at Kurtis&#39;s suggestion. Learned a bit about HD partitioning and boot loading. Bye, Linux VM and &lt;a href=&quot;http://www.linuxliveusb.com/&quot;&gt;LinuxLive USB&lt;/a&gt;!&lt;/p&gt;
-
-&lt;p&gt;I&#39;ve set up my Linux dev environment yet again (probably 10th time in the last month? here&#39;s to repetition), and will try to get Discourse running by tomorrow.&lt;/p&gt;
 </description>
     </item>
     
