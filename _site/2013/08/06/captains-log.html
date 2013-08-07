@@ -9,7 +9,7 @@
         <meta name="author" content="Team Dysania" />
         <meta name="viewport" content="width=device-width">
 
-        <title>Captain's Log: 2013.08.05</title>
+        <title>Captain's Log: 2013.08.06</title>
         <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/screen.css">
@@ -82,71 +82,63 @@
 
 <section class="date">
 
-  <p><span><a href="/2013/08/05/captains-log.html">August 05, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
+  <p><span><a href="/2013/08/06/captains-log.html">August 06, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
 
 </section>
 
 <article>
   
   <section class="content">
-    <h1>Captain's Log: 2013.08.05</h1>
+    <h1>Captain's Log: 2013.08.06</h1>
 
 <blockquote><ul>
-<li>Continued editing Preview, Example, and Amazon specs on <code>preview-refactor</code> branch
+<li>Major gem changes/cleanup in prep for 1.0 release
 
 <ul>
-<li>edited Preview spec to use Example fixture and <a href="http://rubygems.org/gems/fakeweb">fakeweb</a>
-
-<ul>
-<li>we want the spec to not request a website, and to use our fixture</li>
-<li>we need to ask why is this important? Don't we want tests to fail once an actual website changes?</li>
+<li>Renamed gem from <code>discourse-oneboxer</code> to <code>onebox</code></li>
+<li>Renamespaced <code>Discourse::Oneboxer</code> to <code>Onebox</code></li>
+<li>Deleted all the files we didn't originally write</li>
 </ul>
 </li>
-<li>created <code>response()</code> function in html spec helper for less repetitive code in specs</li>
-<li>used <code>let()</code> to do lazy assignments
+<li>Note to selves
 
 <ul>
-<li>ex: <code>let(:link) { "http://example.com" }</code></li>
+<li>Don't use <code>git rm .</code> unless you want to delete your entire directory</li>
+<li>Make sure you're in the correct Git branch ALWAYS</li>
+<li>Refresh your Sublime project once in a while...your files might not be missing after all. Don't panic!</li>
+<li>Captain Kurt - where's our pizza??</li>
 </ul>
 </li>
-<li>finished creating and passing all tests for Amazon
+<li><a href="https://github.com/dysania/onebox/pull/28">First pull request from an outside contributor!</a> Shout out to <a href="https://github.com/markijbema">Mark IJbema</a></li>
+<li>It seems we have a bit of an audience
+<a href="https://github.com/dysania/onebox"><img src="/images/onebox_audience.png" width="100%" style="margin:20px 0 20px 0;"/></a></li>
+<li>HOMEWORK:
 
 <ul>
-<li>First spec finished with least amount of input from Captain Kurt yet!</li>
-<li>JZ: write tests</li>
-<li>Vyki: make tests pass</li>
-<li>learned more about Nokogiri, used <code>.first["src"]</code> to get src attribute for product image</li>
+<li>Update remotes to point to the right repository</li>
+<li>Update <a href="https://github.com/dysania/onebox/blob/master/README.md">dysania/onebox README</a>
+
+<ul>
+<li>extra credit: provide example using onebox</li>
 </ul>
 </li>
+<li>For all services (Coveralls, Travis, Code Climate) - update to point to right repository</li>
+<li>Update <a href="https://github.com/dysania/discourse"><code>dysania/discourse</code></a> from upstream</li>
+<li>Clean up branches
+
+<ul>
+<li><code>git branch --merged</code>: all branches merged w/ current branch</li>
+<li><code>git branch -D [branch-name]</code>: delete local branch</li>
+</ul>
+</li>
+<li>If there's time, do as many oneboxes as you can</li>
+<li>Read about semantic versioning - <a href="http://semver.org">semver.org</a></li>
+<li>Learn about bike shedding in programming context</li>
+<li>Introduce ourselves on meta.discourse</li>
 </ul>
 </li>
 </ul>
 </blockquote>
-
-<ul>
-<li>First <a href="https://github.com/dysania/discourse-oneboxer/pull/26">pull request</a> from <a href="https://twitter.com/evil_trout">Robin</a>
-
-<ul>
-<li>tiny change to keep us up-to-date with discourse/discourse</li>
-</ul>
-</li>
-<li>oneboxer changes to discourse/discourse <a href="https://github.com/discourse/discourse/pull/1288">being redirected our way</a></li>
-<li>New recommended resources
-
-<ul>
-<li><a href="https://www.bitcast.io/">Bitcast.io</a> - Captain Kurt suggested we use it for learning by creating our own screencasts on top of watching existing screencasts</li>
-<li><a href="http://www.manning.com/bigg2/">Rails 4 In Action</a> - Book, check out the early access edition</li>
-</ul>
-</li>
-<li>HOMEWORK: Listen to more RubyRogues, checkout <a href="http://www.rubytapas.com/">Ruby Tapas</a></li>
-</ul>
-
-
-<blockquote class="twitter-tweet"><p>Meet <a href="https://twitter.com/jzeta">@jzeta</a> &amp; <a href="https://twitter.com/toastergrrl">@toastergrrl</a> from Team Dysania! They are developers by night AND can make balloon arches:<a href="http://t.co/6cdokfAiN7">http://t.co/6cdokfAiN7</a> <a href="https://twitter.com/search?q=%23teamoftheweek&amp;src=hash">#teamoftheweek</a></p>&mdash; Rails Girls SoC (@RailsGirlsSoC) <a href="https://twitter.com/RailsGirlsSoC/statuses/364315597707808768">August 5, 2013</a></blockquote>
-
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 
   </section>
 </article>
@@ -156,18 +148,14 @@
 <div id="page-navigation"> 
         <div class="clear">&nbsp;</div> 
         <div class="left">
-         
-                <p>newer:</p>
-                <a href="/2013/08/06/captains-log.html" title="Newer Post: 
-Captain's Log: 2013.08.06"> &laquo; Captain's Log: 2013.08.06</a> 
           
         </div> 
 
         <div class="right"> 
         
                 <p>older:</p>
-                <a href="/2013/08/01/captains-log.html" title="Older Post: 
-Captain's Log: 2013.08.01">Captain's Log: 2013.08.01 &raquo; </a> 
+                <a href="/2013/08/05/captains-log.html" title="Older Post: 
+Captain's Log: 2013.08.05">Captain's Log: 2013.08.05 &raquo; </a> 
          
         </div> 
         <div class="clear">&nbsp;</div> 
@@ -179,7 +167,7 @@ Captain's Log: 2013.08.01">Captain's Log: 2013.08.01 &raquo; </a>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = 'dysania'; // required: replace example with your forum shortname
-        var disqus_identifier = "/2013/08/05/captains-log.html";
+        var disqus_identifier = "/2013/08/06/captains-log.html";
 
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function() {
