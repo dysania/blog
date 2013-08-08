@@ -6,9 +6,54 @@
     <atom:link href="http://dysania.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog for Rails Girls Summer of Code</description>
     <language>en-us</language>
-    <pubDate>Wed, 07 Aug 2013 17:30:05 -0700</pubDate>
-    <lastBuildDate>Wed, 07 Aug 2013 17:30:05 -0700</lastBuildDate>
+    <pubDate>Wed, 07 Aug 2013 23:27:24 -0700</pubDate>
+    <lastBuildDate>Wed, 07 Aug 2013 23:27:24 -0700</lastBuildDate>
 
+    
+    <item>
+      <title>Captain's Log: 2013.08.07</title>
+      <link>http://dysania.github.io/blog/2013/08/07/captains-log.html</link>
+      <pubDate>Wed, 07 Aug 2013 22:52:00 -0700</pubDate>
+      <author>Team Dysania</author>
+      <guid>http://dysania.github.io/blog/2013/08/07/captains-log</guid>
+      <description>&lt;h1&gt;Captain&#39;s Log: 2013.08.07&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://media.catmoji.com/cache/post/kbh/grumpy-cat_thumb.jpg&quot; style=&quot;margin:auto;display:block;&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;ul&gt;
+&lt;li&gt;Started creating oneboxes solo based on Amazon and Example
+
+&lt;ul&gt;
+&lt;li&gt;Vyki made Wikipedia onebox and succeeded&lt;/li&gt;
+&lt;li&gt;JZ tried to make Flickr onebox but failed
+
+&lt;ul&gt;
+&lt;li&gt;Flickr images are generated w/ Javascript, so we can&#39;t use our usual way of parsing an HTML response&lt;/li&gt;
+&lt;li&gt;Discourse uses &lt;code&gt;parse_open_graph&lt;/code&gt; function to access Flickr content&lt;/li&gt;
+&lt;li&gt;Realized we lacked functionality to onebox sites that support &lt;a href=&quot;http://ogp.me/&quot;&gt;Open Graph Protocol&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Note to self: pick easier onebox to do first...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;We need to put off gem release until we can support Open Graph Protocol sites :(&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://bikeshed.com/&quot;&gt;Painted the bikeshed&lt;/a&gt; (try refreshing the page repeatedly...)&lt;/li&gt;
+&lt;li&gt;Attending &lt;a href=&quot;http://www.meetup.com/laruby/events/129200762/&quot;&gt;LA Ruby/Rails August meetup&lt;/a&gt; tomorrow&lt;/li&gt;
+&lt;li&gt;Got a text from &lt;a href=&quot;https://twitter.com/jendiamond&quot;&gt;Jen&lt;/a&gt; - we&#39;ll be presenting our onebox gem at LA Women&#39;s Ruby/Rails Group August Monthly Bash&lt;/li&gt;
+&lt;li&gt;HOMEWORK:
+
+&lt;ul&gt;
+&lt;li&gt;Look at what &lt;code&gt;parse_open_graph&lt;/code&gt; function does&lt;/li&gt;
+&lt;li&gt;Self-assigned: listen to latest &lt;a href=&quot;http://rubyrogues.com/117-rr-discourse-part-2-with-sam-saffron-and-robin-ward/&quot;&gt;Ruby Rogues #117&lt;/a&gt; featuring mentors &lt;a href=&quot;https://twitter.com/samsaffron&quot;&gt;Sam Saffron&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/evil_trout&quot;&gt;Robin Ward&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Start creating oneboxes for sites that don&#39;t support OGP&lt;/li&gt;
+&lt;li&gt;Remove &lt;code&gt;html body&lt;/code&gt; from Nokogiri CSS selectors in oneboxes - it&#39;s redundant. Use classes and ids instead of tags (if possible)&lt;/li&gt;
+&lt;li&gt;At some point, need to create a guide for making oneboxes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
     
     <item>
       <title>Captain's Log: 2013.08.06</title>
@@ -431,33 +476,6 @@
 &lt;li&gt;HOMEWORK: fix all tests&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>And So It Begins</title>
-      <link>http://dysania.github.io/blog/2013/07/08/and-so-it-begins.html</link>
-      <pubDate>Mon, 08 Jul 2013 00:59:00 -0700</pubDate>
-      <author>Team Dysania</author>
-      <guid>http://dysania.github.io/blog/2013/07/08/and-so-it-begins</guid>
-      <description>&lt;h1&gt;And So It Begins&lt;/h1&gt;
-
-&lt;p&gt;Tonight was the first night all three of us (&lt;a href=&quot;http://twitter.com/toastergrrl&quot;&gt;Vyki&lt;/a&gt;, &lt;a href=&quot;http://twitter.com/jzeta&quot;&gt;JZ&lt;/a&gt;, and &lt;a href=&quot;https://twitter.com/krainboltgreene&quot;&gt;Kurtis&lt;/a&gt;) got to work in the same room together!  Though I&#39;m still getting all of my &lt;a href=&quot;http://railsgirlssummerofcode.org/tools/&quot;&gt;tools&lt;/a&gt; installed and set up, and despite my kernel headers problem with VirtualBox, we dove right in.&lt;/p&gt;
-
-&lt;p&gt;We started off with lectures on &lt;a href=&quot;http://en.wikipedia.org/wiki/Software_versioning#Semantic_versioning&quot;&gt;semantic versioning&lt;/a&gt; and best practices for Ruby gems. We then officially forked &lt;a href=&quot;https://github.com/discourse/discourse&quot;&gt;Discourse&lt;/a&gt; to our &lt;a href=&quot;https://github.com/dysania&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;In 3 short hours we managed to:&lt;/p&gt;
-
-&lt;blockquote&gt;&lt;ul&gt;
-&lt;li&gt;learn about &lt;a href=&quot;http://meta.discourse.org/t/what-is-a-onebox/4546&quot;&gt;oneboxing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;create a &lt;a href=&quot;https://github.com/dysania/discourse-oneboxer&quot;&gt;discourse-oneboxer&lt;/a&gt; repo for the gem we&#39;re building&lt;/li&gt;
-&lt;li&gt;generate a new gem using Bundler&lt;/li&gt;
-&lt;li&gt;start pulling in oneboxer files from the Discourse lib to discourse-oneboxer&lt;/li&gt;
-&lt;li&gt;start properly namespacing the files in discourse-oneboxer&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Now off to finish our homework! Mine is to finish the namespacing in discourse-oneboxer, and JZ&#39;s is to finish transfering all the oneboxer files to discourse-oneboxer.&lt;/p&gt;
 </description>
     </item>
     

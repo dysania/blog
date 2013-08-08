@@ -82,6 +82,48 @@
 
   
   <section class="date">
+    <p><span><a href="/2013/07/29/captains-log.html">July 29, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
+  </section>
+  <p><h1>Captain's Log: 2013.07.29</h1>
+
+<blockquote><ul>
+<li>Updated mocha to mocha/api</li>
+<li>Started refactoring <code>preview</code> method as <code>Preview</code> class
+
+<ul>
+<li>should take in url</li>
+<li>should output html</li>
+<li>should extract pieces of page as data</li>
+<li>should display with template</li>
+</ul>
+</li>
+<li>Used Test-Driven Development (mostly)
+
+<ul>
+<li>JZ: created tests that failed</li>
+<li>Vyki: making tests pass</li>
+<li>Captain Kurt: refactoring tests</li>
+</ul>
+</li>
+<li>Started creating Example class and spec
+
+<ul>
+<li>a model for how to build onebox modules</li>
+<li>will use it to implement existing oneboxes</li>
+</ul>
+</li>
+<li>Learned to use Nokogiri and Mustache</li>
+<li>Lecture on instance classes, Ruby best practices, and OOP</li>
+<li>Eagerly discussed the forthcoming <a href="http://www.hipsterceo.com/">Hipster Tech Startup CEO simulator game</a></li>
+<li>HOMEWORK: Listen to latest <a href="http://rubyrogues.com/">Ruby Rogues</a> podcast</li>
+</ul>
+</blockquote>
+</p>
+  <p><a href="/2013/07/29/captains-log.html#disqus_thread" id="comments-link">link</a></p>
+  <br /><br />
+
+  
+  <section class="date">
     <p><span><a href="/2013/07/25/captains-log.html">July 25, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
   </section>
   <p><h1>Captain's Log: 2013.07.25</h1>
@@ -141,60 +183,6 @@
 </blockquote>
 </p>
   <p><a href="/2013/07/24/captains-log.html#disqus_thread" id="comments-link">link</a></p>
-  <br /><br />
-
-  
-  <section class="date">
-    <p><span><a href="/2013/07/16/captains-log.html">July 16, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
-  </section>
-  <p><h1>Captain's Log: 2013.07.16</h1>
-
-<blockquote><ul>
-<li>Captain Kurt fixed JZ's expired version of Sublime Text 2</li>
-<li>Vyki is still in the process of recreating her dev environment: installed Ruby, RVM, Sublime</li>
-<li>Captain Kurt switched from Rails JSON to <a href="https://github.com/intridea/multi_json">MultiJSON</a> for JSON parsing</li>
-<li>Used RSpec to run discourse-oneboxer and fix specs on our own
-
-<ul>
-<li><code>bundle exec rake</code>: run all tests</li>
-<li><code>rspec &lt;file_with_error.rb:line&gt;</code>: run specific test</li>
-</ul>
-</li>
-<li>Messed up git branches
-
-<ul>
-<li>supposed to create new branches from master branch</li>
-<li>instead, created nested mess</li>
-<li>solution: git merged all nested branches into one</li>
-</ul>
-</li>
-<li>Fixed 9 tests, 23 failures to go
-
-<ul>
-<li>replaced Rails methods
-
-<ul>
-<li>replaced <code>squish()</code> with <code>gsub()</code></li>
-<li>changed <code>m.present?</code> to <code>m.to_a.any?</code> because it's more precise</li>
-<li>replaced <code>blank?</code> with <code>empty?</code></li>
-<li>changed instances of <code>present?</code> to use <code>nil?</code> instead</li>
-</ul>
-</li>
-<li>removed favicons from expected results</li>
-</ul>
-</li>
-<li>Conference/meetup talk
-
-<ul>
-<li>Need to ask <a href="https://twitter.com/jendiamond">Jen</a> if we can give quick talk at tomorrow's <a href="http://www.meetup.com/Los-Angeles-Womens-Ruby-on-Rails-Group/events/124552602/">Eastside/Westside Monthly Bash</a> at <a href="http://oversee.net/">Oversee.net</a> (all 3 of us will be in attendance)</li>
-<li>Might be interested in presenting at <a href="http://gogaruco.com/">GoGaRuCo 2013</a> in September</li>
-</ul>
-</li>
-<li>HOMEWORK: fix all tests</li>
-</ul>
-</blockquote>
-</p>
-  <p><a href="/2013/07/16/captains-log.html#disqus_thread" id="comments-link">link</a></p>
   <br /><br />
 
 
