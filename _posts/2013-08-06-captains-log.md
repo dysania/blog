@@ -33,6 +33,7 @@ author: dysania
 	+ Clean up branches
 		+ `git branch --merged`: all branches merged w/ current branch
 		+ `git branch -D [branch-name]`: delete local branch
+		+ `git remote prune origin`: remove remotely deleted branches (i.e. deleted on GitHub)
 	+ If there's time, do as many oneboxes as you can
 	+ Read about semantic versioning - [semver.org](http://semver.org)
 	+ Learn about bike shedding in programming context

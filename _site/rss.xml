@@ -6,8 +6,8 @@
     <atom:link href="http://dysania.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog for Rails Girls Summer of Code</description>
     <language>en-us</language>
-    <pubDate>Wed, 07 Aug 2013 08:39:25 -0700</pubDate>
-    <lastBuildDate>Wed, 07 Aug 2013 08:39:25 -0700</lastBuildDate>
+    <pubDate>Wed, 07 Aug 2013 17:30:05 -0700</pubDate>
+    <lastBuildDate>Wed, 07 Aug 2013 17:30:05 -0700</lastBuildDate>
 
     
     <item>
@@ -56,6 +56,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;git branch --merged&lt;/code&gt;: all branches merged w/ current branch&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;git branch -D [branch-name]&lt;/code&gt;: delete local branch&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git remote prune origin&lt;/code&gt;: remove remotely deleted branches (i.e. deleted on GitHub)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;If there&#39;s time, do as many oneboxes as you can&lt;/li&gt;
