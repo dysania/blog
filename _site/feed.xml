@@ -6,9 +6,69 @@
     <atom:link href="http://dysania.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog for Rails Girls Summer of Code</description>
     <language>en-us</language>
-    <pubDate>Wed, 07 Aug 2013 23:27:24 -0700</pubDate>
-    <lastBuildDate>Wed, 07 Aug 2013 23:27:24 -0700</lastBuildDate>
+    <pubDate>Tue, 13 Aug 2013 01:01:21 -0700</pubDate>
+    <lastBuildDate>Tue, 13 Aug 2013 01:01:21 -0700</lastBuildDate>
 
+    
+    <item>
+      <title>Captain's Log: 2013.08.12</title>
+      <link>http://dysania.github.io/blog/2013/08/12/captains-log.html</link>
+      <pubDate>Mon, 12 Aug 2013 23:52:00 -0700</pubDate>
+      <author>Team Dysania</author>
+      <guid>http://dysania.github.io/blog/2013/08/12/captains-log</guid>
+      <description>&lt;h1&gt;Captain&#39;s Log: 2013.08.12&lt;/h1&gt;
+
+&lt;blockquote&gt;&lt;ul&gt;
+&lt;li&gt;Vyki merged another &lt;a href=&quot;https://github.com/dysania/onebox/pull/35&quot;&gt;pull request&lt;/a&gt; from &lt;a href=&quot;https://github.com/markijbema&quot;&gt;markijbema&lt;/a&gt; requiring &lt;a href=&quot;https://github.com/bbatsov/rubocop&quot;&gt;Rubocop&lt;/a&gt; gem
+
+&lt;ul&gt;
+&lt;li&gt;For consistent code style, according to &lt;a href=&quot;https://github.com/bbatsov/ruby-style-guide&quot;&gt;Ruby Style Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Default cop settings&lt;/li&gt;
+&lt;li&gt;Spacing corrections&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://twitter.com/samsaffron&quot;&gt;Sam&lt;/a&gt; cc&#39;d us on new thread on &lt;a href=&quot;http://meta.discourse.org/&quot;&gt;Discourse Meta&lt;/a&gt;: &lt;a href=&quot;http://meta.discourse.org/t/sometimes-onebox-hangs/9010&quot;&gt;&quot;Sometimes onebox hangs&quot;&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;We&#39;ll need to address HTTP request issues (limits/timeouts) in our gem&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;LA Ruby/Rails August meetup recap
+
+&lt;ul&gt;
+&lt;li&gt;We voted &lt;a href=&quot;https://twitter.com/j3&quot;&gt;Jeff Casimir&lt;/a&gt; of &lt;a href=&quot;http://www.jumpstartlab.com/&quot;&gt;JumpstartLab&lt;/a&gt; as MVP presenter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Discussed possible topics for lightning talk at LA Women&#39;s Ruby/Rails Group August Monthly Bash next Thursday
+
+&lt;ul&gt;
+&lt;li&gt;Present onebox gem&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://semver.org/&quot;&gt;Semantic versioning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/bbatsov/rubocop&quot;&gt;Rubocop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ruby&#39;s unique &lt;a href=&quot;http://robots.thoughtbot.com/post/2508037841/rubys-pessimistic-operator&quot;&gt;pessimistic operator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;JZ kicked herself for forgetting her laptop charger at home&lt;/li&gt;
+&lt;li&gt;Captain Kurt was sleep-deprived so we ended our session early&lt;/li&gt;
+&lt;li&gt;HOMEWORK:
+
+&lt;ul&gt;
+&lt;li&gt;Create 4 new oneboxes (2 each) based on Amazon and Example&lt;/li&gt;
+&lt;li&gt;Create new object that matches given URL to correct onebox class
+
+&lt;ul&gt;
+&lt;li&gt;This functionality is currently in &lt;code&gt;lib/onebox/preview&lt;/code&gt; but should be separate since it&#39;ll get huge&lt;/li&gt;
+&lt;li&gt;Pair-program on this&lt;/li&gt;
+&lt;li&gt;TDD - commit spec first, then class&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;From last week - look at what &lt;code&gt;parse_open_graph&lt;/code&gt; does&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
     
     <item>
       <title>Captain's Log: 2013.08.07</title>
@@ -419,61 +479,6 @@
 &lt;li&gt;Captain Kurt added travis.yml for Travis-CI&lt;/li&gt;
 &lt;li&gt;Travis build doesn&#39;t fail! (but the spam emails continue...)&lt;/li&gt;
 &lt;li&gt;HOMEWORK: Work on RGSoC blog post for Monday, due Friday!&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Captain's Log: 2013.07.16</title>
-      <link>http://dysania.github.io/blog/2013/07/16/captains-log.html</link>
-      <pubDate>Tue, 16 Jul 2013 22:33:00 -0700</pubDate>
-      <author>Team Dysania</author>
-      <guid>http://dysania.github.io/blog/2013/07/16/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.07.16&lt;/h1&gt;
-
-&lt;blockquote&gt;&lt;ul&gt;
-&lt;li&gt;Captain Kurt fixed JZ&#39;s expired version of Sublime Text 2&lt;/li&gt;
-&lt;li&gt;Vyki is still in the process of recreating her dev environment: installed Ruby, RVM, Sublime&lt;/li&gt;
-&lt;li&gt;Captain Kurt switched from Rails JSON to &lt;a href=&quot;https://github.com/intridea/multi_json&quot;&gt;MultiJSON&lt;/a&gt; for JSON parsing&lt;/li&gt;
-&lt;li&gt;Used RSpec to run discourse-oneboxer and fix specs on our own
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;bundle exec rake&lt;/code&gt;: run all tests&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;rspec &amp;lt;file_with_error.rb:line&amp;gt;&lt;/code&gt;: run specific test&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Messed up git branches
-
-&lt;ul&gt;
-&lt;li&gt;supposed to create new branches from master branch&lt;/li&gt;
-&lt;li&gt;instead, created nested mess&lt;/li&gt;
-&lt;li&gt;solution: git merged all nested branches into one&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Fixed 9 tests, 23 failures to go
-
-&lt;ul&gt;
-&lt;li&gt;replaced Rails methods
-
-&lt;ul&gt;
-&lt;li&gt;replaced &lt;code&gt;squish()&lt;/code&gt; with &lt;code&gt;gsub()&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;changed &lt;code&gt;m.present?&lt;/code&gt; to &lt;code&gt;m.to_a.any?&lt;/code&gt; because it&#39;s more precise&lt;/li&gt;
-&lt;li&gt;replaced &lt;code&gt;blank?&lt;/code&gt; with &lt;code&gt;empty?&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;changed instances of &lt;code&gt;present?&lt;/code&gt; to use &lt;code&gt;nil?&lt;/code&gt; instead&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;removed favicons from expected results&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Conference/meetup talk
-
-&lt;ul&gt;
-&lt;li&gt;Need to ask &lt;a href=&quot;https://twitter.com/jendiamond&quot;&gt;Jen&lt;/a&gt; if we can give quick talk at tomorrow&#39;s &lt;a href=&quot;http://www.meetup.com/Los-Angeles-Womens-Ruby-on-Rails-Group/events/124552602/&quot;&gt;Eastside/Westside Monthly Bash&lt;/a&gt; at &lt;a href=&quot;http://oversee.net/&quot;&gt;Oversee.net&lt;/a&gt; (all 3 of us will be in attendance)&lt;/li&gt;
-&lt;li&gt;Might be interested in presenting at &lt;a href=&quot;http://gogaruco.com/&quot;&gt;GoGaRuCo 2013&lt;/a&gt; in September&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;HOMEWORK: fix all tests&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 </description>
