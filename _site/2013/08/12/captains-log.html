@@ -9,7 +9,7 @@
         <meta name="author" content="Team Dysania" />
         <meta name="viewport" content="width=device-width">
 
-        <title>Dysania</title>
+        <title>Captain's Log: 2013.08.12</title>
         <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/screen.css">
@@ -72,191 +72,130 @@
             <!-- 
             <div class="image-wrapper">
                 <img src="/images/space.gif">
-                <div class="image" style="background-image: url(/images/headers/desk.jpg);"></div>
+                <div class="image" style="background-image: url(/images/headers/jesus_ami.jpg);"></div>
             </div>
              -->
         </header>
         <div class="wrapper clearfix">
             <div class="main">
-                <!-- This loops through the paginated posts -->
+                
 
+<section class="date">
+
+  <p><span><a href="/2013/08/12/captains-log.html">August 12, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
+
+</section>
+
+<article>
   
-  <section class="date">
-    <p><span><a href="/2013/07/30/captains-log.html">July 30, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
-  </section>
-  <p><h1>Captain's Log: 2013.07.30</h1>
+  <section class="content">
+    <h1>Captain's Log: 2013.08.12</h1>
 
 <blockquote><ul>
-<li>Quick chat with <a href="http://www.twitter.com/evil_trout">Robin</a> of Discourse in google hangouts (Sam was sleeping)
+<li>Vyki merged another <a href="https://github.com/dysania/onebox/pull/35">pull request</a> from <a href="https://github.com/markijbema">markijbema</a> requiring <a href="https://github.com/bbatsov/rubocop">Rubocop</a> gem
 
 <ul>
-<li>discussed progress so far</li>
-<li>talked about maybe releasing 1.0 version of gem soon</li>
-<li>talked about GoGaRuCo and how Discourse maintainers are attending</li>
-<li>Robin and Sam will be guests on an upcoming Ruby Rogues podcast episode</li>
-<li>LA Ruby/Rails community, Portland, SF</li>
-<li>Robin will be reviewing our GitHub, making comments, and reporting back to rest of team</li>
-<li>still need to introduce ourselves on Discourse meta</li>
+<li>For consistent code style, according to <a href="https://github.com/bbatsov/ruby-style-guide">Ruby Style Guide</a></li>
+<li>Default cop settings</li>
+<li>Spacing corrections</li>
 </ul>
 </li>
-<li>Worked on <code>Preview</code> and <code>Example</code> classes</li>
-<li>TDD again, swapped roles:
+<li><a href="https://twitter.com/samsaffron">Sam</a> cc'd us on new thread on <a href="http://meta.discourse.org/">Discourse Meta</a>: <a href="http://meta.discourse.org/t/sometimes-onebox-hangs/9010">"Sometimes onebox hangs"</a>
 
 <ul>
-<li>JZ: making tests pass</li>
-<li>Vyki: created tests that failed</li>
+<li>We'll need to address HTTP request issues (limits/timeouts) in our gem</li>
 </ul>
 </li>
-<li>Created <code>Amazon</code> class (which we might make inherit from <code>Example</code> later)</li>
-<li>Created Amazon handlebars template</li>
-<li>Learned about File.read and File.join</li>
-<li>Listened to Ruby Rogues podcast on the bus/train</li>
-<li>HOMEWORK: Sleep</li>
+<li>LA Ruby/Rails August meetup recap
+
+<ul>
+<li>We voted <a href="https://twitter.com/j3">Jeff Casimir</a> of <a href="http://www.jumpstartlab.com/">JumpstartLab</a> as MVP presenter</li>
+</ul>
+</li>
+<li>Discussed possible topics for lightning talk at LA Women's Ruby/Rails Group August Monthly Bash next Thursday
+
+<ul>
+<li>Present onebox gem</li>
+<li><a href="http://semver.org/">Semantic versioning</a></li>
+<li><a href="https://github.com/bbatsov/rubocop">Rubocop</a></li>
+<li>Ruby's unique <a href="http://robots.thoughtbot.com/post/2508037841/rubys-pessimistic-operator">pessimistic operator</a></li>
+</ul>
+</li>
+<li>JZ kicked herself for forgetting her laptop charger at home</li>
+<li>Captain Kurt was sleep-deprived so we ended our session early</li>
+<li>HOMEWORK:
+
+<ul>
+<li>Create 4 new oneboxes (2 each) based on Amazon and Example</li>
+<li>Create new object that matches given URL to correct onebox class
+
+<ul>
+<li>This functionality is currently in <code>lib/onebox/preview</code> but should be separate since it'll get huge</li>
+<li>Pair-program on this</li>
+<li>TDD - commit spec first, then class</li>
+</ul>
+</li>
+<li>From last week - look at what <code>parse_open_graph</code> does</li>
+</ul>
+</li>
 </ul>
 </blockquote>
-</p>
-  <p><a href="/2013/07/30/captains-log.html#disqus_thread" id="comments-link">link</a></p>
-  <br /><br />
 
-  
-  <section class="date">
-    <p><span><a href="/2013/07/29/captains-log.html">July 29, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
   </section>
-  <p><h1>Captain's Log: 2013.07.29</h1>
+</article>
 
-<blockquote><ul>
-<li>Updated mocha to mocha/api</li>
-<li>Started refactoring <code>preview</code> method as <code>Preview</code> class
+<!-- provides links on posts to previous/next posts -->
 
-<ul>
-<li>should take in url</li>
-<li>should output html</li>
-<li>should extract pieces of page as data</li>
-<li>should display with template</li>
-</ul>
-</li>
-<li>Used Test-Driven Development (mostly)
+<div id="page-navigation"> 
+        <div class="clear">&nbsp;</div> 
+        <div class="left">
+          
+        </div> 
 
-<ul>
-<li>JZ: created tests that failed</li>
-<li>Vyki: making tests pass</li>
-<li>Captain Kurt: refactoring tests</li>
-</ul>
-</li>
-<li>Started creating Example class and spec
+        <div class="right"> 
+        
+                <p>older:</p>
+                <a href="/2013/08/07/captains-log.html" title="Older Post: 
+Captain's Log: 2013.08.07">Captain's Log: 2013.08.07 &raquo; </a> 
+         
+        </div> 
+        <div class="clear">&nbsp;</div> 
+</div> 
 
-<ul>
-<li>a model for how to build onebox modules</li>
-<li>will use it to implement existing oneboxes</li>
-</ul>
-</li>
-<li>Learned to use Nokogiri and Mustache</li>
-<li>Lecture on instance classes, Ruby best practices, and OOP</li>
-<li>Eagerly discussed the forthcoming <a href="http://www.hipsterceo.com/">Hipster Tech Startup CEO simulator game</a></li>
-<li>HOMEWORK: Listen to latest <a href="http://rubyrogues.com/">Ruby Rogues</a> podcast</li>
-</ul>
-</blockquote>
-</p>
-  <p><a href="/2013/07/29/captains-log.html#disqus_thread" id="comments-link">link</a></p>
-  <br /><br />
-
+  <br />
   
-  <section class="date">
-    <p><span><a href="/2013/07/25/captains-log.html">July 25, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
-  </section>
-  <p><h1>Captain's Log: 2013.07.25</h1>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'dysania'; // required: replace example with your forum shortname
+        var disqus_identifier = "/2013/08/12/captains-log.html";
 
-<p><a href="/images/syrup.jpg"><img src="/images/syrup.jpg" width="100%" /></a></p>
-
-<blockquote><ul>
-<li>Worked at <a href="http://www.yelp.com/biz/syrup-desserts-los-angeles-2">Syrup Desserts</a> for <a href="http://www.meetup.com/Los-Angeles-Womens-Ruby-on-Rails-Group/events/130289862/">Los Angeles Eastside Ruby/Rails study group</a></li>
-<li>Crêpes on crêpes on crêpes (see photo above)</li>
-<li>Caught up with Jen of <a href="http://rgsocbundler.github.io/">Team Bundler</a></li>
-<li>Intro to Test-Driven Development
-
-<ul>
-<li>Captain Kurt showed us project he's working on for a client as an example</li>
-<li>Create specs first to figure out what you expect the results to be</li>
-<li>Run specs and write code as you go to make them pass</li>
-</ul>
-</li>
-<li>Fixed <a href="https://github.com/dysania/discourse-oneboxer/pull/6">discourse-oneboxer README</a>
-
-<ul>
-<li>Edited on GitHub based on Captain Kurt's comments</li>
-<li>Made commits to pull request</li>
-</ul>
-</li>
-<li>Learned about <a href="http://coveralls.io/">Coveralls</a> and <a href="https://codeclimate.com/">Code Climate</a>, added badges to discourse-oneboxer README</li>
-<li>Started writing RGSoC blog post</li>
-<li>HOMEWORK: Read up on object-oriented design and <a href="http://en.wikipedia.org/wiki/Alan_Kay">Alan Kay</a> by Monday, finish RGSoC blog post by tomorrow</li>
-</ul>
-</blockquote>
-</p>
-  <p><a href="/2013/07/25/captains-log.html#disqus_thread" id="comments-link">link</a></p>
-  <br /><br />
-
-
-
-<!-- Pagination links -->
-<div id="post-pagination" class="pagination">
-  
-    <p class="previous">
-      
-        <a href="/page2">&laquo;</a>
-      
-    </p>
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    <br /><br />
   
 
-  <ul class="pages">
-    <li class="page">
-      
-        
-          <a href="/">1</a>
-        
-      
-    </li>
-
+<!-- <div id="related">
+  <h2>Related Posts</h2>
+  <ul class="posts">
     
-      <li class="page">
-        
-          <a href="/page2">2</a>
-        
-      </li>
+      <li><span>27 Jun 2013</span> &raquo; <a href="/2013/06/27/hello-world.html">Hello, World</a></li>
     
-      <li class="page">
-        
-          <span class="current-page">3</span>
-        
-      </li>
+      <li><span>27 Jun 2013</span> &raquo; <a href="/2013/06/27/hello-mentors.html">Hello, Mentors</a></li>
     
-      <li class="page">
-        
-          <a href="/page4">4</a>
-        
-      </li>
-    
-      <li class="page">
-        
-          <a href="/page5">5</a>
-        
-      </li>
-    
-      <li class="page">
-        
-          <a href="/page6">6</a>
-        
-      </li>
+      <li><span>30 Jun 2013</span> &raquo; <a href="/2013/06/30/settin-up.html">Settin' Up</a></li>
     
   </ul>
+  <p><a href="archive.html">View all posts</a></p>
+</div> -->
 
-  
-    <p class="next">
-      <a href="/page4">&raquo;</a>
-    </p>
-  
-  <div class="clearfix"></div>&nbsp;
-</div>
                 <div class="author clearfix">
                     <div class="left">
                         <a class="clip" href="https://github.com/vykster"><img src="/images/vykster.jpg" width="75" height="75" alt="Vyki Englert"></a>
