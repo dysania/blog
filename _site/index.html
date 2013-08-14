@@ -82,6 +82,98 @@
 
   
   <section class="date">
+    <p><span><a href="/2013/08/13/captains-log.html">August 13, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
+  </section>
+  <p><h1>Captain's Log: 2013.08.13</h1>
+
+<blockquote><ul>
+<li>created <code>Matcher</code> class
+
+<ul>
+<li>TDD</li>
+<li><code>Engine</code> module to be included by oneboxes</li>
+<li>refactor <code>preview</code>, move url matching functionality to <code>Matcher.oneboxed</code></li>
+</ul>
+</li>
+<li>JZ added new oneboxes
+
+<ul>
+<li><a href="http://qik.com/">Qik</a></li>
+<li><a href="http://stackexchange.com/">StackExchange</a></li>
+<li>Captain Kurt helped add test for Qik video embedding and make spec DRYer</li>
+</ul>
+</li>
+<li>we don't know how to grab video embed code yet
+
+<ul>
+<li>still undecided on how to display videos in regards to autoplay</li>
+<li>embed or linked thumbnail ?</li>
+</ul>
+</li>
+<li>learned about <a href="http://en.wikipedia.org/wiki/Null_Object_pattern">Null Object</a></li>
+<li>learned how to autoclose issues with a commit message!
+
+<ul>
+<li><code>git commit -m "Fixes #[issue number]"</code></li>
+</ul>
+</li>
+<li>unable to merge <code>wikipedia-onebox</code> branch due to conflicts with master
+
+<ul>
+<li>learned how to deal with conflicts
+
+<ul>
+<li><code>git pull --rebase origin master</code></li>
+<li><code>fix conflicts</code></li>
+<li><code>git add .</code></li>
+<li><code>git rebase --continue</code></li>
+<li><code>git push -f origin wikipedia-onebox</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+
+<ul>
+<li>How to make a good pull request via Robin and Jeff:</li>
+</ul>
+
+
+<blockquote class="twitter-tweet"><p>Now *this* is how you make a good pull request: <a href="https://t.co/WWKEI0OAok">https://t.co/WWKEI0OAok</a></p>&mdash; Robin Ward (@evil_trout) <a href="https://twitter.com/evil_trout/statuses/367442268258459649">August 14, 2013</a></blockquote>
+
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<blockquote class="twitter-tweet"><p>Look at this pull request.. LOOK AT IT <a href="https://t.co/CzA91l6oQw">https://t.co/CzA91l6oQw</a></p>&mdash; Jeff Atwood (@codinghorror) <a href="https://twitter.com/codinghorror/statuses/367395684791508992">August 13, 2013</a></blockquote>
+
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<ul>
+<li>HOMEWORK:
+
+<ul>
+<li>refactor tests so more DRY</li>
+<li>Read up on:
+
+<ul>
+<li><a href="https://github.com/VerbalExpressions/RubyVerbalExpressions">VerbalExpressions</a> for Ruby</li>
+<li><code>parse_open_graph</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</p>
+  <p><a href="/2013/08/13/captains-log.html#disqus_thread" id="comments-link">link</a></p>
+  <br /><br />
+
+  
+  <section class="date">
     <p><span><a href="/2013/08/12/captains-log.html">August 12, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
   </section>
   <p><h1>Captain's Log: 2013.08.12</h1>
@@ -183,65 +275,6 @@
   <p><a href="/2013/08/07/captains-log.html#disqus_thread" id="comments-link">link</a></p>
   <br /><br />
 
-  
-  <section class="date">
-    <p><span><a href="/2013/08/06/captains-log.html">August 06, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
-  </section>
-  <p><h1>Captain's Log: 2013.08.06</h1>
-
-<blockquote><ul>
-<li>Major gem changes/cleanup in prep for 1.0 release
-
-<ul>
-<li>Renamed gem from <code>discourse-oneboxer</code> to <code>onebox</code></li>
-<li>Renamespaced <code>Discourse::Oneboxer</code> to <code>Onebox</code></li>
-<li>Deleted all the files we didn't originally write</li>
-</ul>
-</li>
-<li>Note to selves
-
-<ul>
-<li>Don't use <code>git rm .</code> unless you want to delete your entire directory</li>
-<li>Make sure you're in the correct Git branch ALWAYS</li>
-<li>Refresh your Sublime project once in a while...your files might not be missing after all. Don't panic!</li>
-<li>Captain Kurt - where's our pizza??</li>
-</ul>
-</li>
-<li><a href="https://github.com/dysania/onebox/pull/28">First pull request from an outside contributor!</a> Shout out to <a href="https://github.com/markijbema">Mark IJbema</a></li>
-<li>It seems we have a bit of an audience
-<a href="https://github.com/dysania/onebox"><img src="/images/onebox_audience.png" width="100%" style="margin:20px 0 20px 0;"/></a></li>
-<li>HOMEWORK:
-
-<ul>
-<li>Update remotes to point to the right repository</li>
-<li>Update <a href="https://github.com/dysania/onebox/blob/master/README.md">dysania/onebox README</a>
-
-<ul>
-<li>extra credit: provide example using onebox</li>
-</ul>
-</li>
-<li>For all services (Coveralls, Travis, Code Climate) - update to point to right repository</li>
-<li>Update <a href="https://github.com/dysania/discourse"><code>dysania/discourse</code></a> from upstream</li>
-<li>Clean up branches
-
-<ul>
-<li><code>git branch --merged</code>: all branches merged w/ current branch</li>
-<li><code>git branch -D [branch-name]</code>: delete local branch</li>
-<li><code>git remote prune origin</code>: remove remotely deleted branches (i.e. deleted on GitHub)</li>
-</ul>
-</li>
-<li>If there's time, do as many oneboxes as you can</li>
-<li>Read about semantic versioning - <a href="http://semver.org">semver.org</a></li>
-<li>Learn about bike shedding in programming context</li>
-<li>Introduce ourselves on meta.discourse</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-</p>
-  <p><a href="/2013/08/06/captains-log.html#disqus_thread" id="comments-link">link</a></p>
-  <br /><br />
-
 
 
 <!-- Pagination links -->
@@ -289,6 +322,12 @@
       <li class="page">
         
           <a href="/page6">6</a>
+        
+      </li>
+    
+      <li class="page">
+        
+          <a href="/page7">7</a>
         
       </li>
     

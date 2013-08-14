@@ -6,9 +6,102 @@
     <atom:link href="http://dysania.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog for Rails Girls Summer of Code</description>
     <language>en-us</language>
-    <pubDate>Tue, 13 Aug 2013 01:01:21 -0700</pubDate>
-    <lastBuildDate>Tue, 13 Aug 2013 01:01:21 -0700</lastBuildDate>
+    <pubDate>Tue, 13 Aug 2013 23:00:28 -0700</pubDate>
+    <lastBuildDate>Tue, 13 Aug 2013 23:00:28 -0700</lastBuildDate>
 
+    
+    <item>
+      <title>Captain's Log: 2013.08.13</title>
+      <link>http://dysania.github.io/blog/2013/08/13/captains-log.html</link>
+      <pubDate>Tue, 13 Aug 2013 22:23:00 -0700</pubDate>
+      <author>Team Dysania</author>
+      <guid>http://dysania.github.io/blog/2013/08/13/captains-log</guid>
+      <description>&lt;h1&gt;Captain's Log: 2013.08.13&lt;/h1&gt;
+
+&lt;blockquote&gt;&lt;ul&gt;
+&lt;li&gt;created &lt;code&gt;Matcher&lt;/code&gt; class
+
+&lt;ul&gt;
+&lt;li&gt;TDD&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Engine&lt;/code&gt; module to be included by oneboxes&lt;/li&gt;
+&lt;li&gt;refactor &lt;code&gt;preview&lt;/code&gt;, move url matching functionality to &lt;code&gt;Matcher.oneboxed&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;JZ added new oneboxes
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://qik.com/&quot;&gt;Qik&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://stackexchange.com/&quot;&gt;StackExchange&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Captain Kurt helped add test for Qik video embedding and make spec DRYer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;we don't know how to grab video embed code yet
+
+&lt;ul&gt;
+&lt;li&gt;still undecided on how to display videos in regards to autoplay&lt;/li&gt;
+&lt;li&gt;embed or linked thumbnail ?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;learned about &lt;a href=&quot;http://en.wikipedia.org/wiki/Null_Object_pattern&quot;&gt;Null Object&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;learned how to autoclose issues with a commit message!
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git commit -m &quot;Fixes #[issue number]&quot;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;unable to merge &lt;code&gt;wikipedia-onebox&lt;/code&gt; branch due to conflicts with master
+
+&lt;ul&gt;
+&lt;li&gt;learned how to deal with conflicts
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git pull --rebase origin master&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fix conflicts&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git add .&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git rebase --continue&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git push -f origin wikipedia-onebox&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;How to make a good pull request via Robin and Jeff:&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;Now *this* is how you make a good pull request: &lt;a href=&quot;https://t.co/WWKEI0OAok&quot;&gt;https://t.co/WWKEI0OAok&lt;/a&gt;&lt;/p&gt;&amp;mdash; Robin Ward (@evil_trout) &lt;a href=&quot;https://twitter.com/evil_trout/statuses/367442268258459649&quot;&gt;August 14, 2013&lt;/a&gt;&lt;/blockquote&gt;
+
+
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;Look at this pull request.. LOOK AT IT &lt;a href=&quot;https://t.co/CzA91l6oQw&quot;&gt;https://t.co/CzA91l6oQw&lt;/a&gt;&lt;/p&gt;&amp;mdash; Jeff Atwood (@codinghorror) &lt;a href=&quot;https://twitter.com/codinghorror/statuses/367395684791508992&quot;&gt;August 13, 2013&lt;/a&gt;&lt;/blockquote&gt;
+
+
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;HOMEWORK:
+
+&lt;ul&gt;
+&lt;li&gt;refactor tests so more DRY&lt;/li&gt;
+&lt;li&gt;Read up on:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/VerbalExpressions/RubyVerbalExpressions&quot;&gt;VerbalExpressions&lt;/a&gt; for Ruby&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;parse_open_graph&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+    </item>
     
     <item>
       <title>Captain's Log: 2013.08.12</title>
@@ -16,7 +109,7 @@
       <pubDate>Mon, 12 Aug 2013 23:52:00 -0700</pubDate>
       <author>Team Dysania</author>
       <guid>http://dysania.github.io/blog/2013/08/12/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.08.12&lt;/h1&gt;
+      <description>&lt;h1&gt;Captain's Log: 2013.08.12&lt;/h1&gt;
 
 &lt;blockquote&gt;&lt;ul&gt;
 &lt;li&gt;Vyki merged another &lt;a href=&quot;https://github.com/dysania/onebox/pull/35&quot;&gt;pull request&lt;/a&gt; from &lt;a href=&quot;https://github.com/markijbema&quot;&gt;markijbema&lt;/a&gt; requiring &lt;a href=&quot;https://github.com/bbatsov/rubocop&quot;&gt;Rubocop&lt;/a&gt; gem
@@ -27,10 +120,10 @@
 &lt;li&gt;Spacing corrections&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://twitter.com/samsaffron&quot;&gt;Sam&lt;/a&gt; cc&#39;d us on new thread on &lt;a href=&quot;http://meta.discourse.org/&quot;&gt;Discourse Meta&lt;/a&gt;: &lt;a href=&quot;http://meta.discourse.org/t/sometimes-onebox-hangs/9010&quot;&gt;&quot;Sometimes onebox hangs&quot;&lt;/a&gt;
+&lt;li&gt;&lt;a href=&quot;https://twitter.com/samsaffron&quot;&gt;Sam&lt;/a&gt; cc'd us on new thread on &lt;a href=&quot;http://meta.discourse.org/&quot;&gt;Discourse Meta&lt;/a&gt;: &lt;a href=&quot;http://meta.discourse.org/t/sometimes-onebox-hangs/9010&quot;&gt;&quot;Sometimes onebox hangs&quot;&lt;/a&gt;
 
 &lt;ul&gt;
-&lt;li&gt;We&#39;ll need to address HTTP request issues (limits/timeouts) in our gem&lt;/li&gt;
+&lt;li&gt;We'll need to address HTTP request issues (limits/timeouts) in our gem&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;LA Ruby/Rails August meetup recap
@@ -39,13 +132,13 @@
 &lt;li&gt;We voted &lt;a href=&quot;https://twitter.com/j3&quot;&gt;Jeff Casimir&lt;/a&gt; of &lt;a href=&quot;http://www.jumpstartlab.com/&quot;&gt;JumpstartLab&lt;/a&gt; as MVP presenter&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Discussed possible topics for lightning talk at LA Women&#39;s Ruby/Rails Group August Monthly Bash next Thursday
+&lt;li&gt;Discussed possible topics for lightning talk at LA Women's Ruby/Rails Group August Monthly Bash next Thursday
 
 &lt;ul&gt;
 &lt;li&gt;Present onebox gem&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://semver.org/&quot;&gt;Semantic versioning&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/bbatsov/rubocop&quot;&gt;Rubocop&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Ruby&#39;s unique &lt;a href=&quot;http://robots.thoughtbot.com/post/2508037841/rubys-pessimistic-operator&quot;&gt;pessimistic operator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ruby's unique &lt;a href=&quot;http://robots.thoughtbot.com/post/2508037841/rubys-pessimistic-operator&quot;&gt;pessimistic operator&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;JZ kicked herself for forgetting her laptop charger at home&lt;/li&gt;
@@ -57,7 +150,7 @@
 &lt;li&gt;Create new object that matches given URL to correct onebox class
 
 &lt;ul&gt;
-&lt;li&gt;This functionality is currently in &lt;code&gt;lib/onebox/preview&lt;/code&gt; but should be separate since it&#39;ll get huge&lt;/li&gt;
+&lt;li&gt;This functionality is currently in &lt;code&gt;lib/onebox/preview&lt;/code&gt; but should be separate since it'll get huge&lt;/li&gt;
 &lt;li&gt;Pair-program on this&lt;/li&gt;
 &lt;li&gt;TDD - commit spec first, then class&lt;/li&gt;
 &lt;/ul&gt;
@@ -76,7 +169,7 @@
       <pubDate>Wed, 07 Aug 2013 22:52:00 -0700</pubDate>
       <author>Team Dysania</author>
       <guid>http://dysania.github.io/blog/2013/08/07/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.08.07&lt;/h1&gt;
+      <description>&lt;h1&gt;Captain's Log: 2013.08.07&lt;/h1&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://media.catmoji.com/cache/post/kbh/grumpy-cat_thumb.jpg&quot; style=&quot;margin:auto;display:block;&quot; /&gt;&lt;/p&gt;
 
@@ -88,7 +181,7 @@
 &lt;li&gt;JZ tried to make Flickr onebox but failed
 
 &lt;ul&gt;
-&lt;li&gt;Flickr images are generated w/ Javascript, so we can&#39;t use our usual way of parsing an HTML response&lt;/li&gt;
+&lt;li&gt;Flickr images are generated w/ Javascript, so we can't use our usual way of parsing an HTML response&lt;/li&gt;
 &lt;li&gt;Discourse uses &lt;code&gt;parse_open_graph&lt;/code&gt; function to access Flickr content&lt;/li&gt;
 &lt;li&gt;Realized we lacked functionality to onebox sites that support &lt;a href=&quot;http://ogp.me/&quot;&gt;Open Graph Protocol&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Note to self: pick easier onebox to do first...&lt;/li&gt;
@@ -99,14 +192,14 @@
 &lt;li&gt;We need to put off gem release until we can support Open Graph Protocol sites :(&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://bikeshed.com/&quot;&gt;Painted the bikeshed&lt;/a&gt; (try refreshing the page repeatedly...)&lt;/li&gt;
 &lt;li&gt;Attending &lt;a href=&quot;http://www.meetup.com/laruby/events/129200762/&quot;&gt;LA Ruby/Rails August meetup&lt;/a&gt; tomorrow&lt;/li&gt;
-&lt;li&gt;Got a text from &lt;a href=&quot;https://twitter.com/jendiamond&quot;&gt;Jen&lt;/a&gt; - we&#39;ll be presenting our onebox gem at LA Women&#39;s Ruby/Rails Group August Monthly Bash&lt;/li&gt;
+&lt;li&gt;Got a text from &lt;a href=&quot;https://twitter.com/jendiamond&quot;&gt;Jen&lt;/a&gt; - we'll be presenting our onebox gem at LA Women's Ruby/Rails Group August Monthly Bash&lt;/li&gt;
 &lt;li&gt;HOMEWORK:
 
 &lt;ul&gt;
 &lt;li&gt;Look at what &lt;code&gt;parse_open_graph&lt;/code&gt; function does&lt;/li&gt;
 &lt;li&gt;Self-assigned: listen to latest &lt;a href=&quot;http://rubyrogues.com/117-rr-discourse-part-2-with-sam-saffron-and-robin-ward/&quot;&gt;Ruby Rogues #117&lt;/a&gt; featuring mentors &lt;a href=&quot;https://twitter.com/samsaffron&quot;&gt;Sam Saffron&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/evil_trout&quot;&gt;Robin Ward&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Start creating oneboxes for sites that don&#39;t support OGP&lt;/li&gt;
-&lt;li&gt;Remove &lt;code&gt;html body&lt;/code&gt; from Nokogiri CSS selectors in oneboxes - it&#39;s redundant. Use classes and ids instead of tags (if possible)&lt;/li&gt;
+&lt;li&gt;Start creating oneboxes for sites that don't support OGP&lt;/li&gt;
+&lt;li&gt;Remove &lt;code&gt;html body&lt;/code&gt; from Nokogiri CSS selectors in oneboxes - it's redundant. Use classes and ids instead of tags (if possible)&lt;/li&gt;
 &lt;li&gt;At some point, need to create a guide for making oneboxes&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -121,7 +214,7 @@
       <pubDate>Tue, 06 Aug 2013 23:05:00 -0700</pubDate>
       <author>Team Dysania</author>
       <guid>http://dysania.github.io/blog/2013/08/06/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.08.06&lt;/h1&gt;
+      <description>&lt;h1&gt;Captain's Log: 2013.08.06&lt;/h1&gt;
 
 &lt;blockquote&gt;&lt;ul&gt;
 &lt;li&gt;Major gem changes/cleanup in prep for 1.0 release
@@ -129,16 +222,16 @@
 &lt;ul&gt;
 &lt;li&gt;Renamed gem from &lt;code&gt;discourse-oneboxer&lt;/code&gt; to &lt;code&gt;onebox&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Renamespaced &lt;code&gt;Discourse::Oneboxer&lt;/code&gt; to &lt;code&gt;Onebox&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Deleted all the files we didn&#39;t originally write&lt;/li&gt;
+&lt;li&gt;Deleted all the files we didn't originally write&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Note to selves
 
 &lt;ul&gt;
-&lt;li&gt;Don&#39;t use &lt;code&gt;git rm .&lt;/code&gt; unless you want to delete your entire directory&lt;/li&gt;
-&lt;li&gt;Make sure you&#39;re in the correct Git branch ALWAYS&lt;/li&gt;
-&lt;li&gt;Refresh your Sublime project once in a while...your files might not be missing after all. Don&#39;t panic!&lt;/li&gt;
-&lt;li&gt;Captain Kurt - where&#39;s our pizza??&lt;/li&gt;
+&lt;li&gt;Don't use &lt;code&gt;git rm .&lt;/code&gt; unless you want to delete your entire directory&lt;/li&gt;
+&lt;li&gt;Make sure you're in the correct Git branch ALWAYS&lt;/li&gt;
+&lt;li&gt;Refresh your Sublime project once in a while...your files might not be missing after all. Don't panic!&lt;/li&gt;
+&lt;li&gt;Captain Kurt - where's our pizza??&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/dysania/onebox/pull/28&quot;&gt;First pull request from an outside contributor!&lt;/a&gt; Shout out to &lt;a href=&quot;https://github.com/markijbema&quot;&gt;Mark IJbema&lt;/a&gt;&lt;/li&gt;
@@ -164,7 +257,7 @@
 &lt;li&gt;&lt;code&gt;git remote prune origin&lt;/code&gt;: remove remotely deleted branches (i.e. deleted on GitHub)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;If there&#39;s time, do as many oneboxes as you can&lt;/li&gt;
+&lt;li&gt;If there's time, do as many oneboxes as you can&lt;/li&gt;
 &lt;li&gt;Read about semantic versioning - &lt;a href=&quot;http://semver.org&quot;&gt;semver.org&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Learn about bike shedding in programming context&lt;/li&gt;
 &lt;li&gt;Introduce ourselves on meta.discourse&lt;/li&gt;
@@ -181,7 +274,7 @@
       <pubDate>Mon, 05 Aug 2013 22:43:00 -0700</pubDate>
       <author>Team Dysania</author>
       <guid>http://dysania.github.io/blog/2013/08/05/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.08.05&lt;/h1&gt;
+      <description>&lt;h1&gt;Captain's Log: 2013.08.05&lt;/h1&gt;
 
 &lt;blockquote&gt;&lt;ul&gt;
 &lt;li&gt;Continued editing Preview, Example, and Amazon specs on &lt;code&gt;preview-refactor&lt;/code&gt; branch
@@ -191,7 +284,7 @@
 
 &lt;ul&gt;
 &lt;li&gt;we want the spec to not request a website, and to use our fixture&lt;/li&gt;
-&lt;li&gt;we need to ask why is this important? Don&#39;t we want tests to fail once an actual website changes?&lt;/li&gt;
+&lt;li&gt;we need to ask why is this important? Don't we want tests to fail once an actual website changes?&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;created &lt;code&gt;response()&lt;/code&gt; function in html spec helper for less repetitive code in specs&lt;/li&gt;
@@ -248,25 +341,25 @@
       <pubDate>Thu, 01 Aug 2013 23:00:00 -0700</pubDate>
       <author>Team Dysania</author>
       <guid>http://dysania.github.io/blog/2013/08/01/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.08.01&lt;/h1&gt;
+      <description>&lt;h1&gt;Captain's Log: 2013.08.01&lt;/h1&gt;
 
 &lt;blockquote&gt;&lt;ul&gt;
-&lt;li&gt;Skipped Ruby study group for this week, but will attend next week&#39;s &lt;a href=&quot;http://www.meetup.com/laruby/events/129200762/&quot;&gt;LA Ruby/Rails August meetup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Skipped Ruby study group for this week, but will attend next week's &lt;a href=&quot;http://www.meetup.com/laruby/events/129200762/&quot;&gt;LA Ruby/Rails August meetup&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Created fixtures for all the rest of the oneboxes
 
 &lt;ul&gt;
 &lt;li&gt;Took up most of our session since oneboxer currently supports &lt;a href=&quot;https://github.com/dysania/discourse-oneboxer/tree/master/lib/discourse/oneboxer&quot;&gt;30+ sites&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Certain sites (i.e. Hulu, Google Play) kept making &lt;code&gt;curl&lt;/code&gt; hang for some reason&lt;/li&gt;
-&lt;li&gt;Now we&#39;ll focus on creating specs specific to each onebox&lt;/li&gt;
+&lt;li&gt;Now we'll focus on creating specs specific to each onebox&lt;/li&gt;
 &lt;li&gt;Started to clean up fixtures but still need to finish&lt;/li&gt;
 &lt;li&gt;According to &lt;a href=&quot;https://github.com/dysania/discourse-oneboxer/blob/master/lib/discourse/oneboxer/whitelist.rb&quot;&gt;&lt;code&gt;whitelist.rb&lt;/code&gt;&lt;/a&gt; if a site supports &lt;a href=&quot;http://ogp.me/&quot;&gt;OpenGraph&lt;/a&gt; then it is already supported by oneboxer -- will have to keep that in mind when making tests&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Captain Kurt&#39;s challenge: if we make the 1st failing test from yesterday (out of 2) pass, he&#39;ll get us pizza during the next session
+&lt;li&gt;Captain Kurt's challenge: if we make the 1st failing test from yesterday (out of 2) pass, he'll get us pizza during the next session
 
 &lt;ul&gt;
-&lt;li&gt;Used Nokogiri&#39;s &lt;a href=&quot;http://nokogiri.org/Nokogiri/XML/NodeSet.html#method-i-inner_text&quot;&gt;&lt;code&gt;inner_text()&lt;/code&gt;&lt;/a&gt; method to get just text of extracted data, without HTML tags --&gt; CHALLENGE COMPLETED&lt;/li&gt;
-&lt;li&gt;Also made 2nd test pass technically...by commenting it out for now (bad test that we&#39;ll need to rewrite)&lt;/li&gt;
+&lt;li&gt;Used Nokogiri's &lt;a href=&quot;http://nokogiri.org/Nokogiri/XML/NodeSet.html#method-i-inner_text&quot;&gt;&lt;code&gt;inner_text()&lt;/code&gt;&lt;/a&gt; method to get just text of extracted data, without HTML tags --&gt; CHALLENGE COMPLETED&lt;/li&gt;
+&lt;li&gt;Also made 2nd test pass technically...by commenting it out for now (bad test that we'll need to rewrite)&lt;/li&gt;
 &lt;li&gt;Monday will be Pizza Day! Or hopefully perhaps something healthier&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -280,7 +373,7 @@
 &lt;li&gt;Planning on registering discourse-oneboxer gem to &lt;a href=&quot;http://rubygems.org&quot;&gt;RubyGems.org&lt;/a&gt; on Monday
 
 &lt;ul&gt;
-&lt;li&gt;Captain Kurt joked that he would register it himself tomorrow without us (we don&#39;t meet on Fridays)&lt;/li&gt;
+&lt;li&gt;Captain Kurt joked that he would register it himself tomorrow without us (we don't meet on Fridays)&lt;/li&gt;
 &lt;li&gt;We were not amused
 &lt;img src=&quot;http://www.wall321.com/thumbnails/detail/20121107/usa%20freckles%20gymnast%20olympics%202012%20mckayla%20maroney%20not%20amused%20unimpressed%201920x1080%20wallpaper_www.wall321.com_1.jpg&quot; width=&quot;80%&quot; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -305,7 +398,7 @@
       <pubDate>Wed, 31 Jul 2013 21:46:00 -0700</pubDate>
       <author>Team Dysania</author>
       <guid>http://dysania.github.io/blog/2013/07/31/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.07.31&lt;/h1&gt;
+      <description>&lt;h1&gt;Captain's Log: 2013.07.31&lt;/h1&gt;
 
 &lt;blockquote&gt;&lt;ul&gt;
 &lt;li&gt;Still working on &lt;code&gt;preview-refactor&lt;/code&gt; branch&lt;/li&gt;
@@ -326,8 +419,8 @@
 &lt;li&gt;how we will create fixtures for all oneboxes&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Vyki bought &lt;a href=&quot;http://www.google.com/url?q=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2F1933988657%2Fref%3Doh_details_o00_s00_i03%3Fie%3DUTF8%26psc%3D1&amp;amp;sa=D&amp;amp;sntz=1&amp;amp;usg=AFQjCNEzcqRfz_hCoFeKTom7WuLvoKpPiw&quot;&gt;The Well-Grounded Rubyist&lt;/a&gt; from &lt;a href=&quot;https://www.google.com/url?q=https%3A%2F%2Ftwitter.com%2Flkoponen&amp;amp;sa=D&amp;amp;sntz=1&amp;amp;usg=AFQjCNFJr2dNbYKMSlaaet5DZEAB1E2QHQ&quot;&gt;Lili&#39;s&lt;/a&gt; recommendation&lt;/li&gt;
-&lt;li&gt;JZ didn&#39;t die from Day 2 of bike commuting and was reunited with her lost keys&lt;/li&gt;
+&lt;li&gt;Vyki bought &lt;a href=&quot;http://www.google.com/url?q=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2F1933988657%2Fref%3Doh_details_o00_s00_i03%3Fie%3DUTF8%26psc%3D1&amp;amp;sa=D&amp;amp;sntz=1&amp;amp;usg=AFQjCNEzcqRfz_hCoFeKTom7WuLvoKpPiw&quot;&gt;The Well-Grounded Rubyist&lt;/a&gt; from &lt;a href=&quot;https://www.google.com/url?q=https%3A%2F%2Ftwitter.com%2Flkoponen&amp;amp;sa=D&amp;amp;sntz=1&amp;amp;usg=AFQjCNFJr2dNbYKMSlaaet5DZEAB1E2QHQ&quot;&gt;Lili's&lt;/a&gt; recommendation&lt;/li&gt;
+&lt;li&gt;JZ didn't die from Day 2 of bike commuting and was reunited with her lost keys&lt;/li&gt;
 &lt;li&gt;Gave status update to our RGSoC supervisor &lt;a href=&quot;https://twitter.com/benediktdeicke&quot;&gt;Benedikt&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Sent in our introduction blog post to RGSoC organizers for review -- to be published Monday!&lt;/li&gt;
 &lt;li&gt;HOMEWORK (Vyki): Clean up Amazon response (remove CSS and whitespace)&lt;/li&gt;
@@ -343,7 +436,7 @@
       <pubDate>Tue, 30 Jul 2013 22:18:00 -0700</pubDate>
       <author>Team Dysania</author>
       <guid>http://dysania.github.io/blog/2013/07/30/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.07.30&lt;/h1&gt;
+      <description>&lt;h1&gt;Captain's Log: 2013.07.30&lt;/h1&gt;
 
 &lt;blockquote&gt;&lt;ul&gt;
 &lt;li&gt;Quick chat with &lt;a href=&quot;http://www.twitter.com/evil_trout&quot;&gt;Robin&lt;/a&gt; of Discourse in google hangouts (Sam was sleeping)
@@ -382,7 +475,7 @@
       <pubDate>Mon, 29 Jul 2013 22:40:00 -0700</pubDate>
       <author>Team Dysania</author>
       <guid>http://dysania.github.io/blog/2013/07/29/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.07.29&lt;/h1&gt;
+      <description>&lt;h1&gt;Captain's Log: 2013.07.29&lt;/h1&gt;
 
 &lt;blockquote&gt;&lt;ul&gt;
 &lt;li&gt;Updated mocha to mocha/api&lt;/li&gt;
@@ -425,7 +518,7 @@
       <pubDate>Thu, 25 Jul 2013 21:10:00 -0700</pubDate>
       <author>Team Dysania</author>
       <guid>http://dysania.github.io/blog/2013/07/25/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.07.25&lt;/h1&gt;
+      <description>&lt;h1&gt;Captain's Log: 2013.07.25&lt;/h1&gt;
 
 &lt;p&gt;&lt;a href=&quot;/images/syrup.jpg&quot;&gt;&lt;img src=&quot;/images/syrup.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -436,7 +529,7 @@
 &lt;li&gt;Intro to Test-Driven Development
 
 &lt;ul&gt;
-&lt;li&gt;Captain Kurt showed us project he&#39;s working on for a client as an example&lt;/li&gt;
+&lt;li&gt;Captain Kurt showed us project he's working on for a client as an example&lt;/li&gt;
 &lt;li&gt;Create specs first to figure out what you expect the results to be&lt;/li&gt;
 &lt;li&gt;Run specs and write code as you go to make them pass&lt;/li&gt;
 &lt;/ul&gt;
@@ -444,41 +537,13 @@
 &lt;li&gt;Fixed &lt;a href=&quot;https://github.com/dysania/discourse-oneboxer/pull/6&quot;&gt;discourse-oneboxer README&lt;/a&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Edited on GitHub based on Captain Kurt&#39;s comments&lt;/li&gt;
+&lt;li&gt;Edited on GitHub based on Captain Kurt's comments&lt;/li&gt;
 &lt;li&gt;Made commits to pull request&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Learned about &lt;a href=&quot;http://coveralls.io/&quot;&gt;Coveralls&lt;/a&gt; and &lt;a href=&quot;https://codeclimate.com/&quot;&gt;Code Climate&lt;/a&gt;, added badges to discourse-oneboxer README&lt;/li&gt;
 &lt;li&gt;Started writing RGSoC blog post&lt;/li&gt;
 &lt;li&gt;HOMEWORK: Read up on object-oriented design and &lt;a href=&quot;http://en.wikipedia.org/wiki/Alan_Kay&quot;&gt;Alan Kay&lt;/a&gt; by Monday, finish RGSoC blog post by tomorrow&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Captain's Log: 2013.07.24</title>
-      <link>http://dysania.github.io/blog/2013/07/24/captains-log.html</link>
-      <pubDate>Wed, 24 Jul 2013 22:33:00 -0700</pubDate>
-      <author>Team Dysania</author>
-      <guid>http://dysania.github.io/blog/2013/07/24/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.07.24&lt;/h1&gt;
-
-&lt;blockquote&gt;&lt;ul&gt;
-&lt;li&gt;First time all three of us met together in a week&lt;/li&gt;
-&lt;li&gt;Learned about pending and pending message
-
-&lt;ul&gt;
-&lt;li&gt;Used where there were methods in tests we don&#39;t understand yet and still need to rewrite&lt;/li&gt;
-&lt;li&gt;Methods: expects, onebox_for_url, base_url, apply&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Added Mocha dependency for tests&lt;/li&gt;
-&lt;li&gt;Fixed all remaining tests w/ RSpec, 0 failures, 14 pending&lt;/li&gt;
-&lt;li&gt;Learned about Travis-CI&lt;/li&gt;
-&lt;li&gt;Captain Kurt added travis.yml for Travis-CI&lt;/li&gt;
-&lt;li&gt;Travis build doesn&#39;t fail! (but the spam emails continue...)&lt;/li&gt;
-&lt;li&gt;HOMEWORK: Work on RGSoC blog post for Monday, due Friday!&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 </description>
