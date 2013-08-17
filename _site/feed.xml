@@ -6,9 +6,66 @@
     <atom:link href="http://dysania.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog for Rails Girls Summer of Code</description>
     <language>en-us</language>
-    <pubDate>Tue, 13 Aug 2013 23:00:28 -0700</pubDate>
-    <lastBuildDate>Tue, 13 Aug 2013 23:00:28 -0700</lastBuildDate>
+    <pubDate>Fri, 16 Aug 2013 18:01:09 -0700</pubDate>
+    <lastBuildDate>Fri, 16 Aug 2013 18:01:09 -0700</lastBuildDate>
 
+    
+    <item>
+      <title>Captain's Log: 2013.08.15</title>
+      <link>http://dysania.github.io/blog/2013/08/15/captains-log.html</link>
+      <pubDate>Thu, 15 Aug 2013 22:23:00 -0700</pubDate>
+      <author>Team Dysania</author>
+      <guid>http://dysania.github.io/blog/2013/08/15/captains-log</guid>
+      <description>&lt;h1&gt;Captain's Log: 2013.08.15&lt;/h1&gt;
+
+&lt;blockquote&gt;&lt;ul&gt;
+&lt;li&gt;Pizza! Sodapop! courtesy of Captain Kurt, our prize for making all of our tests pass on &lt;a href=&quot;http://dysania.github.io/blog/2013/08/01/captains-log.html&quot;&gt;8/1/2013&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Added pessimistic version numbers for all of the gems in gemspec
+
+&lt;ul&gt;
+&lt;li&gt;Find current version number with &lt;code&gt;gem list -r &amp;lt;gemname&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add latest version number excluding the last number &lt;code&gt;&quot;&amp;lt;gemname&amp;gt;&quot;, &quot;~&amp;gt;, x.x&quot;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Continued working on adding Open Graph support
+
+&lt;ul&gt;
+&lt;li&gt;switched from opengraph to &lt;a href=&quot;http://rubygems.org/gems/opengraph_parser&quot;&gt;opengraph_parser&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Moved redundant code from oneboxes to engine module
+
+&lt;ul&gt;
+&lt;li&gt;use engine to open template for each onebox&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;code&gt;ruby
+def template_name
+  self.class.name.split(&quot;::&quot;).last.downcase
+end
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;ul&gt;
+&lt;li&gt;created new function in engine &lt;code&gt;read&lt;/code&gt; to open url
+
+&lt;ul&gt;
+&lt;li&gt;re-factored tests to test new method&lt;/li&gt;
+&lt;li&gt;cleaned up onebox specs, used &lt;code&gt;let:&lt;/code&gt; to handle repetitive tasks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;created a few more merge conflicts while both editing gemspec
+
+&lt;ul&gt;
+&lt;li&gt;cleaned them up ourselves like we learned on tuesday&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
     
     <item>
       <title>Captain's Log: 2013.08.13</title>
@@ -507,43 +564,6 @@
 &lt;li&gt;Lecture on instance classes, Ruby best practices, and OOP&lt;/li&gt;
 &lt;li&gt;Eagerly discussed the forthcoming &lt;a href=&quot;http://www.hipsterceo.com/&quot;&gt;Hipster Tech Startup CEO simulator game&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;HOMEWORK: Listen to latest &lt;a href=&quot;http://rubyrogues.com/&quot;&gt;Ruby Rogues&lt;/a&gt; podcast&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Captain's Log: 2013.07.25</title>
-      <link>http://dysania.github.io/blog/2013/07/25/captains-log.html</link>
-      <pubDate>Thu, 25 Jul 2013 21:10:00 -0700</pubDate>
-      <author>Team Dysania</author>
-      <guid>http://dysania.github.io/blog/2013/07/25/captains-log</guid>
-      <description>&lt;h1&gt;Captain's Log: 2013.07.25&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/syrup.jpg&quot;&gt;&lt;img src=&quot;/images/syrup.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;&lt;ul&gt;
-&lt;li&gt;Worked at &lt;a href=&quot;http://www.yelp.com/biz/syrup-desserts-los-angeles-2&quot;&gt;Syrup Desserts&lt;/a&gt; for &lt;a href=&quot;http://www.meetup.com/Los-Angeles-Womens-Ruby-on-Rails-Group/events/130289862/&quot;&gt;Los Angeles Eastside Ruby/Rails study group&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Crêpes on crêpes on crêpes (see photo above)&lt;/li&gt;
-&lt;li&gt;Caught up with Jen of &lt;a href=&quot;http://rgsocbundler.github.io/&quot;&gt;Team Bundler&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Intro to Test-Driven Development
-
-&lt;ul&gt;
-&lt;li&gt;Captain Kurt showed us project he's working on for a client as an example&lt;/li&gt;
-&lt;li&gt;Create specs first to figure out what you expect the results to be&lt;/li&gt;
-&lt;li&gt;Run specs and write code as you go to make them pass&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Fixed &lt;a href=&quot;https://github.com/dysania/discourse-oneboxer/pull/6&quot;&gt;discourse-oneboxer README&lt;/a&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Edited on GitHub based on Captain Kurt's comments&lt;/li&gt;
-&lt;li&gt;Made commits to pull request&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Learned about &lt;a href=&quot;http://coveralls.io/&quot;&gt;Coveralls&lt;/a&gt; and &lt;a href=&quot;https://codeclimate.com/&quot;&gt;Code Climate&lt;/a&gt;, added badges to discourse-oneboxer README&lt;/li&gt;
-&lt;li&gt;Started writing RGSoC blog post&lt;/li&gt;
-&lt;li&gt;HOMEWORK: Read up on object-oriented design and &lt;a href=&quot;http://en.wikipedia.org/wiki/Alan_Kay&quot;&gt;Alan Kay&lt;/a&gt; by Monday, finish RGSoC blog post by tomorrow&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 </description>
