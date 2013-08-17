@@ -82,6 +82,62 @@
 
   
   <section class="date">
+    <p><span><a href="/2013/08/15/captains-log.html">August 15, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
+  </section>
+  <p><h1>Captain's Log: 2013.08.15</h1>
+
+<blockquote><ul>
+<li>Pizza! Sodapop! courtesy of Captain Kurt, our prize for making all of our tests pass on <a href="http://dysania.github.io/blog/2013/08/01/captains-log.html">8/1/2013</a></li>
+<li>Added pessimistic version numbers for all of the gems in gemspec
+
+<ul>
+<li>Find current version number with <code>gem list -r &lt;gemname&gt;</code></li>
+<li>Add latest version number excluding the last number <code>"&lt;gemname&gt;", "~&gt;, x.x"</code></li>
+</ul>
+</li>
+<li>Continued working on adding Open Graph support
+
+<ul>
+<li>switched from opengraph to <a href="http://rubygems.org/gems/opengraph_parser">opengraph_parser</a></li>
+</ul>
+</li>
+<li>Moved redundant code from oneboxes to engine module
+
+<ul>
+<li>use engine to open template for each onebox</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+
+<p><code>ruby
+def template_name
+  self.class.name.split("::").last.downcase
+end
+</code></p>
+
+<blockquote><ul>
+<li>created new function in engine <code>read</code> to open url
+
+<ul>
+<li>re-factored tests to test new method</li>
+<li>cleaned up onebox specs, used <code>let:</code> to handle repetitive tasks</li>
+</ul>
+</li>
+<li>created a few more merge conflicts while both editing gemspec
+
+<ul>
+<li>cleaned them up ourselves like we learned on tuesday</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</p>
+  <p><a href="/2013/08/15/captains-log.html#disqus_thread" id="comments-link">link</a></p>
+  <br /><br />
+
+  
+  <section class="date">
     <p><span><a href="/2013/08/13/captains-log.html">August 13, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
   </section>
   <p><h1>Captain's Log: 2013.08.13</h1>
@@ -229,50 +285,6 @@
 </blockquote>
 </p>
   <p><a href="/2013/08/12/captains-log.html#disqus_thread" id="comments-link">link</a></p>
-  <br /><br />
-
-  
-  <section class="date">
-    <p><span><a href="/2013/08/07/captains-log.html">August 07, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
-  </section>
-  <p><h1>Captain's Log: 2013.08.07</h1>
-
-<p><img src="http://media.catmoji.com/cache/post/kbh/grumpy-cat_thumb.jpg" style="margin:auto;display:block;" /></p>
-
-<blockquote><ul>
-<li>Started creating oneboxes solo based on Amazon and Example
-
-<ul>
-<li>Vyki made Wikipedia onebox and succeeded</li>
-<li>JZ tried to make Flickr onebox but failed
-
-<ul>
-<li>Flickr images are generated w/ Javascript, so we can't use our usual way of parsing an HTML response</li>
-<li>Discourse uses <code>parse_open_graph</code> function to access Flickr content</li>
-<li>Realized we lacked functionality to onebox sites that support <a href="http://ogp.me/">Open Graph Protocol</a></li>
-<li>Note to self: pick easier onebox to do first...</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>We need to put off gem release until we can support Open Graph Protocol sites :(</li>
-<li><a href="http://bikeshed.com/">Painted the bikeshed</a> (try refreshing the page repeatedly...)</li>
-<li>Attending <a href="http://www.meetup.com/laruby/events/129200762/">LA Ruby/Rails August meetup</a> tomorrow</li>
-<li>Got a text from <a href="https://twitter.com/jendiamond">Jen</a> - we'll be presenting our onebox gem at LA Women's Ruby/Rails Group August Monthly Bash</li>
-<li>HOMEWORK:
-
-<ul>
-<li>Look at what <code>parse_open_graph</code> function does</li>
-<li>Self-assigned: listen to latest <a href="http://rubyrogues.com/117-rr-discourse-part-2-with-sam-saffron-and-robin-ward/">Ruby Rogues #117</a> featuring mentors <a href="https://twitter.com/samsaffron">Sam Saffron</a> and <a href="https://twitter.com/evil_trout">Robin Ward</a></li>
-<li>Start creating oneboxes for sites that don't support OGP</li>
-<li>Remove <code>html body</code> from Nokogiri CSS selectors in oneboxes - it's redundant. Use classes and ids instead of tags (if possible)</li>
-<li>At some point, need to create a guide for making oneboxes</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-</p>
-  <p><a href="/2013/08/07/captains-log.html#disqus_thread" id="comments-link">link</a></p>
   <br /><br />
 
 
