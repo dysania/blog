@@ -82,6 +82,128 @@
 
   
   <section class="date">
+    <p><span><a href="/2013/08/05/captains-log.html">August 05, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
+  </section>
+  <p><h1>Captain's Log: 2013.08.05</h1>
+
+<blockquote><ul>
+<li>Continued editing Preview, Example, and Amazon specs on <code>preview-refactor</code> branch
+
+<ul>
+<li>edited Preview spec to use Example fixture and <a href="http://rubygems.org/gems/fakeweb">fakeweb</a>
+
+<ul>
+<li>we want the spec to not request a website, and to use our fixture</li>
+<li>we need to ask why is this important? Don't we want tests to fail once an actual website changes?</li>
+</ul>
+</li>
+<li>created <code>response()</code> function in html spec helper for less repetitive code in specs</li>
+<li>used <code>let()</code> to do lazy assignments
+
+<ul>
+<li>ex: <code>let(:link) { "http://example.com" }</code></li>
+</ul>
+</li>
+<li>finished creating and passing all tests for Amazon
+
+<ul>
+<li>First spec finished with least amount of input from Captain Kurt yet!</li>
+<li>JZ: write tests</li>
+<li>Vyki: make tests pass</li>
+<li>learned more about Nokogiri, used <code>.first["src"]</code> to get src attribute for product image</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+
+<ul>
+<li>First <a href="https://github.com/dysania/discourse-oneboxer/pull/26">pull request</a> from <a href="https://twitter.com/evil_trout">Robin</a>
+
+<ul>
+<li>tiny change to keep us up-to-date with discourse/discourse</li>
+</ul>
+</li>
+<li>oneboxer changes to discourse/discourse <a href="https://github.com/discourse/discourse/pull/1288">being redirected our way</a></li>
+<li>New recommended resources
+
+<ul>
+<li><a href="https://www.bitcast.io/">Bitcast.io</a> - Captain Kurt suggested we use it for learning by creating our own screencasts on top of watching existing screencasts</li>
+<li><a href="http://www.manning.com/bigg2/">Rails 4 In Action</a> - Book, check out the early access edition</li>
+</ul>
+</li>
+<li>HOMEWORK: Listen to more RubyRogues, checkout <a href="http://www.rubytapas.com/">Ruby Tapas</a></li>
+</ul>
+
+
+<blockquote class="twitter-tweet"><p>Meet <a href="https://twitter.com/jzeta">@jzeta</a> &amp; <a href="https://twitter.com/toastergrrl">@toastergrrl</a> from Team Dysania! They are developers by night AND can make balloon arches:<a href="http://t.co/6cdokfAiN7">http://t.co/6cdokfAiN7</a> <a href="https://twitter.com/search?q=%23teamoftheweek&amp;src=hash">#teamoftheweek</a></p>&mdash; Rails Girls SoC (@RailsGirlsSoC) <a href="https://twitter.com/RailsGirlsSoC/statuses/364315597707808768">August 5, 2013</a></blockquote>
+
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</p>
+  <p><a href="/2013/08/05/captains-log.html#disqus_thread" id="comments-link">link</a></p>
+  <br /><br />
+
+  
+  <section class="date">
+    <p><span><a href="/2013/08/01/captains-log.html">August 01, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
+  </section>
+  <p><h1>Captain's Log: 2013.08.01</h1>
+
+<blockquote><ul>
+<li>Skipped Ruby study group for this week, but will attend next week's <a href="http://www.meetup.com/laruby/events/129200762/">LA Ruby/Rails August meetup</a></li>
+<li>Created fixtures for all the rest of the oneboxes
+
+<ul>
+<li>Took up most of our session since oneboxer currently supports <a href="https://github.com/dysania/discourse-oneboxer/tree/master/lib/discourse/oneboxer">30+ sites</a></li>
+<li>Certain sites (i.e. Hulu, Google Play) kept making <code>curl</code> hang for some reason</li>
+<li>Now we'll focus on creating specs specific to each onebox</li>
+<li>Started to clean up fixtures but still need to finish</li>
+<li>According to <a href="https://github.com/dysania/discourse-oneboxer/blob/master/lib/discourse/oneboxer/whitelist.rb"><code>whitelist.rb</code></a> if a site supports <a href="http://ogp.me/">OpenGraph</a> then it is already supported by oneboxer -- will have to keep that in mind when making tests</li>
+</ul>
+</li>
+<li>Captain Kurt's challenge: if we make the 1st failing test from yesterday (out of 2) pass, he'll get us pizza during the next session
+
+<ul>
+<li>Used Nokogiri's <a href="http://nokogiri.org/Nokogiri/XML/NodeSet.html#method-i-inner_text"><code>inner_text()</code></a> method to get just text of extracted data, without HTML tags --> CHALLENGE COMPLETED</li>
+<li>Also made 2nd test pass technically...by commenting it out for now (bad test that we'll need to rewrite)</li>
+<li>Monday will be Pizza Day! Or hopefully perhaps something healthier</li>
+</ul>
+</li>
+<li>First tiny code review from mentor <a href="https://twitter.com/evil_trout">Robin</a>
+
+<ul>
+<li>Mostly positive, asked for reasoning behind using <a href="https://github.com/dysania/discourse-oneboxer/commit/45180d20d6dfb7be6f96b0e89707e66094fe7536"><code>require_relative</code></a> and <a href="https://github.com/dysania/discourse-oneboxer/commit/deeb3df0b797665a99122f44650086bcb593cd4b"><code>add_onebox</code></a> manually for each onebox instead of just including the whole onebox directory</li>
+<li>We replied that we figured it would be easier to understand and would reduce security risk</li>
+</ul>
+</li>
+<li>Planning on registering discourse-oneboxer gem to <a href="http://rubygems.org">RubyGems.org</a> on Monday
+
+<ul>
+<li>Captain Kurt joked that he would register it himself tomorrow without us (we don't meet on Fridays)</li>
+<li>We were not amused
+<img src="http://www.wall321.com/thumbnails/detail/20121107/usa%20freckles%20gymnast%20olympics%202012%20mckayla%20maroney%20not%20amused%20unimpressed%201920x1080%20wallpaper_www.wall321.com_1.jpg" width="80%" /></li>
+</ul>
+</li>
+<li>Worked on RGSoC introduction blog post
+
+<ul>
+<li>Forked <a href="https://github.com/dysania/summer-of-code">summer-of-code</a> repo, created new branch</li>
+<li>Converted approved rough draft to Markdown</li>
+<li>Will submit pull request by Monday</li>
+</ul>
+</li>
+<li>Captain Kurt suggested creating Ruby wrapper in future for <a href="https://github.com/wilkie/apsis">Apsis</a> game engine by <a href="https://twitter.com/wilkieii">@wilkieii</a></li>
+</ul>
+</blockquote>
+</p>
+  <p><a href="/2013/08/01/captains-log.html#disqus_thread" id="comments-link">link</a></p>
+  <br /><br />
+
+  
+  <section class="date">
     <p><span><a href="/2013/07/31/captains-log.html">July 31, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
   </section>
   <p><h1>Captain's Log: 2013.07.31</h1>
@@ -115,86 +237,6 @@
 </blockquote>
 </p>
   <p><a href="/2013/07/31/captains-log.html#disqus_thread" id="comments-link">link</a></p>
-  <br /><br />
-
-  
-  <section class="date">
-    <p><span><a href="/2013/07/30/captains-log.html">July 30, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
-  </section>
-  <p><h1>Captain's Log: 2013.07.30</h1>
-
-<blockquote><ul>
-<li>Quick chat with <a href="http://www.twitter.com/evil_trout">Robin</a> of Discourse in google hangouts (Sam was sleeping)
-
-<ul>
-<li>discussed progress so far</li>
-<li>talked about maybe releasing 1.0 version of gem soon</li>
-<li>talked about GoGaRuCo and how Discourse maintainers are attending</li>
-<li>Robin and Sam will be guests on an upcoming Ruby Rogues podcast episode</li>
-<li>LA Ruby/Rails community, Portland, SF</li>
-<li>Robin will be reviewing our GitHub, making comments, and reporting back to rest of team</li>
-<li>still need to introduce ourselves on Discourse meta</li>
-</ul>
-</li>
-<li>Worked on <code>Preview</code> and <code>Example</code> classes</li>
-<li>TDD again, swapped roles:
-
-<ul>
-<li>JZ: making tests pass</li>
-<li>Vyki: created tests that failed</li>
-</ul>
-</li>
-<li>Created <code>Amazon</code> class (which we might make inherit from <code>Example</code> later)</li>
-<li>Created Amazon handlebars template</li>
-<li>Learned about File.read and File.join</li>
-<li>Listened to Ruby Rogues podcast on the bus/train</li>
-<li>HOMEWORK: Sleep</li>
-</ul>
-</blockquote>
-</p>
-  <p><a href="/2013/07/30/captains-log.html#disqus_thread" id="comments-link">link</a></p>
-  <br /><br />
-
-  
-  <section class="date">
-    <p><span><a href="/2013/07/29/captains-log.html">July 29, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
-  </section>
-  <p><h1>Captain's Log: 2013.07.29</h1>
-
-<blockquote><ul>
-<li>Updated mocha to mocha/api</li>
-<li>Started refactoring <code>preview</code> method as <code>Preview</code> class
-
-<ul>
-<li>should take in url</li>
-<li>should output html</li>
-<li>should extract pieces of page as data</li>
-<li>should display with template</li>
-</ul>
-</li>
-<li>Used Test-Driven Development (mostly)
-
-<ul>
-<li>JZ: created tests that failed</li>
-<li>Vyki: making tests pass</li>
-<li>Captain Kurt: refactoring tests</li>
-</ul>
-</li>
-<li>Started creating Example class and spec
-
-<ul>
-<li>a model for how to build onebox modules</li>
-<li>will use it to implement existing oneboxes</li>
-</ul>
-</li>
-<li>Learned to use Nokogiri and Mustache</li>
-<li>Lecture on instance classes, Ruby best practices, and OOP</li>
-<li>Eagerly discussed the forthcoming <a href="http://www.hipsterceo.com/">Hipster Tech Startup CEO simulator game</a></li>
-<li>HOMEWORK: Listen to latest <a href="http://rubyrogues.com/">Ruby Rogues</a> podcast</li>
-</ul>
-</blockquote>
-</p>
-  <p><a href="/2013/07/29/captains-log.html#disqus_thread" id="comments-link">link</a></p>
   <br /><br />
 
 
