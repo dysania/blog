@@ -82,6 +82,85 @@
 
   
   <section class="date">
+    <p><span><a href="/2013/07/07/the-schedule.html">July 07, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
+  </section>
+  <p><h1>The Schedule</h1>
+
+<p>It's on! We start on the morrow.</p>
+
+<p><strong>Where:</strong> Downtown LA<br/>
+<strong>When:</strong> Monday-Thursday, 8-11 PM (12 hrs/wk)</p>
+
+<p>Shout out to <a href="https://twitter.com/jendiamond">Jen Diamond</a> (member of <a href="http://teams.railsgirlssummerofcode.org/teams/2">Team Bundler</a> and organizer of the <a href="http://www.meetup.com/Los-Angeles-Womens-Ruby-on-Rails-Group/">Los Angeles Women's Ruby on Rails Group</a>) for 1) continuing to run the LA Ruby Eastside study group despite her new stint on the Westside, and 2) agreeing to move its location from Glendale to Downtown LA.</p>
+</p>
+  <p><a href="/2013/07/07/the-schedule.html#disqus_thread" id="comments-link">link</a></p>
+  <br /><br />
+
+  
+  <section class="date">
+    <p><span><a href="/2013/07/02/popping-my-irc-freenode-cherry.html">July 02, 2013</a></span> - <a href="/about.html">JZ</a></p>
+  </section>
+  <p><h1>Popping my IRC Freenode Cherry</h1>
+
+<p>Shout out to UForgotten of the IRC <a href="http://www.vagrantup.com/">#vagrant</a> channel, who helped me <strong>debug a problem on Freenode for the first time!</strong></p>
+
+<p>Earlier today, I tried to run <code>vagrant up</code> again in my new Linux environment as per <a href="http://blog.discourse.org/2013/04/discourse-as-your-first-rails-app/">Discourse as Your First Rails App</a>, and luckily it didn't hang at the VM boot anymore. However, I kept getting this error:</p>
+
+<div class="highlight"><pre><code class="bash"><span class="o">[</span>Default<span class="o">]</span> Mounting NFS shared folders...
+The following SSH <span class="nb">command </span>responded with a non-zero <span class="nb">exit </span>status.
+Vagrant assumes that this means the <span class="nb">command </span>failed! 
+</code></pre></div>
+
+
+<p>I scrounged the Discourse docs for <a href="http://docs-v1.vagrantup.com/v1/docs/nfs.html">NFS</a> errors and found the following in the <a href="https://github.com/discourse/discourse/blob/master/docs/VAGRANT.md">Discourse Vagrant Developer Guide</a>:</p>
+
+<p><a href="/images/discourse_nfs.png"><img src="/images/discourse_nfs.png" width="100%" /></a></p>
+
+<p>Nope, not my errors. Google wasn't any real help either; Vagrant issues <a href="https://github.com/mitchellh/vagrant/issues/1659">#1659</a>, <a href="https://github.com/mitchellh/vagrant/issues/1694">#1694</a>, and <a href="https://github.com/mitchellh/vagrant/issues/1702">#1702</a> mentioned similar errors but the solutions didn't work for me. Vyki and Kurtis weren't online to help out. <a href="https://www.youtube.com/watch?v=iuL2loyB1bk">I was so totally (de)buggin'</a>.</p>
+
+<p>Frustrated after running <code>vagrant up</code> and <code>vagrant halt</code> over and over again with no success, I turned to the next best thing: irc.freenode.net.</p>
+
+<p>I posted my problem on the #vagrant channel, and bam, UForgotten immediately responded. (The badass was actually troubleshooting for multiple IRC users at the same time.) He asked me some questions, and had me run some commands to get to the bottom of things. He thought at first it had to do with IP issues that he himself had run into recently with Vagrant, but that wasn't it.</p>
+
+<p>UForgotten eventually told me to send him my <a href="https://github.com/discourse/discourse/blob/master/Vagrantfile">Vagrantfile</a> and <a href="http://docs.vagrantup.com/v2/debugging.html">debugging log</a> after running this:</p>
+
+<div class="highlight"><pre><code class="bash"><span class="nv">$ VAGRANT_LOG</span><span class="o">=</span>debug vagrant up
+</code></pre></div>
+
+
+<p>I did so, and after some time, he informed me that the problem lay in this line of the log:</p>
+
+<div class="highlight"><pre><code class="bash">exportfs: /home/jzeta/Projects/rgsoc/discourse does not support NFS <span class="nb">export</span>
+</code></pre></div>
+
+
+<p>Wait a second.....I'd seen that before.......!</p>
+
+<p><a href="/images/discourse_nfs_holdup.png"><img src="/images/discourse_nfs_holdup.png" width="100%" /></a></p>
+
+<p><strong>"The root Discourse directory cannot be on an ecryptfs mount or you will receive an error."</strong> When I installed Ubuntu, I had opted to encrypt my home folder, which is where I had put Discourse. All I have to do is remove the encryption, and the Discourse environment should be able to run.</p>
+
+<p>The answer had been right in front of me! Guess I just had to learn the hard way to always read the error log.</p>
+
+<p>UForgotten was pretty patient with my noobiness, and said the reason why I couldn't use an encrypted folder was that NFS simply can't handle the decoding. Another IRC user, smerrill, also put in his 2 cents about how <a href="http://www.phase2technology.com/blog/vagrant-and-nfs/">NFS can't export symlinks</a> either.</p>
+
+<p>I thanked UForgotten for his help, and he replied, "De nada mang. Welcome to IRC. It's good karma, I need help once in a while so when I can I try to pay it forward." Cool.</p>
+
+<p>Really glad my first foray into IRC Freenode went well! On to fixing the encryption thing tomorrow.</p>
+
+<blockquote class="twitter-tweet"><p>1st time getting help on irc freenode ---&gt; problem solved! thanks <a href="https://twitter.com/search?q=%23vagrant&amp;src=hash">#vagrant</a> channel <a href="https://twitter.com/RailsGirlsSoC">@RailsGirlsSoC</a></p>&mdash; jz (@jzeta) <a href="https://twitter.com/jzeta/statuses/352160070928306178">July 2, 2013</a></blockquote>
+
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+</p>
+  <p><a href="/2013/07/02/popping-my-irc-freenode-cherry.html#disqus_thread" id="comments-link">link</a></p>
+  <br /><br />
+
+  
+  <section class="date">
     <p><span><a href="/2013/07/01/i-am-an-installing-machine.html">July 01, 2013</a></span> - <a href="/about.html">JZ</a></p>
   </section>
   <p><h1>I am an Installing Machine</h1>
@@ -93,51 +172,6 @@
 <p>I've set up my Linux dev environment yet again (probably 10th time in the last month? here's to repetition), and will try to get Discourse running by tomorrow.</p>
 </p>
   <p><a href="/2013/07/01/i-am-an-installing-machine.html#disqus_thread" id="comments-link">link</a></p>
-  <br /><br />
-
-  
-  <section class="date">
-    <p><span><a href="/2013/06/30/settin-up.html">June 30, 2013</a></span> - <a href="/about.html">JZ</a></p>
-  </section>
-  <p><h1>Settin' Up</h1>
-
-<p>This weekend I installed an Ubuntu Linux VM on my Windows 7 laptop and set about going through <a href="http://blog.discourse.org/2013/04/discourse-as-your-first-rails-app/">Discourse as Your First Rails App</a>. I'll basically end up with a VM within a VM...kinda neat but kinda worrisome. Prayin' for ya, my wee ASUS.</p>
-
-<p>Coach Kurtis said to read through <a href="http://docs.vagrantup.com/v2/getting-started/">Vagrant's Getting Started guide</a> as well, since it's what Discourse uses for its VM. Vagrant  provides a configured, portable work environment, so that anyone can simply download it and have it up and running quickly.</p>
-
-<p>So far, I still haven't gotten Vagrant to run the Discourse VM yet since <a href="https://github.com/mitchellh/vagrant/wiki/%60vagrant-up%60-hangs-at-%22Waiting-for-VM-to-boot.-This-can-take-a-few-minutes%22">it keeps hanging</a>. Hope I can get it working soon.</p>
-
-<p>P.S. I wonder if Kurtis would mind if I called him Captain Kurt.</p>
-</p>
-  <p><a href="/2013/06/30/settin-up.html#disqus_thread" id="comments-link">link</a></p>
-  <br /><br />
-
-  
-  <section class="date">
-    <p><span><a href="/2013/06/27/hello-mentors.html">June 27, 2013</a></span> - <a href="/about.html">JZ</a></p>
-  </section>
-  <p><h1>Hello, Mentors</h1>
-
-<p>...or in other words, shit just got real (and exciting)!</p>
-
-<p>I've just had my <strong>first Google Hangout</strong> with our mentors <a href="http://twitter.com/evil_trout">Robin Ward</a> and <a href="http://twitter.com/samsaffron">Sam Saffron</a>. Unfortunately, Vyki couldn't really join in as she was in the woods of Washington for a family reunion. Still, Robin, Sam, our coach <a href="http://twitter.com/krainboltgreene">Kurtis</a> and I were able to discuss our plans for <a href="http://discourse.org">Discourse</a>.</p>
-
-<p>Our goal for the summer will be to <strong>extract all oneboxing into one gem.</strong> <a href="http://meta.discourse.org/t/what-is-a-onebox/4546">Oneboxing</a> is a feature of Discourse where if you include a link to a site (i.e. Twitter, Wikipedia), it will try to create a usable snippet for you automatically. By extracting this feature into a gem, it can be usable by projects other than Discourse, and will also make testing much easier since the code will be more modularized.</p>
-
-<p>If time permits, we'll also be implementing oneboxing for other often-used sites that aren't supported yet.</p>
-
-<p>To start out, we're gonna:</p>
-
-<blockquote><ul>
-<li>get Discourse running in our own dev environments using Vagrant/VirtualBox (using <a href="http://blog.discourse.org/2013/04/discourse-as-your-first-rails-app/">this tutorial</a>)</li>
-<li>get Discourse test environment running</li>
-<li>create a thread on <a href="http://meta.discourse.org/">meta.discourse forum</a> introducing ourselves to the community there</li>
-</ul>
-</blockquote>
-
-<p>I'm feeling pretty lucky to have these awesome guys supporting us. Allons! Let's go!</p>
-</p>
-  <p><a href="/2013/06/27/hello-mentors.html#disqus_thread" id="comments-link">link</a></p>
   <br /><br />
 
 
