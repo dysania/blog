@@ -6,9 +6,68 @@
     <atom:link href="http://dysania.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog for Rails Girls Summer of Code</description>
     <language>en-us</language>
-    <pubDate>Tue, 20 Aug 2013 00:24:48 -0700</pubDate>
-    <lastBuildDate>Tue, 20 Aug 2013 00:24:48 -0700</lastBuildDate>
+    <pubDate>Tue, 20 Aug 2013 22:45:10 -0700</pubDate>
+    <lastBuildDate>Tue, 20 Aug 2013 22:45:10 -0700</lastBuildDate>
 
+    
+    <item>
+      <title>Captain's Log: 2013.08.20</title>
+      <link>http://dysania.github.io/blog/2013/08/20/captains-log.html</link>
+      <pubDate>Tue, 20 Aug 2013 22:27:00 -0700</pubDate>
+      <author>Team Dysania</author>
+      <guid>http://dysania.github.io/blog/2013/08/20/captains-log</guid>
+      <description>&lt;h1&gt;Captain's Log: 2013.08.20&lt;/h1&gt;
+
+&lt;blockquote&gt;&lt;ul&gt;
+&lt;li&gt;Started using Verbal Expressions for &lt;code&gt;Matcher&lt;/code&gt; module&lt;/li&gt;
+&lt;li&gt;Refactored &lt;code&gt;Engine&lt;/code&gt; module
+
+&lt;ul&gt;
+&lt;li&gt;Created &lt;code&gt;.===&lt;/code&gt; method to determine if an engine matches a url&lt;/li&gt;
+&lt;li&gt;Created &lt;code&gt;.matches&lt;/code&gt; method to take in verbal expression for engine&lt;/li&gt;
+&lt;li&gt;Learned more about ClassMethods, singleton methods, and &lt;code&gt;extend&lt;/code&gt;/&lt;code&gt;include&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Edited &lt;code&gt;Matcher.oneboxed&lt;/code&gt; to get array of engines and return appropriate onebox
+
+&lt;ul&gt;
+&lt;li&gt;array includes any Engines ending with &quot;Onebox&quot;&lt;/li&gt;
+&lt;li&gt;removed explicit regex url matching&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Created &lt;code&gt;Engine&lt;/code&gt; spec&lt;/li&gt;
+&lt;li&gt;Started copying regex used in discourse/discourse oneboxes for url matching into existing engines
+
+&lt;ul&gt;
+&lt;li&gt;Will convert to Verbal Expressions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;HOMEWORK:
+
+&lt;ul&gt;
+&lt;li&gt;Mandatory watch last night's assigned video&lt;/li&gt;
+&lt;li&gt;Vyki:
+
+&lt;ul&gt;
+&lt;li&gt;Make sure there is an issue for every remaining onebox needed&lt;/li&gt;
+&lt;li&gt;Paste regex for url matching in each issue&lt;/li&gt;
+&lt;li&gt;Make sure milestone for each issue is 1.0.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;JZ:
+
+&lt;ul&gt;
+&lt;li&gt;Rewrite current regex to use verbal_expressions&lt;/li&gt;
+&lt;li&gt;Contact @vykster to merge request when they are all finished&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;If conscious, make more oneboxes.......&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
     
     <item>
       <title>Captain's Log: 2013.08.19</title>
@@ -519,49 +578,6 @@
 &lt;li&gt;Learned about File.read and File.join&lt;/li&gt;
 &lt;li&gt;Listened to Ruby Rogues podcast on the bus/train&lt;/li&gt;
 &lt;li&gt;HOMEWORK: Sleep&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Captain's Log: 2013.07.29</title>
-      <link>http://dysania.github.io/blog/2013/07/29/captains-log.html</link>
-      <pubDate>Mon, 29 Jul 2013 22:40:00 -0700</pubDate>
-      <author>Team Dysania</author>
-      <guid>http://dysania.github.io/blog/2013/07/29/captains-log</guid>
-      <description>&lt;h1&gt;Captain's Log: 2013.07.29&lt;/h1&gt;
-
-&lt;blockquote&gt;&lt;ul&gt;
-&lt;li&gt;Updated mocha to mocha/api&lt;/li&gt;
-&lt;li&gt;Started refactoring &lt;code&gt;preview&lt;/code&gt; method as &lt;code&gt;Preview&lt;/code&gt; class
-
-&lt;ul&gt;
-&lt;li&gt;should take in url&lt;/li&gt;
-&lt;li&gt;should output html&lt;/li&gt;
-&lt;li&gt;should extract pieces of page as data&lt;/li&gt;
-&lt;li&gt;should display with template&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Used Test-Driven Development (mostly)
-
-&lt;ul&gt;
-&lt;li&gt;JZ: created tests that failed&lt;/li&gt;
-&lt;li&gt;Vyki: making tests pass&lt;/li&gt;
-&lt;li&gt;Captain Kurt: refactoring tests&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Started creating Example class and spec
-
-&lt;ul&gt;
-&lt;li&gt;a model for how to build onebox modules&lt;/li&gt;
-&lt;li&gt;will use it to implement existing oneboxes&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Learned to use Nokogiri and Mustache&lt;/li&gt;
-&lt;li&gt;Lecture on instance classes, Ruby best practices, and OOP&lt;/li&gt;
-&lt;li&gt;Eagerly discussed the forthcoming &lt;a href=&quot;http://www.hipsterceo.com/&quot;&gt;Hipster Tech Startup CEO simulator game&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;HOMEWORK: Listen to latest &lt;a href=&quot;http://rubyrogues.com/&quot;&gt;Ruby Rogues&lt;/a&gt; podcast&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 </description>
