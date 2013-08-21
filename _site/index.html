@@ -194,94 +194,58 @@
 
   
   <section class="date">
-    <p><span><a href="/2013/08/13/captains-log.html">August 13, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
+    <p><span><a href="/2013/08/14/captains-log.html">August 14, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
   </section>
-  <p><h1>Captain's Log: 2013.08.13</h1>
+  <p><h1>Captain's Log: 2013.08.14</h1>
 
 <blockquote><ul>
-<li>created <code>Matcher</code> class
+<li>Dealt w/ a LOT of merge conflicts
 
 <ul>
-<li>TDD</li>
-<li><code>Engine</code> module to be included by oneboxes</li>
-<li>refactor <code>preview</code>, move url matching functionality to <code>Matcher.oneboxed</code></li>
+<li>We had pull requested a few onebox branches before we refactored
+
+<ul>
+<li>Qik</li>
+<li>Wikipedia</li>
+<li>StackExchange</li>
 </ul>
 </li>
-<li>JZ added new oneboxes
-
-<ul>
-<li><a href="http://qik.com/">Qik</a></li>
-<li><a href="http://stackexchange.com/">StackExchange</a></li>
-<li>Captain Kurt helped add test for Qik video embedding and make spec DRYer</li>
+<li>Renamespaced oneboxes to <code>Engine</code> module instead of <code>Preview</code> class</li>
 </ul>
 </li>
-<li>we don't know how to grab video embed code yet
+<li>Cleaned up local and remote branches in <code>dysania/onebox</code></li>
+<li>Started looking at VerbalExpressions</li>
+<li>Learned about the difference between <code>include</code> and <code>extend</code> re: singleton class methods</li>
+<li>For sites that support OpenGraph, we decided we'll be using the <a href="https://www.google.com/url?q=https%3A%2F%2Fgithub.%20com%2Fintridea%2Fopengraph&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGJyQrwMaX1IFBEYInqmAPK3N6GIg">opengraph</a> gem</li>
+<li><a href="https://github.com/markijbema">markijbema</a> asked about why we created Matcher object (<a href="https://github.com/dysania/onebox/issues/43">issue #43</a>)
 
 <ul>
-<li>still undecided on how to display videos in regards to autoplay</li>
-<li>embed or linked thumbnail ?</li>
+<li>He thought it made sense that we keep url matching code close to onebox conversion code since it would define which urls we support</li>
+<li>We created <code>Matcher</code> object because <code>Preview</code> should only have to worry about onebox conversion and not how to find the correct onebox</li>
 </ul>
 </li>
-<li>learned about <a href="http://en.wikipedia.org/wiki/Null_Object_pattern">Null Object</a></li>
-<li>learned how to autoclose issues with a commit message!
+<li>Discussed our lightning talk for next week
 
 <ul>
-<li><code>git commit -m "Fixes #[issue number]"</code></li>
-</ul>
-</li>
-<li>unable to merge <code>wikipedia-onebox</code> branch due to conflicts with master
-
-<ul>
-<li>learned how to deal with conflicts
-
-<ul>
-<li><code>git pull --rebase origin master</code></li>
-<li><code>fix conflicts</code></li>
-<li><code>git add .</code></li>
-<li><code>git rebase --continue</code></li>
-<li><code>git push -f origin wikipedia-onebox</code></li>
-</ul>
-</li>
+<li>Semantic versioning</li>
+<li>Ruby's pessimistic operator</li>
+<li>Our experience so far extracting feature as a gem (the meetup's theme is gems)</li>
 </ul>
 </li>
 </ul>
 </blockquote>
 
 <ul>
-<li>How to make a good pull request via Robin and Jeff:</li>
-</ul>
-
-
-<blockquote class="twitter-tweet"><p>Now *this* is how you make a good pull request: <a href="https://t.co/WWKEI0OAok">https://t.co/WWKEI0OAok</a></p>&mdash; Robin Ward (@evil_trout) <a href="https://twitter.com/evil_trout/statuses/367442268258459649">August 14, 2013</a></blockquote>
-
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-<blockquote class="twitter-tweet"><p>Look at this pull request.. LOOK AT IT <a href="https://t.co/CzA91l6oQw">https://t.co/CzA91l6oQw</a></p>&mdash; Jeff Atwood (@codinghorror) <a href="https://twitter.com/codinghorror/statuses/367395684791508992">August 13, 2013</a></blockquote>
-
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-<ul>
 <li>HOMEWORK:
 
 <ul>
-<li>refactor tests so more DRY</li>
-<li>Read up on:
-
-<ul>
-<li><a href="https://github.com/VerbalExpressions/RubyVerbalExpressions">VerbalExpressions</a> for Ruby</li>
-<li><code>parse_open_graph</code></li>
-</ul>
-</li>
+<li>Add <code>require opengraph</code> in gemfile, commit in new branch for <a href="https://github.com/dysania/onebox/issues/44">issue #44</a></li>
 </ul>
 </li>
 </ul>
 
 </p>
-  <p><a href="/2013/08/13/captains-log.html#disqus_thread" id="comments-link">link</a></p>
+  <p><a href="/2013/08/14/captains-log.html#disqus_thread" id="comments-link">link</a></p>
   <br /><br />
 
 
@@ -337,6 +301,12 @@
       <li class="page">
         
           <a href="/page7">7</a>
+        
+      </li>
+    
+      <li class="page">
+        
+          <a href="/page8">8</a>
         
       </li>
     
