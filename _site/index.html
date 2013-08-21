@@ -82,6 +82,64 @@
 
   
   <section class="date">
+    <p><span><a href="/2013/08/20/captains-log.html">August 20, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
+  </section>
+  <p><h1>Captain's Log: 2013.08.20</h1>
+
+<blockquote><ul>
+<li>Started using Verbal Expressions for <code>Matcher</code> module</li>
+<li>Refactored <code>Engine</code> module
+
+<ul>
+<li>Created <code>.===</code> method to determine if an engine matches a url</li>
+<li>Created <code>.matches</code> method to take in verbal expression for engine</li>
+<li>Learned more about ClassMethods, singleton methods, and <code>extend</code>/<code>include</code></li>
+</ul>
+</li>
+<li>Edited <code>Matcher.oneboxed</code> to get array of engines and return appropriate onebox
+
+<ul>
+<li>array includes any Engines ending with "Onebox"</li>
+<li>removed explicit regex url matching</li>
+</ul>
+</li>
+<li>Created <code>Engine</code> spec</li>
+<li>Started copying regex used in discourse/discourse oneboxes for url matching into existing engines
+
+<ul>
+<li>Will convert to Verbal Expressions</li>
+</ul>
+</li>
+<li>HOMEWORK:
+
+<ul>
+<li>Mandatory watch last night's assigned video</li>
+<li>Vyki:
+
+<ul>
+<li>Make sure there is an issue for every remaining onebox needed</li>
+<li>Paste regex for url matching in each issue</li>
+<li>Make sure milestone for each issue is 1.0.0</li>
+</ul>
+</li>
+<li>JZ:
+
+<ul>
+<li>Rewrite current regex to use verbal_expressions</li>
+<li>Contact @vykster to merge request when they are all finished</li>
+</ul>
+</li>
+<li>If conscious, make more oneboxes.......</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</p>
+  <p><a href="/2013/08/20/captains-log.html#disqus_thread" id="comments-link">link</a></p>
+  <br /><br />
+
+  
+  <section class="date">
     <p><span><a href="/2013/08/19/captains-log.html">August 19, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
   </section>
   <p><h1>Captain's Log: 2013.08.19</h1>
@@ -224,65 +282,6 @@
 
 </p>
   <p><a href="/2013/08/13/captains-log.html#disqus_thread" id="comments-link">link</a></p>
-  <br /><br />
-
-  
-  <section class="date">
-    <p><span><a href="/2013/08/12/captains-log.html">August 12, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
-  </section>
-  <p><h1>Captain's Log: 2013.08.12</h1>
-
-<blockquote><ul>
-<li>Vyki merged another <a href="https://github.com/dysania/onebox/pull/35">pull request</a> from <a href="https://github.com/markijbema">markijbema</a> requiring <a href="https://github.com/bbatsov/rubocop">Rubocop</a> gem
-
-<ul>
-<li>For consistent code style, according to <a href="https://github.com/bbatsov/ruby-style-guide">Ruby Style Guide</a></li>
-<li>Default cop settings</li>
-<li>Spacing corrections</li>
-</ul>
-</li>
-<li><a href="https://twitter.com/samsaffron">Sam</a> cc'd us on new thread on <a href="http://meta.discourse.org/">Discourse Meta</a>: <a href="http://meta.discourse.org/t/sometimes-onebox-hangs/9010">"Sometimes onebox hangs"</a>
-
-<ul>
-<li>We'll need to address HTTP request issues (limits/timeouts) in our gem</li>
-</ul>
-</li>
-<li>LA Ruby/Rails August meetup recap
-
-<ul>
-<li>We voted <a href="https://twitter.com/j3">Jeff Casimir</a> of <a href="http://www.jumpstartlab.com/">JumpstartLab</a> as MVP presenter</li>
-</ul>
-</li>
-<li>Discussed possible topics for lightning talk at LA Women's Ruby/Rails Group August Monthly Bash next Thursday
-
-<ul>
-<li>Present onebox gem</li>
-<li><a href="http://semver.org/">Semantic versioning</a></li>
-<li><a href="https://github.com/bbatsov/rubocop">Rubocop</a></li>
-<li>Ruby's unique <a href="http://robots.thoughtbot.com/post/2508037841/rubys-pessimistic-operator">pessimistic operator</a></li>
-</ul>
-</li>
-<li>JZ kicked herself for forgetting her laptop charger at home</li>
-<li>Captain Kurt was sleep-deprived so we ended our session early</li>
-<li>HOMEWORK:
-
-<ul>
-<li>Create 4 new oneboxes (2 each) based on Amazon and Example</li>
-<li>Create new object that matches given URL to correct onebox class
-
-<ul>
-<li>This functionality is currently in <code>lib/onebox/preview</code> but should be separate since it'll get huge</li>
-<li>Pair-program on this</li>
-<li>TDD - commit spec first, then class</li>
-</ul>
-</li>
-<li>From last week - look at what <code>parse_open_graph</code> does</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-</p>
-  <p><a href="/2013/08/12/captains-log.html#disqus_thread" id="comments-link">link</a></p>
   <br /><br />
 
 
