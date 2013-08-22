@@ -9,7 +9,7 @@
         <meta name="author" content="Team Dysania" />
         <meta name="viewport" content="width=device-width">
 
-        <title>Captain's Log: 2013.08.19</title>
+        <title>Captain's Log: 2013.08.17</title>
         <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/screen.css">
@@ -82,59 +82,59 @@
 
 <section class="date">
 
-  <p><span><a href="/2013/08/19/captains-log.html">August 19, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
+  <p><span><a href="/2013/08/17/captains-log.html">August 17, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
 
 </section>
 
 <article>
   
   <section class="content">
-    <h1>Captain's Log: 2013.08.19</h1>
+    <h1>Captain's Log: 2013.08.17</h1>
+
+<p><img src="/images/library.jpg" width="100%" /></p>
 
 <blockquote><ul>
-<li>Fetch and pull from upstream
+<li>1st meeting during the weekend!</li>
+<li>Chilled at the <a href="http://www.lapl.org/branches/central-library">Los Angeles Grand Central Library</a>, walked around DTLA a bit</li>
+<li>Renamed all onebox engines and specs to end with <code>_onebox</code>/<code>Onebox</code>
 
 <ul>
-<li><code>discourse/discourse</code> --> <code>dysania/discourse</code></li>
+<li>We want to pass an array of all the oneboxes, but without including the <code>OpenGraph</code> module</li>
+<li>We'll be searching for the onebox engines/specs based on their suffixes</li>
+<li>Renamed throughout the project</li>
 </ul>
 </li>
-<li>Merge pull requests from Saturday
+<li>Created <code>OpenGraph</code> module
 
 <ul>
-<li>Created a few merge conflicts b/c of the order they were merged in :(</li>
+<li>Includes <code>Engine</code> module</li>
+<li>To be used for sites that support Open Graph Protocol
+
+<ul>
+<li>It's standardized and easier to parse</li>
+<li>Don't have to deal with OGP sites that generate content using Javascript (like Flickr)</li>
+<li>Lots of supporting sites, so won't have to create as many explicit engines and specs</li>
 </ul>
 </li>
-<li>Finish first Onebox Engine that uses Open Graph
-
-<ul>
-<li>FlickrOnebox</li>
+<li>Learned how to namespace from root (ex. <code>::OpenGraph.new(@url)</code>)</li>
 </ul>
 </li>
-<li>Work on README.md
+<li>Created Flickr engine and specs to start using <code>OpenGraph</code> module</li>
+<li>Captain Kurt drafted a format for our presentation, to be called "Pulling a Gem Out of your App"
 
 <ul>
-<li>Draft instructions for creating a new onebox</li>
+<li>We'll highlight 5 lessons we've learned since starting work on onebox gem</li>
+</ul>
+</li>
+<li>HOMEWORK:
+
+<ul>
+<li>Read article from <a href="http://www.heartmindcode.com/blog/2013/08/loyalty-and-layoffs/">Heart, Mind Code</a> by <a href="https://twitter.com/dbrady">David Brady</a></li>
+<li>Keep working on presentation</li>
 </ul>
 </li>
 </ul>
 </blockquote>
-
-<ul>
-<li>HOMEWORK:
-
-<ul>
-<li>Create more Oneboxes using Open Graph</li>
-<li>Work on presentation for Thursday</li>
-<li>Watch <a href="http://vimeo.com/5047563">ART &amp;&amp; CODE Symposium: Hackety Hack, why the lucky stiff</a></li>
-</ul>
-</li>
-</ul>
-
-
-<iframe src="http://player.vimeo.com/video/5047563?byline=0&amp;portrait=0" width="100%" height="352" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-
-
-
 
   </section>
 </article>
@@ -146,16 +146,16 @@
         <div class="left">
          
                 <p>newer:</p>
-                <a href="/2013/08/20/captains-log.html" title="Newer Post: 
-Captain's Log: 2013.08.20"> &laquo; Captain's Log: 2013.08.20</a> 
+                <a href="/2013/08/19/captains-log.html" title="Newer Post: 
+Captain's Log: 2013.08.19"> &laquo; Captain's Log: 2013.08.19</a> 
           
         </div> 
 
         <div class="right"> 
         
                 <p>older:</p>
-                <a href="/2013/08/17/captains-log.html" title="Older Post: 
-Captain's Log: 2013.08.17">Captain's Log: 2013.08.17 &raquo; </a> 
+                <a href="/2013/08/13/captains-log.html" title="Older Post: 
+Captain's Log: 2013.08.13">Captain's Log: 2013.08.13 &raquo; </a> 
          
         </div> 
         <div class="clear">&nbsp;</div> 
@@ -167,7 +167,7 @@ Captain's Log: 2013.08.17">Captain's Log: 2013.08.17 &raquo; </a>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = 'dysania'; // required: replace example with your forum shortname
-        var disqus_identifier = "/2013/08/19/captains-log.html";
+        var disqus_identifier = "/2013/08/17/captains-log.html";
 
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function() {
