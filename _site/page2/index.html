@@ -82,6 +82,60 @@
 
   
   <section class="date">
+    <p><span><a href="/2013/08/17/captains-log.html">August 17, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
+  </section>
+  <p><h1>Captain's Log: 2013.08.17</h1>
+
+<p><img src="/images/library.jpg" width="100%" /></p>
+
+<blockquote><ul>
+<li>1st meeting during the weekend!</li>
+<li>Chilled at the <a href="http://www.lapl.org/branches/central-library">Los Angeles Grand Central Library</a>, walked around DTLA a bit</li>
+<li>Renamed all onebox engines and specs to end with <code>_onebox</code>/<code>Onebox</code>
+
+<ul>
+<li>We want to pass an array of all the oneboxes, but without including the <code>OpenGraph</code> module</li>
+<li>We'll be searching for the onebox engines/specs based on their suffixes</li>
+<li>Renamed throughout the project</li>
+</ul>
+</li>
+<li>Created <code>OpenGraph</code> module
+
+<ul>
+<li>Includes <code>Engine</code> module</li>
+<li>To be used for sites that support Open Graph Protocol
+
+<ul>
+<li>It's standardized and easier to parse</li>
+<li>Don't have to deal with OGP sites that generate content using Javascript (like Flickr)</li>
+<li>Lots of supporting sites, so won't have to create as many explicit engines and specs</li>
+</ul>
+</li>
+<li>Learned how to namespace from root (ex. <code>::OpenGraph.new(@url)</code>)</li>
+</ul>
+</li>
+<li>Created Flickr engine and specs to start using <code>OpenGraph</code> module</li>
+<li>Captain Kurt drafted a format for our presentation, to be called "Pulling a Gem Out of your App"
+
+<ul>
+<li>We'll highlight 5 lessons we've learned since starting work on onebox gem</li>
+</ul>
+</li>
+<li>HOMEWORK:
+
+<ul>
+<li>Read article from <a href="http://www.heartmindcode.com/blog/2013/08/loyalty-and-layoffs/">Heart, Mind Code</a> by <a href="https://twitter.com/dbrady">David Brady</a></li>
+<li>Keep working on presentation</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</p>
+  <p><a href="/2013/08/17/captains-log.html#disqus_thread" id="comments-link">link</a></p>
+  <br /><br />
+
+  
+  <section class="date">
     <p><span><a href="/2013/08/14/captains-log.html">August 14, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
   </section>
   <p><h1>Captain's Log: 2013.08.14</h1>
@@ -226,65 +280,6 @@
 
 </p>
   <p><a href="/2013/08/13/captains-log.html#disqus_thread" id="comments-link">link</a></p>
-  <br /><br />
-
-  
-  <section class="date">
-    <p><span><a href="/2013/08/12/captains-log.html">August 12, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
-  </section>
-  <p><h1>Captain's Log: 2013.08.12</h1>
-
-<blockquote><ul>
-<li>Vyki merged another <a href="https://github.com/dysania/onebox/pull/35">pull request</a> from <a href="https://github.com/markijbema">markijbema</a> requiring <a href="https://github.com/bbatsov/rubocop">Rubocop</a> gem
-
-<ul>
-<li>For consistent code style, according to <a href="https://github.com/bbatsov/ruby-style-guide">Ruby Style Guide</a></li>
-<li>Default cop settings</li>
-<li>Spacing corrections</li>
-</ul>
-</li>
-<li><a href="https://twitter.com/samsaffron">Sam</a> cc'd us on new thread on <a href="http://meta.discourse.org/">Discourse Meta</a>: <a href="http://meta.discourse.org/t/sometimes-onebox-hangs/9010">"Sometimes onebox hangs"</a>
-
-<ul>
-<li>We'll need to address HTTP request issues (limits/timeouts) in our gem</li>
-</ul>
-</li>
-<li>LA Ruby/Rails August meetup recap
-
-<ul>
-<li>We voted <a href="https://twitter.com/j3">Jeff Casimir</a> of <a href="http://www.jumpstartlab.com/">JumpstartLab</a> as MVP presenter</li>
-</ul>
-</li>
-<li>Discussed possible topics for lightning talk at LA Women's Ruby/Rails Group August Monthly Bash next Thursday
-
-<ul>
-<li>Present onebox gem</li>
-<li><a href="http://semver.org/">Semantic versioning</a></li>
-<li><a href="https://github.com/bbatsov/rubocop">Rubocop</a></li>
-<li>Ruby's unique <a href="http://robots.thoughtbot.com/post/2508037841/rubys-pessimistic-operator">pessimistic operator</a></li>
-</ul>
-</li>
-<li>JZ kicked herself for forgetting her laptop charger at home</li>
-<li>Captain Kurt was sleep-deprived so we ended our session early</li>
-<li>HOMEWORK:
-
-<ul>
-<li>Create 4 new oneboxes (2 each) based on Amazon and Example</li>
-<li>Create new object that matches given URL to correct onebox class
-
-<ul>
-<li>This functionality is currently in <code>lib/onebox/preview</code> but should be separate since it'll get huge</li>
-<li>Pair-program on this</li>
-<li>TDD - commit spec first, then class</li>
-</ul>
-</li>
-<li>From last week - look at what <code>parse_open_graph</code> does</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-</p>
-  <p><a href="/2013/08/12/captains-log.html#disqus_thread" id="comments-link">link</a></p>
   <br /><br />
 
 
