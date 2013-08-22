@@ -6,9 +6,50 @@
     <atom:link href="http://dysania.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog for Rails Girls Summer of Code</description>
     <language>en-us</language>
-    <pubDate>Wed, 21 Aug 2013 17:54:01 -0700</pubDate>
-    <lastBuildDate>Wed, 21 Aug 2013 17:54:01 -0700</lastBuildDate>
+    <pubDate>Wed, 21 Aug 2013 23:00:30 -0700</pubDate>
+    <lastBuildDate>Wed, 21 Aug 2013 23:00:30 -0700</lastBuildDate>
 
+    
+    <item>
+      <title>Captain's Log: 2013.08.21</title>
+      <link>http://dysania.github.io/blog/2013/08/21/captains-log.html</link>
+      <pubDate>Wed, 21 Aug 2013 22:44:00 -0700</pubDate>
+      <author>Team Dysania</author>
+      <guid>http://dysania.github.io/blog/2013/08/21/captains-log</guid>
+      <description>&lt;h1&gt;Captain's Log: 2013.08.21&lt;/h1&gt;
+
+&lt;blockquote&gt;&lt;ul&gt;
+&lt;li&gt;Trying to get our onebox gem to v1.0.0 ASAP&lt;/li&gt;
+&lt;li&gt;Started working on setting up caching support
+
+&lt;ul&gt;
+&lt;li&gt;Lesson on caching, and the differences between arrays and hashes&lt;/li&gt;
+&lt;li&gt;using &lt;a href=&quot;http://ruby-doc.org/stdlib-1.9.3/libdoc/ostruct/rdoc/OpenStruct.html&quot;&gt;ostruct&lt;/a&gt; to allow creation of OpenStruct objects&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Wrote Verbal Expression blocks using &lt;code&gt;matches&lt;/code&gt; function for all existing oneboxes&lt;/li&gt;
+&lt;li&gt;Added Blip.tv onebox
+
+&lt;ul&gt;
+&lt;li&gt;Still haven't set up video embed template&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;HOMEWORK
+
+&lt;ul&gt;
+&lt;li&gt;Work on Presentation for tomorrow's &lt;a href=&quot;http://www.meetup.com/Los-Angeles-Womens-Ruby-on-Rails-Group/events/134549192/&quot;&gt;Westside/Eastside Ruby on Rails Bash&lt;/a&gt;. Stop by if you are in L.A.!&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;P.S. JZ just watched &lt;a href=&quot;http://www.imdb.com/title/tt0083658/&quot;&gt;Blade Runner&lt;/a&gt; for the &lt;em&gt;first&lt;/em&gt; time. (You should so tease her on Twitter)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+    </item>
     
     <item>
       <title>Captain's Log: 2013.08.20</title>
@@ -16,7 +57,7 @@
       <pubDate>Tue, 20 Aug 2013 22:27:00 -0700</pubDate>
       <author>Team Dysania</author>
       <guid>http://dysania.github.io/blog/2013/08/20/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.08.20&lt;/h1&gt;
+      <description>&lt;h1&gt;Captain's Log: 2013.08.20&lt;/h1&gt;
 
 &lt;blockquote&gt;&lt;ul&gt;
 &lt;li&gt;Started using Verbal Expressions for &lt;code&gt;Matcher&lt;/code&gt; module&lt;/li&gt;
@@ -45,7 +86,7 @@
 &lt;li&gt;HOMEWORK:
 
 &lt;ul&gt;
-&lt;li&gt;Mandatory watch last night&#39;s assigned video&lt;/li&gt;
+&lt;li&gt;Mandatory watch last night's assigned video&lt;/li&gt;
 &lt;li&gt;Vyki:
 
 &lt;ul&gt;
@@ -75,7 +116,7 @@
       <pubDate>Mon, 19 Aug 2013 22:38:00 -0700</pubDate>
       <author>Team Dysania</author>
       <guid>http://dysania.github.io/blog/2013/08/19/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.08.19&lt;/h1&gt;
+      <description>&lt;h1&gt;Captain's Log: 2013.08.19&lt;/h1&gt;
 
 &lt;blockquote&gt;&lt;ul&gt;
 &lt;li&gt;Fetch and pull from upstream
@@ -130,7 +171,7 @@
       <pubDate>Sat, 17 Aug 2013 17:01:00 -0700</pubDate>
       <author>Team Dysania</author>
       <guid>http://dysania.github.io/blog/2013/08/17/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.08.17&lt;/h1&gt;
+      <description>&lt;h1&gt;Captain's Log: 2013.08.17&lt;/h1&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/library.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
 
@@ -141,7 +182,7 @@
 
 &lt;ul&gt;
 &lt;li&gt;We want to pass an array of all the oneboxes, but without including the &lt;code&gt;OpenGraph&lt;/code&gt; module&lt;/li&gt;
-&lt;li&gt;We&#39;ll be searching for the onebox engines/specs based on their suffixes&lt;/li&gt;
+&lt;li&gt;We'll be searching for the onebox engines/specs based on their suffixes&lt;/li&gt;
 &lt;li&gt;Renamed throughout the project&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -152,9 +193,9 @@
 &lt;li&gt;To be used for sites that support Open Graph Protocol
 
 &lt;ul&gt;
-&lt;li&gt;It&#39;s standardized and easier to parse&lt;/li&gt;
-&lt;li&gt;Don&#39;t have to deal with OGP sites that generate content using Javascript (like Flickr)&lt;/li&gt;
-&lt;li&gt;Lots of supporting sites, so won&#39;t have to create as many explicit engines and specs&lt;/li&gt;
+&lt;li&gt;It's standardized and easier to parse&lt;/li&gt;
+&lt;li&gt;Don't have to deal with OGP sites that generate content using Javascript (like Flickr)&lt;/li&gt;
+&lt;li&gt;Lots of supporting sites, so won't have to create as many explicit engines and specs&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Learned how to namespace from root (ex. &lt;code&gt;::OpenGraph.new(@url)&lt;/code&gt;)&lt;/li&gt;
@@ -164,7 +205,7 @@
 &lt;li&gt;Captain Kurt drafted a format for our presentation, to be called &quot;Pulling a Gem Out of your App&quot;
 
 &lt;ul&gt;
-&lt;li&gt;We&#39;ll highlight 5 lessons we&#39;ve learned since starting work on onebox gem&lt;/li&gt;
+&lt;li&gt;We'll highlight 5 lessons we've learned since starting work on onebox gem&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;HOMEWORK:
@@ -185,7 +226,7 @@
       <pubDate>Wed, 14 Aug 2013 23:00:00 -0700</pubDate>
       <author>Team Dysania</author>
       <guid>http://dysania.github.io/blog/2013/08/14/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.08.14&lt;/h1&gt;
+      <description>&lt;h1&gt;Captain's Log: 2013.08.14&lt;/h1&gt;
 
 &lt;blockquote&gt;&lt;ul&gt;
 &lt;li&gt;Dealt w/ a LOT of merge conflicts
@@ -205,7 +246,7 @@
 &lt;li&gt;Cleaned up local and remote branches in &lt;code&gt;dysania/onebox&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Started looking at VerbalExpressions&lt;/li&gt;
 &lt;li&gt;Learned about the difference between &lt;code&gt;include&lt;/code&gt; and &lt;code&gt;extend&lt;/code&gt; re: singleton class methods&lt;/li&gt;
-&lt;li&gt;For sites that support OpenGraph, we decided we&#39;ll be using the &lt;a href=&quot;https://www.google.com/url?q=https%3A%2F%2Fgithub.%20com%2Fintridea%2Fopengraph&amp;amp;sa=D&amp;amp;sntz=1&amp;amp;usg=AFQjCNGJyQrwMaX1IFBEYInqmAPK3N6GIg&quot;&gt;opengraph&lt;/a&gt; gem&lt;/li&gt;
+&lt;li&gt;For sites that support OpenGraph, we decided we'll be using the &lt;a href=&quot;https://www.google.com/url?q=https%3A%2F%2Fgithub.%20com%2Fintridea%2Fopengraph&amp;amp;sa=D&amp;amp;sntz=1&amp;amp;usg=AFQjCNGJyQrwMaX1IFBEYInqmAPK3N6GIg&quot;&gt;opengraph&lt;/a&gt; gem&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/markijbema&quot;&gt;markijbema&lt;/a&gt; asked about why we created Matcher object (&lt;a href=&quot;https://github.com/dysania/onebox/issues/43&quot;&gt;issue #43&lt;/a&gt;)
 
 &lt;ul&gt;
@@ -217,8 +258,8 @@
 
 &lt;ul&gt;
 &lt;li&gt;Semantic versioning&lt;/li&gt;
-&lt;li&gt;Ruby&#39;s pessimistic operator&lt;/li&gt;
-&lt;li&gt;Our experience so far extracting feature as a gem (the meetup&#39;s theme is gems)&lt;/li&gt;
+&lt;li&gt;Ruby's pessimistic operator&lt;/li&gt;
+&lt;li&gt;Our experience so far extracting feature as a gem (the meetup's theme is gems)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -242,7 +283,7 @@
       <pubDate>Tue, 13 Aug 2013 22:23:00 -0700</pubDate>
       <author>Team Dysania</author>
       <guid>http://dysania.github.io/blog/2013/08/13/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.08.13&lt;/h1&gt;
+      <description>&lt;h1&gt;Captain's Log: 2013.08.13&lt;/h1&gt;
 
 &lt;blockquote&gt;&lt;ul&gt;
 &lt;li&gt;created &lt;code&gt;Matcher&lt;/code&gt; class
@@ -261,7 +302,7 @@
 &lt;li&gt;Captain Kurt helped add test for Qik video embedding and make spec DRYer&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;we don&#39;t know how to grab video embed code yet
+&lt;li&gt;we don't know how to grab video embed code yet
 
 &lt;ul&gt;
 &lt;li&gt;still undecided on how to display videos in regards to autoplay&lt;/li&gt;
@@ -335,7 +376,7 @@
       <pubDate>Mon, 12 Aug 2013 23:52:00 -0700</pubDate>
       <author>Team Dysania</author>
       <guid>http://dysania.github.io/blog/2013/08/12/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.08.12&lt;/h1&gt;
+      <description>&lt;h1&gt;Captain's Log: 2013.08.12&lt;/h1&gt;
 
 &lt;blockquote&gt;&lt;ul&gt;
 &lt;li&gt;Vyki merged another &lt;a href=&quot;https://github.com/dysania/onebox/pull/35&quot;&gt;pull request&lt;/a&gt; from &lt;a href=&quot;https://github.com/markijbema&quot;&gt;markijbema&lt;/a&gt; requiring &lt;a href=&quot;https://github.com/bbatsov/rubocop&quot;&gt;Rubocop&lt;/a&gt; gem
@@ -346,10 +387,10 @@
 &lt;li&gt;Spacing corrections&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://twitter.com/samsaffron&quot;&gt;Sam&lt;/a&gt; cc&#39;d us on new thread on &lt;a href=&quot;http://meta.discourse.org/&quot;&gt;Discourse Meta&lt;/a&gt;: &lt;a href=&quot;http://meta.discourse.org/t/sometimes-onebox-hangs/9010&quot;&gt;&quot;Sometimes onebox hangs&quot;&lt;/a&gt;
+&lt;li&gt;&lt;a href=&quot;https://twitter.com/samsaffron&quot;&gt;Sam&lt;/a&gt; cc'd us on new thread on &lt;a href=&quot;http://meta.discourse.org/&quot;&gt;Discourse Meta&lt;/a&gt;: &lt;a href=&quot;http://meta.discourse.org/t/sometimes-onebox-hangs/9010&quot;&gt;&quot;Sometimes onebox hangs&quot;&lt;/a&gt;
 
 &lt;ul&gt;
-&lt;li&gt;We&#39;ll need to address HTTP request issues (limits/timeouts) in our gem&lt;/li&gt;
+&lt;li&gt;We'll need to address HTTP request issues (limits/timeouts) in our gem&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;LA Ruby/Rails August meetup recap
@@ -358,13 +399,13 @@
 &lt;li&gt;We voted &lt;a href=&quot;https://twitter.com/j3&quot;&gt;Jeff Casimir&lt;/a&gt; of &lt;a href=&quot;http://www.jumpstartlab.com/&quot;&gt;JumpstartLab&lt;/a&gt; as MVP presenter&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Discussed possible topics for lightning talk at LA Women&#39;s Ruby/Rails Group August Monthly Bash next Thursday
+&lt;li&gt;Discussed possible topics for lightning talk at LA Women's Ruby/Rails Group August Monthly Bash next Thursday
 
 &lt;ul&gt;
 &lt;li&gt;Present onebox gem&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://semver.org/&quot;&gt;Semantic versioning&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/bbatsov/rubocop&quot;&gt;Rubocop&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Ruby&#39;s unique &lt;a href=&quot;http://robots.thoughtbot.com/post/2508037841/rubys-pessimistic-operator&quot;&gt;pessimistic operator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ruby's unique &lt;a href=&quot;http://robots.thoughtbot.com/post/2508037841/rubys-pessimistic-operator&quot;&gt;pessimistic operator&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;JZ kicked herself for forgetting her laptop charger at home&lt;/li&gt;
@@ -376,7 +417,7 @@
 &lt;li&gt;Create new object that matches given URL to correct onebox class
 
 &lt;ul&gt;
-&lt;li&gt;This functionality is currently in &lt;code&gt;lib/onebox/preview&lt;/code&gt; but should be separate since it&#39;ll get huge&lt;/li&gt;
+&lt;li&gt;This functionality is currently in &lt;code&gt;lib/onebox/preview&lt;/code&gt; but should be separate since it'll get huge&lt;/li&gt;
 &lt;li&gt;Pair-program on this&lt;/li&gt;
 &lt;li&gt;TDD - commit spec first, then class&lt;/li&gt;
 &lt;/ul&gt;
@@ -395,7 +436,7 @@
       <pubDate>Wed, 07 Aug 2013 22:52:00 -0700</pubDate>
       <author>Team Dysania</author>
       <guid>http://dysania.github.io/blog/2013/08/07/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.08.07&lt;/h1&gt;
+      <description>&lt;h1&gt;Captain's Log: 2013.08.07&lt;/h1&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://media.catmoji.com/cache/post/kbh/grumpy-cat_thumb.jpg&quot; style=&quot;margin:auto;display:block;&quot; /&gt;&lt;/p&gt;
 
@@ -407,7 +448,7 @@
 &lt;li&gt;JZ tried to make Flickr onebox but failed
 
 &lt;ul&gt;
-&lt;li&gt;Flickr images are generated w/ Javascript, so we can&#39;t use our usual way of parsing an HTML response&lt;/li&gt;
+&lt;li&gt;Flickr images are generated w/ Javascript, so we can't use our usual way of parsing an HTML response&lt;/li&gt;
 &lt;li&gt;Discourse uses &lt;code&gt;parse_open_graph&lt;/code&gt; function to access Flickr content&lt;/li&gt;
 &lt;li&gt;Realized we lacked functionality to onebox sites that support &lt;a href=&quot;http://ogp.me/&quot;&gt;Open Graph Protocol&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Note to self: pick easier onebox to do first...&lt;/li&gt;
@@ -418,14 +459,14 @@
 &lt;li&gt;We need to put off gem release until we can support Open Graph Protocol sites :(&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://bikeshed.com/&quot;&gt;Painted the bikeshed&lt;/a&gt; (try refreshing the page repeatedly...)&lt;/li&gt;
 &lt;li&gt;Attending &lt;a href=&quot;http://www.meetup.com/laruby/events/129200762/&quot;&gt;LA Ruby/Rails August meetup&lt;/a&gt; tomorrow&lt;/li&gt;
-&lt;li&gt;Got a text from &lt;a href=&quot;https://twitter.com/jendiamond&quot;&gt;Jen&lt;/a&gt; - we&#39;ll be presenting our onebox gem at LA Women&#39;s Ruby/Rails Group August Monthly Bash&lt;/li&gt;
+&lt;li&gt;Got a text from &lt;a href=&quot;https://twitter.com/jendiamond&quot;&gt;Jen&lt;/a&gt; - we'll be presenting our onebox gem at LA Women's Ruby/Rails Group August Monthly Bash&lt;/li&gt;
 &lt;li&gt;HOMEWORK:
 
 &lt;ul&gt;
 &lt;li&gt;Look at what &lt;code&gt;parse_open_graph&lt;/code&gt; function does&lt;/li&gt;
 &lt;li&gt;Self-assigned: listen to latest &lt;a href=&quot;http://rubyrogues.com/117-rr-discourse-part-2-with-sam-saffron-and-robin-ward/&quot;&gt;Ruby Rogues #117&lt;/a&gt; featuring mentors &lt;a href=&quot;https://twitter.com/samsaffron&quot;&gt;Sam Saffron&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/evil_trout&quot;&gt;Robin Ward&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Start creating oneboxes for sites that don&#39;t support OGP&lt;/li&gt;
-&lt;li&gt;Remove &lt;code&gt;html body&lt;/code&gt; from Nokogiri CSS selectors in oneboxes - it&#39;s redundant. Use classes and ids instead of tags (if possible)&lt;/li&gt;
+&lt;li&gt;Start creating oneboxes for sites that don't support OGP&lt;/li&gt;
+&lt;li&gt;Remove &lt;code&gt;html body&lt;/code&gt; from Nokogiri CSS selectors in oneboxes - it's redundant. Use classes and ids instead of tags (if possible)&lt;/li&gt;
 &lt;li&gt;At some point, need to create a guide for making oneboxes&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -440,7 +481,7 @@
       <pubDate>Tue, 06 Aug 2013 23:05:00 -0700</pubDate>
       <author>Team Dysania</author>
       <guid>http://dysania.github.io/blog/2013/08/06/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.08.06&lt;/h1&gt;
+      <description>&lt;h1&gt;Captain's Log: 2013.08.06&lt;/h1&gt;
 
 &lt;blockquote&gt;&lt;ul&gt;
 &lt;li&gt;Major gem changes/cleanup in prep for 1.0 release
@@ -448,16 +489,16 @@
 &lt;ul&gt;
 &lt;li&gt;Renamed gem from &lt;code&gt;discourse-oneboxer&lt;/code&gt; to &lt;code&gt;onebox&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Renamespaced &lt;code&gt;Discourse::Oneboxer&lt;/code&gt; to &lt;code&gt;Onebox&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Deleted all the files we didn&#39;t originally write&lt;/li&gt;
+&lt;li&gt;Deleted all the files we didn't originally write&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Note to selves
 
 &lt;ul&gt;
-&lt;li&gt;Don&#39;t use &lt;code&gt;git rm .&lt;/code&gt; unless you want to delete your entire directory&lt;/li&gt;
-&lt;li&gt;Make sure you&#39;re in the correct Git branch ALWAYS&lt;/li&gt;
-&lt;li&gt;Refresh your Sublime project once in a while...your files might not be missing after all. Don&#39;t panic!&lt;/li&gt;
-&lt;li&gt;Captain Kurt - where&#39;s our pizza??&lt;/li&gt;
+&lt;li&gt;Don't use &lt;code&gt;git rm .&lt;/code&gt; unless you want to delete your entire directory&lt;/li&gt;
+&lt;li&gt;Make sure you're in the correct Git branch ALWAYS&lt;/li&gt;
+&lt;li&gt;Refresh your Sublime project once in a while...your files might not be missing after all. Don't panic!&lt;/li&gt;
+&lt;li&gt;Captain Kurt - where's our pizza??&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/dysania/onebox/pull/28&quot;&gt;First pull request from an outside contributor!&lt;/a&gt; Shout out to &lt;a href=&quot;https://github.com/markijbema&quot;&gt;Mark IJbema&lt;/a&gt;&lt;/li&gt;
@@ -483,7 +524,7 @@
 &lt;li&gt;&lt;code&gt;git remote prune origin&lt;/code&gt;: remove remotely deleted branches (i.e. deleted on GitHub)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;If there&#39;s time, do as many oneboxes as you can&lt;/li&gt;
+&lt;li&gt;If there's time, do as many oneboxes as you can&lt;/li&gt;
 &lt;li&gt;Read about semantic versioning - &lt;a href=&quot;http://semver.org&quot;&gt;semver.org&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Learn about bike shedding in programming context&lt;/li&gt;
 &lt;li&gt;Introduce ourselves on meta.discourse&lt;/li&gt;
@@ -500,7 +541,7 @@
       <pubDate>Mon, 05 Aug 2013 22:43:00 -0700</pubDate>
       <author>Team Dysania</author>
       <guid>http://dysania.github.io/blog/2013/08/05/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.08.05&lt;/h1&gt;
+      <description>&lt;h1&gt;Captain's Log: 2013.08.05&lt;/h1&gt;
 
 &lt;blockquote&gt;&lt;ul&gt;
 &lt;li&gt;Continued editing Preview, Example, and Amazon specs on &lt;code&gt;preview-refactor&lt;/code&gt; branch
@@ -510,7 +551,7 @@
 
 &lt;ul&gt;
 &lt;li&gt;we want the spec to not request a website, and to use our fixture&lt;/li&gt;
-&lt;li&gt;we need to ask why is this important? Don&#39;t we want tests to fail once an actual website changes?&lt;/li&gt;
+&lt;li&gt;we need to ask why is this important? Don't we want tests to fail once an actual website changes?&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;created &lt;code&gt;response()&lt;/code&gt; function in html spec helper for less repetitive code in specs&lt;/li&gt;
@@ -558,63 +599,6 @@
 
 &lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
 
-</description>
-    </item>
-    
-    <item>
-      <title>Captain's Log: 2013.08.01</title>
-      <link>http://dysania.github.io/blog/2013/08/01/captains-log.html</link>
-      <pubDate>Thu, 01 Aug 2013 23:00:00 -0700</pubDate>
-      <author>Team Dysania</author>
-      <guid>http://dysania.github.io/blog/2013/08/01/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.08.01&lt;/h1&gt;
-
-&lt;blockquote&gt;&lt;ul&gt;
-&lt;li&gt;Skipped Ruby study group for this week, but will attend next week&#39;s &lt;a href=&quot;http://www.meetup.com/laruby/events/129200762/&quot;&gt;LA Ruby/Rails August meetup&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Created fixtures for all the rest of the oneboxes
-
-&lt;ul&gt;
-&lt;li&gt;Took up most of our session since oneboxer currently supports &lt;a href=&quot;https://github.com/dysania/discourse-oneboxer/tree/master/lib/discourse/oneboxer&quot;&gt;30+ sites&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Certain sites (i.e. Hulu, Google Play) kept making &lt;code&gt;curl&lt;/code&gt; hang for some reason&lt;/li&gt;
-&lt;li&gt;Now we&#39;ll focus on creating specs specific to each onebox&lt;/li&gt;
-&lt;li&gt;Started to clean up fixtures but still need to finish&lt;/li&gt;
-&lt;li&gt;According to &lt;a href=&quot;https://github.com/dysania/discourse-oneboxer/blob/master/lib/discourse/oneboxer/whitelist.rb&quot;&gt;&lt;code&gt;whitelist.rb&lt;/code&gt;&lt;/a&gt; if a site supports &lt;a href=&quot;http://ogp.me/&quot;&gt;OpenGraph&lt;/a&gt; then it is already supported by oneboxer -- will have to keep that in mind when making tests&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Captain Kurt&#39;s challenge: if we make the 1st failing test from yesterday (out of 2) pass, he&#39;ll get us pizza during the next session
-
-&lt;ul&gt;
-&lt;li&gt;Used Nokogiri&#39;s &lt;a href=&quot;http://nokogiri.org/Nokogiri/XML/NodeSet.html#method-i-inner_text&quot;&gt;&lt;code&gt;inner_text()&lt;/code&gt;&lt;/a&gt; method to get just text of extracted data, without HTML tags --&gt; CHALLENGE COMPLETED&lt;/li&gt;
-&lt;li&gt;Also made 2nd test pass technically...by commenting it out for now (bad test that we&#39;ll need to rewrite)&lt;/li&gt;
-&lt;li&gt;Monday will be Pizza Day! Or hopefully perhaps something healthier&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;First tiny code review from mentor &lt;a href=&quot;https://twitter.com/evil_trout&quot;&gt;Robin&lt;/a&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Mostly positive, asked for reasoning behind using &lt;a href=&quot;https://github.com/dysania/discourse-oneboxer/commit/45180d20d6dfb7be6f96b0e89707e66094fe7536&quot;&gt;&lt;code&gt;require_relative&lt;/code&gt;&lt;/a&gt; and &lt;a href=&quot;https://github.com/dysania/discourse-oneboxer/commit/deeb3df0b797665a99122f44650086bcb593cd4b&quot;&gt;&lt;code&gt;add_onebox&lt;/code&gt;&lt;/a&gt; manually for each onebox instead of just including the whole onebox directory&lt;/li&gt;
-&lt;li&gt;We replied that we figured it would be easier to understand and would reduce security risk&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Planning on registering discourse-oneboxer gem to &lt;a href=&quot;http://rubygems.org&quot;&gt;RubyGems.org&lt;/a&gt; on Monday
-
-&lt;ul&gt;
-&lt;li&gt;Captain Kurt joked that he would register it himself tomorrow without us (we don&#39;t meet on Fridays)&lt;/li&gt;
-&lt;li&gt;We were not amused
-&lt;img src=&quot;http://www.wall321.com/thumbnails/detail/20121107/usa%20freckles%20gymnast%20olympics%202012%20mckayla%20maroney%20not%20amused%20unimpressed%201920x1080%20wallpaper_www.wall321.com_1.jpg&quot; width=&quot;80%&quot; /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Worked on RGSoC introduction blog post
-
-&lt;ul&gt;
-&lt;li&gt;Forked &lt;a href=&quot;https://github.com/dysania/summer-of-code&quot;&gt;summer-of-code&lt;/a&gt; repo, created new branch&lt;/li&gt;
-&lt;li&gt;Converted approved rough draft to Markdown&lt;/li&gt;
-&lt;li&gt;Will submit pull request by Monday&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Captain Kurt suggested creating Ruby wrapper in future for &lt;a href=&quot;https://github.com/wilkie/apsis&quot;&gt;Apsis&lt;/a&gt; game engine by &lt;a href=&quot;https://twitter.com/wilkieii&quot;&gt;@wilkieii&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
 </description>
     </item>
     
