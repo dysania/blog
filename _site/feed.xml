@@ -6,8 +6,8 @@
     <atom:link href="http://dysania.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog for Rails Girls Summer of Code</description>
     <language>en-us</language>
-    <pubDate>Wed, 21 Aug 2013 09:13:47 -0700</pubDate>
-    <lastBuildDate>Wed, 21 Aug 2013 09:13:47 -0700</lastBuildDate>
+    <pubDate>Wed, 21 Aug 2013 17:54:01 -0700</pubDate>
+    <lastBuildDate>Wed, 21 Aug 2013 17:54:01 -0700</lastBuildDate>
 
     
     <item>
@@ -121,6 +121,61 @@
 
 
 
+</description>
+    </item>
+    
+    <item>
+      <title>Captain's Log: 2013.08.17</title>
+      <link>http://dysania.github.io/blog/2013/08/17/captains-log.html</link>
+      <pubDate>Sat, 17 Aug 2013 17:01:00 -0700</pubDate>
+      <author>Team Dysania</author>
+      <guid>http://dysania.github.io/blog/2013/08/17/captains-log</guid>
+      <description>&lt;h1&gt;Captain&#39;s Log: 2013.08.17&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/library.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;ul&gt;
+&lt;li&gt;1st meeting during the weekend!&lt;/li&gt;
+&lt;li&gt;Chilled at the &lt;a href=&quot;http://www.lapl.org/branches/central-library&quot;&gt;Los Angeles Grand Central Library&lt;/a&gt;, walked around DTLA a bit&lt;/li&gt;
+&lt;li&gt;Renamed all onebox engines and specs to end with &lt;code&gt;_onebox&lt;/code&gt;/&lt;code&gt;Onebox&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;We want to pass an array of all the oneboxes, but without including the &lt;code&gt;OpenGraph&lt;/code&gt; module&lt;/li&gt;
+&lt;li&gt;We&#39;ll be searching for the onebox engines/specs based on their suffixes&lt;/li&gt;
+&lt;li&gt;Renamed throughout the project&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Created &lt;code&gt;OpenGraph&lt;/code&gt; module
+
+&lt;ul&gt;
+&lt;li&gt;Includes &lt;code&gt;Engine&lt;/code&gt; module&lt;/li&gt;
+&lt;li&gt;To be used for sites that support Open Graph Protocol
+
+&lt;ul&gt;
+&lt;li&gt;It&#39;s standardized and easier to parse&lt;/li&gt;
+&lt;li&gt;Don&#39;t have to deal with OGP sites that generate content using Javascript (like Flickr)&lt;/li&gt;
+&lt;li&gt;Lots of supporting sites, so won&#39;t have to create as many explicit engines and specs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Learned how to namespace from root (ex. &lt;code&gt;::OpenGraph.new(@url)&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Created Flickr engine and specs to start using &lt;code&gt;OpenGraph&lt;/code&gt; module&lt;/li&gt;
+&lt;li&gt;Captain Kurt drafted a format for our presentation, to be called &quot;Pulling a Gem Out of your App&quot;
+
+&lt;ul&gt;
+&lt;li&gt;We&#39;ll highlight 5 lessons we&#39;ve learned since starting work on onebox gem&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;HOMEWORK:
+
+&lt;ul&gt;
+&lt;li&gt;Read article from &lt;a href=&quot;http://www.heartmindcode.com/blog/2013/08/loyalty-and-layoffs/&quot;&gt;Heart, Mind Code&lt;/a&gt; by &lt;a href=&quot;https://twitter.com/dbrady&quot;&gt;David Brady&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Keep working on presentation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
 </description>
     </item>
     
@@ -558,44 +613,6 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Captain Kurt suggested creating Ruby wrapper in future for &lt;a href=&quot;https://github.com/wilkie/apsis&quot;&gt;Apsis&lt;/a&gt; game engine by &lt;a href=&quot;https://twitter.com/wilkieii&quot;&gt;@wilkieii&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Captain's Log: 2013.07.31</title>
-      <link>http://dysania.github.io/blog/2013/07/31/captains-log.html</link>
-      <pubDate>Wed, 31 Jul 2013 21:46:00 -0700</pubDate>
-      <author>Team Dysania</author>
-      <guid>http://dysania.github.io/blog/2013/07/31/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.07.31&lt;/h1&gt;
-
-&lt;blockquote&gt;&lt;ul&gt;
-&lt;li&gt;Still working on &lt;code&gt;preview-refactor&lt;/code&gt; branch&lt;/li&gt;
-&lt;li&gt;TDD:
-
-&lt;ul&gt;
-&lt;li&gt;JZ: making tests pass&lt;/li&gt;
-&lt;li&gt;Vyki: created tests that failed&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Added &lt;code&gt;amazon&lt;/code&gt; spec&lt;/li&gt;
-&lt;li&gt;Created fixtures for &lt;code&gt;amazon&lt;/code&gt; and &lt;code&gt;example&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Made &lt;code&gt;preview&lt;/code&gt; and &lt;code&gt;amazon&lt;/code&gt; specs pass&lt;/li&gt;
-&lt;li&gt;Learned how to get contents of url in bash using curl
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;curl --output spec/fixtures/amazon.response -L -X GET http://amzn.com/193609620X&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;how we will create fixtures for all oneboxes&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Vyki bought &lt;a href=&quot;http://www.google.com/url?q=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2F1933988657%2Fref%3Doh_details_o00_s00_i03%3Fie%3DUTF8%26psc%3D1&amp;amp;sa=D&amp;amp;sntz=1&amp;amp;usg=AFQjCNEzcqRfz_hCoFeKTom7WuLvoKpPiw&quot;&gt;The Well-Grounded Rubyist&lt;/a&gt; from &lt;a href=&quot;https://www.google.com/url?q=https%3A%2F%2Ftwitter.com%2Flkoponen&amp;amp;sa=D&amp;amp;sntz=1&amp;amp;usg=AFQjCNFJr2dNbYKMSlaaet5DZEAB1E2QHQ&quot;&gt;Lili&#39;s&lt;/a&gt; recommendation&lt;/li&gt;
-&lt;li&gt;JZ didn&#39;t die from Day 2 of bike commuting and was reunited with her lost keys&lt;/li&gt;
-&lt;li&gt;Gave status update to our RGSoC supervisor &lt;a href=&quot;https://twitter.com/benediktdeicke&quot;&gt;Benedikt&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Sent in our introduction blog post to RGSoC organizers for review -- to be published Monday!&lt;/li&gt;
-&lt;li&gt;HOMEWORK (Vyki): Clean up Amazon response (remove CSS and whitespace)&lt;/li&gt;
-&lt;li&gt;HOMEWORK (JZ): Create fixture for &lt;code&gt;example&lt;/code&gt;, pick another onebox to refactor and capture response for it&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 </description>
