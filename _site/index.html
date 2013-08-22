@@ -82,6 +82,46 @@
 
   
   <section class="date">
+    <p><span><a href="/2013/08/21/captains-log.html">August 21, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
+  </section>
+  <p><h1>Captain's Log: 2013.08.21</h1>
+
+<blockquote><ul>
+<li>Trying to get our onebox gem to v1.0.0 ASAP</li>
+<li>Started working on setting up caching support
+
+<ul>
+<li>Lesson on caching, and the differences between arrays and hashes</li>
+<li>using <a href="http://ruby-doc.org/stdlib-1.9.3/libdoc/ostruct/rdoc/OpenStruct.html">ostruct</a> to allow creation of OpenStruct objects</li>
+</ul>
+</li>
+<li>Wrote Verbal Expression blocks using <code>matches</code> function for all existing oneboxes</li>
+<li>Added Blip.tv onebox
+
+<ul>
+<li>Still haven't set up video embed template</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+
+<ul>
+<li>HOMEWORK
+
+<ul>
+<li>Work on Presentation for tomorrow's <a href="http://www.meetup.com/Los-Angeles-Womens-Ruby-on-Rails-Group/events/134549192/">Westside/Eastside Ruby on Rails Bash</a>. Stop by if you are in L.A.!</li>
+</ul>
+
+
+<p>P.S. JZ just watched <a href="http://www.imdb.com/title/tt0083658/">Blade Runner</a> for the <em>first</em> time. (You should so tease her on Twitter)</p></li>
+</ul>
+
+</p>
+  <p><a href="/2013/08/21/captains-log.html#disqus_thread" id="comments-link">link</a></p>
+  <br /><br />
+
+  
+  <section class="date">
     <p><span><a href="/2013/08/20/captains-log.html">August 20, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
   </section>
   <p><h1>Captain's Log: 2013.08.20</h1>
@@ -190,60 +230,6 @@
 
 </p>
   <p><a href="/2013/08/19/captains-log.html#disqus_thread" id="comments-link">link</a></p>
-  <br /><br />
-
-  
-  <section class="date">
-    <p><span><a href="/2013/08/17/captains-log.html">August 17, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
-  </section>
-  <p><h1>Captain's Log: 2013.08.17</h1>
-
-<p><img src="/images/library.jpg" width="100%" /></p>
-
-<blockquote><ul>
-<li>1st meeting during the weekend!</li>
-<li>Chilled at the <a href="http://www.lapl.org/branches/central-library">Los Angeles Grand Central Library</a>, walked around DTLA a bit</li>
-<li>Renamed all onebox engines and specs to end with <code>_onebox</code>/<code>Onebox</code>
-
-<ul>
-<li>We want to pass an array of all the oneboxes, but without including the <code>OpenGraph</code> module</li>
-<li>We'll be searching for the onebox engines/specs based on their suffixes</li>
-<li>Renamed throughout the project</li>
-</ul>
-</li>
-<li>Created <code>OpenGraph</code> module
-
-<ul>
-<li>Includes <code>Engine</code> module</li>
-<li>To be used for sites that support Open Graph Protocol
-
-<ul>
-<li>It's standardized and easier to parse</li>
-<li>Don't have to deal with OGP sites that generate content using Javascript (like Flickr)</li>
-<li>Lots of supporting sites, so won't have to create as many explicit engines and specs</li>
-</ul>
-</li>
-<li>Learned how to namespace from root (ex. <code>::OpenGraph.new(@url)</code>)</li>
-</ul>
-</li>
-<li>Created Flickr engine and specs to start using <code>OpenGraph</code> module</li>
-<li>Captain Kurt drafted a format for our presentation, to be called "Pulling a Gem Out of your App"
-
-<ul>
-<li>We'll highlight 5 lessons we've learned since starting work on onebox gem</li>
-</ul>
-</li>
-<li>HOMEWORK:
-
-<ul>
-<li>Read article from <a href="http://www.heartmindcode.com/blog/2013/08/loyalty-and-layoffs/">Heart, Mind Code</a> by <a href="https://twitter.com/dbrady">David Brady</a></li>
-<li>Keep working on presentation</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-</p>
-  <p><a href="/2013/08/17/captains-log.html#disqus_thread" id="comments-link">link</a></p>
   <br /><br />
 
 
