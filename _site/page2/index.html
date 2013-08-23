@@ -136,6 +136,67 @@
 
   
   <section class="date">
+    <p><span><a href="/2013/08/15/captains-log.html">August 15, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
+  </section>
+  <p><h1>Captain's Log: 2013.08.15</h1>
+
+<blockquote><ul>
+<li>Pizza! Sodapop! courtesy of Captain Kurt, our prize for making all of our tests pass on <a href="http://dysania.github.io/blog/2013/08/01/captains-log.html">8/1/2013</a></li>
+<li>Added pessimistic version numbers for all of the gems in gemspec
+
+<ul>
+<li>Find current version number with <code>gem list -r &lt;gemname&gt;</code></li>
+<li>Add latest version number excluding the last decimal number: <br /><code>spec.add_runtime_dependency "&lt;gemname&gt;", "~&gt;, x.x"</code></li>
+</ul>
+</li>
+<li>Continued working on adding Open Graph support
+
+<ul>
+<li>Switched from opengraph to <a href="http://rubygems.org/gems/opengraph_parser">opengraph_parser</a></li>
+<li>opengraph's Nokogiri version dependency <a href="https://github.com/intridea/opengraph/blob/master/opengraph.gemspec">hasn't been updated in a while</a>, so it breaks our code</li>
+<li>opengraph_parser has <a href="https://github.com/huyha85/opengraph_parser/blob/master/opengraph_parser.gemspec">bad version dependencies generally</a>, but would still rather use that</li>
+</ul>
+</li>
+<li>Moved duplicated code from oneboxes to new <code>Engine</code> module
+
+<ul>
+<li>All oneboxes include <code>Engine</code> --> share methods</li>
+<li>Onebox engines now only need to define their own <code>extracted_data()</code> function</li>
+<li>Handlebars templates must follow name pattern</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+
+<div class="highlight"><pre><code class="ruby">            <span class="k">def</span> <span class="nf">template_name</span>
+              <span class="nb">self</span><span class="o">.</span><span class="n">class</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;::&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">last</span><span class="o">.</span><span class="n">downcase</span>
+            <span class="k">end</span>
+</code></pre></div>
+
+
+<blockquote><ul>
+<li>Created new function <code>read()</code> in <code>Engine</code> to open url
+
+<ul>
+<li>Will eventually use eithr Nokogiri or opengraph_parser depending on website</li>
+<li>Refactored Engine spec</li>
+<li>Cleaned up onebox specs, used <code>let:</code> to handle repetitive tasks</li>
+</ul>
+</li>
+<li>Created a few more merge conflicts while we were both editing gemspec
+
+<ul>
+<li>Cleaned them up ourselves like we learned on Tuesday</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</p>
+  <p><a href="/2013/08/15/captains-log.html#disqus_thread" id="comments-link">link</a></p>
+  <br /><br />
+
+  
+  <section class="date">
     <p><span><a href="/2013/08/14/captains-log.html">August 14, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
   </section>
   <p><h1>Captain's Log: 2013.08.14</h1>
@@ -188,98 +249,6 @@
 
 </p>
   <p><a href="/2013/08/14/captains-log.html#disqus_thread" id="comments-link">link</a></p>
-  <br /><br />
-
-  
-  <section class="date">
-    <p><span><a href="/2013/08/13/captains-log.html">August 13, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
-  </section>
-  <p><h1>Captain's Log: 2013.08.13</h1>
-
-<blockquote><ul>
-<li>created <code>Matcher</code> class
-
-<ul>
-<li>TDD</li>
-<li><code>Engine</code> module to be included by oneboxes</li>
-<li>refactor <code>preview</code>, move url matching functionality to <code>Matcher.oneboxed</code></li>
-</ul>
-</li>
-<li>JZ added new oneboxes
-
-<ul>
-<li><a href="http://qik.com/">Qik</a></li>
-<li><a href="http://stackexchange.com/">StackExchange</a></li>
-<li>Captain Kurt helped add test for Qik video embedding and make spec DRYer</li>
-</ul>
-</li>
-<li>we don't know how to grab video embed code yet
-
-<ul>
-<li>still undecided on how to display videos in regards to autoplay</li>
-<li>embed or linked thumbnail ?</li>
-</ul>
-</li>
-<li>learned about <a href="http://en.wikipedia.org/wiki/Null_Object_pattern">Null Object</a></li>
-<li>learned how to autoclose issues with a commit message!
-
-<ul>
-<li><code>git commit -m "Fixes #[issue number]"</code></li>
-</ul>
-</li>
-<li>unable to merge <code>wikipedia-onebox</code> branch due to conflicts with master
-
-<ul>
-<li>learned how to deal with conflicts
-
-<ul>
-<li><code>git pull --rebase origin master</code></li>
-<li><code>fix conflicts</code></li>
-<li><code>git add .</code></li>
-<li><code>git rebase --continue</code></li>
-<li><code>git push -f origin wikipedia-onebox</code></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-
-<ul>
-<li>How to make a good pull request via Robin and Jeff:</li>
-</ul>
-
-
-<blockquote class="twitter-tweet"><p>Now *this* is how you make a good pull request: <a href="https://t.co/WWKEI0OAok">https://t.co/WWKEI0OAok</a></p>&mdash; Robin Ward (@evil_trout) <a href="https://twitter.com/evil_trout/statuses/367442268258459649">August 14, 2013</a></blockquote>
-
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-<blockquote class="twitter-tweet"><p>Look at this pull request.. LOOK AT IT <a href="https://t.co/CzA91l6oQw">https://t.co/CzA91l6oQw</a></p>&mdash; Jeff Atwood (@codinghorror) <a href="https://twitter.com/codinghorror/statuses/367395684791508992">August 13, 2013</a></blockquote>
-
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-<ul>
-<li>HOMEWORK:
-
-<ul>
-<li>refactor tests so more DRY</li>
-<li>Read up on:
-
-<ul>
-<li><a href="https://github.com/VerbalExpressions/RubyVerbalExpressions">VerbalExpressions</a> for Ruby</li>
-<li><code>parse_open_graph</code></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-</p>
-  <p><a href="/2013/08/13/captains-log.html#disqus_thread" id="comments-link">link</a></p>
   <br /><br />
 
 
@@ -343,6 +312,12 @@
       <li class="page">
         
           <a href="/page8">8</a>
+        
+      </li>
+    
+      <li class="page">
+        
+          <a href="/page9">9</a>
         
       </li>
     
