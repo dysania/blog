@@ -6,8 +6,8 @@
     <atom:link href="http://dysania.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog for Rails Girls Summer of Code</description>
     <language>en-us</language>
-    <pubDate>Fri, 23 Aug 2013 10:18:30 -0700</pubDate>
-    <lastBuildDate>Fri, 23 Aug 2013 10:18:30 -0700</lastBuildDate>
+    <pubDate>Sat, 24 Aug 2013 11:21:11 -0700</pubDate>
+    <lastBuildDate>Sat, 24 Aug 2013 11:21:11 -0700</lastBuildDate>
 
     
     <item>
@@ -162,6 +162,22 @@
 
 
 
+</description>
+    </item>
+    
+    <item>
+      <title>Sunday Funday!</title>
+      <link>http://dysania.github.io/blog/2013/08/18/captains-log.html</link>
+      <pubDate>Sun, 18 Aug 2013 22:38:00 -0700</pubDate>
+      <author>Team Dysania</author>
+      <guid>http://dysania.github.io/blog/2013/08/18/captains-log</guid>
+      <description>&lt;h1&gt;Sunday Funday!&lt;/h1&gt;
+
+&lt;p&gt;Beers + ice cream sandwiches at &lt;a href=&quot;http://www.yelp.com/biz/fathers-office-los-angeles&quot;&gt;Father&#39;s Office&lt;/a&gt;, post 20+ mile bike ride.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/sunday-funday.gif&quot;&gt;&lt;img src=&quot;/images/sunday-funday.gif&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Thanks to cameraman &lt;a href=&quot;http://www.twitter.com/tosefjaylor&quot;&gt;Joe&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -530,66 +546,6 @@
 &lt;li&gt;Start creating oneboxes for sites that don&#39;t support OGP&lt;/li&gt;
 &lt;li&gt;Remove &lt;code&gt;html body&lt;/code&gt; from Nokogiri CSS selectors in oneboxes - it&#39;s redundant. Use classes and ids instead of tags (if possible)&lt;/li&gt;
 &lt;li&gt;At some point, need to create a guide for making oneboxes&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Captain's Log: 2013.08.06</title>
-      <link>http://dysania.github.io/blog/2013/08/06/captains-log.html</link>
-      <pubDate>Tue, 06 Aug 2013 23:05:00 -0700</pubDate>
-      <author>Team Dysania</author>
-      <guid>http://dysania.github.io/blog/2013/08/06/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.08.06&lt;/h1&gt;
-
-&lt;blockquote&gt;&lt;ul&gt;
-&lt;li&gt;Major gem changes/cleanup in prep for 1.0 release
-
-&lt;ul&gt;
-&lt;li&gt;Renamed gem from &lt;code&gt;discourse-oneboxer&lt;/code&gt; to &lt;code&gt;onebox&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Renamespaced &lt;code&gt;Discourse::Oneboxer&lt;/code&gt; to &lt;code&gt;Onebox&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Deleted all the files we didn&#39;t originally write&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Note to selves
-
-&lt;ul&gt;
-&lt;li&gt;Don&#39;t use &lt;code&gt;git rm .&lt;/code&gt; unless you want to delete your entire directory&lt;/li&gt;
-&lt;li&gt;Make sure you&#39;re in the correct Git branch ALWAYS&lt;/li&gt;
-&lt;li&gt;Refresh your Sublime project once in a while...your files might not be missing after all. Don&#39;t panic!&lt;/li&gt;
-&lt;li&gt;Captain Kurt - where&#39;s our pizza??&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/dysania/onebox/pull/28&quot;&gt;First pull request from an outside contributor!&lt;/a&gt; Shout out to &lt;a href=&quot;https://github.com/markijbema&quot;&gt;Mark IJbema&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;It seems we have a bit of an audience
-&lt;a href=&quot;https://github.com/dysania/onebox&quot;&gt;&lt;img src=&quot;/images/onebox_audience.png&quot; width=&quot;100%&quot; style=&quot;margin:20px 0 20px 0;&quot;/&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;HOMEWORK:
-
-&lt;ul&gt;
-&lt;li&gt;Update remotes to point to the right repository&lt;/li&gt;
-&lt;li&gt;Update &lt;a href=&quot;https://github.com/dysania/onebox/blob/master/README.md&quot;&gt;dysania/onebox README&lt;/a&gt;
-
-&lt;ul&gt;
-&lt;li&gt;extra credit: provide example using onebox&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;For all services (Coveralls, Travis, Code Climate) - update to point to right repository&lt;/li&gt;
-&lt;li&gt;Update &lt;a href=&quot;https://github.com/dysania/discourse&quot;&gt;&lt;code&gt;dysania/discourse&lt;/code&gt;&lt;/a&gt; from upstream&lt;/li&gt;
-&lt;li&gt;Clean up branches
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;git branch --merged&lt;/code&gt;: all branches merged w/ current branch&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git branch -D [branch-name]&lt;/code&gt;: delete local branch&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git remote prune origin&lt;/code&gt;: remove remotely deleted branches (i.e. deleted on GitHub)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;If there&#39;s time, do as many oneboxes as you can&lt;/li&gt;
-&lt;li&gt;Read about semantic versioning - &lt;a href=&quot;http://semver.org&quot;&gt;semver.org&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Learn about bike shedding in programming context&lt;/li&gt;
-&lt;li&gt;Introduce ourselves on meta.discourse&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

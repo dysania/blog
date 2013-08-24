@@ -82,6 +82,62 @@
 
   
   <section class="date">
+    <p><span><a href="/2013/08/14/captains-log.html">August 14, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
+  </section>
+  <p><h1>Captain's Log: 2013.08.14</h1>
+
+<blockquote><ul>
+<li>Dealt w/ a LOT of merge conflicts
+
+<ul>
+<li>We had pull requested a few onebox branches before we refactored
+
+<ul>
+<li>Qik</li>
+<li>Wikipedia</li>
+<li>StackExchange</li>
+</ul>
+</li>
+<li>Renamespaced oneboxes to <code>Engine</code> module instead of <code>Preview</code> class</li>
+</ul>
+</li>
+<li>Cleaned up local and remote branches in <code>dysania/onebox</code></li>
+<li>Started looking at VerbalExpressions</li>
+<li>Learned about the difference between <code>include</code> and <code>extend</code> re: singleton class methods</li>
+<li>For sites that support OpenGraph, we decided we'll be using the <a href="https://www.google.com/url?q=https%3A%2F%2Fgithub.%20com%2Fintridea%2Fopengraph&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGJyQrwMaX1IFBEYInqmAPK3N6GIg">opengraph</a> gem</li>
+<li><a href="https://github.com/markijbema">markijbema</a> asked about why we created Matcher object (<a href="https://github.com/dysania/onebox/issues/43">issue #43</a>)
+
+<ul>
+<li>He thought it made sense that we keep url matching code close to onebox conversion code since it would define which urls we support</li>
+<li>We created <code>Matcher</code> object because <code>Preview</code> should only have to worry about onebox conversion and not how to find the correct onebox</li>
+</ul>
+</li>
+<li>Discussed our lightning talk for next week
+
+<ul>
+<li>Semantic versioning</li>
+<li>Ruby's pessimistic operator</li>
+<li>Our experience so far extracting feature as a gem (the meetup's theme is gems)</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+
+<ul>
+<li>HOMEWORK:
+
+<ul>
+<li>Add <code>require opengraph</code> in gemfile, commit in new branch for <a href="https://github.com/dysania/onebox/issues/44">issue #44</a></li>
+</ul>
+</li>
+</ul>
+
+</p>
+  <p><a href="/2013/08/14/captains-log.html#disqus_thread" id="comments-link">link</a></p>
+  <br /><br />
+
+  
+  <section class="date">
     <p><span><a href="/2013/08/13/captains-log.html">August 13, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
   </section>
   <p><h1>Captain's Log: 2013.08.13</h1>
@@ -229,50 +285,6 @@
 </blockquote>
 </p>
   <p><a href="/2013/08/12/captains-log.html#disqus_thread" id="comments-link">link</a></p>
-  <br /><br />
-
-  
-  <section class="date">
-    <p><span><a href="/2013/08/07/captains-log.html">August 07, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
-  </section>
-  <p><h1>Captain's Log: 2013.08.07</h1>
-
-<p><img src="http://media.catmoji.com/cache/post/kbh/grumpy-cat_thumb.jpg" style="margin:auto;display:block;" /></p>
-
-<blockquote><ul>
-<li>Started creating oneboxes solo based on Amazon and Example
-
-<ul>
-<li>Vyki made Wikipedia onebox and succeeded</li>
-<li>JZ tried to make Flickr onebox but failed
-
-<ul>
-<li>Flickr images are generated w/ Javascript, so we can't use our usual way of parsing an HTML response</li>
-<li>Discourse uses <code>parse_open_graph</code> function to access Flickr content</li>
-<li>Realized we lacked functionality to onebox sites that support <a href="http://ogp.me/">Open Graph Protocol</a></li>
-<li>Note to self: pick easier onebox to do first...</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>We need to put off gem release until we can support Open Graph Protocol sites :(</li>
-<li><a href="http://bikeshed.com/">Painted the bikeshed</a> (try refreshing the page repeatedly...)</li>
-<li>Attending <a href="http://www.meetup.com/laruby/events/129200762/">LA Ruby/Rails August meetup</a> tomorrow</li>
-<li>Got a text from <a href="https://twitter.com/jendiamond">Jen</a> - we'll be presenting our onebox gem at LA Women's Ruby/Rails Group August Monthly Bash</li>
-<li>HOMEWORK:
-
-<ul>
-<li>Look at what <code>parse_open_graph</code> function does</li>
-<li>Self-assigned: listen to latest <a href="http://rubyrogues.com/117-rr-discourse-part-2-with-sam-saffron-and-robin-ward/">Ruby Rogues #117</a> featuring mentors <a href="https://twitter.com/samsaffron">Sam Saffron</a> and <a href="https://twitter.com/evil_trout">Robin Ward</a></li>
-<li>Start creating oneboxes for sites that don't support OGP</li>
-<li>Remove <code>html body</code> from Nokogiri CSS selectors in oneboxes - it's redundant. Use classes and ids instead of tags (if possible)</li>
-<li>At some point, need to create a guide for making oneboxes</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-</p>
-  <p><a href="/2013/08/07/captains-log.html#disqus_thread" id="comments-link">link</a></p>
   <br /><br />
 
 
