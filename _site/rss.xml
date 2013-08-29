@@ -6,9 +6,87 @@
     <atom:link href="http://dysania.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog for Rails Girls Summer of Code</description>
     <language>en-us</language>
-    <pubDate>Sat, 24 Aug 2013 11:21:11 -0700</pubDate>
-    <lastBuildDate>Sat, 24 Aug 2013 11:21:11 -0700</lastBuildDate>
+    <pubDate>Wed, 28 Aug 2013 22:55:53 -0700</pubDate>
+    <lastBuildDate>Wed, 28 Aug 2013 22:55:53 -0700</lastBuildDate>
 
+    
+    <item>
+      <title>Captain's Log: 2013.08.28</title>
+      <link>http://dysania.github.io/blog/2013/08/28/captains-log.html</link>
+      <pubDate>Wed, 28 Aug 2013 22:35:00 -0700</pubDate>
+      <author>Team Dysania</author>
+      <guid>http://dysania.github.io/blog/2013/08/28/captains-log</guid>
+      <description>&lt;h1&gt;Captain&#39;s Log: 2013.08.28&lt;/h1&gt;
+
+&lt;blockquote&gt;&lt;ul&gt;
+&lt;li&gt;Continued working on caching support
+
+&lt;ul&gt;
+&lt;li&gt;Decided to use &lt;a href=&quot;https://github.com/minad/moneta&quot;&gt;moneta&lt;/a&gt; after all
+
+&lt;ul&gt;
+&lt;li&gt;Set &lt;code&gt;expire = true&lt;/code&gt; in options&lt;/li&gt;
+&lt;li&gt;Created singleton &lt;code&gt;.defaults&lt;/code&gt; to DRY code for initializing Moneta caches&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Made edits based on Captain Kurt&#39;s comments&lt;/li&gt;
+&lt;li&gt;We&#39;re gonna need to fix &lt;code&gt;Preview&lt;/code&gt; specs to check that cache behaves like a cache
+
+&lt;ul&gt;
+&lt;li&gt;Bad test right now - only checks that it&#39;s a kind of Hash&lt;/li&gt;
+&lt;li&gt;Need to test that it behaves like a cache system, with abilities to &lt;code&gt;#store&lt;/code&gt;, &lt;code&gt;#fetch&lt;/code&gt;, and &lt;code&gt;#key&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Discussed using default images for oneboxes missing usable images
+
+&lt;ul&gt;
+&lt;li&gt;Considering using &lt;a href=&quot;http://prioritized.net/blog/gemify-assets-for-rails/&quot;&gt;this process&lt;/a&gt; to help integrate with Rails&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Vyki created Clikthrough onebox
+
+&lt;ul&gt;
+&lt;li&gt;NOT &quot;CLICKTHROUGH&quot;!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;JZ made edits to oneboxes from last night based on Captain Kurt&#39;s comments on open pull requests
+
+&lt;ul&gt;
+&lt;li&gt;Use &lt;code&gt;Array#first&lt;/code&gt; instead of &lt;code&gt;Array[0]&lt;/code&gt; because more idiomatic&lt;/li&gt;
+&lt;li&gt;Make sure to indicate on pull requests if it depends on another one&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Discussed more on regex, Verbal Expressions, and played with Rubular
+
+&lt;ul&gt;
+&lt;li&gt;We&#39;ll be using the regex matchers from Discourse to help guide us with our Verbal Expressions in our &lt;code&gt;matches&lt;/code&gt; blocks&lt;/li&gt;
+&lt;li&gt;This will be important for security&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Learned more on constants and how classes/modules are basically constants
+
+&lt;ul&gt;
+&lt;li&gt;You can actually do something like &lt;code&gt;Onebox = Module.new do ... end&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Captain Kurt recommended we look at &lt;a href=&quot;https://github.com/harukizaemon/hamster&quot;&gt;Hamster&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;HOMEWORK
+
+&lt;ul&gt;
+&lt;li&gt;Work on oneboxes&lt;/li&gt;
+&lt;li&gt;At some point, make edits to README branch - some instructions are already outdated&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+    </item>
     
     <item>
       <title>Captain's Log: 2013.08.21</title>
@@ -501,51 +579,6 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;From last week - look at what &lt;code&gt;parse_open_graph&lt;/code&gt; does&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Captain's Log: 2013.08.07</title>
-      <link>http://dysania.github.io/blog/2013/08/07/captains-log.html</link>
-      <pubDate>Wed, 07 Aug 2013 22:52:00 -0700</pubDate>
-      <author>Team Dysania</author>
-      <guid>http://dysania.github.io/blog/2013/08/07/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.08.07&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://media.catmoji.com/cache/post/kbh/grumpy-cat_thumb.jpg&quot; style=&quot;margin:auto;display:block;&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;&lt;ul&gt;
-&lt;li&gt;Started creating oneboxes solo based on Amazon and Example
-
-&lt;ul&gt;
-&lt;li&gt;Vyki made Wikipedia onebox and succeeded&lt;/li&gt;
-&lt;li&gt;JZ tried to make Flickr onebox but failed
-
-&lt;ul&gt;
-&lt;li&gt;Flickr images are generated w/ Javascript, so we can&#39;t use our usual way of parsing an HTML response&lt;/li&gt;
-&lt;li&gt;Discourse uses &lt;code&gt;parse_open_graph&lt;/code&gt; function to access Flickr content&lt;/li&gt;
-&lt;li&gt;Realized we lacked functionality to onebox sites that support &lt;a href=&quot;http://ogp.me/&quot;&gt;Open Graph Protocol&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Note to self: pick easier onebox to do first...&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;We need to put off gem release until we can support Open Graph Protocol sites :(&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://bikeshed.com/&quot;&gt;Painted the bikeshed&lt;/a&gt; (try refreshing the page repeatedly...)&lt;/li&gt;
-&lt;li&gt;Attending &lt;a href=&quot;http://www.meetup.com/laruby/events/129200762/&quot;&gt;LA Ruby/Rails August meetup&lt;/a&gt; tomorrow&lt;/li&gt;
-&lt;li&gt;Got a text from &lt;a href=&quot;https://twitter.com/jendiamond&quot;&gt;Jen&lt;/a&gt; - we&#39;ll be presenting our onebox gem at LA Women&#39;s Ruby/Rails Group August Monthly Bash&lt;/li&gt;
-&lt;li&gt;HOMEWORK:
-
-&lt;ul&gt;
-&lt;li&gt;Look at what &lt;code&gt;parse_open_graph&lt;/code&gt; function does&lt;/li&gt;
-&lt;li&gt;Self-assigned: listen to latest &lt;a href=&quot;http://rubyrogues.com/117-rr-discourse-part-2-with-sam-saffron-and-robin-ward/&quot;&gt;Ruby Rogues #117&lt;/a&gt; featuring mentors &lt;a href=&quot;https://twitter.com/samsaffron&quot;&gt;Sam Saffron&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/evil_trout&quot;&gt;Robin Ward&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Start creating oneboxes for sites that don&#39;t support OGP&lt;/li&gt;
-&lt;li&gt;Remove &lt;code&gt;html body&lt;/code&gt; from Nokogiri CSS selectors in oneboxes - it&#39;s redundant. Use classes and ids instead of tags (if possible)&lt;/li&gt;
-&lt;li&gt;At some point, need to create a guide for making oneboxes&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
