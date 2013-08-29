@@ -82,6 +82,72 @@
 
   
   <section class="date">
+    <p><span><a href="/2013/08/05/captains-log.html">August 05, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
+  </section>
+  <p><h1>Captain's Log: 2013.08.05</h1>
+
+<blockquote><ul>
+<li>Continued editing Preview, Example, and Amazon specs on <code>preview-refactor</code> branch
+
+<ul>
+<li>edited Preview spec to use Example fixture and <a href="http://rubygems.org/gems/fakeweb">fakeweb</a>
+
+<ul>
+<li>we want the spec to not request a website, and to use our fixture</li>
+<li>we need to ask why is this important? Don't we want tests to fail once an actual website changes?</li>
+</ul>
+</li>
+<li>created <code>response()</code> function in html spec helper for less repetitive code in specs</li>
+<li>used <code>let()</code> to do lazy assignments
+
+<ul>
+<li>ex: <code>let(:link) { "http://example.com" }</code></li>
+</ul>
+</li>
+<li>finished creating and passing all tests for Amazon
+
+<ul>
+<li>First spec finished with least amount of input from Captain Kurt yet!</li>
+<li>JZ: write tests</li>
+<li>Vyki: make tests pass</li>
+<li>learned more about Nokogiri, used <code>.first["src"]</code> to get src attribute for product image</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+
+<ul>
+<li>First <a href="https://github.com/dysania/discourse-oneboxer/pull/26">pull request</a> from <a href="https://twitter.com/evil_trout">Robin</a>
+
+<ul>
+<li>tiny change to keep us up-to-date with discourse/discourse</li>
+</ul>
+</li>
+<li>oneboxer changes to discourse/discourse <a href="https://github.com/discourse/discourse/pull/1288">being redirected our way</a></li>
+<li>New recommended resources
+
+<ul>
+<li><a href="https://www.bitcast.io/">Bitcast.io</a> - Captain Kurt suggested we use it for learning by creating our own screencasts on top of watching existing screencasts</li>
+<li><a href="http://www.manning.com/bigg2/">Rails 4 In Action</a> - Book, check out the early access edition</li>
+</ul>
+</li>
+<li>HOMEWORK: Listen to more RubyRogues, checkout <a href="http://www.rubytapas.com/">Ruby Tapas</a></li>
+</ul>
+
+
+<blockquote class="twitter-tweet"><p>Meet <a href="https://twitter.com/jzeta">@jzeta</a> &amp; <a href="https://twitter.com/toastergrrl">@toastergrrl</a> from Team Dysania! They are developers by night AND can make balloon arches:<a href="http://t.co/6cdokfAiN7">http://t.co/6cdokfAiN7</a> <a href="https://twitter.com/search?q=%23teamoftheweek&amp;src=hash">#teamoftheweek</a></p>&mdash; Rails Girls SoC (@RailsGirlsSoC) <a href="https://twitter.com/RailsGirlsSoC/statuses/364315597707808768">August 5, 2013</a></blockquote>
+
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</p>
+  <p><a href="/2013/08/05/captains-log.html#disqus_thread" id="comments-link">link</a></p>
+  <br /><br />
+
+  
+  <section class="date">
     <p><span><a href="/2013/08/01/captains-log.html">August 01, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
   </section>
   <p><h1>Captain's Log: 2013.08.01</h1>
@@ -171,44 +237,6 @@
 </blockquote>
 </p>
   <p><a href="/2013/07/31/captains-log.html#disqus_thread" id="comments-link">link</a></p>
-  <br /><br />
-
-  
-  <section class="date">
-    <p><span><a href="/2013/07/30/captains-log.html">July 30, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
-  </section>
-  <p><h1>Captain's Log: 2013.07.30</h1>
-
-<blockquote><ul>
-<li>Quick chat with <a href="http://www.twitter.com/evil_trout">Robin</a> of Discourse in google hangouts (Sam was sleeping)
-
-<ul>
-<li>discussed progress so far</li>
-<li>talked about maybe releasing 1.0 version of gem soon</li>
-<li>talked about GoGaRuCo and how Discourse maintainers are attending</li>
-<li>Robin and Sam will be guests on an upcoming Ruby Rogues podcast episode</li>
-<li>LA Ruby/Rails community, Portland, SF</li>
-<li>Robin will be reviewing our GitHub, making comments, and reporting back to rest of team</li>
-<li>still need to introduce ourselves on Discourse meta</li>
-</ul>
-</li>
-<li>Worked on <code>Preview</code> and <code>Example</code> classes</li>
-<li>TDD again, swapped roles:
-
-<ul>
-<li>JZ: making tests pass</li>
-<li>Vyki: created tests that failed</li>
-</ul>
-</li>
-<li>Created <code>Amazon</code> class (which we might make inherit from <code>Example</code> later)</li>
-<li>Created Amazon handlebars template</li>
-<li>Learned about File.read and File.join</li>
-<li>Listened to Ruby Rogues podcast on the bus/train</li>
-<li>HOMEWORK: Sleep</li>
-</ul>
-</blockquote>
-</p>
-  <p><a href="/2013/07/30/captains-log.html#disqus_thread" id="comments-link">link</a></p>
   <br /><br />
 
 
