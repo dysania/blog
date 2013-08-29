@@ -82,6 +82,60 @@
 
   
   <section class="date">
+    <p><span><a href="/2013/08/19/captains-log.html">August 19, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
+  </section>
+  <p><h1>Captain's Log: 2013.08.19</h1>
+
+<blockquote><ul>
+<li>Fetch and pull from upstream
+
+<ul>
+<li><code>discourse/discourse</code> --> <code>dysania/discourse</code></li>
+</ul>
+</li>
+<li>Merge pull requests from Saturday
+
+<ul>
+<li>Created a few merge conflicts b/c of the order they were merged in :(</li>
+</ul>
+</li>
+<li>Finish first Onebox Engine that uses Open Graph
+
+<ul>
+<li>FlickrOnebox</li>
+</ul>
+</li>
+<li>Work on README.md
+
+<ul>
+<li>Draft instructions for creating a new onebox</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+
+<ul>
+<li>HOMEWORK:
+
+<ul>
+<li>Create more Oneboxes using Open Graph</li>
+<li>Work on presentation for Thursday</li>
+<li>Watch <a href="http://vimeo.com/5047563">ART &amp;&amp; CODE Symposium: Hackety Hack, why the lucky stiff</a></li>
+</ul>
+</li>
+</ul>
+
+
+<iframe src="http://player.vimeo.com/video/5047563?byline=0&amp;portrait=0" width="100%" height="352" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+
+
+</p>
+  <p><a href="/2013/08/19/captains-log.html#disqus_thread" id="comments-link">link</a></p>
+  <br /><br />
+
+  
+  <section class="date">
     <p><span><a href="/2013/08/18/captains-log.html">August 18, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
   </section>
   <p><h1>Sunday Funday!</h1>
@@ -147,67 +201,6 @@
 </blockquote>
 </p>
   <p><a href="/2013/08/17/captains-log.html#disqus_thread" id="comments-link">link</a></p>
-  <br /><br />
-
-  
-  <section class="date">
-    <p><span><a href="/2013/08/15/captains-log.html">August 15, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
-  </section>
-  <p><h1>Captain's Log: 2013.08.15</h1>
-
-<blockquote><ul>
-<li>Pizza! Sodapop! courtesy of Captain Kurt, our prize for making all of our tests pass on <a href="http://dysania.github.io/blog/2013/08/01/captains-log.html">8/1/2013</a></li>
-<li>Added pessimistic version numbers for all of the gems in gemspec
-
-<ul>
-<li>Find current version number with <code>gem list -r &lt;gemname&gt;</code></li>
-<li>Add latest version number excluding the last decimal number: <br /><code>spec.add_runtime_dependency "&lt;gemname&gt;", "~&gt;, x.x"</code></li>
-</ul>
-</li>
-<li>Continued working on adding Open Graph support
-
-<ul>
-<li>Switched from opengraph to <a href="http://rubygems.org/gems/opengraph_parser">opengraph_parser</a></li>
-<li>opengraph's Nokogiri version dependency <a href="https://github.com/intridea/opengraph/blob/master/opengraph.gemspec">hasn't been updated in a while</a>, so it breaks our code</li>
-<li>opengraph_parser has <a href="https://github.com/huyha85/opengraph_parser/blob/master/opengraph_parser.gemspec">bad version dependencies generally</a>, but would still rather use that</li>
-</ul>
-</li>
-<li>Moved duplicated code from oneboxes to new <code>Engine</code> module
-
-<ul>
-<li>All oneboxes include <code>Engine</code> --> share methods</li>
-<li>Onebox engines now only need to define their own <code>extracted_data()</code> function</li>
-<li>Handlebars templates must follow name pattern</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-
-<div class="highlight"><pre><code class="ruby">            <span class="k">def</span> <span class="nf">template_name</span>
-              <span class="nb">self</span><span class="o">.</span><span class="n">class</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;::&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">last</span><span class="o">.</span><span class="n">downcase</span>
-            <span class="k">end</span>
-</code></pre></div>
-
-
-<blockquote><ul>
-<li>Created new function <code>read()</code> in <code>Engine</code> to open url
-
-<ul>
-<li>Will eventually use eithr Nokogiri or opengraph_parser depending on website</li>
-<li>Refactored Engine spec</li>
-<li>Cleaned up onebox specs, used <code>let:</code> to handle repetitive tasks</li>
-</ul>
-</li>
-<li>Created a few more merge conflicts while we were both editing gemspec
-
-<ul>
-<li>Cleaned them up ourselves like we learned on Tuesday</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-</p>
-  <p><a href="/2013/08/15/captains-log.html#disqus_thread" id="comments-link">link</a></p>
   <br /><br />
 
 
