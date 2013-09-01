@@ -6,8 +6,8 @@
     <atom:link href="http://dysania.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog for Rails Girls Summer of Code</description>
     <language>en-us</language>
-    <pubDate>Wed, 28 Aug 2013 22:55:53 -0700</pubDate>
-    <lastBuildDate>Wed, 28 Aug 2013 22:55:53 -0700</lastBuildDate>
+    <pubDate>Sat, 31 Aug 2013 17:24:33 -0700</pubDate>
+    <lastBuildDate>Sat, 31 Aug 2013 17:24:33 -0700</lastBuildDate>
 
     
     <item>
@@ -85,6 +85,30 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 
+</description>
+    </item>
+    
+    <item>
+      <title>1st Presentation: Check</title>
+      <link>http://dysania.github.io/blog/2013/08/22/first-presentation.html</link>
+      <pubDate>Thu, 22 Aug 2013 23:55:00 -0700</pubDate>
+      <author>Team Dysania</author>
+      <guid>http://dysania.github.io/blog/2013/08/22/first-presentation</guid>
+      <description>&lt;h1&gt;1st Presentation: Check&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/first-presentation.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We&#39;ve just survived our first presentation on contributing to Discourse!&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;http://www.meetup.com/Los-Angeles-Womens-Ruby-on-Rails-Group/events/134549192/&quot;&gt;LA Ruby Meetup&lt;/a&gt;&#39;s theme of the night was gems, and it took place at &lt;a href=&quot;http://pivotallabs.com/&quot;&gt;Pivotal Labs&lt;/a&gt;--which was &lt;a href=&quot;http://railsgirls.com/la&quot;&gt;where it all started&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We were nervous, but we think we did alright. We kept it pretty short (maybe 15-20 minutes?) since we were the last to go tonight, and we did a Q&amp;amp;A afterward.&lt;/p&gt;
+
+&lt;p&gt;We made our presentation slides pretty quickly so we&#39;d like to make some edits before we post it. :)&lt;/p&gt;
+
+&lt;p&gt;After the Meetup, a bunch of us went for drinks at &lt;a href=&quot;http://www.yelp.com/biz/tinga-santa-monica&quot;&gt;Tinga&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Thanks to camerawoman and organizer &lt;a href=&quot;http://twitter.com/jendiamond&quot;&gt;Jen&lt;/a&gt;, who led a &lt;a href=&quot;http://slid.es/jendiamond/createa_gem&quot;&gt;tutorial on creating gems&lt;/a&gt; tonight.&lt;/p&gt;
 </description>
     </item>
     
@@ -245,10 +269,10 @@
     
     <item>
       <title>Sunday Funday!</title>
-      <link>http://dysania.github.io/blog/2013/08/18/captains-log.html</link>
+      <link>http://dysania.github.io/blog/2013/08/18/sunday-funday.html</link>
       <pubDate>Sun, 18 Aug 2013 22:38:00 -0700</pubDate>
       <author>Team Dysania</author>
-      <guid>http://dysania.github.io/blog/2013/08/18/captains-log</guid>
+      <guid>http://dysania.github.io/blog/2013/08/18/sunday-funday</guid>
       <description>&lt;h1&gt;Sunday Funday!&lt;/h1&gt;
 
 &lt;p&gt;Beers + ice cream sandwiches at &lt;a href=&quot;http://www.yelp.com/biz/fathers-office-los-angeles&quot;&gt;Father&#39;s Office&lt;/a&gt;, post 20+ mile bike ride.&lt;/p&gt;
@@ -523,66 +547,6 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 
-</description>
-    </item>
-    
-    <item>
-      <title>Captain's Log: 2013.08.12</title>
-      <link>http://dysania.github.io/blog/2013/08/12/captains-log.html</link>
-      <pubDate>Mon, 12 Aug 2013 23:52:00 -0700</pubDate>
-      <author>Team Dysania</author>
-      <guid>http://dysania.github.io/blog/2013/08/12/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.08.12&lt;/h1&gt;
-
-&lt;blockquote&gt;&lt;ul&gt;
-&lt;li&gt;Vyki merged another &lt;a href=&quot;https://github.com/dysania/onebox/pull/35&quot;&gt;pull request&lt;/a&gt; from &lt;a href=&quot;https://github.com/markijbema&quot;&gt;markijbema&lt;/a&gt; requiring &lt;a href=&quot;https://github.com/bbatsov/rubocop&quot;&gt;Rubocop&lt;/a&gt; gem
-
-&lt;ul&gt;
-&lt;li&gt;For consistent code style, according to &lt;a href=&quot;https://github.com/bbatsov/ruby-style-guide&quot;&gt;Ruby Style Guide&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Default cop settings&lt;/li&gt;
-&lt;li&gt;Spacing corrections&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://twitter.com/samsaffron&quot;&gt;Sam&lt;/a&gt; cc&#39;d us on new thread on &lt;a href=&quot;http://meta.discourse.org/&quot;&gt;Discourse Meta&lt;/a&gt;: &lt;a href=&quot;http://meta.discourse.org/t/sometimes-onebox-hangs/9010&quot;&gt;&quot;Sometimes onebox hangs&quot;&lt;/a&gt;
-
-&lt;ul&gt;
-&lt;li&gt;We&#39;ll need to address HTTP request issues (limits/timeouts) in our gem&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;LA Ruby/Rails August meetup recap
-
-&lt;ul&gt;
-&lt;li&gt;We voted &lt;a href=&quot;https://twitter.com/j3&quot;&gt;Jeff Casimir&lt;/a&gt; of &lt;a href=&quot;http://www.jumpstartlab.com/&quot;&gt;JumpstartLab&lt;/a&gt; as MVP presenter&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Discussed possible topics for lightning talk at LA Women&#39;s Ruby/Rails Group August Monthly Bash next Thursday
-
-&lt;ul&gt;
-&lt;li&gt;Present onebox gem&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://semver.org/&quot;&gt;Semantic versioning&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/bbatsov/rubocop&quot;&gt;Rubocop&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Ruby&#39;s unique &lt;a href=&quot;http://robots.thoughtbot.com/post/2508037841/rubys-pessimistic-operator&quot;&gt;pessimistic operator&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;JZ kicked herself for forgetting her laptop charger at home&lt;/li&gt;
-&lt;li&gt;Captain Kurt was sleep-deprived so we ended our session early&lt;/li&gt;
-&lt;li&gt;HOMEWORK:
-
-&lt;ul&gt;
-&lt;li&gt;Create 4 new oneboxes (2 each) based on Amazon and Example&lt;/li&gt;
-&lt;li&gt;Create new object that matches given URL to correct onebox class
-
-&lt;ul&gt;
-&lt;li&gt;This functionality is currently in &lt;code&gt;lib/onebox/preview&lt;/code&gt; but should be separate since it&#39;ll get huge&lt;/li&gt;
-&lt;li&gt;Pair-program on this&lt;/li&gt;
-&lt;li&gt;TDD - commit spec first, then class&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;From last week - look at what &lt;code&gt;parse_open_graph&lt;/code&gt; does&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
 </description>
     </item>
     

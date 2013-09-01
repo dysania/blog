@@ -82,6 +82,64 @@
 
   
   <section class="date">
+    <p><span><a href="/2013/08/20/captains-log.html">August 20, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
+  </section>
+  <p><h1>Captain's Log: 2013.08.20</h1>
+
+<blockquote><ul>
+<li>Started using Verbal Expressions for <code>Matcher</code> module</li>
+<li>Refactored <code>Engine</code> module
+
+<ul>
+<li>Created <code>.===</code> method to determine if an engine matches a url</li>
+<li>Created <code>.matches</code> method to take in verbal expression for engine</li>
+<li>Learned more about ClassMethods, singleton methods, and <code>extend</code>/<code>include</code></li>
+</ul>
+</li>
+<li>Edited <code>Matcher.oneboxed</code> to get array of engines and return appropriate onebox
+
+<ul>
+<li>array includes any Engines ending with "Onebox"</li>
+<li>removed explicit regex url matching</li>
+</ul>
+</li>
+<li>Created <code>Engine</code> spec</li>
+<li>Started copying regex used in discourse/discourse oneboxes for url matching into existing engines
+
+<ul>
+<li>Will convert to Verbal Expressions</li>
+</ul>
+</li>
+<li>HOMEWORK:
+
+<ul>
+<li>Mandatory watch last night's assigned video</li>
+<li>Vyki:
+
+<ul>
+<li>Make sure there is an issue for every remaining onebox needed</li>
+<li>Paste regex for url matching in each issue</li>
+<li>Make sure milestone for each issue is 1.0.0</li>
+</ul>
+</li>
+<li>JZ:
+
+<ul>
+<li>Rewrite current regex to use verbal_expressions</li>
+<li>Contact @vykster to merge request when they are all finished</li>
+</ul>
+</li>
+<li>If conscious, make more oneboxes.......</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</p>
+  <p><a href="/2013/08/20/captains-log.html#disqus_thread" id="comments-link">link</a></p>
+  <br /><br />
+
+  
+  <section class="date">
     <p><span><a href="/2013/08/19/captains-log.html">August 19, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
   </section>
   <p><h1>Captain's Log: 2013.08.19</h1>
@@ -136,7 +194,7 @@
 
   
   <section class="date">
-    <p><span><a href="/2013/08/18/captains-log.html">August 18, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
+    <p><span><a href="/2013/08/18/sunday-funday.html">August 18, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
   </section>
   <p><h1>Sunday Funday!</h1>
 
@@ -146,61 +204,7 @@
 
 <p>Thanks to cameraman <a href="http://www.twitter.com/tosefjaylor">Joe</a>.</p>
 </p>
-  <p><a href="/2013/08/18/captains-log.html#disqus_thread" id="comments-link">link</a></p>
-  <br /><br />
-
-  
-  <section class="date">
-    <p><span><a href="/2013/08/17/captains-log.html">August 17, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
-  </section>
-  <p><h1>Captain's Log: 2013.08.17</h1>
-
-<p><img src="/images/library.jpg" width="100%" /></p>
-
-<blockquote><ul>
-<li>1st meeting during the weekend!</li>
-<li>Chilled at the <a href="http://www.lapl.org/branches/central-library">Los Angeles Grand Central Library</a>, walked around DTLA a bit</li>
-<li>Renamed all onebox engines and specs to end with <code>_onebox</code>/<code>Onebox</code>
-
-<ul>
-<li>We want to pass an array of all the oneboxes, but without including the <code>OpenGraph</code> module</li>
-<li>We'll be searching for the onebox engines/specs based on their suffixes</li>
-<li>Renamed throughout the project</li>
-</ul>
-</li>
-<li>Created <code>OpenGraph</code> module
-
-<ul>
-<li>Includes <code>Engine</code> module</li>
-<li>To be used for sites that support Open Graph Protocol
-
-<ul>
-<li>It's standardized and easier to parse</li>
-<li>Don't have to deal with OGP sites that generate content using Javascript (like Flickr)</li>
-<li>Lots of supporting sites, so won't have to create as many explicit engines and specs</li>
-</ul>
-</li>
-<li>Learned how to namespace from root (ex. <code>::OpenGraph.new(@url)</code>)</li>
-</ul>
-</li>
-<li>Created Flickr engine and specs to start using <code>OpenGraph</code> module</li>
-<li>Captain Kurt drafted a format for our presentation, to be called "Pulling a Gem Out of your App"
-
-<ul>
-<li>We'll highlight 5 lessons we've learned since starting work on onebox gem</li>
-</ul>
-</li>
-<li>HOMEWORK:
-
-<ul>
-<li>Read article from <a href="http://www.heartmindcode.com/blog/2013/08/loyalty-and-layoffs/">Heart, Mind Code</a> by <a href="https://twitter.com/dbrady">David Brady</a></li>
-<li>Keep working on presentation</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-</p>
-  <p><a href="/2013/08/17/captains-log.html#disqus_thread" id="comments-link">link</a></p>
+  <p><a href="/2013/08/18/sunday-funday.html#disqus_thread" id="comments-link">link</a></p>
   <br /><br />
 
 
@@ -270,6 +274,12 @@
       <li class="page">
         
           <a href="/page9">9</a>
+        
+      </li>
+    
+      <li class="page">
+        
+          <a href="/page10">10</a>
         
       </li>
     
