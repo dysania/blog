@@ -82,6 +82,65 @@
 
   
   <section class="date">
+    <p><span><a href="/2013/08/06/captains-log.html">August 06, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
+  </section>
+  <p><h1>Captain's Log: 2013.08.06</h1>
+
+<blockquote><ul>
+<li>Major gem changes/cleanup in prep for 1.0 release
+
+<ul>
+<li>Renamed gem from <code>discourse-oneboxer</code> to <code>onebox</code></li>
+<li>Renamespaced <code>Discourse::Oneboxer</code> to <code>Onebox</code></li>
+<li>Deleted all the files we didn't originally write</li>
+</ul>
+</li>
+<li>Note to selves
+
+<ul>
+<li>Don't use <code>git rm .</code> unless you want to delete your entire directory</li>
+<li>Make sure you're in the correct Git branch ALWAYS</li>
+<li>Refresh your Sublime project once in a while...your files might not be missing after all. Don't panic!</li>
+<li>Captain Kurt - where's our pizza??</li>
+</ul>
+</li>
+<li><a href="https://github.com/dysania/onebox/pull/28">First pull request from an outside contributor!</a> Shout out to <a href="https://github.com/markijbema">Mark IJbema</a></li>
+<li>It seems we have a bit of an audience
+<a href="https://github.com/dysania/onebox"><img src="/images/onebox_audience.png" width="100%" style="margin:20px 0 20px 0;"/></a></li>
+<li>HOMEWORK:
+
+<ul>
+<li>Update remotes to point to the right repository</li>
+<li>Update <a href="https://github.com/dysania/onebox/blob/master/README.md">dysania/onebox README</a>
+
+<ul>
+<li>extra credit: provide example using onebox</li>
+</ul>
+</li>
+<li>For all services (Coveralls, Travis, Code Climate) - update to point to right repository</li>
+<li>Update <a href="https://github.com/dysania/discourse"><code>dysania/discourse</code></a> from upstream</li>
+<li>Clean up branches
+
+<ul>
+<li><code>git branch --merged</code>: all branches merged w/ current branch</li>
+<li><code>git branch -D [branch-name]</code>: delete local branch</li>
+<li><code>git remote prune origin</code>: remove remotely deleted branches (i.e. deleted on GitHub)</li>
+</ul>
+</li>
+<li>If there's time, do as many oneboxes as you can</li>
+<li>Read about semantic versioning - <a href="http://semver.org">semver.org</a></li>
+<li>Learn about bike shedding in programming context</li>
+<li>Introduce ourselves on meta.discourse</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</p>
+  <p><a href="/2013/08/06/captains-log.html#disqus_thread" id="comments-link">link</a></p>
+  <br /><br />
+
+  
+  <section class="date">
     <p><span><a href="/2013/08/05/captains-log.html">August 05, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
   </section>
   <p><h1>Captain's Log: 2013.08.05</h1>
@@ -202,43 +261,6 @@
   <p><a href="/2013/08/01/captains-log.html#disqus_thread" id="comments-link">link</a></p>
   <br /><br />
 
-  
-  <section class="date">
-    <p><span><a href="/2013/07/31/captains-log.html">July 31, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
-  </section>
-  <p><h1>Captain's Log: 2013.07.31</h1>
-
-<blockquote><ul>
-<li>Still working on <code>preview-refactor</code> branch</li>
-<li>TDD:
-
-<ul>
-<li>JZ: making tests pass</li>
-<li>Vyki: created tests that failed</li>
-</ul>
-</li>
-<li>Added <code>amazon</code> spec</li>
-<li>Created fixtures for <code>amazon</code> and <code>example</code></li>
-<li>Made <code>preview</code> and <code>amazon</code> specs pass</li>
-<li>Learned how to get contents of url in bash using curl
-
-<ul>
-<li><code>curl --output spec/fixtures/amazon.response -L -X GET http://amzn.com/193609620X</code></li>
-<li>how we will create fixtures for all oneboxes</li>
-</ul>
-</li>
-<li>Vyki bought <a href="http://www.google.com/url?q=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fproduct%2F1933988657%2Fref%3Doh_details_o00_s00_i03%3Fie%3DUTF8%26psc%3D1&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNEzcqRfz_hCoFeKTom7WuLvoKpPiw">The Well-Grounded Rubyist</a> from <a href="https://www.google.com/url?q=https%3A%2F%2Ftwitter.com%2Flkoponen&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNFJr2dNbYKMSlaaet5DZEAB1E2QHQ">Lili's</a> recommendation</li>
-<li>JZ didn't die from Day 2 of bike commuting and was reunited with her lost keys</li>
-<li>Gave status update to our RGSoC supervisor <a href="https://twitter.com/benediktdeicke">Benedikt</a></li>
-<li>Sent in our introduction blog post to RGSoC organizers for review -- to be published Monday!</li>
-<li>HOMEWORK (Vyki): Clean up Amazon response (remove CSS and whitespace)</li>
-<li>HOMEWORK (JZ): Create fixture for <code>example</code>, pick another onebox to refactor and capture response for it</li>
-</ul>
-</blockquote>
-</p>
-  <p><a href="/2013/07/31/captains-log.html#disqus_thread" id="comments-link">link</a></p>
-  <br /><br />
-
 
 
 <!-- Pagination links -->
@@ -306,6 +328,12 @@
       <li class="page">
         
           <a href="/page9">9</a>
+        
+      </li>
+    
+      <li class="page">
+        
+          <a href="/page10">10</a>
         
       </li>
     

@@ -9,7 +9,7 @@
         <meta name="author" content="Team Dysania" />
         <meta name="viewport" content="width=device-width">
 
-        <title>Captain's Log: 2013.08.28</title>
+        <title>Dysania</title>
         <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/screen.css">
@@ -72,148 +72,110 @@
             <!-- 
             <div class="image-wrapper">
                 <img src="/images/space.gif">
-                <div class="image" style="background-image: url(/images/headers/jesus_ami.jpg);"></div>
+                <div class="image" style="background-image: url(/images/headers/desk.jpg);"></div>
             </div>
              -->
         </header>
         <div class="wrapper clearfix">
             <div class="main">
-                
+                <!-- This loops through the paginated posts -->
 
-<section class="date">
-
-  <p><span><a href="/2013/08/28/captains-log.html">August 28, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
-
-</section>
-
-<article>
   
-  <section class="content">
-    <h1>Captain's Log: 2013.08.28</h1>
-
-<blockquote><ul>
-<li>Continued working on caching support
-
-<ul>
-<li>Decided to use <a href="https://github.com/minad/moneta">moneta</a> after all
-
-<ul>
-<li>Set <code>expire = true</code> in options</li>
-<li>Created singleton <code>.defaults</code> to DRY code for initializing Moneta caches</li>
-</ul>
-</li>
-<li>Made edits based on Captain Kurt's comments</li>
-<li>We're gonna need to fix <code>Preview</code> specs to check that cache behaves like a cache
-
-<ul>
-<li>Bad test right now - only checks that it's a kind of Hash</li>
-<li>Need to test that it behaves like a cache system, with abilities to <code>#store</code>, <code>#fetch</code>, and <code>#key</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Discussed using default images for oneboxes missing usable images
-
-<ul>
-<li>Considering using <a href="http://prioritized.net/blog/gemify-assets-for-rails/">this process</a> to help integrate with Rails</li>
-</ul>
-</li>
-<li>Vyki created Clikthrough onebox
-
-<ul>
-<li>NOT "CLICKTHROUGH"!</li>
-</ul>
-</li>
-<li>JZ made edits to oneboxes from last night based on Captain Kurt's comments on open pull requests
-
-<ul>
-<li>Use <code>Array#first</code> instead of <code>Array[0]</code> because more idiomatic</li>
-<li>Make sure to indicate on pull requests if it depends on another one</li>
-</ul>
-</li>
-<li>Discussed more on regex, Verbal Expressions, and played with Rubular
-
-<ul>
-<li>We'll be using the regex matchers from Discourse to help guide us with our Verbal Expressions in our <code>matches</code> blocks</li>
-<li>This will be important for security</li>
-</ul>
-</li>
-<li>Learned more on constants and how classes/modules are basically constants
-
-<ul>
-<li>You can actually do something like <code>Onebox = Module.new do ... end</code></li>
-</ul>
-</li>
-<li>Captain Kurt recommended we look at <a href="https://github.com/harukizaemon/hamster">Hamster</a></li>
-</ul>
-</blockquote>
-
-<ul>
-<li>HOMEWORK
-
-<ul>
-<li>Work on oneboxes</li>
-<li>At some point, make edits to README branch - some instructions are already outdated</li>
-</ul>
-</li>
-</ul>
-
-
+  <section class="date">
+    <p><span><a href="/2013/06/27/hello-world.html">June 27, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
   </section>
-</article>
+  <p><h1>Hello, World</h1>
 
-<!-- provides links on posts to previous/next posts -->
+<p>It's business time.</p>
+</p>
+  <p><a href="/2013/06/27/hello-world.html#disqus_thread" id="comments-link">link</a></p>
+  <br /><br />
 
-<div id="page-navigation"> 
-        <div class="clear">&nbsp;</div> 
-        <div class="left">
-          
-        </div> 
 
-        <div class="right"> 
+
+<!-- Pagination links -->
+<div id="post-pagination" class="pagination">
+  
+    <p class="previous">
+      
+        <a href="/page9">&laquo;</a>
+      
+    </p>
+  
+
+  <ul class="pages">
+    <li class="page">
+      
         
-                <p>older:</p>
-                <a href="/2013/08/22/first-presentation.html" title="Older Post: 
-1st Presentation: Check">1st Presentation: Check &raquo; </a> 
-         
-        </div> 
-        <div class="clear">&nbsp;</div> 
-</div> 
+          <a href="/">1</a>
+        
+      
+    </li>
 
-  <br />
-  
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'dysania'; // required: replace example with your forum shortname
-        var disqus_identifier = "/2013/08/28/captains-log.html";
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    <br /><br />
-  
-
-<!-- <div id="related">
-  <h2>Related Posts</h2>
-  <ul class="posts">
     
-      <li><span>27 Jun 2013</span> &raquo; <a href="/2013/06/27/hello-world.html">Hello, World</a></li>
+      <li class="page">
+        
+          <a href="/page2">2</a>
+        
+      </li>
     
-      <li><span>27 Jun 2013</span> &raquo; <a href="/2013/06/27/hello-mentors.html">Hello, Mentors</a></li>
+      <li class="page">
+        
+          <a href="/page3">3</a>
+        
+      </li>
     
-      <li><span>30 Jun 2013</span> &raquo; <a href="/2013/06/30/settin-up.html">Settin' Up</a></li>
+      <li class="page">
+        
+          <a href="/page4">4</a>
+        
+      </li>
+    
+      <li class="page">
+        
+          <a href="/page5">5</a>
+        
+      </li>
+    
+      <li class="page">
+        
+          <a href="/page6">6</a>
+        
+      </li>
+    
+      <li class="page">
+        
+          <a href="/page7">7</a>
+        
+      </li>
+    
+      <li class="page">
+        
+          <a href="/page8">8</a>
+        
+      </li>
+    
+      <li class="page">
+        
+          <a href="/page9">9</a>
+        
+      </li>
+    
+      <li class="page">
+        
+          <span class="current-page">10</span>
+        
+      </li>
     
   </ul>
-  <p><a href="archive.html">View all posts</a></p>
-</div> -->
 
+  
+    <p class="next disabled">
+      <span>&raquo;</span>
+    </p>
+  
+  <div class="clearfix"></div>&nbsp;
+</div>
                 <div class="author clearfix">
                     <div class="left">
                         <a class="clip" href="https://github.com/vykster"><img src="/images/vykster.jpg" width="75" height="75" alt="Vyki Englert"></a>
