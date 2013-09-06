@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Captain's Log: 2013.09.05"
+title: "Captain's Log: 2013.09.04"
 location: "Los Angeles, CA"
-date: "Wed, Sep 09 2013 23:35:00 -07:00"
+date: "Wed, Sep 04 2013 23:35:00 -07:00"
 image: headers/jesus_ami.jpg
 color: 880706
 author: dysania

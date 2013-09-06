@@ -6,17 +6,17 @@
     <atom:link href="http://dysania.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog for Rails Girls Summer of Code</description>
     <language>en-us</language>
-    <pubDate>Thu, 05 Sep 2013 20:48:51 -0700</pubDate>
-    <lastBuildDate>Thu, 05 Sep 2013 20:48:51 -0700</lastBuildDate>
+    <pubDate>Thu, 05 Sep 2013 20:57:29 -0700</pubDate>
+    <lastBuildDate>Thu, 05 Sep 2013 20:57:29 -0700</lastBuildDate>
 
     
     <item>
-      <title>Captain's Log: 2013.09.05</title>
-      <link>http://dysania.github.io/blog/2013/09/09/captains-log.html</link>
-      <pubDate>Mon, 09 Sep 2013 23:35:00 -0700</pubDate>
+      <title>Captain's Log: 2013.09.04</title>
+      <link>http://dysania.github.io/blog/2013/09/04/captains-log.html</link>
+      <pubDate>Wed, 04 Sep 2013 23:35:00 -0700</pubDate>
       <author>Team Dysania</author>
-      <guid>http://dysania.github.io/blog/2013/09/09/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.09.05&lt;/h1&gt;
+      <guid>http://dysania.github.io/blog/2013/09/04/captains-log</guid>
+      <description>&lt;h1&gt;Captain&#39;s Log: 2013.09.04&lt;/h1&gt;
 
 &lt;blockquote&gt;&lt;ul&gt;
 &lt;li&gt;Continued working on caching support
