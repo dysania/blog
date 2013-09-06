@@ -82,6 +82,60 @@
 
   
   <section class="date">
+    <p><span><a href="/2013/07/16/captains-log.html">July 16, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
+  </section>
+  <p><h1>Captain's Log: 2013.07.16</h1>
+
+<blockquote><ul>
+<li>Captain Kurt fixed JZ's expired version of Sublime Text 2</li>
+<li>Vyki is still in the process of recreating her dev environment: installed Ruby, RVM, Sublime</li>
+<li>Captain Kurt switched from Rails JSON to <a href="https://github.com/intridea/multi_json">MultiJSON</a> for JSON parsing</li>
+<li>Used RSpec to run discourse-oneboxer and fix specs on our own
+
+<ul>
+<li><code>bundle exec rake</code>: run all tests</li>
+<li><code>rspec &lt;file_with_error.rb:line&gt;</code>: run specific test</li>
+</ul>
+</li>
+<li>Messed up git branches
+
+<ul>
+<li>supposed to create new branches from master branch</li>
+<li>instead, created nested mess</li>
+<li>solution: git merged all nested branches into one</li>
+</ul>
+</li>
+<li>Fixed 9 tests, 23 failures to go
+
+<ul>
+<li>replaced Rails methods
+
+<ul>
+<li>replaced <code>squish()</code> with <code>gsub()</code></li>
+<li>changed <code>m.present?</code> to <code>m.to_a.any?</code> because it's more precise</li>
+<li>replaced <code>blank?</code> with <code>empty?</code></li>
+<li>changed instances of <code>present?</code> to use <code>nil?</code> instead</li>
+</ul>
+</li>
+<li>removed favicons from expected results</li>
+</ul>
+</li>
+<li>Conference/meetup talk
+
+<ul>
+<li>Need to ask <a href="https://twitter.com/jendiamond">Jen</a> if we can give quick talk at tomorrow's <a href="http://www.meetup.com/Los-Angeles-Womens-Ruby-on-Rails-Group/events/124552602/">Eastside/Westside Monthly Bash</a> at <a href="http://oversee.net/">Oversee.net</a> (all 3 of us will be in attendance)</li>
+<li>Might be interested in presenting at <a href="http://gogaruco.com/">GoGaRuCo 2013</a> in September</li>
+</ul>
+</li>
+<li>HOMEWORK: fix all tests</li>
+</ul>
+</blockquote>
+</p>
+  <p><a href="/2013/07/16/captains-log.html#disqus_thread" id="comments-link">link</a></p>
+  <br /><br />
+
+  
+  <section class="date">
     <p><span><a href="/2013/07/08/and-so-it-begins.html">July 08, 2013</a></span> - <a href="/about.html">Vyki</a></p>
   </section>
   <p><h1>And So It Begins</h1>
@@ -120,69 +174,6 @@
 <p>Shout out to <a href="https://twitter.com/jendiamond">Jen Diamond</a> (member of <a href="http://teams.railsgirlssummerofcode.org/teams/2">Team Bundler</a> and organizer of the <a href="http://www.meetup.com/Los-Angeles-Womens-Ruby-on-Rails-Group/">Los Angeles Women's Ruby on Rails Group</a>) for 1) continuing to run the LA Ruby Eastside study group despite her new stint on the Westside, and 2) agreeing to move its location from Glendale to Downtown LA.</p>
 </p>
   <p><a href="/2013/07/07/the-schedule.html#disqus_thread" id="comments-link">link</a></p>
-  <br /><br />
-
-  
-  <section class="date">
-    <p><span><a href="/2013/07/02/popping-my-irc-freenode-cherry.html">July 02, 2013</a></span> - <a href="/about.html">JZ</a></p>
-  </section>
-  <p><h1>Popping my IRC Freenode Cherry</h1>
-
-<p>Shout out to UForgotten of the IRC <a href="http://www.vagrantup.com/">#vagrant</a> channel, who helped me <strong>debug a problem on Freenode for the first time!</strong></p>
-
-<p>Earlier today, I tried to run <code>vagrant up</code> again in my new Linux environment as per <a href="http://blog.discourse.org/2013/04/discourse-as-your-first-rails-app/">Discourse as Your First Rails App</a>, and luckily it didn't hang at the VM boot anymore. However, I kept getting this error:</p>
-
-<div class="highlight"><pre><code class="bash"><span class="o">[</span>Default<span class="o">]</span> Mounting NFS shared folders...
-The following SSH <span class="nb">command </span>responded with a non-zero <span class="nb">exit </span>status.
-Vagrant assumes that this means the <span class="nb">command </span>failed! 
-</code></pre></div>
-
-
-<p>I scrounged the Discourse docs for <a href="http://docs-v1.vagrantup.com/v1/docs/nfs.html">NFS</a> errors and found the following in the <a href="https://github.com/discourse/discourse/blob/master/docs/VAGRANT.md">Discourse Vagrant Developer Guide</a>:</p>
-
-<p><a href="/images/discourse_nfs.png"><img src="/images/discourse_nfs.png" width="100%" /></a></p>
-
-<p>Nope, not my errors. Google wasn't any real help either; Vagrant issues <a href="https://github.com/mitchellh/vagrant/issues/1659">#1659</a>, <a href="https://github.com/mitchellh/vagrant/issues/1694">#1694</a>, and <a href="https://github.com/mitchellh/vagrant/issues/1702">#1702</a> mentioned similar errors but the solutions didn't work for me. Vyki and Kurtis weren't online to help out. <a href="https://www.youtube.com/watch?v=iuL2loyB1bk">I was so totally (de)buggin'</a>.</p>
-
-<p>Frustrated after running <code>vagrant up</code> and <code>vagrant halt</code> over and over again with no success, I turned to the next best thing: irc.freenode.net.</p>
-
-<p>I posted my problem on the #vagrant channel, and bam, UForgotten immediately responded. (The badass was actually troubleshooting for multiple IRC users at the same time.) He asked me some questions, and had me run some commands to get to the bottom of things. He thought at first it had to do with IP issues that he himself had run into recently with Vagrant, but that wasn't it.</p>
-
-<p>UForgotten eventually told me to send him my <a href="https://github.com/discourse/discourse/blob/master/Vagrantfile">Vagrantfile</a> and <a href="http://docs.vagrantup.com/v2/debugging.html">debugging log</a> after running this:</p>
-
-<div class="highlight"><pre><code class="bash"><span class="nv">$ VAGRANT_LOG</span><span class="o">=</span>debug vagrant up
-</code></pre></div>
-
-
-<p>I did so, and after some time, he informed me that the problem lay in this line of the log:</p>
-
-<div class="highlight"><pre><code class="bash">exportfs: /home/jzeta/Projects/rgsoc/discourse does not support NFS <span class="nb">export</span>
-</code></pre></div>
-
-
-<p>Wait a second.....I'd seen that before.......!</p>
-
-<p><a href="/images/discourse_nfs_holdup.png"><img src="/images/discourse_nfs_holdup.png" width="100%" /></a></p>
-
-<p><strong>"The root Discourse directory cannot be on an ecryptfs mount or you will receive an error."</strong> When I installed Ubuntu, I had opted to encrypt my home folder, which is where I had put Discourse. All I have to do is remove the encryption, and the Discourse environment should be able to run.</p>
-
-<p>The answer had been right in front of me! Guess I just had to learn the hard way to always read the error log.</p>
-
-<p>UForgotten was pretty patient with my noobiness, and said the reason why I couldn't use an encrypted folder was that NFS simply can't handle the decoding. Another IRC user, smerrill, also put in his 2 cents about how <a href="http://www.phase2technology.com/blog/vagrant-and-nfs/">NFS can't export symlinks</a> either.</p>
-
-<p>I thanked UForgotten for his help, and he replied, "De nada mang. Welcome to IRC. It's good karma, I need help once in a while so when I can I try to pay it forward." Cool.</p>
-
-<p>Really glad my first foray into IRC Freenode went well! On to fixing the encryption thing tomorrow.</p>
-
-<blockquote class="twitter-tweet"><p>1st time getting help on irc freenode ---&gt; problem solved! thanks <a href="https://twitter.com/search?q=%23vagrant&amp;src=hash">#vagrant</a> channel <a href="https://twitter.com/RailsGirlsSoC">@RailsGirlsSoC</a></p>&mdash; jz (@jzeta) <a href="https://twitter.com/jzeta/statuses/352160070928306178">July 2, 2013</a></blockquote>
-
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-
-</p>
-  <p><a href="/2013/07/02/popping-my-irc-freenode-cherry.html#disqus_thread" id="comments-link">link</a></p>
   <br /><br />
 
 
