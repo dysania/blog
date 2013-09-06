@@ -6,9 +6,36 @@
     <atom:link href="http://dysania.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog for Rails Girls Summer of Code</description>
     <language>en-us</language>
-    <pubDate>Thu, 05 Sep 2013 20:57:29 -0700</pubDate>
-    <lastBuildDate>Thu, 05 Sep 2013 20:57:29 -0700</lastBuildDate>
+    <pubDate>Fri, 06 Sep 2013 15:05:04 -0700</pubDate>
+    <lastBuildDate>Fri, 06 Sep 2013 15:05:04 -0700</lastBuildDate>
 
+    
+    <item>
+      <title>Captain's Log: 2013.09.05</title>
+      <link>http://dysania.github.io/blog/2013/09/05/captains-log.html</link>
+      <pubDate>Thu, 05 Sep 2013 21:00:00 -0700</pubDate>
+      <author>Team Dysania</author>
+      <guid>http://dysania.github.io/blog/2013/09/05/captains-log</guid>
+      <description>&lt;h1&gt;Captain&#39;s Log: 2013.09.05&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://25.media.tumblr.com/tumblr_m4xmdelT7j1qf7155o1_1280.jpg
+&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;ul&gt;
+&lt;li&gt;Short day today since we&#39;re tizzered :/&lt;/li&gt;
+&lt;li&gt;Fixed small errors in &lt;a href=&quot;https://github.com/dysania/onebox/pull/97&quot;&gt;&lt;code&gt;caching-support-for-preview&lt;/code&gt;&lt;/a&gt; branch based on Captain Kurt&#39;s comments&lt;/li&gt;
+&lt;li&gt;Worked on logs&lt;/li&gt;
+&lt;li&gt;HOMEWORK
+
+&lt;ul&gt;
+&lt;li&gt;Work on remaining comments on &lt;code&gt;caching-support-for-preview&lt;/code&gt; branch&lt;/li&gt;
+&lt;li&gt;Read &lt;a href=&quot;https://twitter.com/avdi&quot;&gt;@avdi&#39;s&lt;/a&gt; article on &lt;a href=&quot;http://devblog.avdi.org/2011/07/05/demeter-its-not-just-a-good-idea-its-the-law/&quot;&gt;The Law of Demeter&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
     
     <item>
       <title>Captain's Log: 2013.09.04</title>
@@ -465,63 +492,6 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Captain's Log: 2013.08.14</title>
-      <link>http://dysania.github.io/blog/2013/08/14/captains-log.html</link>
-      <pubDate>Wed, 14 Aug 2013 23:00:00 -0700</pubDate>
-      <author>Team Dysania</author>
-      <guid>http://dysania.github.io/blog/2013/08/14/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.08.14&lt;/h1&gt;
-
-&lt;blockquote&gt;&lt;ul&gt;
-&lt;li&gt;Dealt w/ a LOT of merge conflicts
-
-&lt;ul&gt;
-&lt;li&gt;We had pull requested a few onebox branches before we refactored
-
-&lt;ul&gt;
-&lt;li&gt;Qik&lt;/li&gt;
-&lt;li&gt;Wikipedia&lt;/li&gt;
-&lt;li&gt;StackExchange&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Renamespaced oneboxes to &lt;code&gt;Engine&lt;/code&gt; module instead of &lt;code&gt;Preview&lt;/code&gt; class&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Cleaned up local and remote branches in &lt;code&gt;dysania/onebox&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Started looking at VerbalExpressions&lt;/li&gt;
-&lt;li&gt;Learned about the difference between &lt;code&gt;include&lt;/code&gt; and &lt;code&gt;extend&lt;/code&gt; re: singleton class methods&lt;/li&gt;
-&lt;li&gt;For sites that support OpenGraph, we decided we&#39;ll be using the &lt;a href=&quot;https://www.google.com/url?q=https%3A%2F%2Fgithub.%20com%2Fintridea%2Fopengraph&amp;amp;sa=D&amp;amp;sntz=1&amp;amp;usg=AFQjCNGJyQrwMaX1IFBEYInqmAPK3N6GIg&quot;&gt;opengraph&lt;/a&gt; gem&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/markijbema&quot;&gt;markijbema&lt;/a&gt; asked about why we created Matcher object (&lt;a href=&quot;https://github.com/dysania/onebox/issues/43&quot;&gt;issue #43&lt;/a&gt;)
-
-&lt;ul&gt;
-&lt;li&gt;He thought it made sense that we keep url matching code close to onebox conversion code since it would define which urls we support&lt;/li&gt;
-&lt;li&gt;We created &lt;code&gt;Matcher&lt;/code&gt; object because &lt;code&gt;Preview&lt;/code&gt; should only have to worry about onebox conversion and not how to find the correct onebox&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Discussed our lightning talk for next week
-
-&lt;ul&gt;
-&lt;li&gt;Semantic versioning&lt;/li&gt;
-&lt;li&gt;Ruby&#39;s pessimistic operator&lt;/li&gt;
-&lt;li&gt;Our experience so far extracting feature as a gem (the meetup&#39;s theme is gems)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;HOMEWORK:
-
-&lt;ul&gt;
-&lt;li&gt;Add &lt;code&gt;require opengraph&lt;/code&gt; in gemfile, commit in new branch for &lt;a href=&quot;https://github.com/dysania/onebox/issues/44&quot;&gt;issue #44&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
 </description>
     </item>
     
