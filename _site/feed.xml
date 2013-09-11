@@ -6,9 +6,53 @@
     <atom:link href="http://dysania.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog for Rails Girls Summer of Code</description>
     <language>en-us</language>
-    <pubDate>Fri, 06 Sep 2013 15:05:04 -0700</pubDate>
-    <lastBuildDate>Fri, 06 Sep 2013 15:05:04 -0700</lastBuildDate>
+    <pubDate>Tue, 10 Sep 2013 23:56:46 -0700</pubDate>
+    <lastBuildDate>Tue, 10 Sep 2013 23:56:46 -0700</lastBuildDate>
 
+    
+    <item>
+      <title>Captain's Log: 2013.09.09</title>
+      <link>http://dysania.github.io/blog/2013/09/09/captains-log.html</link>
+      <pubDate>Mon, 09 Sep 2013 21:00:00 -0700</pubDate>
+      <author>Team Dysania</author>
+      <guid>http://dysania.github.io/blog/2013/09/09/captains-log</guid>
+      <description>&lt;h1&gt;Captain&#39;s Log: 2013.09.09&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.justsaypictures.com/images/almost-there-2hj5.jpg
+&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I went solo tonight since Vyki had to take the night off&lt;/li&gt;
+&lt;li&gt;Sick with fever/cold! But must keep going...&lt;/li&gt;
+&lt;li&gt;Captain Kurt gave me some pair programming interview tips&lt;/li&gt;
+&lt;li&gt;Finally merged &lt;a href=&quot;https://github.com/dysania/onebox/pull/97&quot;&gt;&lt;code&gt;caching-support-for-preview&lt;/code&gt;&lt;/a&gt; into master, 3 weeks after opening the PR&lt;/li&gt;
+&lt;li&gt;Created &lt;a href=&quot;https://github.com/dysania/onebox/pull/119&quot;&gt;&lt;code&gt;sanitize-url-for-preview&lt;/code&gt;&lt;/a&gt; branch
+
+&lt;ul&gt;
+&lt;li&gt;We need to make sure oneboxes don&#39;t allow &lt;a href=&quot;http://en.wikipedia.org/wiki/Cross-site_scripting&quot;&gt;cross-site scripting, aka XSS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Added tests to &lt;code&gt;Engine&lt;/code&gt; spec
+
+&lt;ul&gt;
+&lt;li&gt;Returns onebox wrapper&lt;/li&gt;
+&lt;li&gt;Doesn&#39;t allow XSS injection&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Added tests to &lt;code&gt;Onebox&lt;/code&gt; spec
+
+&lt;ul&gt;
+&lt;li&gt;No triple braces in Handlebars templates - this escapes values&lt;/li&gt;
+&lt;li&gt;No Javascript - &lt;code&gt;&amp;lt;script&lt;/code&gt; tags or attributes like &lt;code&gt;onclick&lt;/code&gt;, &lt;code&gt;onload&lt;/code&gt;, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Fixed Wikipedia onebox template to not use triple braces&lt;/li&gt;
+&lt;li&gt;Ready for Vyki to merge&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;We&#39;re now ready for 1.0.0 release! Now to do it together...&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+    </item>
     
     <item>
       <title>Captain's Log: 2013.09.05</title>
@@ -426,68 +470,6 @@
 &lt;ul&gt;
 &lt;li&gt;Read article from &lt;a href=&quot;http://www.heartmindcode.com/blog/2013/08/loyalty-and-layoffs/&quot;&gt;Heart, Mind Code&lt;/a&gt; by &lt;a href=&quot;https://twitter.com/dbrady&quot;&gt;David Brady&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Keep working on presentation&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Captain's Log: 2013.08.15</title>
-      <link>http://dysania.github.io/blog/2013/08/15/captains-log.html</link>
-      <pubDate>Thu, 15 Aug 2013 22:23:00 -0700</pubDate>
-      <author>Team Dysania</author>
-      <guid>http://dysania.github.io/blog/2013/08/15/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.08.15&lt;/h1&gt;
-
-&lt;blockquote&gt;&lt;ul&gt;
-&lt;li&gt;Pizza! Sodapop! courtesy of Captain Kurt, our prize for making all of our tests pass on &lt;a href=&quot;http://dysania.github.io/blog/2013/08/01/captains-log.html&quot;&gt;8/1/2013&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Added pessimistic version numbers for all of the gems in gemspec
-
-&lt;ul&gt;
-&lt;li&gt;Find current version number with &lt;code&gt;gem list -r &amp;lt;gemname&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Add latest version number excluding the last decimal number: &lt;br /&gt;&lt;code&gt;spec.add_runtime_dependency &quot;&amp;lt;gemname&amp;gt;&quot;, &quot;~&amp;gt;, x.x&quot;&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Continued working on adding Open Graph support
-
-&lt;ul&gt;
-&lt;li&gt;Switched from opengraph to &lt;a href=&quot;http://rubygems.org/gems/opengraph_parser&quot;&gt;opengraph_parser&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;opengraph&#39;s Nokogiri version dependency &lt;a href=&quot;https://github.com/intridea/opengraph/blob/master/opengraph.gemspec&quot;&gt;hasn&#39;t been updated in a while&lt;/a&gt;, so it breaks our code&lt;/li&gt;
-&lt;li&gt;opengraph_parser has &lt;a href=&quot;https://github.com/huyha85/opengraph_parser/blob/master/opengraph_parser.gemspec&quot;&gt;bad version dependencies generally&lt;/a&gt;, but would still rather use that&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Moved duplicated code from oneboxes to new &lt;code&gt;Engine&lt;/code&gt; module
-
-&lt;ul&gt;
-&lt;li&gt;All oneboxes include &lt;code&gt;Engine&lt;/code&gt; --&gt; share methods&lt;/li&gt;
-&lt;li&gt;Onebox engines now only need to define their own &lt;code&gt;extracted_data()&lt;/code&gt; function&lt;/li&gt;
-&lt;li&gt;Handlebars templates must follow name pattern&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;            &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;template_name&lt;/span&gt;
-              &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;::&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;last&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;downcase&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;blockquote&gt;&lt;ul&gt;
-&lt;li&gt;Created new function &lt;code&gt;read()&lt;/code&gt; in &lt;code&gt;Engine&lt;/code&gt; to open url
-
-&lt;ul&gt;
-&lt;li&gt;Will eventually use eithr Nokogiri or opengraph_parser depending on website&lt;/li&gt;
-&lt;li&gt;Refactored Engine spec&lt;/li&gt;
-&lt;li&gt;Cleaned up onebox specs, used &lt;code&gt;let:&lt;/code&gt; to handle repetitive tasks&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Created a few more merge conflicts while we were both editing gemspec
-
-&lt;ul&gt;
-&lt;li&gt;Cleaned them up ourselves like we learned on Tuesday&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
