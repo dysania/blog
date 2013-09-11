@@ -82,6 +82,49 @@
 
   
   <section class="date">
+    <p><span><a href="/2013/09/09/captains-log.html">September 09, 2013</a></span> - <a href="/about.html">JZ</a></p>
+  </section>
+  <p><h1>Captain's Log: 2013.09.09</h1>
+
+<p><img src="http://www.justsaypictures.com/images/almost-there-2hj5.jpg
+" width="100%" /></p>
+
+<ul>
+<li>I went solo tonight since Vyki had to take the night off</li>
+<li>Sick with fever/cold! But must keep going...</li>
+<li>Captain Kurt gave me some pair programming interview tips</li>
+<li>Finally merged <a href="https://github.com/dysania/onebox/pull/97"><code>caching-support-for-preview</code></a> into master, 3 weeks after opening the PR</li>
+<li>Created <a href="https://github.com/dysania/onebox/pull/119"><code>sanitize-url-for-preview</code></a> branch
+
+<ul>
+<li>We need to make sure oneboxes don't allow <a href="http://en.wikipedia.org/wiki/Cross-site_scripting">cross-site scripting, aka XSS</a></li>
+<li>Added tests to <code>Engine</code> spec
+
+<ul>
+<li>Returns onebox wrapper</li>
+<li>Doesn't allow XSS injection</li>
+</ul>
+</li>
+<li>Added tests to <code>Onebox</code> spec
+
+<ul>
+<li>No triple braces in Handlebars templates - this escapes values</li>
+<li>No Javascript - <code>&lt;script</code> tags or attributes like <code>onclick</code>, <code>onload</code>, etc.</li>
+</ul>
+</li>
+<li>Fixed Wikipedia onebox template to not use triple braces</li>
+<li>Ready for Vyki to merge</li>
+</ul>
+</li>
+<li>We're now ready for 1.0.0 release! Now to do it together...</li>
+</ul>
+
+</p>
+  <p><a href="/2013/09/09/captains-log.html#disqus_thread" id="comments-link">link</a></p>
+  <br /><br />
+
+  
+  <section class="date">
     <p><span><a href="/2013/09/05/captains-log.html">September 05, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
   </section>
   <p><h1>Captain's Log: 2013.09.05</h1>
@@ -173,83 +216,6 @@
   <p><a href="/2013/09/04/captains-log.html#disqus_thread" id="comments-link">link</a></p>
   <br /><br />
 
-  
-  <section class="date">
-    <p><span><a href="/2013/08/28/captains-log.html">August 28, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
-  </section>
-  <p><h1>Captain's Log: 2013.08.28</h1>
-
-<blockquote><ul>
-<li>Continued working on caching support
-
-<ul>
-<li>Decided to use <a href="https://github.com/minad/moneta">moneta</a> after all
-
-<ul>
-<li>Set <code>expire = true</code> in options</li>
-<li>Created singleton <code>.defaults</code> to DRY code for initializing Moneta caches</li>
-</ul>
-</li>
-<li>Made edits based on Captain Kurt's comments</li>
-<li>We're gonna need to fix <code>Preview</code> specs to check that cache behaves like a cache
-
-<ul>
-<li>Bad test right now - only checks that it's a kind of Hash</li>
-<li>Need to test that it behaves like a cache system, with abilities to <code>#store</code>, <code>#fetch</code>, and <code>#key</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Discussed using default images for oneboxes missing usable images
-
-<ul>
-<li>Considering using <a href="http://prioritized.net/blog/gemify-assets-for-rails/">this process</a> to help integrate with Rails</li>
-</ul>
-</li>
-<li>Vyki created Clikthrough onebox
-
-<ul>
-<li>NOT "CLICKTHROUGH"!</li>
-</ul>
-</li>
-<li>JZ made edits to oneboxes from last night based on Captain Kurt's comments on open pull requests
-
-<ul>
-<li>Use <code>Array#first</code> instead of <code>Array[0]</code> because more idiomatic</li>
-<li>Make sure to indicate on pull requests if it depends on another one</li>
-</ul>
-</li>
-<li>Discussed more on regex, Verbal Expressions, and played with Rubular
-
-<ul>
-<li>We'll be using the regex matchers from Discourse to help guide us with our Verbal Expressions in our <code>matches</code> blocks</li>
-<li>This will be important for security</li>
-</ul>
-</li>
-<li>Learned more on constants and how classes/modules are basically constants
-
-<ul>
-<li>You can actually do something like <code>Onebox = Module.new do ... end</code></li>
-</ul>
-</li>
-<li>Captain Kurt recommended we look at <a href="https://github.com/harukizaemon/hamster">Hamster</a></li>
-</ul>
-</blockquote>
-
-<ul>
-<li>HOMEWORK
-
-<ul>
-<li>Work on oneboxes</li>
-<li>At some point, make edits to README branch - some instructions are already outdated</li>
-</ul>
-</li>
-</ul>
-
-</p>
-  <p><a href="/2013/08/28/captains-log.html#disqus_thread" id="comments-link">link</a></p>
-  <br /><br />
-
 
 
 <!-- Pagination links -->
@@ -321,6 +287,12 @@
       <li class="page">
         
           <a href="/page10">10</a>
+        
+      </li>
+    
+      <li class="page">
+        
+          <a href="/page11">11</a>
         
       </li>
     
