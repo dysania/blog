@@ -6,8 +6,8 @@
     <atom:link href="http://dysania.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog for Rails Girls Summer of Code</description>
     <language>en-us</language>
-    <pubDate>Thu, 12 Sep 2013 22:40:23 -0700</pubDate>
-    <lastBuildDate>Thu, 12 Sep 2013 22:40:23 -0700</lastBuildDate>
+    <pubDate>Fri, 13 Sep 2013 08:00:35 -0700</pubDate>
+    <lastBuildDate>Fri, 13 Sep 2013 08:00:35 -0700</lastBuildDate>
 
     
     <item>
@@ -18,11 +18,11 @@
       <guid>http://dysania.github.io/blog/2013/09/12/release</guid>
       <description>&lt;h1&gt;RELEASE THE KRAKEN&lt;/h1&gt;
 
-&lt;p&gt;We&#39;ve officially &lt;a href=&quot;http://www.youtube.com/watch?v=7SqC_m3yUDU&quot;&gt;released&lt;/a&gt; Onebox 1.0.1!&lt;/p&gt;
+&lt;p&gt;We&#39;ve officially &lt;a href=&quot;http://www.youtube.com/watch?v=7SqC_m3yUDU&quot;&gt;released&lt;/a&gt; Onebox 1.0.0!&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/bundleexecrelease.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Check our gem out on &lt;a href=&quot;http://rubygems.org/gems/onebox&quot;&gt;RubyGems.org&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;Check our gem out on &lt;a href=&quot;http://rubygems.org/gems/onebox&quot;&gt;RubyGems.org&lt;/a&gt;:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://rubygems.org/gems/onebox&quot;&gt;&lt;img src=&quot;/images/rubygems1.0.0.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
