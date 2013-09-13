@@ -6,9 +6,33 @@
     <atom:link href="http://dysania.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog for Rails Girls Summer of Code</description>
     <language>en-us</language>
-    <pubDate>Tue, 10 Sep 2013 23:56:46 -0700</pubDate>
-    <lastBuildDate>Tue, 10 Sep 2013 23:56:46 -0700</lastBuildDate>
+    <pubDate>Thu, 12 Sep 2013 22:40:23 -0700</pubDate>
+    <lastBuildDate>Thu, 12 Sep 2013 22:40:23 -0700</lastBuildDate>
 
+    
+    <item>
+      <title>RELEASE THE KRAKEN</title>
+      <link>http://dysania.github.io/blog/2013/09/12/release.html</link>
+      <pubDate>Thu, 12 Sep 2013 22:24:00 -0700</pubDate>
+      <author>Team Dysania</author>
+      <guid>http://dysania.github.io/blog/2013/09/12/release</guid>
+      <description>&lt;h1&gt;RELEASE THE KRAKEN&lt;/h1&gt;
+
+&lt;p&gt;We&#39;ve officially &lt;a href=&quot;http://www.youtube.com/watch?v=7SqC_m3yUDU&quot;&gt;released&lt;/a&gt; Onebox 1.0.1!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/bundleexecrelease.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Check our gem out on &lt;a href=&quot;http://rubygems.org/gems/onebox&quot;&gt;RubyGems.org&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://rubygems.org/gems/onebox&quot;&gt;&lt;img src=&quot;/images/rubygems1.0.0.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This is our onebox in action:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/oneboxpreview.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Pretty, right? :stuck_out_tongue_closed_eyes:&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Captain's Log: 2013.09.09</title>
@@ -419,61 +443,6 @@
 &lt;p&gt;&lt;a href=&quot;/images/sunday-funday.gif&quot;&gt;&lt;img src=&quot;/images/sunday-funday.gif&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Thanks to cameraman &lt;a href=&quot;http://www.twitter.com/tosefjaylor&quot;&gt;Joe&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Captain's Log: 2013.08.17</title>
-      <link>http://dysania.github.io/blog/2013/08/17/captains-log.html</link>
-      <pubDate>Sat, 17 Aug 2013 17:01:00 -0700</pubDate>
-      <author>Team Dysania</author>
-      <guid>http://dysania.github.io/blog/2013/08/17/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.08.17&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/library.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;&lt;ul&gt;
-&lt;li&gt;1st meeting during the weekend!&lt;/li&gt;
-&lt;li&gt;Chilled at the &lt;a href=&quot;http://www.lapl.org/branches/central-library&quot;&gt;Los Angeles Grand Central Library&lt;/a&gt;, walked around DTLA a bit&lt;/li&gt;
-&lt;li&gt;Renamed all onebox engines and specs to end with &lt;code&gt;_onebox&lt;/code&gt;/&lt;code&gt;Onebox&lt;/code&gt;
-
-&lt;ul&gt;
-&lt;li&gt;We want to pass an array of all the oneboxes, but without including the &lt;code&gt;OpenGraph&lt;/code&gt; module&lt;/li&gt;
-&lt;li&gt;We&#39;ll be searching for the onebox engines/specs based on their suffixes&lt;/li&gt;
-&lt;li&gt;Renamed throughout the project&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Created &lt;code&gt;OpenGraph&lt;/code&gt; module
-
-&lt;ul&gt;
-&lt;li&gt;Includes &lt;code&gt;Engine&lt;/code&gt; module&lt;/li&gt;
-&lt;li&gt;To be used for sites that support Open Graph Protocol
-
-&lt;ul&gt;
-&lt;li&gt;It&#39;s standardized and easier to parse&lt;/li&gt;
-&lt;li&gt;Don&#39;t have to deal with OGP sites that generate content using Javascript (like Flickr)&lt;/li&gt;
-&lt;li&gt;Lots of supporting sites, so won&#39;t have to create as many explicit engines and specs&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Learned how to namespace from root (ex. &lt;code&gt;::OpenGraph.new(@url)&lt;/code&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Created Flickr engine and specs to start using &lt;code&gt;OpenGraph&lt;/code&gt; module&lt;/li&gt;
-&lt;li&gt;Captain Kurt drafted a format for our presentation, to be called &quot;Pulling a Gem Out of your App&quot;
-
-&lt;ul&gt;
-&lt;li&gt;We&#39;ll highlight 5 lessons we&#39;ve learned since starting work on onebox gem&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;HOMEWORK:
-
-&lt;ul&gt;
-&lt;li&gt;Read article from &lt;a href=&quot;http://www.heartmindcode.com/blog/2013/08/loyalty-and-layoffs/&quot;&gt;Heart, Mind Code&lt;/a&gt; by &lt;a href=&quot;https://twitter.com/dbrady&quot;&gt;David Brady&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Keep working on presentation&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
 </description>
     </item>
     
