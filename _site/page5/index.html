@@ -82,6 +82,67 @@
 
   
   <section class="date">
+    <p><span><a href="/2013/08/15/captains-log.html">August 15, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
+  </section>
+  <p><h1>Captain's Log: 2013.08.15</h1>
+
+<blockquote><ul>
+<li>Pizza! Sodapop! courtesy of Captain Kurt, our prize for making all of our tests pass on <a href="http://dysania.github.io/blog/2013/08/01/captains-log.html">8/1/2013</a></li>
+<li>Added pessimistic version numbers for all of the gems in gemspec
+
+<ul>
+<li>Find current version number with <code>gem list -r &lt;gemname&gt;</code></li>
+<li>Add latest version number excluding the last decimal number: <br /><code>spec.add_runtime_dependency "&lt;gemname&gt;", "~&gt;, x.x"</code></li>
+</ul>
+</li>
+<li>Continued working on adding Open Graph support
+
+<ul>
+<li>Switched from opengraph to <a href="http://rubygems.org/gems/opengraph_parser">opengraph_parser</a></li>
+<li>opengraph's Nokogiri version dependency <a href="https://github.com/intridea/opengraph/blob/master/opengraph.gemspec">hasn't been updated in a while</a>, so it breaks our code</li>
+<li>opengraph_parser has <a href="https://github.com/huyha85/opengraph_parser/blob/master/opengraph_parser.gemspec">bad version dependencies generally</a>, but would still rather use that</li>
+</ul>
+</li>
+<li>Moved duplicated code from oneboxes to new <code>Engine</code> module
+
+<ul>
+<li>All oneboxes include <code>Engine</code> --> share methods</li>
+<li>Onebox engines now only need to define their own <code>extracted_data()</code> function</li>
+<li>Handlebars templates must follow name pattern</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+
+<div class="highlight"><pre><code class="ruby">            <span class="k">def</span> <span class="nf">template_name</span>
+              <span class="nb">self</span><span class="o">.</span><span class="n">class</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;::&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">last</span><span class="o">.</span><span class="n">downcase</span>
+            <span class="k">end</span>
+</code></pre></div>
+
+
+<blockquote><ul>
+<li>Created new function <code>read()</code> in <code>Engine</code> to open url
+
+<ul>
+<li>Will eventually use eithr Nokogiri or opengraph_parser depending on website</li>
+<li>Refactored Engine spec</li>
+<li>Cleaned up onebox specs, used <code>let:</code> to handle repetitive tasks</li>
+</ul>
+</li>
+<li>Created a few more merge conflicts while we were both editing gemspec
+
+<ul>
+<li>Cleaned them up ourselves like we learned on Tuesday</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</p>
+  <p><a href="/2013/08/15/captains-log.html#disqus_thread" id="comments-link">link</a></p>
+  <br /><br />
+
+  
+  <section class="date">
     <p><span><a href="/2013/08/14/captains-log.html">August 14, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
   </section>
   <p><h1>Captain's Log: 2013.08.14</h1>
@@ -226,65 +287,6 @@
 
 </p>
   <p><a href="/2013/08/13/captains-log.html#disqus_thread" id="comments-link">link</a></p>
-  <br /><br />
-
-  
-  <section class="date">
-    <p><span><a href="/2013/08/12/captains-log.html">August 12, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
-  </section>
-  <p><h1>Captain's Log: 2013.08.12</h1>
-
-<blockquote><ul>
-<li>Vyki merged another <a href="https://github.com/dysania/onebox/pull/35">pull request</a> from <a href="https://github.com/markijbema">markijbema</a> requiring <a href="https://github.com/bbatsov/rubocop">Rubocop</a> gem
-
-<ul>
-<li>For consistent code style, according to <a href="https://github.com/bbatsov/ruby-style-guide">Ruby Style Guide</a></li>
-<li>Default cop settings</li>
-<li>Spacing corrections</li>
-</ul>
-</li>
-<li><a href="https://twitter.com/samsaffron">Sam</a> cc'd us on new thread on <a href="http://meta.discourse.org/">Discourse Meta</a>: <a href="http://meta.discourse.org/t/sometimes-onebox-hangs/9010">"Sometimes onebox hangs"</a>
-
-<ul>
-<li>We'll need to address HTTP request issues (limits/timeouts) in our gem</li>
-</ul>
-</li>
-<li>LA Ruby/Rails August meetup recap
-
-<ul>
-<li>We voted <a href="https://twitter.com/j3">Jeff Casimir</a> of <a href="http://www.jumpstartlab.com/">JumpstartLab</a> as MVP presenter</li>
-</ul>
-</li>
-<li>Discussed possible topics for lightning talk at LA Women's Ruby/Rails Group August Monthly Bash next Thursday
-
-<ul>
-<li>Present onebox gem</li>
-<li><a href="http://semver.org/">Semantic versioning</a></li>
-<li><a href="https://github.com/bbatsov/rubocop">Rubocop</a></li>
-<li>Ruby's unique <a href="http://robots.thoughtbot.com/post/2508037841/rubys-pessimistic-operator">pessimistic operator</a></li>
-</ul>
-</li>
-<li>JZ kicked herself for forgetting her laptop charger at home</li>
-<li>Captain Kurt was sleep-deprived so we ended our session early</li>
-<li>HOMEWORK:
-
-<ul>
-<li>Create 4 new oneboxes (2 each) based on Amazon and Example</li>
-<li>Create new object that matches given URL to correct onebox class
-
-<ul>
-<li>This functionality is currently in <code>lib/onebox/preview</code> but should be separate since it'll get huge</li>
-<li>Pair-program on this</li>
-<li>TDD - commit spec first, then class</li>
-</ul>
-</li>
-<li>From last week - look at what <code>parse_open_graph</code> does</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-</p>
-  <p><a href="/2013/08/12/captains-log.html#disqus_thread" id="comments-link">link</a></p>
   <br /><br />
 
 
