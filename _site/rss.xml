@@ -6,9 +6,43 @@
     <atom:link href="http://dysania.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog for Rails Girls Summer of Code</description>
     <language>en-us</language>
-    <pubDate>Mon, 16 Sep 2013 23:06:41 -0700</pubDate>
-    <lastBuildDate>Mon, 16 Sep 2013 23:06:41 -0700</lastBuildDate>
+    <pubDate>Tue, 17 Sep 2013 22:33:35 -0700</pubDate>
+    <lastBuildDate>Tue, 17 Sep 2013 22:33:35 -0700</lastBuildDate>
 
+    
+    <item>
+      <title>Captain's Log: 2013.09.17</title>
+      <link>http://dysania.github.io/blog/2013/09/17/captains-log.html</link>
+      <pubDate>Tue, 17 Sep 2013 22:23:00 -0700</pubDate>
+      <author>Team Dysania</author>
+      <guid>http://dysania.github.io/blog/2013/09/17/captains-log</guid>
+      <description>&lt;h1&gt;Captain's Log: 2013.09.17&lt;/h1&gt;
+
+&lt;blockquote&gt;&lt;ul&gt;
+&lt;li&gt;Vyki's B'day! Woot!&lt;/li&gt;
+&lt;li&gt;Vyki got her fancy new RailsGirls &lt;a href=&quot;https://twitter.com/unerdwear&quot;&gt;Unerdwear&lt;/a&gt; in the mail&lt;/li&gt;
+&lt;li&gt;Closed four issues
+
+&lt;ul&gt;
+&lt;li&gt;One was a duplicate, used the duplicate label and unassigned the milestone to remove it from our &lt;a href=&quot;https://github.com/dysania/onebox/issues?milestone=1&amp;amp;state=open&quot;&gt;open issues list&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Closed previously finished readme issue&lt;/li&gt;
+&lt;li&gt;Made spec for HTML module with &lt;a href=&quot;https://github.com/dysania/onebox/pull/133&quot;&gt;PR #133&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Made spec for OpenGraph module with &lt;a href=&quot;https://github.com/dysania/onebox/pull/134&quot;&gt;PR #134&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Started working on Github Gist onebox, but realized we need to use JSON
+
+&lt;ul&gt;
+&lt;li&gt;Began creating JSON module&lt;/li&gt;
+&lt;li&gt;Stuck on trying to curl response, but out of time for the evening.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/dysania/onebox/issues?milestone=1&amp;amp;state=open&quot;&gt;Still so much more work to do!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;HOMEWORK: Keep on making oneboxes for v1.1.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
     
     <item>
       <title>Captain's Log: 2013.09.16</title>
@@ -407,61 +441,6 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Captain's Log: 2013.08.19</title>
-      <link>http://dysania.github.io/blog/2013/08/19/captains-log.html</link>
-      <pubDate>Mon, 19 Aug 2013 22:38:00 -0700</pubDate>
-      <author>Team Dysania</author>
-      <guid>http://dysania.github.io/blog/2013/08/19/captains-log</guid>
-      <description>&lt;h1&gt;Captain's Log: 2013.08.19&lt;/h1&gt;
-
-&lt;blockquote&gt;&lt;ul&gt;
-&lt;li&gt;Fetch and pull from upstream
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;discourse/discourse&lt;/code&gt; --&gt; &lt;code&gt;dysania/discourse&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Merge pull requests from Saturday
-
-&lt;ul&gt;
-&lt;li&gt;Created a few merge conflicts b/c of the order they were merged in :(&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Finish first Onebox Engine that uses Open Graph
-
-&lt;ul&gt;
-&lt;li&gt;FlickrOnebox&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Work on README.md
-
-&lt;ul&gt;
-&lt;li&gt;Draft instructions for creating a new onebox&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;HOMEWORK:
-
-&lt;ul&gt;
-&lt;li&gt;Create more Oneboxes using Open Graph&lt;/li&gt;
-&lt;li&gt;Work on presentation for Thursday&lt;/li&gt;
-&lt;li&gt;Watch &lt;a href=&quot;http://vimeo.com/5047563&quot;&gt;ART &amp;amp;&amp;amp; CODE Symposium: Hackety Hack, why the lucky stiff&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;iframe src=&quot;http://player.vimeo.com/video/5047563?byline=0&amp;amp;portrait=0&quot; width=&quot;100%&quot; height=&quot;352&quot; frameborder=&quot;0&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;
-
-
-
 </description>
     </item>
     

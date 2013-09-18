@@ -82,6 +82,83 @@
 
   
   <section class="date">
+    <p><span><a href="/2013/08/28/captains-log.html">August 28, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
+  </section>
+  <p><h1>Captain's Log: 2013.08.28</h1>
+
+<blockquote><ul>
+<li>Continued working on caching support
+
+<ul>
+<li>Decided to use <a href="https://github.com/minad/moneta">moneta</a> after all
+
+<ul>
+<li>Set <code>expire = true</code> in options</li>
+<li>Created singleton <code>.defaults</code> to DRY code for initializing Moneta caches</li>
+</ul>
+</li>
+<li>Made edits based on Captain Kurt's comments</li>
+<li>We're gonna need to fix <code>Preview</code> specs to check that cache behaves like a cache
+
+<ul>
+<li>Bad test right now - only checks that it's a kind of Hash</li>
+<li>Need to test that it behaves like a cache system, with abilities to <code>#store</code>, <code>#fetch</code>, and <code>#key</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Discussed using default images for oneboxes missing usable images
+
+<ul>
+<li>Considering using <a href="http://prioritized.net/blog/gemify-assets-for-rails/">this process</a> to help integrate with Rails</li>
+</ul>
+</li>
+<li>Vyki created Clikthrough onebox
+
+<ul>
+<li>NOT "CLICKTHROUGH"!</li>
+</ul>
+</li>
+<li>JZ made edits to oneboxes from last night based on Captain Kurt's comments on open pull requests
+
+<ul>
+<li>Use <code>Array#first</code> instead of <code>Array[0]</code> because more idiomatic</li>
+<li>Make sure to indicate on pull requests if it depends on another one</li>
+</ul>
+</li>
+<li>Discussed more on regex, Verbal Expressions, and played with Rubular
+
+<ul>
+<li>We'll be using the regex matchers from Discourse to help guide us with our Verbal Expressions in our <code>matches</code> blocks</li>
+<li>This will be important for security</li>
+</ul>
+</li>
+<li>Learned more on constants and how classes/modules are basically constants
+
+<ul>
+<li>You can actually do something like <code>Onebox = Module.new do ... end</code></li>
+</ul>
+</li>
+<li>Captain Kurt recommended we look at <a href="https://github.com/harukizaemon/hamster">Hamster</a></li>
+</ul>
+</blockquote>
+
+<ul>
+<li>HOMEWORK
+
+<ul>
+<li>Work on oneboxes</li>
+<li>At some point, make edits to README branch - some instructions are already outdated</li>
+</ul>
+</li>
+</ul>
+
+</p>
+  <p><a href="/2013/08/28/captains-log.html#disqus_thread" id="comments-link">link</a></p>
+  <br /><br />
+
+  
+  <section class="date">
     <p><span><a href="/2013/08/22/first-presentation.html">August 22, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
   </section>
   <p><h1>1st Presentation: Check</h1>
@@ -141,64 +218,6 @@
 
 </p>
   <p><a href="/2013/08/21/captains-log.html#disqus_thread" id="comments-link">link</a></p>
-  <br /><br />
-
-  
-  <section class="date">
-    <p><span><a href="/2013/08/20/captains-log.html">August 20, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
-  </section>
-  <p><h1>Captain's Log: 2013.08.20</h1>
-
-<blockquote><ul>
-<li>Started using Verbal Expressions for <code>Matcher</code> module</li>
-<li>Refactored <code>Engine</code> module
-
-<ul>
-<li>Created <code>.===</code> method to determine if an engine matches a url</li>
-<li>Created <code>.matches</code> method to take in verbal expression for engine</li>
-<li>Learned more about ClassMethods, singleton methods, and <code>extend</code>/<code>include</code></li>
-</ul>
-</li>
-<li>Edited <code>Matcher.oneboxed</code> to get array of engines and return appropriate onebox
-
-<ul>
-<li>array includes any Engines ending with "Onebox"</li>
-<li>removed explicit regex url matching</li>
-</ul>
-</li>
-<li>Created <code>Engine</code> spec</li>
-<li>Started copying regex used in discourse/discourse oneboxes for url matching into existing engines
-
-<ul>
-<li>Will convert to Verbal Expressions</li>
-</ul>
-</li>
-<li>HOMEWORK:
-
-<ul>
-<li>Mandatory watch last night's assigned video</li>
-<li>Vyki:
-
-<ul>
-<li>Make sure there is an issue for every remaining onebox needed</li>
-<li>Paste regex for url matching in each issue</li>
-<li>Make sure milestone for each issue is 1.0.0</li>
-</ul>
-</li>
-<li>JZ:
-
-<ul>
-<li>Rewrite current regex to use verbal_expressions</li>
-<li>Contact @vykster to merge request when they are all finished</li>
-</ul>
-</li>
-<li>If conscious, make more oneboxes.......</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-</p>
-  <p><a href="/2013/08/20/captains-log.html#disqus_thread" id="comments-link">link</a></p>
   <br /><br />
 
 
@@ -280,6 +299,12 @@
       <li class="page">
         
           <a href="/page11">11</a>
+        
+      </li>
+    
+      <li class="page">
+        
+          <a href="/page12">12</a>
         
       </li>
     
