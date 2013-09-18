@@ -82,6 +82,60 @@
 
   
   <section class="date">
+    <p><span><a href="/2013/08/17/captains-log.html">August 17, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
+  </section>
+  <p><h1>Captain's Log: 2013.08.17</h1>
+
+<p><img src="/images/library.jpg" width="100%" /></p>
+
+<blockquote><ul>
+<li>1st meeting during the weekend!</li>
+<li>Chilled at the <a href="http://www.lapl.org/branches/central-library">Los Angeles Grand Central Library</a>, walked around DTLA a bit</li>
+<li>Renamed all onebox engines and specs to end with <code>_onebox</code>/<code>Onebox</code>
+
+<ul>
+<li>We want to pass an array of all the oneboxes, but without including the <code>OpenGraph</code> module</li>
+<li>We'll be searching for the onebox engines/specs based on their suffixes</li>
+<li>Renamed throughout the project</li>
+</ul>
+</li>
+<li>Created <code>OpenGraph</code> module
+
+<ul>
+<li>Includes <code>Engine</code> module</li>
+<li>To be used for sites that support Open Graph Protocol
+
+<ul>
+<li>It's standardized and easier to parse</li>
+<li>Don't have to deal with OGP sites that generate content using Javascript (like Flickr)</li>
+<li>Lots of supporting sites, so won't have to create as many explicit engines and specs</li>
+</ul>
+</li>
+<li>Learned how to namespace from root (ex. <code>::OpenGraph.new(@url)</code>)</li>
+</ul>
+</li>
+<li>Created Flickr engine and specs to start using <code>OpenGraph</code> module</li>
+<li>Captain Kurt drafted a format for our presentation, to be called "Pulling a Gem Out of your App"
+
+<ul>
+<li>We'll highlight 5 lessons we've learned since starting work on onebox gem</li>
+</ul>
+</li>
+<li>HOMEWORK:
+
+<ul>
+<li>Read article from <a href="http://www.heartmindcode.com/blog/2013/08/loyalty-and-layoffs/">Heart, Mind Code</a> by <a href="https://twitter.com/dbrady">David Brady</a></li>
+<li>Keep working on presentation</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</p>
+  <p><a href="/2013/08/17/captains-log.html#disqus_thread" id="comments-link">link</a></p>
+  <br /><br />
+
+  
+  <section class="date">
     <p><span><a href="/2013/08/15/captains-log.html">August 15, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
   </section>
   <p><h1>Captain's Log: 2013.08.15</h1>
@@ -197,98 +251,6 @@
   <p><a href="/2013/08/14/captains-log.html#disqus_thread" id="comments-link">link</a></p>
   <br /><br />
 
-  
-  <section class="date">
-    <p><span><a href="/2013/08/13/captains-log.html">August 13, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
-  </section>
-  <p><h1>Captain's Log: 2013.08.13</h1>
-
-<blockquote><ul>
-<li>created <code>Matcher</code> class
-
-<ul>
-<li>TDD</li>
-<li><code>Engine</code> module to be included by oneboxes</li>
-<li>refactor <code>preview</code>, move url matching functionality to <code>Matcher.oneboxed</code></li>
-</ul>
-</li>
-<li>JZ added new oneboxes
-
-<ul>
-<li><a href="http://qik.com/">Qik</a></li>
-<li><a href="http://stackexchange.com/">StackExchange</a></li>
-<li>Captain Kurt helped add test for Qik video embedding and make spec DRYer</li>
-</ul>
-</li>
-<li>we don't know how to grab video embed code yet
-
-<ul>
-<li>still undecided on how to display videos in regards to autoplay</li>
-<li>embed or linked thumbnail ?</li>
-</ul>
-</li>
-<li>learned about <a href="http://en.wikipedia.org/wiki/Null_Object_pattern">Null Object</a></li>
-<li>learned how to autoclose issues with a commit message!
-
-<ul>
-<li><code>git commit -m "Fixes #[issue number]"</code></li>
-</ul>
-</li>
-<li>unable to merge <code>wikipedia-onebox</code> branch due to conflicts with master
-
-<ul>
-<li>learned how to deal with conflicts
-
-<ul>
-<li><code>git pull --rebase origin master</code></li>
-<li><code>fix conflicts</code></li>
-<li><code>git add .</code></li>
-<li><code>git rebase --continue</code></li>
-<li><code>git push -f origin wikipedia-onebox</code></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-
-<ul>
-<li>How to make a good pull request via Robin and Jeff:</li>
-</ul>
-
-
-<blockquote class="twitter-tweet"><p>Now *this* is how you make a good pull request: <a href="https://t.co/WWKEI0OAok">https://t.co/WWKEI0OAok</a></p>&mdash; Robin Ward (@evil_trout) <a href="https://twitter.com/evil_trout/statuses/367442268258459649">August 14, 2013</a></blockquote>
-
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-<blockquote class="twitter-tweet"><p>Look at this pull request.. LOOK AT IT <a href="https://t.co/CzA91l6oQw">https://t.co/CzA91l6oQw</a></p>&mdash; Jeff Atwood (@codinghorror) <a href="https://twitter.com/codinghorror/statuses/367395684791508992">August 13, 2013</a></blockquote>
-
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-<ul>
-<li>HOMEWORK:
-
-<ul>
-<li>refactor tests so more DRY</li>
-<li>Read up on:
-
-<ul>
-<li><a href="https://github.com/VerbalExpressions/RubyVerbalExpressions">VerbalExpressions</a> for Ruby</li>
-<li><code>parse_open_graph</code></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-</p>
-  <p><a href="/2013/08/13/captains-log.html#disqus_thread" id="comments-link">link</a></p>
-  <br /><br />
-
 
 
 <!-- Pagination links -->
@@ -368,6 +330,12 @@
       <li class="page">
         
           <a href="/page11">11</a>
+        
+      </li>
+    
+      <li class="page">
+        
+          <a href="/page12">12</a>
         
       </li>
     
