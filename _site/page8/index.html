@@ -82,6 +82,62 @@
 
   
   <section class="date">
+    <p><span><a href="/2013/08/01/captains-log.html">August 01, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
+  </section>
+  <p><h1>Captain's Log: 2013.08.01</h1>
+
+<blockquote><ul>
+<li>Skipped Ruby study group for this week, but will attend next week's <a href="http://www.meetup.com/laruby/events/129200762/">LA Ruby/Rails August meetup</a></li>
+<li>Created fixtures for all the rest of the oneboxes
+
+<ul>
+<li>Took up most of our session since oneboxer currently supports <a href="https://github.com/dysania/discourse-oneboxer/tree/master/lib/discourse/oneboxer">30+ sites</a></li>
+<li>Certain sites (i.e. Hulu, Google Play) kept making <code>curl</code> hang for some reason</li>
+<li>Now we'll focus on creating specs specific to each onebox</li>
+<li>Started to clean up fixtures but still need to finish</li>
+<li>According to <a href="https://github.com/dysania/discourse-oneboxer/blob/master/lib/discourse/oneboxer/whitelist.rb"><code>whitelist.rb</code></a> if a site supports <a href="http://ogp.me/">OpenGraph</a> then it is already supported by oneboxer -- will have to keep that in mind when making tests</li>
+</ul>
+</li>
+<li>Captain Kurt's challenge: if we make the 1st failing test from yesterday (out of 2) pass, he'll get us pizza during the next session
+
+<ul>
+<li>Used Nokogiri's <a href="http://nokogiri.org/Nokogiri/XML/NodeSet.html#method-i-inner_text"><code>inner_text()</code></a> method to get just text of extracted data, without HTML tags --> CHALLENGE COMPLETED</li>
+<li>Also made 2nd test pass technically...by commenting it out for now (bad test that we'll need to rewrite)</li>
+<li>Monday will be Pizza Day! Or hopefully perhaps something healthier</li>
+</ul>
+</li>
+<li>First tiny code review from mentor <a href="https://twitter.com/evil_trout">Robin</a>
+
+<ul>
+<li>Mostly positive, asked for reasoning behind using <a href="https://github.com/dysania/discourse-oneboxer/commit/45180d20d6dfb7be6f96b0e89707e66094fe7536"><code>require_relative</code></a> and <a href="https://github.com/dysania/discourse-oneboxer/commit/deeb3df0b797665a99122f44650086bcb593cd4b"><code>add_onebox</code></a> manually for each onebox instead of just including the whole onebox directory</li>
+<li>We replied that we figured it would be easier to understand and would reduce security risk</li>
+</ul>
+</li>
+<li>Planning on registering discourse-oneboxer gem to <a href="http://rubygems.org">RubyGems.org</a> on Monday
+
+<ul>
+<li>Captain Kurt joked that he would register it himself tomorrow without us (we don't meet on Fridays)</li>
+<li>We were not amused
+<img src="http://www.wall321.com/thumbnails/detail/20121107/usa%20freckles%20gymnast%20olympics%202012%20mckayla%20maroney%20not%20amused%20unimpressed%201920x1080%20wallpaper_www.wall321.com_1.jpg" width="80%" /></li>
+</ul>
+</li>
+<li>Worked on RGSoC introduction blog post
+
+<ul>
+<li>Forked <a href="https://github.com/dysania/summer-of-code">summer-of-code</a> repo, created new branch</li>
+<li>Converted approved rough draft to Markdown</li>
+<li>Will submit pull request by Monday</li>
+</ul>
+</li>
+<li>Captain Kurt suggested creating Ruby wrapper in future for <a href="https://github.com/wilkie/apsis">Apsis</a> game engine by <a href="https://twitter.com/wilkieii">@wilkieii</a></li>
+</ul>
+</blockquote>
+</p>
+  <p><a href="/2013/08/01/captains-log.html#disqus_thread" id="comments-link">link</a></p>
+  <br /><br />
+
+  
+  <section class="date">
     <p><span><a href="/2013/07/31/captains-log.html">July 31, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
   </section>
   <p><h1>Captain's Log: 2013.07.31</h1>
@@ -153,48 +209,6 @@
 </blockquote>
 </p>
   <p><a href="/2013/07/30/captains-log.html#disqus_thread" id="comments-link">link</a></p>
-  <br /><br />
-
-  
-  <section class="date">
-    <p><span><a href="/2013/07/29/captains-log.html">July 29, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
-  </section>
-  <p><h1>Captain's Log: 2013.07.29</h1>
-
-<blockquote><ul>
-<li>Updated mocha to mocha/api</li>
-<li>Started refactoring <code>preview</code> method as <code>Preview</code> class
-
-<ul>
-<li>should take in url</li>
-<li>should output html</li>
-<li>should extract pieces of page as data</li>
-<li>should display with template</li>
-</ul>
-</li>
-<li>Used Test-Driven Development (mostly)
-
-<ul>
-<li>JZ: created tests that failed</li>
-<li>Vyki: making tests pass</li>
-<li>Captain Kurt: refactoring tests</li>
-</ul>
-</li>
-<li>Started creating Example class and spec
-
-<ul>
-<li>a model for how to build onebox modules</li>
-<li>will use it to implement existing oneboxes</li>
-</ul>
-</li>
-<li>Learned to use Nokogiri and Mustache</li>
-<li>Lecture on instance classes, Ruby best practices, and OOP</li>
-<li>Eagerly discussed the forthcoming <a href="http://www.hipsterceo.com/">Hipster Tech Startup CEO simulator game</a></li>
-<li>HOMEWORK: Listen to latest <a href="http://rubyrogues.com/">Ruby Rogues</a> podcast</li>
-</ul>
-</blockquote>
-</p>
-  <p><a href="/2013/07/29/captains-log.html#disqus_thread" id="comments-link">link</a></p>
   <br /><br />
 
 
