@@ -6,9 +6,39 @@
     <atom:link href="http://dysania.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog for Rails Girls Summer of Code</description>
     <language>en-us</language>
-    <pubDate>Tue, 24 Sep 2013 23:46:19 -0700</pubDate>
-    <lastBuildDate>Tue, 24 Sep 2013 23:46:19 -0700</lastBuildDate>
+    <pubDate>Wed, 25 Sep 2013 22:58:48 -0700</pubDate>
+    <lastBuildDate>Wed, 25 Sep 2013 22:58:48 -0700</lastBuildDate>
 
+    
+    <item>
+      <title>Captain's Log: 2013.09.25</title>
+      <link>http://dysania.github.io/blog/2013/09/25/captains-log.html</link>
+      <pubDate>Wed, 25 Sep 2013 22:17:00 -0700</pubDate>
+      <author>Team Dysania</author>
+      <guid>http://dysania.github.io/blog/2013/09/25/captains-log</guid>
+      <description>&lt;h1&gt;Captain's Log: 2013.09.25&lt;/h1&gt;
+
+&lt;blockquote&gt;&lt;ul&gt;
+&lt;li&gt;Continued working on on issue &lt;a href=&quot;https://github.com/dysania/onebox/issues/61&quot;&gt;#61&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Read up on Mustache.js vs Handlebars.js&lt;/li&gt;
+&lt;li&gt;No one has implemented a Ruby parser for Handlebars&lt;/li&gt;
+&lt;li&gt;Using mustache for onebox templates, as it has better support/integration for Ruby&lt;/li&gt;
+&lt;li&gt;Having a bit of trouble with _layout, using partials in layout template, and doesn't escape characters&lt;/li&gt;
+&lt;li&gt;Might be able to get around this with }, but need to consider potential security issues&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Learned new if syntax &lt;code&gt;if x then positive else negative&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Discussed making our own template gem, perhaps named after something other than after facial hair&lt;/li&gt;
+&lt;li&gt;Talked a bit about looking at performance testing as a good intro to Rails (we've really just been working in Ruby)&lt;/li&gt;
+&lt;li&gt;Discussed &lt;a href=&quot;http://rc3.org/2009/07/14/hate-driven-development/&quot;&gt;Hate Driven Development&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Learned about redcarpet, upskirt, pantyshot.... would recommend against Googling....&lt;/li&gt;
+&lt;li&gt;HOMEWORK: Keep on making oneboxes for v1.1.0...again&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
     
     <item>
       <title>Captain's Log: 2013.09.24</title>
@@ -16,7 +46,7 @@
       <pubDate>Tue, 24 Sep 2013 23:25:00 -0700</pubDate>
       <author>Team Dysania</author>
       <guid>http://dysania.github.io/blog/2013/09/24/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.09.24&lt;/h1&gt;
+      <description>&lt;h1&gt;Captain's Log: 2013.09.24&lt;/h1&gt;
 
 &lt;blockquote&gt;&lt;ul&gt;
 &lt;li&gt;Vyki finished up and merged &lt;code&gt;setting-up-hexpress&lt;/code&gt; branch&lt;/li&gt;
@@ -32,21 +62,21 @@
 &lt;li&gt;Discussed how to implement &lt;a href=&quot;https://github.com/dysania/onebox/pull/107&quot;&gt;Imgur onebox&lt;/a&gt;
 
 &lt;ul&gt;
-&lt;li&gt;We&#39;ll need to make 2, one for albums and one for galleries&lt;/li&gt;
+&lt;li&gt;We'll need to make 2, one for albums and one for galleries&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/markijbema&quot;&gt;@markijbema&lt;/a&gt; is back! He opened up some discussion regarding XSS issues we might not have addressed yet&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Discussed how to implement exceptional onebox engines (Video, Audio, etc.)
 
 &lt;ul&gt;
-&lt;li&gt;They&#39;ll be similar to HTML/JSON/OpenGraph modules in that they will be included in other oneboxes (e.g. &lt;code&gt;include Video&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;They'll be similar to HTML/JSON/OpenGraph modules in that they will be included in other oneboxes (e.g. &lt;code&gt;include Video&lt;/code&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Learned more about &lt;a href=&quot;https://github.com/defunkt/mustache&quot;&gt;Mustache&lt;/a&gt; and &lt;a href=&quot;http://handlebarsjs.com/&quot;&gt;Handlebars&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Sent out invites for our &lt;a href=&quot;https://rooftop-ruby.eventbrite.com/&quot;&gt;Rooftop Ruby&lt;/a&gt; event on October 5 in Little Tokyo
 
 &lt;ul&gt;
-&lt;li&gt;If you&#39;re in LA and would like to attend, let us know and we&#39;ll send you an invite!&lt;/li&gt;
+&lt;li&gt;If you're in LA and would like to attend, let us know and we'll send you an invite!&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;84 STARS!&lt;/li&gt;
@@ -62,7 +92,7 @@
       <pubDate>Wed, 18 Sep 2013 22:22:00 -0700</pubDate>
       <author>Team Dysania</author>
       <guid>http://dysania.github.io/blog/2013/09/18/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.09.18&lt;/h1&gt;
+      <description>&lt;h1&gt;Captain's Log: 2013.09.18&lt;/h1&gt;
 
 &lt;blockquote&gt;&lt;ul&gt;
 &lt;li&gt;Continued working on JSON module and GitHub Gist Onebox
@@ -86,10 +116,10 @@
       <pubDate>Tue, 17 Sep 2013 22:23:00 -0700</pubDate>
       <author>Team Dysania</author>
       <guid>http://dysania.github.io/blog/2013/09/17/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.09.17&lt;/h1&gt;
+      <description>&lt;h1&gt;Captain's Log: 2013.09.17&lt;/h1&gt;
 
 &lt;blockquote&gt;&lt;ul&gt;
-&lt;li&gt;Vyki&#39;s B&#39;day! Woot!&lt;/li&gt;
+&lt;li&gt;Vyki's B'day! Woot!&lt;/li&gt;
 &lt;li&gt;Vyki got her fancy new RailsGirls &lt;a href=&quot;https://twitter.com/unerdwear&quot;&gt;Unerdwear&lt;/a&gt; in the mail&lt;/li&gt;
 &lt;li&gt;Closed four issues
 
@@ -120,7 +150,7 @@
       <pubDate>Mon, 16 Sep 2013 22:41:00 -0700</pubDate>
       <author>Team Dysania</author>
       <guid>http://dysania.github.io/blog/2013/09/16/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.09.16&lt;/h1&gt;
+      <description>&lt;h1&gt;Captain's Log: 2013.09.16&lt;/h1&gt;
 
 &lt;blockquote&gt;&lt;ul&gt;
 &lt;li&gt;46 Stars! Wow!&lt;/li&gt;
@@ -137,8 +167,8 @@
 &lt;li&gt;Learned how to checkout a branch submitted by another author, make edits and merge from the command line&lt;/li&gt;
 &lt;li&gt;A community-submitted onebox! woot. &lt;a href=&quot;https://github.com/peterhellberg&quot;&gt;Peter Hellberg&lt;/a&gt; submitted a &lt;a href=&quot;https://github.com/dysania/onebox/pull/127&quot;&gt;pull request&lt;/a&gt; for a Spotify Onebox, we made a few minor changes and merged&lt;/li&gt;
 &lt;li&gt;Grammar fix &lt;a href=&quot;https://github.com/dysania/onebox/pull/125&quot;&gt;pull request&lt;/a&gt; submitted by &lt;a href=&quot;https://github.com/nirvdrum&quot;&gt;Kevin Menard&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Changed GitHub Commit Onebox to use Nokogiri instead of OpenGraph, as OpenGraph object didn&#39;t include as many details as we would like to preview&lt;/li&gt;
-&lt;li&gt;Renamed all of our engine specs to include &quot;_onebox&quot; in the name for convention&#39;s sake&lt;/li&gt;
+&lt;li&gt;Changed GitHub Commit Onebox to use Nokogiri instead of OpenGraph, as OpenGraph object didn't include as many details as we would like to preview&lt;/li&gt;
+&lt;li&gt;Renamed all of our engine specs to include &quot;_onebox&quot; in the name for convention's sake&lt;/li&gt;
 &lt;li&gt;Declined a &lt;a href=&quot;https://github.com/dysania/onebox/pull/126&quot;&gt;contribution&lt;/a&gt; for syntax edits&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -157,7 +187,7 @@
       <guid>http://dysania.github.io/blog/2013/09/12/release</guid>
       <description>&lt;h1&gt;RELEASE THE KRAKEN&lt;/h1&gt;
 
-&lt;p&gt;We&#39;ve officially &lt;a href=&quot;http://www.youtube.com/watch?v=7SqC_m3yUDU&quot;&gt;released&lt;/a&gt; Onebox 1.0.0!&lt;/p&gt;
+&lt;p&gt;We've officially &lt;a href=&quot;http://www.youtube.com/watch?v=7SqC_m3yUDU&quot;&gt;released&lt;/a&gt; Onebox 1.0.0!&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/bundleexecrelease.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
 
@@ -179,7 +209,7 @@
       <pubDate>Mon, 09 Sep 2013 21:00:00 -0700</pubDate>
       <author>Team Dysania</author>
       <guid>http://dysania.github.io/blog/2013/09/09/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.09.09&lt;/h1&gt;
+      <description>&lt;h1&gt;Captain's Log: 2013.09.09&lt;/h1&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://www.justsaypictures.com/images/almost-there-2hj5.jpg
 &quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
@@ -192,12 +222,12 @@
 &lt;li&gt;Created &lt;a href=&quot;https://github.com/dysania/onebox/pull/119&quot;&gt;&lt;code&gt;sanitize-url-for-preview&lt;/code&gt;&lt;/a&gt; branch
 
 &lt;ul&gt;
-&lt;li&gt;We need to make sure oneboxes don&#39;t allow &lt;a href=&quot;http://en.wikipedia.org/wiki/Cross-site_scripting&quot;&gt;cross-site scripting, aka XSS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;We need to make sure oneboxes don't allow &lt;a href=&quot;http://en.wikipedia.org/wiki/Cross-site_scripting&quot;&gt;cross-site scripting, aka XSS&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Added tests to &lt;code&gt;Engine&lt;/code&gt; spec
 
 &lt;ul&gt;
 &lt;li&gt;Returns onebox wrapper&lt;/li&gt;
-&lt;li&gt;Doesn&#39;t allow XSS injection&lt;/li&gt;
+&lt;li&gt;Doesn't allow XSS injection&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Added tests to &lt;code&gt;Onebox&lt;/code&gt; spec
@@ -211,7 +241,7 @@
 &lt;li&gt;Ready for Vyki to merge&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;We&#39;re now ready for 1.0.0 release! Now to do it together...&lt;/li&gt;
+&lt;li&gt;We're now ready for 1.0.0 release! Now to do it together...&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
@@ -223,20 +253,20 @@
       <pubDate>Thu, 05 Sep 2013 21:00:00 -0700</pubDate>
       <author>Team Dysania</author>
       <guid>http://dysania.github.io/blog/2013/09/05/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.09.05&lt;/h1&gt;
+      <description>&lt;h1&gt;Captain's Log: 2013.09.05&lt;/h1&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://25.media.tumblr.com/tumblr_m4xmdelT7j1qf7155o1_1280.jpg
 &quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;&lt;ul&gt;
-&lt;li&gt;Short day today since we&#39;re tizzered :/&lt;/li&gt;
-&lt;li&gt;Fixed small errors in &lt;a href=&quot;https://github.com/dysania/onebox/pull/97&quot;&gt;&lt;code&gt;caching-support-for-preview&lt;/code&gt;&lt;/a&gt; branch based on Captain Kurt&#39;s comments&lt;/li&gt;
+&lt;li&gt;Short day today since we're tizzered :/&lt;/li&gt;
+&lt;li&gt;Fixed small errors in &lt;a href=&quot;https://github.com/dysania/onebox/pull/97&quot;&gt;&lt;code&gt;caching-support-for-preview&lt;/code&gt;&lt;/a&gt; branch based on Captain Kurt's comments&lt;/li&gt;
 &lt;li&gt;Worked on logs&lt;/li&gt;
 &lt;li&gt;HOMEWORK
 
 &lt;ul&gt;
 &lt;li&gt;Work on remaining comments on &lt;code&gt;caching-support-for-preview&lt;/code&gt; branch&lt;/li&gt;
-&lt;li&gt;Read &lt;a href=&quot;https://twitter.com/avdi&quot;&gt;@avdi&#39;s&lt;/a&gt; article on &lt;a href=&quot;http://devblog.avdi.org/2011/07/05/demeter-its-not-just-a-good-idea-its-the-law/&quot;&gt;The Law of Demeter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Read &lt;a href=&quot;https://twitter.com/avdi&quot;&gt;@avdi's&lt;/a&gt; article on &lt;a href=&quot;http://devblog.avdi.org/2011/07/05/demeter-its-not-just-a-good-idea-its-the-law/&quot;&gt;The Law of Demeter&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -250,7 +280,7 @@
       <pubDate>Wed, 04 Sep 2013 23:35:00 -0700</pubDate>
       <author>Team Dysania</author>
       <guid>http://dysania.github.io/blog/2013/09/04/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.09.04&lt;/h1&gt;
+      <description>&lt;h1&gt;Captain's Log: 2013.09.04&lt;/h1&gt;
 
 &lt;blockquote&gt;&lt;ul&gt;
 &lt;li&gt;Continued working on caching support
@@ -318,7 +348,7 @@
       <pubDate>Wed, 28 Aug 2013 22:35:00 -0700</pubDate>
       <author>Team Dysania</author>
       <guid>http://dysania.github.io/blog/2013/08/28/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.08.28&lt;/h1&gt;
+      <description>&lt;h1&gt;Captain's Log: 2013.08.28&lt;/h1&gt;
 
 &lt;blockquote&gt;&lt;ul&gt;
 &lt;li&gt;Continued working on caching support
@@ -331,11 +361,11 @@
 &lt;li&gt;Created singleton &lt;code&gt;.defaults&lt;/code&gt; to DRY code for initializing Moneta caches&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Made edits based on Captain Kurt&#39;s comments&lt;/li&gt;
-&lt;li&gt;We&#39;re gonna need to fix &lt;code&gt;Preview&lt;/code&gt; specs to check that cache behaves like a cache
+&lt;li&gt;Made edits based on Captain Kurt's comments&lt;/li&gt;
+&lt;li&gt;We're gonna need to fix &lt;code&gt;Preview&lt;/code&gt; specs to check that cache behaves like a cache
 
 &lt;ul&gt;
-&lt;li&gt;Bad test right now - only checks that it&#39;s a kind of Hash&lt;/li&gt;
+&lt;li&gt;Bad test right now - only checks that it's a kind of Hash&lt;/li&gt;
 &lt;li&gt;Need to test that it behaves like a cache system, with abilities to &lt;code&gt;#store&lt;/code&gt;, &lt;code&gt;#fetch&lt;/code&gt;, and &lt;code&gt;#key&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -353,7 +383,7 @@
 &lt;li&gt;NOT &quot;CLICKTHROUGH&quot;!&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;JZ made edits to oneboxes from last night based on Captain Kurt&#39;s comments on open pull requests
+&lt;li&gt;JZ made edits to oneboxes from last night based on Captain Kurt's comments on open pull requests
 
 &lt;ul&gt;
 &lt;li&gt;Use &lt;code&gt;Array#first&lt;/code&gt; instead of &lt;code&gt;Array[0]&lt;/code&gt; because more idiomatic&lt;/li&gt;
@@ -363,7 +393,7 @@
 &lt;li&gt;Discussed more on regex, Verbal Expressions, and played with Rubular
 
 &lt;ul&gt;
-&lt;li&gt;We&#39;ll be using the regex matchers from Discourse to help guide us with our Verbal Expressions in our &lt;code&gt;matches&lt;/code&gt; blocks&lt;/li&gt;
+&lt;li&gt;We'll be using the regex matchers from Discourse to help guide us with our Verbal Expressions in our &lt;code&gt;matches&lt;/code&gt; blocks&lt;/li&gt;
 &lt;li&gt;This will be important for security&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -387,30 +417,6 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 
-</description>
-    </item>
-    
-    <item>
-      <title>1st Presentation: Check</title>
-      <link>http://dysania.github.io/blog/2013/08/22/first-presentation.html</link>
-      <pubDate>Thu, 22 Aug 2013 23:55:00 -0700</pubDate>
-      <author>Team Dysania</author>
-      <guid>http://dysania.github.io/blog/2013/08/22/first-presentation</guid>
-      <description>&lt;h1&gt;1st Presentation: Check&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/first-presentation.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;We&#39;ve just survived our first presentation on contributing to Discourse!&lt;/p&gt;
-
-&lt;p&gt;The &lt;a href=&quot;http://www.meetup.com/Los-Angeles-Womens-Ruby-on-Rails-Group/events/134549192/&quot;&gt;LA Ruby Meetup&lt;/a&gt;&#39;s theme of the night was gems, and it took place at &lt;a href=&quot;http://pivotallabs.com/&quot;&gt;Pivotal Labs&lt;/a&gt;--which was &lt;a href=&quot;http://railsgirls.com/la&quot;&gt;where it all started&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;We were nervous, but we think we did alright. We kept it pretty short (maybe 15-20 minutes?) since we were the last to go tonight, and we did a Q&amp;amp;A afterward.&lt;/p&gt;
-
-&lt;p&gt;We made our presentation slides pretty quickly so we&#39;d like to make some edits before we post it. :)&lt;/p&gt;
-
-&lt;p&gt;After the Meetup, a bunch of us went for drinks at &lt;a href=&quot;http://www.yelp.com/biz/tinga-santa-monica&quot;&gt;Tinga&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Thanks to camerawoman and organizer &lt;a href=&quot;http://twitter.com/jendiamond&quot;&gt;Jen&lt;/a&gt;, who led a &lt;a href=&quot;http://slid.es/jendiamond/createa_gem&quot;&gt;tutorial on creating gems&lt;/a&gt; tonight.&lt;/p&gt;
 </description>
     </item>
     
