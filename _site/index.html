@@ -82,6 +82,39 @@
 
   
   <section class="date">
+    <p><span><a href="/2013/09/26/captains-log.html">September 26, 2013</a></span> - <a href="/about.html">JZ</a></p>
+  </section>
+  <p><h1>Captain's Log: 2013.09.26</h1>
+
+<blockquote><ul>
+<li>Vyki's night off!</li>
+<li>Finally finished and merged <a href="https://github.com/dysania/onebox/pull/140"><code>add-shared-layout-view</code></a> branch for <a href="https://github.com/dysania/onebox/issues/61">#61</a>!
+
+<ul>
+<li>Triple curls allowed only for layout template</li>
+<li>Updated all onebox engine templates so they don't include duplicated elements anymore</li>
+<li>Refactored <code>View</code> class</li>
+<li>Decided that all onebox engines should each have a template -- including Example</li>
+</ul>
+</li>
+<li>Learned that you don't need to always immediately act on an object upon initialization
+
+<ul>
+<li>The context: using <code>#to_html</code> on new <code>View</code> object within a method</li>
+<li>Why: Might use up time/power on this action when it won't even be necessary, like if you timeout</li>
+</ul>
+</li>
+<li>Learned about <a href="http://ruby-doc.org/core-2.0.0/Object.html#method-i-tap"><code>#tap</code></a></li>
+<li>SO CLOSE to releasing v1.1.0...</li>
+<li>HOMEWORK: Keep on making oneboxes for v1.1.0...again</li>
+</ul>
+</blockquote>
+</p>
+  <p><a href="/2013/09/26/captains-log.html#disqus_thread" id="comments-link">link</a></p>
+  <br /><br />
+
+  
+  <section class="date">
     <p><span><a href="/2013/09/25/captains-log.html">September 25, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
   </section>
   <p><h1>Captain's Log: 2013.09.25</h1>
@@ -152,29 +185,6 @@
 </blockquote>
 </p>
   <p><a href="/2013/09/24/captains-log.html#disqus_thread" id="comments-link">link</a></p>
-  <br /><br />
-
-  
-  <section class="date">
-    <p><span><a href="/2013/09/18/captains-log.html">September 18, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
-  </section>
-  <p><h1>Captain's Log: 2013.09.18</h1>
-
-<blockquote><ul>
-<li>Continued working on JSON module and GitHub Gist Onebox
-
-<ul>
-<li>Finished!</li>
-<li>GitHub Gist Onebox uses raw contents of gist, later we will want to look at possibly using <a href="https://github.com/blog/122-embedded-gists">Javascript to embed</a> so that the pretty syntax highlighting from GitHub is displayed</li>
-</ul>
-</li>
-<li>61 stars!</li>
-<li>Tomorrow JZ + Captain Kurt headed to <a href="http://www.meetup.com/Los-Angeles-Womens-Ruby-on-Rails-Group/events/137696602/">Eastside Westside Ruby Bash</a> and Vyki is headed to <a href="http://www.meetup.com/codeforla/events/134964782/">Code for Los Brigade Meetup</a></li>
-<li>HOMEWORK: Keep on making oneboxes for v1.1.0</li>
-</ul>
-</blockquote>
-</p>
-  <p><a href="/2013/09/18/captains-log.html#disqus_thread" id="comments-link">link</a></p>
   <br /><br />
 
 
