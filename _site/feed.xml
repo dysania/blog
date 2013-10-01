@@ -6,9 +6,58 @@
     <atom:link href="http://dysania.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog for Rails Girls Summer of Code</description>
     <language>en-us</language>
-    <pubDate>Sat, 28 Sep 2013 09:06:43 -0700</pubDate>
-    <lastBuildDate>Sat, 28 Sep 2013 09:06:43 -0700</lastBuildDate>
+    <pubDate>Mon, 30 Sep 2013 23:05:46 -0700</pubDate>
+    <lastBuildDate>Mon, 30 Sep 2013 23:05:46 -0700</lastBuildDate>
 
+    
+    <item>
+      <title>Captain's Log: 2013.09.30</title>
+      <link>http://dysania.github.io/blog/2013/09/30/captains-log.html</link>
+      <pubDate>Mon, 30 Sep 2013 22:41:00 -0700</pubDate>
+      <author>Team Dysania</author>
+      <guid>http://dysania.github.io/blog/2013/09/30/captains-log</guid>
+      <description>&lt;h1&gt;Captain&#39;s Log: 2013.09.30&lt;/h1&gt;
+
+&lt;blockquote&gt;&lt;ul&gt;
+&lt;li&gt;Closed 3 PRs from Captain Kurt
+
+&lt;ul&gt;
+&lt;li&gt;Opening template name to public (&lt;a href=&quot;https://github.com/dysania/onebox/pull/145&quot;&gt;#145&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Allowing timeouts from services (&lt;a href=&quot;https://github.com/dysania/onebox/pull/143&quot;&gt;#143&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixing global state cache problems (&lt;a href=&quot;https://github.com/dysania/onebox/pull/142&quot;&gt;#142&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;JZ had to resolve some merge conflicts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Vyki added &lt;a href=&quot;https://github.com/dysania/onebox/pull/146&quot;&gt;iTunes onebox&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Created new issue &lt;a href=&quot;https://github.com/dysania/onebox/issues/147&quot;&gt;#147&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;We want users to be able create custom templates without having to contribute to the onebox gem&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;We need to prep for integrating our onebox gem back into Discourse
+
+&lt;ul&gt;
+&lt;li&gt;Start &lt;a href=&quot;http://meta.discourse.org/&quot;&gt;Meta Discourse&lt;/a&gt; discussion on what else we need to get onebox ready&lt;/li&gt;
+&lt;li&gt;Schedule Google Hangout w/ mentors Robin and Sam&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Discussed today&#39;s &lt;a href=&quot;http://www.washingtonpost.com/blogs/wonkblog/wp/2013/09/30/absolutely-everything-you-need-to-know-about-how-the-government-shutdown-will-work/&quot;&gt;U.S. government shutdown&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;JZ is slowly dying by bug bite&lt;/li&gt;
+&lt;li&gt;We decided we&#39;ll be attending the &lt;a href=&quot;http://laopensource2013.eventbrite.com/&quot;&gt;LA Open Source Hackathon&lt;/a&gt; on October 19&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://shop.oreilly.com/category/ebooks/programming.do&quot;&gt;O&#39;Reilly&lt;/a&gt; will be giving every RGSOC student a free programming ebook! :)&lt;/li&gt;
+&lt;li&gt;95 STARS!&lt;/li&gt;
+&lt;li&gt;HOMEWORK
+
+&lt;ul&gt;
+&lt;li&gt;Read about &lt;a href=&quot;http://en.wikipedia.org/wiki/Maslow&#39;s_hierarchy_of_needs&quot;&gt;Maslow&#39;s Hierarchy of Needs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Keep on making oneboxes for v1.1.0...again&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
     
     <item>
       <title>Captain's Log: 2013.09.26</title>
@@ -305,74 +354,6 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Captain's Log: 2013.09.04</title>
-      <link>http://dysania.github.io/blog/2013/09/04/captains-log.html</link>
-      <pubDate>Wed, 04 Sep 2013 23:35:00 -0700</pubDate>
-      <author>Team Dysania</author>
-      <guid>http://dysania.github.io/blog/2013/09/04/captains-log</guid>
-      <description>&lt;h1&gt;Captain&#39;s Log: 2013.09.04&lt;/h1&gt;
-
-&lt;blockquote&gt;&lt;ul&gt;
-&lt;li&gt;Continued working on caching support
-
-&lt;ul&gt;
-&lt;li&gt;Continued refactoring &lt;code&gt;Preview&lt;/code&gt; class
-
-&lt;ul&gt;
-&lt;li&gt;Refactored A LOT&lt;/li&gt;
-&lt;li&gt;Renamed &lt;code&gt;#record&lt;/code&gt; to &lt;code&gt;#data&lt;/code&gt; in &lt;code&gt;Engine&lt;/code&gt; module&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Added new specs in &lt;code&gt;spec_helper.rb&lt;/code&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Make sure oneboxes behave like engines&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;shared_examples_for&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;engines&amp;quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;it&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;should behave like an engine&amp;quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;expect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;described_class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;private_instance_methods&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:record&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:raw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-
-  &lt;span class=&quot;n&quot;&gt;it&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;should have implemented a data method&amp;quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;expect&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;described_class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;not_to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;raise_error&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;blockquote&gt;&lt;ul&gt;
-&lt;li&gt;In onebox specs, move fake web to global scope since our tests were using actual web pages instead of fixtures&lt;/li&gt;
-&lt;li&gt;Captain Kurt released v1.2.0 of his &lt;a href=&quot;https://github.com/krainboltgreene/hexpress&quot;&gt;Hexpress&lt;/a&gt; gem!
-
-&lt;ul&gt;
-&lt;li&gt;We made a new branch that requires it in onebox since we will be using that instead of Verbal Expressions to match urls&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;We realized we need to rename our onebox specs to end in &lt;code&gt;onebox_spec.rb&lt;/code&gt; (instead of just &lt;code&gt;spec.rb&lt;/code&gt;) to reflect the files they are testing&lt;/li&gt;
-&lt;li&gt;Vyki made her first &lt;a href=&quot;http://open-gov.tumblr.com/&quot;&gt;Tumblr&lt;/a&gt; today! &lt;a href=&quot;https://twitter.com/search?q=%23opengov&amp;amp;src=typd&quot;&gt;#opengov&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;HOMEWORK
-
-&lt;ul&gt;
-&lt;li&gt;Catch up on logs!&lt;/li&gt;
-&lt;li&gt;Read more about &lt;a href=&quot;http://www.rubyist.net/~slagell/ruby/accessors.html&quot;&gt;accessors&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
 </description>
     </item>
     
