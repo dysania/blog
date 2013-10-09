@@ -6,9 +6,48 @@
     <atom:link href="http://dysania.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Blog for Rails Girls Summer of Code</description>
     <language>en-us</language>
-    <pubDate>Wed, 02 Oct 2013 22:44:55 -0700</pubDate>
-    <lastBuildDate>Wed, 02 Oct 2013 22:44:55 -0700</lastBuildDate>
+    <pubDate>Tue, 08 Oct 2013 22:08:20 -0700</pubDate>
+    <lastBuildDate>Tue, 08 Oct 2013 22:08:20 -0700</lastBuildDate>
 
+    
+    <item>
+      <title>Captain's Log: 2013.10.07</title>
+      <link>http://dysania.github.io/blog/2013/10/07/captains-log.html</link>
+      <pubDate>Mon, 07 Oct 2013 22:30:00 -0700</pubDate>
+      <author>Team Dysania</author>
+      <guid>http://dysania.github.io/blog/2013/10/07/captains-log</guid>
+      <description>&lt;h1&gt;Captain&#39;s Log: 2013.10.07&lt;/h1&gt;
+
+&lt;blockquote&gt;&lt;ul&gt;
+&lt;li&gt;Finished GitHub Commit onebox (PR &lt;a href=&quot;https://github.com/dysania/onebox/pull/159&quot;&gt;#159&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Finished Twitter onebox (PR &lt;a href=&quot;https://github.com/dysania/onebox/pull/161&quot;&gt;#161&lt;/a&gt;)
+
+&lt;ul&gt;
+&lt;li&gt;Discourse uses Twitter API, which requires oAuth&lt;/li&gt;
+&lt;li&gt;But, we&#39;re making a gem, not an application&lt;/li&gt;
+&lt;li&gt;We&#39;ll use &lt;code&gt;HTML&lt;/code&gt; module to parse instead to make it easier&lt;/li&gt;
+&lt;li&gt;Might run into problems with protected tweets later -- these should only output the tweet URL if the user is not allowed access to that URL&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Created 2 new issues
+
+&lt;ul&gt;
+&lt;li&gt;We don&#39;t want protected tweets to be oneboxed ( &lt;a href=&quot;https://github.com/dysania/onebox/issues/162&quot;&gt;#162&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Time display conversion for JSON oneboxes ( &lt;a href=&quot;https://github.com/dysania/onebox/issues/160&quot;&gt;#160&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Google Hangout with Discourse mentors next Tuesday&lt;/li&gt;
+&lt;li&gt;Everybody&#39;s tired! Early turn-in&lt;/li&gt;
+&lt;li&gt;HOMEWORK
+
+&lt;ul&gt;
+&lt;li&gt;Keep on making oneboxes for v1.1.0...again&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
     
     <item>
       <title>Captain's Log: 2013.10.02</title>
@@ -360,30 +399,6 @@
 &lt;li&gt;HOMEWORK: Keep on making oneboxes for v1.1.0&lt;/li&gt;
 &lt;/ul&gt;
 
-</description>
-    </item>
-    
-    <item>
-      <title>RELEASE THE KRAKEN</title>
-      <link>http://dysania.github.io/blog/2013/09/12/release.html</link>
-      <pubDate>Thu, 12 Sep 2013 22:24:00 -0700</pubDate>
-      <author>Team Dysania</author>
-      <guid>http://dysania.github.io/blog/2013/09/12/release</guid>
-      <description>&lt;h1&gt;RELEASE THE KRAKEN&lt;/h1&gt;
-
-&lt;p&gt;We&#39;ve officially &lt;a href=&quot;http://www.youtube.com/watch?v=7SqC_m3yUDU&quot;&gt;released&lt;/a&gt; Onebox 1.0.0!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/bundleexecrelease.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Check our gem out on &lt;a href=&quot;http://rubygems.org/gems/onebox&quot;&gt;RubyGems.org&lt;/a&gt;:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://rubygems.org/gems/onebox&quot;&gt;&lt;img src=&quot;/images/rubygems1.0.0.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;This is our onebox in action:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/oneboxpreview.jpg&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Pretty, right? :stuck_out_tongue_closed_eyes:&lt;/p&gt;
 </description>
     </item>
     

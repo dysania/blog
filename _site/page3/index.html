@@ -82,6 +82,51 @@
 
   
   <section class="date">
+    <p><span><a href="/2013/09/24/captains-log.html">September 24, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
+  </section>
+  <p><h1>Captain's Log: 2013.09.24</h1>
+
+<blockquote><ul>
+<li>Vyki finished up and merged <code>setting-up-hexpress</code> branch</li>
+<li>JZ worked on issue <a href="https://github.com/dysania/onebox/issues/61">#61</a>
+
+<ul>
+<li>We want to reduce the duplicated parts of each template by having a shared layout view</li>
+<li>Created new branch <a href="https://github.com/dysania/onebox/pull/140"><code>adding-shared-layout-view</code></a></li>
+<li>Created new <code>Layout</code> class (which inherits from <code>Mustache</code>) to handle template rendering, instead of <code>Engine</code> module</li>
+<li>Onebox engine templates will be rendered as partials within the default <code>_layout.handlebars</code></li>
+</ul>
+</li>
+<li>Discussed how to implement <a href="https://github.com/dysania/onebox/pull/107">Imgur onebox</a>
+
+<ul>
+<li>We'll need to make 2, one for albums and one for galleries</li>
+<li><a href="https://github.com/markijbema">@markijbema</a> is back! He opened up some discussion regarding XSS issues we might not have addressed yet</li>
+</ul>
+</li>
+<li>Discussed how to implement exceptional onebox engines (Video, Audio, etc.)
+
+<ul>
+<li>They'll be similar to HTML/JSON/OpenGraph modules in that they will be included in other oneboxes (e.g. <code>include Video</code>)</li>
+</ul>
+</li>
+<li>Learned more about <a href="https://github.com/defunkt/mustache">Mustache</a> and <a href="http://handlebarsjs.com/">Handlebars</a></li>
+<li>Sent out invites for our <a href="https://rooftop-ruby.eventbrite.com/">Rooftop Ruby</a> event on October 5 in Little Tokyo
+
+<ul>
+<li>If you're in LA and would like to attend, let us know and we'll send you an invite!</li>
+</ul>
+</li>
+<li>84 STARS!</li>
+<li>HOMEWORK: Keep on making oneboxes for v1.1.0...again</li>
+</ul>
+</blockquote>
+</p>
+  <p><a href="/2013/09/24/captains-log.html#disqus_thread" id="comments-link">link</a></p>
+  <br /><br />
+
+  
+  <section class="date">
     <p><span><a href="/2013/09/18/captains-log.html">September 18, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
   </section>
   <p><h1>Captain's Log: 2013.09.18</h1>
@@ -134,40 +179,6 @@
 </blockquote>
 </p>
   <p><a href="/2013/09/17/captains-log.html#disqus_thread" id="comments-link">link</a></p>
-  <br /><br />
-
-  
-  <section class="date">
-    <p><span><a href="/2013/09/16/captains-log.html">September 16, 2013</a></span> - <a href="/about.html">Team Dysania</a></p>
-  </section>
-  <p><h1>Captain's Log: 2013.09.16</h1>
-
-<blockquote><ul>
-<li>46 Stars! Wow!</li>
-</ul>
-</blockquote>
-
-<p><a href="http://rubygems.org/gems/onebox"><img src="/images/onebox-stats-9-16.png" width="100%" /></a></p>
-
-<ul>
-<li>Lots of eyes on us, and lots of work to do still</li>
-<li>Cleaned up and finished as many open v1.0.0 issues and open pull requests as we could in two hours
-
-<ul>
-<li>Learned how to checkout a branch submitted by another author, make edits and merge from the command line</li>
-<li>A community-submitted onebox! woot. <a href="https://github.com/peterhellberg">Peter Hellberg</a> submitted a <a href="https://github.com/dysania/onebox/pull/127">pull request</a> for a Spotify Onebox, we made a few minor changes and merged</li>
-<li>Grammar fix <a href="https://github.com/dysania/onebox/pull/125">pull request</a> submitted by <a href="https://github.com/nirvdrum">Kevin Menard</a></li>
-<li>Changed GitHub Commit Onebox to use Nokogiri instead of OpenGraph, as OpenGraph object didn't include as many details as we would like to preview</li>
-<li>Renamed all of our engine specs to include "_onebox" in the name for convention's sake</li>
-<li>Declined a <a href="https://github.com/dysania/onebox/pull/126">contribution</a> for syntax edits</li>
-</ul>
-</li>
-<li><a href="https://github.com/dysania/onebox/issues?milestone=1&amp;state=open">Still so much more work to do!</a></li>
-<li>HOMEWORK: Keep on making oneboxes for v1.1.0</li>
-</ul>
-
-</p>
-  <p><a href="/2013/09/16/captains-log.html#disqus_thread" id="comments-link">link</a></p>
   <br /><br />
 
 
